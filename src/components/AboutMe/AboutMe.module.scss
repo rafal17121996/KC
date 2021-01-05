@@ -1,0 +1,33 @@
+.AboutMeWrapper{
+    height: 100vh;
+    background-color: rgb(248, 238, 238);
+    display: flex;
+    &__left{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__right{
+        width: 50%;
+        display: flex;
+    }
+
+    &__description{
+        text-align: center;
+        margin: 0 40px;
+    }
+    &__title{
+        text-align: center;
+        margin: 10px 40px;
+       
+    }
+    &__picture{
+            max-width: 100%;
+            max-height: 80%;
+            margin: auto;
+            display: block;
+    }
+    
+}
