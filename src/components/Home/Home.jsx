@@ -1,5 +1,6 @@
 import React from "react";
 import bemCssModules from "bem-css-modules";
+import { Link } from "react-scroll";
 import { Parallax } from "react-parallax";
 
 import { default as HomeStyles } from "./Home.module.scss";
@@ -22,6 +23,11 @@ Wspieram w decyzjach, procesach, emocjach.</h2>
           <div className={style("inlineStyle")}></div>
         </div>
       </Parallax> */}
+        <div className={style("scroll-button")}>
+        <Link to="about" smooth={true} duration={1000}>
+          <i className="fas fa-chevron-circle-down"></i>
+        </Link>
+      </div>
     </section>
   );
 }

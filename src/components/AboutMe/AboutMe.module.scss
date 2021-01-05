@@ -1,7 +1,13 @@
 .AboutMeWrapper{
     height: 100vh;
-    background-color: rgb(248, 238, 238);
+    background-image: url("../../assets/pexels-karolina-grabowska-4041317.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
     display: flex;
+    box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+    filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
     &__left{
         width: 50%;
         display: flex;
@@ -28,6 +34,20 @@
             max-height: 80%;
             margin: auto;
             display: block;
+            box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+    filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
     }
+    &__scroll-button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.5rem;
+        .fa-chevron-circle-down {
+          color: rgb(0, 0, 0);
+          cursor: pointer;
+        }
+      }
     
 }

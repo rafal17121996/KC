@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import bemCssModules from "bem-css-modules";
 import { Parallax } from "react-parallax";
-// import emailjs from "emailjs-com";
+ import emailjs from "emailjs-com";
 
 import { default as ContactStyles } from "./Contact.module.scss";
 
@@ -30,7 +30,7 @@ function Contact() {
         setErrors("coś1")
       }  else if(!state["mail"]){
         setErrors("coś1")
-      }else if(!state["title"]){
+      }else if(!state["date"]){
         setErrors("coś1")
       }else if(!state["text"]){
         setErrors("coś1")
@@ -39,7 +39,7 @@ function Contact() {
       emailjs.sendForm('service_f2ixcir', 'template_5g2c7io', e.target, 'user_ux3gKfqC84EoWJjDiNkqL')
       .then((result) => {
           console.log(result.text);
-          setState({ name: '', mail: '', text: '', title: '' });
+          setState({ name: '', mail: '', text: '', date: '' });
       }, (error) => {
           console.log(error.text);
       });
@@ -86,10 +86,10 @@ function Contact() {
 
               <input
                 className={style("input")}
-                placeholder="Podaj tytuł wiadomości"
-                name="title"
-                type="text"
-                value={state.title}
+                placeholder="Podaj datę ślubu"
+                name="date"
+                type="date"
+                value={state.date}
                 onChange={onInputChange}
               />
 

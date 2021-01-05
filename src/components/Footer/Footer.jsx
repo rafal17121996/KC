@@ -13,7 +13,7 @@ function Footer() {
         <a href="https://www.facebook.com/kcwedding.konsultantkaslubna/"><i className="fab fa-facebook-f">
           <p className={style("link")}>Facebook</p>
         </i></a>
-        <a href="https://www.instagram.com/kc_weddingplanner/"><i class="fab fa-instagram">
+        <a href="https://www.instagram.com/kc_weddingplanner/"><i className="fab fa-instagram">
           <p className={style("link")}>Instagram</p>
         </i></a>
 

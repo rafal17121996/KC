@@ -4,6 +4,7 @@ import { Parallax } from "react-parallax";
 
 import { default as AboutMeStyles } from "./AboutMe.module.scss";
 import img from "../../assets//Karolina_KCwedding-25.jpg";
+import { Link } from "react-scroll";
 
 const style = bemCssModules(AboutMeStyles);
 
@@ -49,7 +50,11 @@ export default function AboutMe() {
       <div className={style("right")}>
         <img className={style("picture")} src={img} alt="" />
       </div>
-
+      <div className={style("scroll-button")}>
+        <Link to="offer" smooth={true} duration={1000}>
+          <i className="fas fa-chevron-circle-down"></i>
+        </Link>
+      </div>
       
     </section>
   );
