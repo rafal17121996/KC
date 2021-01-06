@@ -7,7 +7,7 @@ module.exports = {
     index: path(__dirname, "..", "src", "index.js"),
   },
   output: {
-    filename: "static/js/[name].[contenthash:6].js",
+    filename: "[name].[contenthash:6].js",
     path: path(__dirname, "..", "build"),
   },
   resolve: {
@@ -26,13 +26,10 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: "file-loader",
-            options: {
-              outputPath: 'static/media',
-            },
+            loader: 'file-loader',
           },
         ],
-      },
+      }
     ],
   },
   plugins: [
