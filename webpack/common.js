@@ -2,13 +2,12 @@ const path = require("path").resolve;
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
-
 module.exports = {
   entry: {
     index: path(__dirname, "..", "src", "index.js"),
   },
   output: {
-    filename: "[name].[contenthash:6].js",
+    filename: "static/js/[name].[contenthash:6].js",
     path: path(__dirname, "..", "build"),
   },
   resolve: {
@@ -27,10 +26,13 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
+            options: {
+              outputPath: 'static/media',
+            },
           },
         ],
-      }
+      },
     ],
   },
   plugins: [
