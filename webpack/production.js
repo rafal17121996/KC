@@ -42,14 +42,27 @@ module.exports = {
           },
         ],
       },
+      // {
+      //   test: /\.(json)$/,
+      //   type: "javascript/auto",
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: "[folder]/[name].[ext]",
+      //         outputPath: "public/locales/"
+      //       }
+      //     }
+      //   ]
+      // }
     ],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "style.[contenthash:6].css",
-      chunkFilename: "style.[contenthash:6].css",
-      publicPath: "./",
+      filename: "/static/css/style.[contenthash:6].css",
+      chunkFilename: "/static/cssstyle.[contenthash:6].css",
+      publicPath: "./static/css",
     }),
   ],
 };
