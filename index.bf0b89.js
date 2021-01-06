@@ -3523,13 +3523,13 @@ var Home_module = __webpack_require__(19);
 var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 
 // CONCATENATED MODULE: ./src/assets/back1 (1).jpg
-/* harmony default export */ var back1_1_ = (__webpack_require__.p + "static/media/836018d88f733130e810e0dca56f9f74.jpg");
+/* harmony default export */ var back1_1_ = (__webpack_require__.p + "836018d88f733130e810e0dca56f9f74.jpg");
 // CONCATENATED MODULE: ./src/assets/back1 (2).jpg
-/* harmony default export */ var back1_2_ = (__webpack_require__.p + "static/media/e83752ba4f45e1526294028c26a92383.jpg");
+/* harmony default export */ var back1_2_ = (__webpack_require__.p + "e83752ba4f45e1526294028c26a92383.jpg");
 // CONCATENATED MODULE: ./src/assets/back1 (3).jpg
-/* harmony default export */ var back1_3_ = (__webpack_require__.p + "static/media/22dcb287488823ead5c9c935ea41f9a8.jpg");
+/* harmony default export */ var back1_3_ = (__webpack_require__.p + "22dcb287488823ead5c9c935ea41f9a8.jpg");
 // CONCATENATED MODULE: ./src/assets/back1 (4).jpg
-/* harmony default export */ var back1_4_ = (__webpack_require__.p + "static/media/f0b4bb7dbaed16dbd590d0055d34e005.jpg");
+/* harmony default export */ var back1_4_ = (__webpack_require__.p + "f0b4bb7dbaed16dbd590d0055d34e005.jpg");
 // CONCATENATED MODULE: ./src/components/Home/Home.jsx
 
 
@@ -3575,9 +3575,9 @@ var AboutMe_module = __webpack_require__(20);
 var AboutMe_module_default = /*#__PURE__*/__webpack_require__.n(AboutMe_module);
 
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-25.jpg
-/* harmony default export */ var Karolina_KCwedding_25 = (__webpack_require__.p + "static/media/120c08a3ddf5c96d7c0cd260d6b7316b.jpg");
+/* harmony default export */ var Karolina_KCwedding_25 = (__webpack_require__.p + "120c08a3ddf5c96d7c0cd260d6b7316b.jpg");
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-53.jpg
-/* harmony default export */ var Karolina_KCwedding_53 = (__webpack_require__.p + "static/media/b5251b133e0f87dda0bc9ac6d30168ce.jpg");
+/* harmony default export */ var Karolina_KCwedding_53 = (__webpack_require__.p + "b5251b133e0f87dda0bc9ac6d30168ce.jpg");
 // CONCATENATED MODULE: ./src/components/AboutMe/AboutMe.jsx
 
 
@@ -3655,9 +3655,9 @@ function CardItem(props) {
 
 /* harmony default export */ var subComponent_CardItem = (CardItem);
 // CONCATENATED MODULE: ./src/assets/square.jpg
-/* harmony default export */ var square = (__webpack_require__.p + "static/media/b496cd542bee62a7bdcddda7f4308d14.jpg");
+/* harmony default export */ var square = (__webpack_require__.p + "b496cd542bee62a7bdcddda7f4308d14.jpg");
 // CONCATENATED MODULE: ./src/assets/square2.jpg
-/* harmony default export */ var square2 = (__webpack_require__.p + "static/media/e45b76dc2e4852e2ad51d0f21351e1d9.jpg");
+/* harmony default export */ var square2 = (__webpack_require__.p + "e45b76dc2e4852e2ad51d0f21351e1d9.jpg");
 // CONCATENATED MODULE: ./src/components/Offer/Offer.jsx
 
 
@@ -3764,7 +3764,7 @@ var Contact_module = __webpack_require__(23);
 var Contact_module_default = /*#__PURE__*/__webpack_require__.n(Contact_module);
 
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-37.jpg
-/* harmony default export */ var Karolina_KCwedding_37 = (__webpack_require__.p + "static/media/1467812d1290e0614dfdf0e7d1c5a52c.jpg");
+/* harmony default export */ var Karolina_KCwedding_37 = (__webpack_require__.p + "1467812d1290e0614dfdf0e7d1c5a52c.jpg");
 // CONCATENATED MODULE: ./src/components/Contact/Contact.jsx
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
