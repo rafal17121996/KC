@@ -1,53 +1,63 @@
-.AboutMeWrapper{
-    height: 100vh;
-    background-image: url("../../assets/pexels-karolina-grabowska-4041317.jpg");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+.AboutMeWrapper {
+  min-height: 100vh;
+  background-image: url("../../assets/pexels-karolina-grabowska-4041317.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  // box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
+  // -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+  // filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    padding:15px 0 ;
+    background-color: rgba(250, 234, 214, 0.6);
+  }
+
+  &__wrapper {
     display: flex;
+    flex-direction: column;
+  }
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__description {
+      font-size: 1.2rem;
+    text-align: justify;
+    margin: 0 40px;
+    width: 50%;
+  }
+
+  &__picture {
+      margin: 20px auto;
+    width: 20%;
+    display: block;
     box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
     -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
     filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
-    &__left{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  }
+  &__scroll-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    .fa-chevron-circle-down {
+      color: rgb(0, 0, 0);
+      cursor: pointer;
     }
-    &__right{
-        width: 50%;
-        display: flex;
-    }
-
-    &__description{
-        text-align: center;
-        margin: 0 40px;
-    }
-    &__title{
-        text-align: center;
-        margin: 10px 40px;
-       
-    }
-    &__picture{
-            max-width: 100%;
-            max-height: 80%;
-            margin: auto;
-            display: block;
-            box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
-    filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
-    }
-    &__scroll-button {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 2.5rem;
-        .fa-chevron-circle-down {
-          color: rgb(0, 0, 0);
-          cursor: pointer;
-        }
-      }
-    
+  }
 }

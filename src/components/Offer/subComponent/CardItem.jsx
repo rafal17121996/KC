@@ -12,7 +12,7 @@ function CardItem(props) {
       <>
         <li className={style("item")}>
           <div className={style("item__link")} >
-            <figure className={style({clas})} data-category={props.label}>
+            <figure className={style({clas})} >
               <img
                 className={style("item__img")}
                 alt='Travel Image'

@@ -4,4 +4,9 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    &__title{
+        margin-top: 30px;
+        padding: 15px 0;
+    background-color: rgba(250, 234, 214, 0.6);
+    }
 }

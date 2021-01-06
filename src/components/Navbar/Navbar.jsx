@@ -19,7 +19,7 @@ const Navbar = () => {
 
 
   const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
-  const [visible, setVisible] = useState(true);
+  // const [visible, setVisible] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
 
@@ -30,6 +30,7 @@ const Navbar = () => {
           smooth={true}
           duration={1000}
           to={item.url}
+          offset={-60}
           className={style("nav-links")}
         >
           {item.title}
@@ -78,14 +79,14 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={style("", { hidden: !visible })}>
+      <nav className={style("")}>
         <div className={style("wrapper")}>
           <div className={style("menu-button")} onClick={handleOnClick}>
             <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
           {/* {logo} */}
          
-          <Link smooth={true} duration={1000} to="home" className={style("title")}>
+          <Link smooth={true} duration={1000} to="home"  offset={-60} className={style("title")}>
             <h1 className={style("title")}>TU_LOGO</h1>
           </Link>
 
@@ -96,7 +97,7 @@ const Navbar = () => {
        
       </nav>
       {prevScrollpos ? (
-        <Link smooth={true} duration={1000} to="home" className="scroll-up">
+        <Link smooth={true} duration={1000} to="home"  className="scroll-up">
           <i className="fas fa-arrow-up"></i>
         </Link>
       ) : null}

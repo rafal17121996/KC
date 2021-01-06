@@ -1,7 +1,7 @@
-$base-color: antiquewhite;
+$base-color: black;
 
 .Navbar {
-  height: 80px;
+  height: 60px;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -10,10 +10,10 @@ $base-color: antiquewhite;
   align-items: center;
   font-size: 1.7rem;
   transition: top 0.6s;
-  // background-color: grey;
-  // box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
-  // -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
-  // filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+  background-color: white;
+  box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+  filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
   z-index: 999;
   @media screen and (max-width: 960px) {
     background-color: transparent;
@@ -30,7 +30,7 @@ $base-color: antiquewhite;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 60px;
     width: 100%;
   }
    
@@ -46,7 +46,6 @@ $base-color: antiquewhite;
     display: block;
     cursor: pointer;
     color: $base-color;
-    text-shadow: 2px 2px black;
     padding-left: 1rem;
     font-size: 1rem
   }
@@ -63,11 +62,10 @@ $base-color: antiquewhite;
   }
 
   &__nav-item {
-    height: 80px;
+    height: 60px;
   }
   &__nav-links {
     color: $base-color;
-    text-shadow: 1px 1px black;
     display: flex;
     align-items: center;
     text-decoration: none;

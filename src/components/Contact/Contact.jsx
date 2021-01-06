@@ -1,23 +1,23 @@
 import React, { useContext, useState } from "react";
 import bemCssModules from "bem-css-modules";
-import { Parallax } from "react-parallax";
  import emailjs from "emailjs-com";
 
 import { default as ContactStyles } from "./Contact.module.scss";
-
-//import img from "../../assets/Karolina_KCwedding-55.jpg";
-import img from "../../assets/Contact.jpg";
+import img from "../../assets/Karolina_KCwedding-37.jpg";
 
 import { StoreContext } from "../../store/StoreProvider";
 
 const style = bemCssModules(ContactStyles);
 
 function Contact() {
+  let today = new Date().toISOString().substr(0, 10);
+
+
   const { isMobile } = useContext(StoreContext);
   const [state, setState] = useState({
     name: "",
     mail: "",
-    title: "",
+    date: today,
     text: "",
   });
   const [errors, setErrors] = useState("");
@@ -58,8 +58,8 @@ function Contact() {
 
   return (
     <section id="contact" className={style()}>
-      <Parallax bgImage={img} strength={700}>
-        <div className={style("img")}>
+      <div className={style("ImgWrapper")}>  <img src={img} alt="" className={style("image")}/></div>
+    
           <div className={style("inlineStyle")}>
             <div>
               <h1 className={style("title")}>Napisz do mnie wiadomość!</h1>
@@ -107,14 +107,7 @@ function Contact() {
               <button className={style("subBtn")}>Wyślij</button>
             </form>
           </div>
-          {isMobile ? null : (
-            <div className={style("left")}>
-              <h1>Coś w stylu zadzwnoń pod numer 111 111 111 aby ustalić ....</h1>
-              <h3>Lub skorzystaj z formularza kontaktowego</h3>
-            </div>
-          )}
-        </div>
-      </Parallax>
+
     </section>
   );
 }

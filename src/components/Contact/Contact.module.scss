@@ -1,113 +1,86 @@
 .contact {
-    min-height: 100vh;
-   
-    img{
-      filter: brightness(70%) !important;
-    }
-  
-    &__img {
-      height: 100vh;
-      
-  
-    }
-    &__inlineStyle {
-      top: 50%;
-      left: 75%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      width: 25%;
-      min-width: 370px;
-      min-height: 600px;
-      background-color: rgba(0, 0, 0, 0.7);
-      border-radius: 20px;
-      border: 2px solid black;
-      @media screen and (max-width: 960px) {
-        left: 50%;
-        width: 50%;
-      }
-    }
-    &__title{
-      color: rgba(156, 70, 0, 0.966);
-      text-shadow: 2px 2px rgb(3, 3, 3);
-      margin-top: 20px;
-      font-size: 2.5rem;
-    }
-  
-    &__description{
-      color: rgb(255, 255, 255);
-      padding: 20px;
-      text-shadow: 1px 1px rgb(12, 12, 12);
-      font-size: 1.1rem;
-    }
-  
-    &__input {
-      font-family: Arial, Helvetica, sans-serif !important;
-      border: 2px solid black;
-      
-      display: block;
-      margin: 20px auto;
-      padding: 10px;
-      width: 80%;
-      border-radius: 5px;
-    }
-  
-    &__textarea{
-      font-family: Arial, Helvetica, sans-serif !important;
-      border: 2px solid black;
-      display: block;
-      margin: 20px auto;
-      padding: 10px;
-      width: 80%;
-      border-radius: 5px;
-      resize: none;
-    }
-    &__file{
-      font-family: Arial, Helvetica, sans-serif !important;
-      color: white;
-      display: block;
-      margin: 20px auto;
-      padding: 10px;
-      cursor: pointer;
-    }
-    &__subBtn{
-      font-family: Arial, Helvetica, sans-serif !important;
+  height: 100vh;
+  position: relative;
+  background-color: #fafafa;
+
+  &__ImgWrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 50%;
+    display: block;
+    box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+    filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+  }
+  &__inlineStyle {
+    top: 50%;
+    left: 75%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 25%;
+    min-width: 370px;
+    min-height: 600px;
+    @media screen and (max-width: 960px) {
+      left: 50%;
       width: 50%;
-      padding: 10px;
-      border-radius: 5px;
-      border: 2px solid black;
-      cursor: pointer;
-      transition: transform .2s;
-      color: black;
-      font-size: 1.1rem;
-      font-weight: 700;
-      &:hover{
-        transform: scale(1.1);
-      }
     }
-  
-  
-    &__left {
-      top: 60%;
-      left: 25%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      text-align: left;
-      width: 40%;
-      min-width: 370px;
-      color: white;
-      position: relative;
-      h1{
-        padding: 10px;
-        font-size: 4rem;
-      }
-      h3{
-        font-size: 2.2rem;
-        padding: 10px;
-      }
-  
+  }
+  &__title {
+    color: rgba(0, 0, 0, 0.966);
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+
+  &__description {
+    color: rgb(56, 51, 51);
+    padding: 20px;
+    font-size: 1.1rem;
+  }
+
+  &__input {
+    border: 2px solid black;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+  }
+
+  &__textarea {
+    border: 2px solid black;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    resize: none;
+  }
+
+  &__subBtn {
+    background-color: rgba(250, 234, 214, 0.6);
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: transform 0.2s;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+    &:hover {
+      transform: scale(1.1);
     }
-  &__arrow{
+  }
+
+  &__arrow {
     position: absolute;
     top: 0;
     right: 0;
@@ -135,16 +108,15 @@
     margin-bottom: 10px;
     border-radius: 5px;
     border: 2px solid black;
-    p{
+    p {
       font-family: Arial, Helvetica, sans-serif !important;
     }
-    em{
+    em {
       font-family: Arial, Helvetica, sans-serif !important;
       font-size: 0.6rem;
     }
   }
-  &__errors{
+  &__errors {
     color: white;
   }
-  }
-  
+}

@@ -10,7 +10,7 @@ export default function FAQ() {
   return (
     <section id="faq" className={style()}>
      
-        <h1 className={style('title')} > ABC przyszłych nowożeńców | Co powinniście wiedzieć na dobry początek współpracy z KC Wedding?</h1>
+        <h1 className={style('title')} > ABC przyszłych nowożeńców <br/> Co powinniście wiedzieć na dobry początek współpracy z KC Wedding?</h1>
        
       
 <br/>
