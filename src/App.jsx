@@ -23,7 +23,7 @@ const App = () => {
         <Contact />
         <FAQ /> */}
         <Switch>
-          <Route
+          {/* <Route
             path="/"
             exact
             render={() => (
@@ -34,7 +34,8 @@ const App = () => {
                 <Contact />
               </>
             )}
-          />
+          /> */}
+        <Route path="/" exact component={Home} />
           <Route path="/faq" component={FAQ} />
         </Switch>
         <Footer />
