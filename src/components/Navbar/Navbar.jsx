@@ -9,7 +9,7 @@ import { StoreContext } from "../../store/StoreProvider";
 
 import { default as NavbarStyles } from "./Navbar.module.scss";
 
-// import img from "../../assets/logo.png";
+import img from "../../assets/KC (1).png";
 
 
 const style = bemCssModules(NavbarStyles);
@@ -55,9 +55,9 @@ const Navbar = () => {
       const newVisible = prevScrollpos > currentScrollPos;
 
       setPrevScrollpos(currentScrollPos);
-      setVisible(newVisible);
+      // setVisible(newVisible);
     } else {
-      setVisible(true);
+      // setVisible(true);
     }
   };
   const handleOnClick = () => {
@@ -73,9 +73,9 @@ const Navbar = () => {
     ? style("nav-menu", { active: true })
     : style("nav-menu");
 
-//   const logo = isMobile ? null: <Link smooth={true} duration={1000} to="home" className={style("logo")}>
-//             <img className={style("logo")} src={img} alt="" />
-//           </Link>
+  const logo = isMobile ? null: <Link smooth={true} duration={1000} offset={-60} to="home" className={style("logo")}>
+            <img className={style("logo")} src={img} alt="" />
+          </Link>
 
   return (
     <>
@@ -84,11 +84,11 @@ const Navbar = () => {
           <div className={style("menu-button")} onClick={handleOnClick}>
             <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
-          {/* {logo} */}
+          {logo}
          
-          <Link smooth={true} duration={1000} to="home"  offset={-60} className={style("title")}>
+          {/* <Link smooth={true} duration={1000} to="home"  offset={-60} className={style("title")}>
             <h1 className={style("title")}>TU_LOGO</h1>
-          </Link>
+          </Link> */}
 
           <ul className={itemStyle}>{Items}</ul> 
         
@@ -97,7 +97,7 @@ const Navbar = () => {
        
       </nav>
       {prevScrollpos ? (
-        <Link smooth={true} duration={1000} to="home"  className="scroll-up">
+        <Link smooth={true} duration={1000} to="home" offset={-60} className="scroll-up">
           <i className="fas fa-arrow-up"></i>
         </Link>
       ) : null}

@@ -11,13 +11,13 @@ export const MenuItems=[
         cName: 'nav-links'
     },
     {
-        title: 'ABC KLIENTA',
-        url: 'faq',
+        title: 'KONTAKT',
+        url: 'contact',
         cName: 'nav-links'
     },
     {
-        title: 'KONTAKT',
-        url: 'contact',
+        title: 'ABC KLIENTA',
+        url: 'faq',
         cName: 'nav-links'
     }
 ]

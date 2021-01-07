@@ -4,17 +4,17 @@ import { Link } from "react-scroll";
 import BackgroundSlider from 'react-background-slider'
 
 import { default as HomeStyles } from "./Home.module.scss";
-import img from "../../assets/back1 (1).jpg";
+// import img from "../../assets/back1 (1).jpg";
 import img1 from "../../assets/back1 (2).jpg";
-import img2 from "../../assets/back1 (3).jpg";
-import img3 from "../../assets/back1 (4).jpg";
+import img2 from "../../assets/back1.jpg";
+import img3 from "../../assets/back2.jpg";
 
 
 const style = bemCssModules(HomeStyles);
 
 export default function Home() {
   return (
-    <section styles={{ backgroundImage:`url(${img})` }} id="home" className={style()}>
+    <section  id="home" className={style()}>
       <h1 className={style('text')}>
         Cześć, nazywam się Karolina Chorzępa.<br></br>
         Jestem Waszym wedding plannerem.
@@ -33,7 +33,7 @@ Wspieram w decyzjach, procesach, emocjach.</h2>
         </Link>
       </div>
       <BackgroundSlider
-  images={[img, img1, img2, img3]}
+  images={[img1, img2, img3]}
   duration={3} transition={2} />
     </section>
   );
