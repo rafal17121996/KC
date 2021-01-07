@@ -6792,7 +6792,7 @@ function Footer() {
 
 
 var App_App = () => {
-  return /*#__PURE__*/react_default.a.createElement(react_router_dom_BrowserRouter, null, /*#__PURE__*/react_default.a.createElement(store_StoreProvider, null, /*#__PURE__*/react_default.a.createElement(Navbar_Navbar, null), /*#__PURE__*/react_default.a.createElement(react_router_Switch, null, /*#__PURE__*/react_default.a.createElement(react_router_Route, {
+  return /*#__PURE__*/react_default.a.createElement(react_router_dom_HashRouter, null, /*#__PURE__*/react_default.a.createElement(store_StoreProvider, null, /*#__PURE__*/react_default.a.createElement(Navbar_Navbar, null), /*#__PURE__*/react_default.a.createElement(react_router_Switch, null, /*#__PURE__*/react_default.a.createElement(react_router_Route, {
     path: "/",
     exact: true,
     render: () => /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, /*#__PURE__*/react_default.a.createElement(Home, null), /*#__PURE__*/react_default.a.createElement(AboutMe, null), /*#__PURE__*/react_default.a.createElement(Offer_Offer, null), /*#__PURE__*/react_default.a.createElement(Contact_Contact, null))
