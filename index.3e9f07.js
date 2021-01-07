@@ -6778,6 +6778,26 @@ function Footer() {
 }
 
 /* harmony default export */ var Footer_Footer = (Footer);
+// CONCATENATED MODULE: ./src/components/Scroll/ScrollToTop.jsx
+
+
+
+function ScrollToTop(_ref) {
+  var {
+    history
+  } = _ref;
+  Object(react["useEffect"])(() => {
+    var unlisten = history.listen(() => {
+      window.scrollTo(0, 0);
+    });
+    return () => {
+      unlisten();
+    };
+  }, []);
+  return null;
+}
+
+/* harmony default export */ var Scroll_ScrollToTop = (withRouter(ScrollToTop));
 // CONCATENATED MODULE: ./src/App.jsx
 
 
@@ -6791,8 +6811,9 @@ function Footer() {
 
 
 
+
 var App_App = () => {
-  return /*#__PURE__*/react_default.a.createElement(react_router_dom_HashRouter, null, /*#__PURE__*/react_default.a.createElement(store_StoreProvider, null, /*#__PURE__*/react_default.a.createElement(Navbar_Navbar, null), /*#__PURE__*/react_default.a.createElement(react_router_Switch, null, /*#__PURE__*/react_default.a.createElement(react_router_Route, {
+  return /*#__PURE__*/react_default.a.createElement(react_router_dom_HashRouter, null, /*#__PURE__*/react_default.a.createElement(store_StoreProvider, null, /*#__PURE__*/react_default.a.createElement(Navbar_Navbar, null), /*#__PURE__*/react_default.a.createElement(Scroll_ScrollToTop, null), /*#__PURE__*/react_default.a.createElement(react_router_Switch, null, /*#__PURE__*/react_default.a.createElement(react_router_Route, {
     path: "/",
     exact: true,
     render: () => /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, /*#__PURE__*/react_default.a.createElement(Home, null), /*#__PURE__*/react_default.a.createElement(AboutMe, null), /*#__PURE__*/react_default.a.createElement(Offer_Offer, null), /*#__PURE__*/react_default.a.createElement(Contact_Contact, null))
