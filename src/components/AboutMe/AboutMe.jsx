@@ -14,9 +14,9 @@ const style = bemCssModules(AboutMeStyles);
 export default function AboutMe() {
   return (
     <section id="about" className={style()}>
-      <Parallax bgImage={bg} strength={1000}>
+      {/* <Parallax bgImage={bg} strength={1000}>
         <div className={style("img")}>
-          <div className={style("inlineStyle")}>
+          <div className={style("inlineStyle")}> */}
 
   <h1 className={style("title")}>Kto stoi za KC Wedding?</h1>
       <div className={style("wrapper")}>
@@ -69,10 +69,10 @@ export default function AboutMe() {
           <i className="fas fa-chevron-circle-down"></i>
         </Link>
       </div>
-
+{/* 
           </div>
           </div>
-          </Parallax>
+          </Parallax> */}
     
     </section>
   );

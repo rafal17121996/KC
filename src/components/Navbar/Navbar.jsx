@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import bemCssModules from "bem-css-modules";
-import { Link } from "react-scroll";
+import { Link as Link1 } from "react-scroll";
+import { Link } from "react-router-dom";
 
 
 
@@ -26,7 +27,7 @@ const Navbar = () => {
   const Items = MenuItems.map((item, index) => {
     return (
       <li  key={index} className={style("nav-item")}>
-        <Link
+        <Link1
           smooth={true}
           duration={1000}
           to={item.url}
@@ -34,7 +35,7 @@ const Navbar = () => {
           className={style("nav-links")}
         >
           {item.title}
-        </Link>
+        </Link1>
       </li>
     );
   });
@@ -73,7 +74,7 @@ const Navbar = () => {
     ? style("nav-menu", { active: true })
     : style("nav-menu");
 
-  const logo = isMobile ? null: <Link smooth={true} duration={1000} offset={-60} to="home" className={style("logo")}>
+  const logo = isMobile ? null: <Link  to="/" className={style("logo")}>
             <img className={style("logo")} src={img} alt="" />
           </Link>
 
@@ -90,16 +91,25 @@ const Navbar = () => {
             <h1 className={style("title")}>TU_LOGO</h1>
           </Link> */}
 
-          <ul className={itemStyle}>{Items}</ul> 
+          <ul className={itemStyle}>{Items}
+          <li   className={style("nav-item")}>
+        <Link
+          to="/faq"
+          className={style("nav-links")}
+        >
+          ABC KLIENTA
+        </Link>
+      </li>
+          </ul> 
         
          
         </div>
        
       </nav>
       {prevScrollpos ? (
-        <Link smooth={true} duration={1000} to="home" offset={-60} className="scroll-up">
+        <Link1 smooth={true} duration={1000} to="home" offset={-60} className="scroll-up">
           <i className="fas fa-arrow-up"></i>
-        </Link>
+        </Link1>
       ) : null}
     </>
   );

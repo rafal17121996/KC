@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 import StoreProvider from "./store/StoreProvider";
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
@@ -10,25 +10,37 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Offer from "./components/Offer/Offer";
 import FAQ from "./components/FAQ/FAQ";
 import Contact from "./components/Contact/Contact";
-import Footer from './components/Footer/Footer';
-
-
-
-
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
-    return (
-        <StoreProvider>
+  return (
+    <Router>
+      <StoreProvider>
         <Navbar />
-        <Home />
+        {/* <Home />
         <AboutMe />
         <Offer />
         <Contact />
-        <FAQ />
-       
+        <FAQ /> */}
+        <Switch>
+          <Route
+            path="/"
+            exact
+            render={() => (
+              <>
+                <Home />
+                <AboutMe />
+                <Offer />
+                <Contact />
+              </>
+            )}
+          />
+          <Route path="/faq" component={FAQ} />
+        </Switch>
         <Footer />
-        </StoreProvider>
-    );
-}
+      </StoreProvider>
+    </Router>
+  );
+};
 
 export default App;

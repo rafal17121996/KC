@@ -6,7 +6,7 @@ export const MenuItems=[
         cName: 'nav-links'
     },
     {
-        title: 'Oferta',
+        title: 'OFERTA',
         url: 'offer',
         cName: 'nav-links'
     },
@@ -14,10 +14,11 @@ export const MenuItems=[
         title: 'KONTAKT',
         url: 'contact',
         cName: 'nav-links'
-    },
-    {
-        title: 'ABC KLIENTA',
-        url: 'faq',
-        cName: 'nav-links'
     }
+    // ,
+    // {
+    //     title: 'ABC KLIENTA',
+    //     url: 'faq',
+    //     cName: 'nav-links'
+    // }
 ]
