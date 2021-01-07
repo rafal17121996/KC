@@ -92,12 +92,13 @@ const Navbar = () => {
           </Link> */}
 
           <ul className={itemStyle}>{Items}
-          <li   className={style("nav-item")}>
+          <li   className={style("nav-item")}>         
         <Link
           to="/faq"
           className={style("nav-links")}
         >
-          ABC KLIENTA
+
+            ABC KLIENTA
         </Link>
       </li>
           </ul> 

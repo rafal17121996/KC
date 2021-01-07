@@ -11,6 +11,7 @@ import Offer from "./components/Offer/Offer";
 import FAQ from "./components/FAQ/FAQ";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/Scroll/ScrollToTop";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Offer />
         <Contact />
         <FAQ /> */}
+         <ScrollToTop />
         <Switch>
           {/* <Route
             path="/"
