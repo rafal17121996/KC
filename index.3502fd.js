@@ -280,23 +280,23 @@ var _scroller = __webpack_require__(3);
 
 var _scroller2 = _interopRequireDefault(_scroller);
 
-var _scrollEvents = __webpack_require__(11);
+var _scrollEvents = __webpack_require__(12);
 
 var _scrollEvents2 = _interopRequireDefault(_scrollEvents);
 
-var _scrollSpy = __webpack_require__(9);
+var _scrollSpy = __webpack_require__(10);
 
 var _scrollSpy2 = _interopRequireDefault(_scrollSpy);
 
-var _animateScroll = __webpack_require__(13);
+var _animateScroll = __webpack_require__(14);
 
 var _animateScroll2 = _interopRequireDefault(_animateScroll);
 
-var _scrollLink = __webpack_require__(8);
+var _scrollLink = __webpack_require__(9);
 
 var _scrollLink2 = _interopRequireDefault(_scrollLink);
 
-var _scrollElement = __webpack_require__(15);
+var _scrollElement = __webpack_require__(16);
 
 var _scrollElement2 = _interopRequireDefault(_scrollElement);
 
@@ -335,11 +335,11 @@ var _utils = __webpack_require__(4);
 
 var _utils2 = _interopRequireDefault(_utils);
 
-var _animateScroll = __webpack_require__(13);
+var _animateScroll = __webpack_require__(14);
 
 var _animateScroll2 = _interopRequireDefault(_animateScroll);
 
-var _scrollEvents = __webpack_require__(11);
+var _scrollEvents = __webpack_require__(12);
 
 var _scrollEvents2 = _interopRequireDefault(_scrollEvents);
 
@@ -533,11 +533,17 @@ if (true) {
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
+!function webpackUniversalModuleDefinition(e,t){ true?module.exports=t(__webpack_require__(0)):undefined}("undefined"!=typeof self?self:this,(function(e){return function(e){var t={};function __webpack_require__(n){if(t[n])return t[n].exports;var r=t[n]={i:n,l:!1,exports:{}};return e[n].call(r.exports,r,r.exports,__webpack_require__),r.l=!0,r.exports}return __webpack_require__.m=e,__webpack_require__.c=t,__webpack_require__.d=function(e,t,n){__webpack_require__.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},__webpack_require__.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},__webpack_require__.t=function(e,t){if(1&t&&(e=__webpack_require__(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(__webpack_require__.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)__webpack_require__.d(n,r,function(t){return e[t]}.bind(null,r));return n},__webpack_require__.n=function(e){var t=e&&e.__esModule?function getDefault(){return e.default}:function getModuleExports(){return e};return __webpack_require__.d(t,"a",t),t},__webpack_require__.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},__webpack_require__.p="",__webpack_require__(__webpack_require__.s=3)}([function(t,n){t.exports=e},function(e,t,n){"use strict";function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function _typeof(e){return typeof e}:function _typeof(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _inherits(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&_setPrototypeOf(e,t)}function _setPrototypeOf(e,t){return(_setPrototypeOf=Object.setPrototypeOf||function _setPrototypeOf(e,t){return e.__proto__=t,e})(e,t)}function _createSuper(e){var t=function _isNativeReflectConstruct(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}();return function _createSuperInternal(){var n,r=_getPrototypeOf(e);if(t){var o=_getPrototypeOf(this).constructor;n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments);return _possibleConstructorReturn(this,n)}}function _possibleConstructorReturn(e,t){return!t||"object"!==_typeof(t)&&"function"!=typeof t?function _assertThisInitialized(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e):t}function _getPrototypeOf(e){return(_getPrototypeOf=Object.setPrototypeOf?Object.getPrototypeOf:function _getPrototypeOf(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0}),t.Background=t.Parallax=void 0;var o=r(n(0)),i=function(e){_inherits(Parallax,e);var t=_createSuper(Parallax);function Parallax(){return _classCallCheck(this,Parallax),t.apply(this,arguments)}return Parallax}(o.default.Component);t.Parallax=i;var a=function(e){_inherits(Background,e);var t=_createSuper(Background);function Background(){return _classCallCheck(this,Background),t.apply(this,arguments)}return Background}(o.default.Component);t.Background=a},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.canUseDOM=t.getNodeHeight=t.isScrolledIntoView=t.getWindowHeight=void 0,t.getWindowHeight=function(e){if(!e)return 0;var t=window,n=document,r=n.documentElement,o=n.getElementsByTagName("body")[0];return t.innerHeight||r.clientHeight||o.clientHeight},t.isScrolledIntoView=function(e){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0,r=arguments.length>2?arguments[2]:void 0;if(!r)return!1;var o=e.getBoundingClientRect().top-n,i=e.getBoundingClientRect().bottom+n;return o<=t.getWindowHeight(r)&&i>=0},t.getNodeHeight=function(e,n){return e?n&&"clientHeight"in n?n.clientHeight:t.getWindowHeight(e):0},t.canUseDOM=function(){return!("undefined"==typeof window||!window.document||!window.document.createElement)}},function(e,t,n){"use strict";var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0}),t.Background=t.Parallax=void 0;var o=r(n(4));t.Parallax=o.default;var i=r(n(7));t.Background=i.default},function(e,t,n){"use strict";function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function _typeof(e){return typeof e}:function _typeof(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function _defineProperties(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function _setPrototypeOf(e,t){return(_setPrototypeOf=Object.setPrototypeOf||function _setPrototypeOf(e,t){return e.__proto__=t,e})(e,t)}function _createSuper(e){var t=function _isNativeReflectConstruct(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}();return function _createSuperInternal(){var n,r=_getPrototypeOf(e);if(t){var o=_getPrototypeOf(this).constructor;n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments);return _possibleConstructorReturn(this,n)}}function _possibleConstructorReturn(e,t){return!t||"object"!==_typeof(t)&&"function"!=typeof t?function _assertThisInitialized(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e):t}function _getPrototypeOf(e){return(_getPrototypeOf=Object.setPrototypeOf?Object.getPrototypeOf:function _getPrototypeOf(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0});var o=r(n(0)),i=n(1),a=n(5),c=n(2),u=r(n(6)),s={position:"absolute",left:"50%",WebkitTransform:"translate3d(-50%, 0, 0)",transform:"translate3d(-50%, 0, 0)",WebkitTransformStyle:"preserve-3d",WebkitBackfaceVisibility:"hidden",MozBackfaceVisibility:"hidden",MsBackfaceVisibility:"hidden"},l=function(e){!function _inherits(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&_setPrototypeOf(e,t)}(Parallax,e);var t=_createSuper(Parallax);function Parallax(e){var n;return function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,Parallax),(n=t.call(this,e)).onWindowResize=function(){n.parentHeight=c.getNodeHeight(n.canUseDOM,n.parent),n.updatePosition()},n.onWindowLoad=function(){n.updatePosition()},n.onScroll=function(){if(n.canUseDOM){var e=Date.now();e-n.timestamp>=10&&c.isScrolledIntoView(n.node,100,n.canUseDOM)&&(window.requestAnimationFrame(n.updatePosition),n.timestamp=e)}},n.onContentMount=function(e){n.content=e},n.updatePosition=function(){if(n.content){var e=!1;n.contentHeight=n.content.getBoundingClientRect().height,n.contentWidth=n.node.getBoundingClientRect().width,n.img&&n.img.naturalWidth/n.img.naturalHeight<n.contentWidth/n.getImageHeight()&&(e=!0);var t=a.getRelativePosition(n.node,n.canUseDOM),r=!!n.img,o=n.bg&&n.state.splitChildren.bgChildren.length>0;r&&n.setImagePosition(t,e),o&&n.setBackgroundPosition(t),r||o||n.setState({percentage:t})}},n.state={bgImage:e.bgImage,bgImageSrcSet:e.bgImageSrcSet,bgImageSizes:e.bgImageSizes,imgStyle:s,bgStyle:Object.assign(Object.assign({},s),e.bgStyle),percentage:0,splitChildren:a.getSplitChildren(e)},n.canUseDOM=c.canUseDOM(),n.node=null,n.content=null,n.bgImageLoaded=!1,n.bgImageRef=void 0,n.parent=e.parent,n.parentHeight=c.getNodeHeight(n.canUseDOM,n.parent),n.timestamp=Date.now(),n.isDynamicBlur=a.getHasDynamicBlur(e.blur),n}return function _createClass(e,t,n){return t&&_defineProperties(e.prototype,t),n&&_defineProperties(e,n),e}(Parallax,[{key:"componentDidMount",value:function componentDidMount(){var e=this.props.parent,t=this.state,n=t.bgImage,r=t.bgImageSrcSet,o=t.bgImageSizes;this.parent=e||document,this.addListeners(),n?this.loadImage(n,r,o):this.updatePosition()}},{key:"componentDidUpdate",value:function componentDidUpdate(e){var t=this.props,n=t.parent,r=t.bgImage,o=t.bgImageSrcSet,i=t.bgImageSizes,a=this.state.bgImage;e.parent!==n&&(this.removeListeners(this.parent),this.parent=n,n&&this.addListeners()),this.parentHeight=c.getNodeHeight(this.canUseDOM,this.parent),a!==r&&this.loadImage(r,o,i)}},{key:"componentWillUnmount",value:function componentWillUnmount(){this.removeListeners(this.parent),this.releaseImage()}},{key:"setBackgroundPosition",value:function setBackgroundPosition(e){var t=this.props,n=t.disabled,r=t.strength;if(!0!==n){var o=this.state.bgStyle,i="translate3d(-50%, ".concat((r<0?r:0)-r*e,"px, 0)");this.setState({bgStyle:Object.assign(Object.assign({},o),{WebkitTransform:i,transform:i}),percentage:e})}}},{key:"setImagePosition",value:function setImagePosition(e){var t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=this.props,r=n.disabled,o=n.strength,i=n.blur,c=t?"auto":"".concat(this.getImageHeight(),"px"),u=t?"".concat(this.contentWidth,"px"):"auto";if(!0!==r){var s=this.state.imgStyle,l=o<0,f=(l?o:0)-o*e,p="translate3d(-50%, ".concat(f,"px, 0)"),g="none";i&&(g="blur(".concat(a.getBlurValue(this.isDynamicBlur,i,e),"px)")),this.setState({imgStyle:Object.assign(Object.assign({},s),{height:c,width:u,WebkitTransform:p,transform:p,WebkitFilter:g,filter:g}),percentage:e})}}},{key:"getImageHeight",value:function getImageHeight(){var e=this.props.strength,t=(e<0?2.5:1)*Math.abs(e);return Math.floor(this.contentHeight+t)}},{key:"loadImage",value:function loadImage(e,t,n){var r=this;this.releaseImage(),this.bgImageRef=new Image,this.bgImageRef.onload=function(){r.setState({bgImage:e,bgImageSrcSet:t,bgImageSizes:n},(function(){return r.updatePosition()}))},this.bgImageRef.onerror=this.bgImageRef.onload,this.bgImageRef.src=e,this.bgImageRef.srcset=t||"",this.bgImageRef.sizes=n||""}},{key:"releaseImage",value:function releaseImage(){this.bgImageRef&&(this.bgImageRef.onload=null,this.bgImageRef.onerror=null,delete this.bgImageRef)}},{key:"addListeners",value:function addListeners(){this.canUseDOM&&this.parent&&(this.parent.addEventListener("scroll",this.onScroll,!1),window.addEventListener("resize",this.onWindowResize,!1),window.addEventListener("load",this.onWindowLoad,!1))}},{key:"removeListeners",value:function removeListeners(e){this.canUseDOM&&(e&&e.removeEventListener("scroll",this.onScroll,!1),window.removeEventListener("resize",this.onWindowResize,!1),window.removeEventListener("load",this.onWindowLoad,!1))}},{key:"render",value:function render(){var e=this,t=this.props,n=t.className,r=t.style,i=t.bgClassName,a=t.contentClassName,c=t.bgImageAlt,s=t.renderLayer,l=t.bgImageStyle,f=this.state,p=f.bgImage,g=f.bgImageSrcSet,d=f.bgImageSizes,_=f.percentage,y=f.imgStyle,h=f.bgStyle,b=f.splitChildren;return o.default.createElement("div",{className:"react-parallax ".concat(n),style:Object.assign({position:"relative",overflow:"hidden"},r),ref:function ref(t){e.node=t}},p?o.default.createElement("img",{className:i,src:p,srcSet:g,sizes:d,ref:function ref(t){e.img=t},alt:c,style:Object.assign(Object.assign({},y),l)}):null,s?s(-(_-1)):null,b.bgChildren.length>0?o.default.createElement("div",{className:"react-parallax-background-children",ref:function ref(t){e.bg=t},style:h},b.bgChildren):null,o.default.createElement(u.default,{onMount:this.onContentMount,className:a},b.children))}}],[{key:"getDerivedStateFromProps",value:function getDerivedStateFromProps(e){return{splitChildren:a.getSplitChildren(e)}}}]),Parallax}(i.Parallax);l.defaultProps={bgClassName:"react-parallax-bgimage",bgImageAlt:"",className:"",contentClassName:"",disabled:!1,strength:100},t.default=l},function(e,t,n){"use strict";function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function _typeof(e){return typeof e}:function _typeof(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}Object.defineProperty(t,"__esModule",{value:!0}),t.setBlur=t.getBlurValue=t.getHasDynamicBlur=t.getSplitChildren=t.getRelativePosition=t.getPercentage=void 0;var r=n(0),o=n(2);t.getPercentage=function(e,t,n){return(n-e)/(t-e)||0},t.getRelativePosition=function(e,n){if(!n)return 0;var r=e.getBoundingClientRect(),i=r.top,a=r.height,c=o.getNodeHeight(n),u=a>c?a:c,s=Math.round(i>u?u:i);return t.getPercentage(0,u,s)},t.getSplitChildren=function(e){var t=[],n=r.Children.toArray(e.children);return n.forEach((function(e,r){var o=e;o.type&&o.type.isParallaxBackground&&(t=t.concat(n.splice(r,1)))})),{bgChildren:t,children:n}},t.getHasDynamicBlur=function(e){return"object"===_typeof(e)&&void 0!==e.min&&void 0!==e.max},t.getBlurValue=function(e,t,n){return e?t.min+(1-n)*t.max:t},t.setBlur=function(e,t){e.style.webkitFilter="blur(".concat(t,"px)"),e.style.filter="blur(".concat(t,"px)")}},function(e,t,n){"use strict";var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0});var o=r(n(0));t.default=function ParallaxChildren(e){var t=e.children,n=e.onMount,r=e.className;return o.default.createElement("div",{ref:function ref(e){return n(e)},className:r||"react-parallax-content",style:{position:"relative"}},t)}},function(e,t,n){"use strict";function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function _typeof(e){return typeof e}:function _typeof(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _defineProperties(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function _setPrototypeOf(e,t){return(_setPrototypeOf=Object.setPrototypeOf||function _setPrototypeOf(e,t){return e.__proto__=t,e})(e,t)}function _createSuper(e){var t=function _isNativeReflectConstruct(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}();return function _createSuperInternal(){var n,r=_getPrototypeOf(e);if(t){var o=_getPrototypeOf(this).constructor;n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments);return _possibleConstructorReturn(this,n)}}function _possibleConstructorReturn(e,t){return!t||"object"!==_typeof(t)&&"function"!=typeof t?function _assertThisInitialized(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e):t}function _getPrototypeOf(e){return(_getPrototypeOf=Object.setPrototypeOf?Object.getPrototypeOf:function _getPrototypeOf(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0});var o=r(n(0)),i=function(e){!function _inherits(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&_setPrototypeOf(e,t)}(Background,e);var t=_createSuper(Background);function Background(){return _classCallCheck(this,Background),t.apply(this,arguments)}return function _createClass(e,t,n){return t&&_defineProperties(e.prototype,t),n&&_defineProperties(e,n),e}(Background,[{key:"render",value:function render(){var e=this.props,t=e.className,n=e.children;return o.default.createElement("div",{className:"react-parallax-background ".concat(t)},n)}}]),Background}(n(1).Background);i.defaultProps={className:""},i.isParallaxBackground=!0,t.default=i}])}));
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // extracted by mini-css-extract-plugin
 module.exports = {"cards":"cards","cards__title":"cards__title","cards__container":"cards__container","cards__wrapper":"cards__wrapper","cards__items":"cards__items","cards__item":"cards__item","cards__item__link":"cards__item__link","cards_clas_item__pic-wrap":"cards_clas_item__pic-wrap","cards_clas_item__pic-wrapp":"cards_clas_item__pic-wrapp","cards__item__img":"cards__item__img","cards__item__info":"cards__item__info","cards__item__text":"cards__item__text"};
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -555,7 +561,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _scrollSpy = __webpack_require__(9);
+var _scrollSpy = __webpack_require__(10);
 
 var _scrollSpy2 = _interopRequireDefault(_scrollSpy);
 
@@ -567,7 +573,7 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _scrollHash = __webpack_require__(14);
+var _scrollHash = __webpack_require__(15);
 
 var _scrollHash2 = _interopRequireDefault(_scrollHash);
 
@@ -834,7 +840,7 @@ exports.default = function (Component, customScroller) {
 };
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -848,7 +854,7 @@ var _lodash = __webpack_require__(31);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-var _passiveEventListeners = __webpack_require__(10);
+var _passiveEventListeners = __webpack_require__(11);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -941,7 +947,7 @@ var scrollSpy = {
 exports.default = scrollSpy;
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -976,7 +982,7 @@ var removePassiveEventListener = exports.removePassiveEventListener = function r
 };
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1001,7 +1007,7 @@ var Events = {
 exports.default = Events;
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1098,7 +1104,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1122,7 +1128,7 @@ var _cancelEvents = __webpack_require__(34);
 
 var _cancelEvents2 = _interopRequireDefault(_cancelEvents);
 
-var _scrollEvents = __webpack_require__(11);
+var _scrollEvents = __webpack_require__(12);
 
 var _scrollEvents2 = _interopRequireDefault(_scrollEvents);
 
@@ -1364,7 +1370,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1374,7 +1380,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _passiveEventListeners = __webpack_require__(10);
+var _passiveEventListeners = __webpack_require__(11);
 
 var _utils = __webpack_require__(4);
 
@@ -1448,7 +1454,7 @@ var scrollHash = {
 exports.default = scrollHash;
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1550,12 +1556,6 @@ exports.default = function (Component) {
 };
 
 /***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-!function webpackUniversalModuleDefinition(e,t){ true?module.exports=t(__webpack_require__(0)):undefined}("undefined"!=typeof self?self:this,(function(e){return function(e){var t={};function __webpack_require__(n){if(t[n])return t[n].exports;var r=t[n]={i:n,l:!1,exports:{}};return e[n].call(r.exports,r,r.exports,__webpack_require__),r.l=!0,r.exports}return __webpack_require__.m=e,__webpack_require__.c=t,__webpack_require__.d=function(e,t,n){__webpack_require__.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},__webpack_require__.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},__webpack_require__.t=function(e,t){if(1&t&&(e=__webpack_require__(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(__webpack_require__.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)__webpack_require__.d(n,r,function(t){return e[t]}.bind(null,r));return n},__webpack_require__.n=function(e){var t=e&&e.__esModule?function getDefault(){return e.default}:function getModuleExports(){return e};return __webpack_require__.d(t,"a",t),t},__webpack_require__.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},__webpack_require__.p="",__webpack_require__(__webpack_require__.s=3)}([function(t,n){t.exports=e},function(e,t,n){"use strict";function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function _typeof(e){return typeof e}:function _typeof(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _inherits(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&_setPrototypeOf(e,t)}function _setPrototypeOf(e,t){return(_setPrototypeOf=Object.setPrototypeOf||function _setPrototypeOf(e,t){return e.__proto__=t,e})(e,t)}function _createSuper(e){var t=function _isNativeReflectConstruct(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}();return function _createSuperInternal(){var n,r=_getPrototypeOf(e);if(t){var o=_getPrototypeOf(this).constructor;n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments);return _possibleConstructorReturn(this,n)}}function _possibleConstructorReturn(e,t){return!t||"object"!==_typeof(t)&&"function"!=typeof t?function _assertThisInitialized(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e):t}function _getPrototypeOf(e){return(_getPrototypeOf=Object.setPrototypeOf?Object.getPrototypeOf:function _getPrototypeOf(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0}),t.Background=t.Parallax=void 0;var o=r(n(0)),i=function(e){_inherits(Parallax,e);var t=_createSuper(Parallax);function Parallax(){return _classCallCheck(this,Parallax),t.apply(this,arguments)}return Parallax}(o.default.Component);t.Parallax=i;var a=function(e){_inherits(Background,e);var t=_createSuper(Background);function Background(){return _classCallCheck(this,Background),t.apply(this,arguments)}return Background}(o.default.Component);t.Background=a},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.canUseDOM=t.getNodeHeight=t.isScrolledIntoView=t.getWindowHeight=void 0,t.getWindowHeight=function(e){if(!e)return 0;var t=window,n=document,r=n.documentElement,o=n.getElementsByTagName("body")[0];return t.innerHeight||r.clientHeight||o.clientHeight},t.isScrolledIntoView=function(e){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0,r=arguments.length>2?arguments[2]:void 0;if(!r)return!1;var o=e.getBoundingClientRect().top-n,i=e.getBoundingClientRect().bottom+n;return o<=t.getWindowHeight(r)&&i>=0},t.getNodeHeight=function(e,n){return e?n&&"clientHeight"in n?n.clientHeight:t.getWindowHeight(e):0},t.canUseDOM=function(){return!("undefined"==typeof window||!window.document||!window.document.createElement)}},function(e,t,n){"use strict";var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0}),t.Background=t.Parallax=void 0;var o=r(n(4));t.Parallax=o.default;var i=r(n(7));t.Background=i.default},function(e,t,n){"use strict";function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function _typeof(e){return typeof e}:function _typeof(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function _defineProperties(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function _setPrototypeOf(e,t){return(_setPrototypeOf=Object.setPrototypeOf||function _setPrototypeOf(e,t){return e.__proto__=t,e})(e,t)}function _createSuper(e){var t=function _isNativeReflectConstruct(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}();return function _createSuperInternal(){var n,r=_getPrototypeOf(e);if(t){var o=_getPrototypeOf(this).constructor;n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments);return _possibleConstructorReturn(this,n)}}function _possibleConstructorReturn(e,t){return!t||"object"!==_typeof(t)&&"function"!=typeof t?function _assertThisInitialized(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e):t}function _getPrototypeOf(e){return(_getPrototypeOf=Object.setPrototypeOf?Object.getPrototypeOf:function _getPrototypeOf(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0});var o=r(n(0)),i=n(1),a=n(5),c=n(2),u=r(n(6)),s={position:"absolute",left:"50%",WebkitTransform:"translate3d(-50%, 0, 0)",transform:"translate3d(-50%, 0, 0)",WebkitTransformStyle:"preserve-3d",WebkitBackfaceVisibility:"hidden",MozBackfaceVisibility:"hidden",MsBackfaceVisibility:"hidden"},l=function(e){!function _inherits(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&_setPrototypeOf(e,t)}(Parallax,e);var t=_createSuper(Parallax);function Parallax(e){var n;return function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,Parallax),(n=t.call(this,e)).onWindowResize=function(){n.parentHeight=c.getNodeHeight(n.canUseDOM,n.parent),n.updatePosition()},n.onWindowLoad=function(){n.updatePosition()},n.onScroll=function(){if(n.canUseDOM){var e=Date.now();e-n.timestamp>=10&&c.isScrolledIntoView(n.node,100,n.canUseDOM)&&(window.requestAnimationFrame(n.updatePosition),n.timestamp=e)}},n.onContentMount=function(e){n.content=e},n.updatePosition=function(){if(n.content){var e=!1;n.contentHeight=n.content.getBoundingClientRect().height,n.contentWidth=n.node.getBoundingClientRect().width,n.img&&n.img.naturalWidth/n.img.naturalHeight<n.contentWidth/n.getImageHeight()&&(e=!0);var t=a.getRelativePosition(n.node,n.canUseDOM),r=!!n.img,o=n.bg&&n.state.splitChildren.bgChildren.length>0;r&&n.setImagePosition(t,e),o&&n.setBackgroundPosition(t),r||o||n.setState({percentage:t})}},n.state={bgImage:e.bgImage,bgImageSrcSet:e.bgImageSrcSet,bgImageSizes:e.bgImageSizes,imgStyle:s,bgStyle:Object.assign(Object.assign({},s),e.bgStyle),percentage:0,splitChildren:a.getSplitChildren(e)},n.canUseDOM=c.canUseDOM(),n.node=null,n.content=null,n.bgImageLoaded=!1,n.bgImageRef=void 0,n.parent=e.parent,n.parentHeight=c.getNodeHeight(n.canUseDOM,n.parent),n.timestamp=Date.now(),n.isDynamicBlur=a.getHasDynamicBlur(e.blur),n}return function _createClass(e,t,n){return t&&_defineProperties(e.prototype,t),n&&_defineProperties(e,n),e}(Parallax,[{key:"componentDidMount",value:function componentDidMount(){var e=this.props.parent,t=this.state,n=t.bgImage,r=t.bgImageSrcSet,o=t.bgImageSizes;this.parent=e||document,this.addListeners(),n?this.loadImage(n,r,o):this.updatePosition()}},{key:"componentDidUpdate",value:function componentDidUpdate(e){var t=this.props,n=t.parent,r=t.bgImage,o=t.bgImageSrcSet,i=t.bgImageSizes,a=this.state.bgImage;e.parent!==n&&(this.removeListeners(this.parent),this.parent=n,n&&this.addListeners()),this.parentHeight=c.getNodeHeight(this.canUseDOM,this.parent),a!==r&&this.loadImage(r,o,i)}},{key:"componentWillUnmount",value:function componentWillUnmount(){this.removeListeners(this.parent),this.releaseImage()}},{key:"setBackgroundPosition",value:function setBackgroundPosition(e){var t=this.props,n=t.disabled,r=t.strength;if(!0!==n){var o=this.state.bgStyle,i="translate3d(-50%, ".concat((r<0?r:0)-r*e,"px, 0)");this.setState({bgStyle:Object.assign(Object.assign({},o),{WebkitTransform:i,transform:i}),percentage:e})}}},{key:"setImagePosition",value:function setImagePosition(e){var t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=this.props,r=n.disabled,o=n.strength,i=n.blur,c=t?"auto":"".concat(this.getImageHeight(),"px"),u=t?"".concat(this.contentWidth,"px"):"auto";if(!0!==r){var s=this.state.imgStyle,l=o<0,f=(l?o:0)-o*e,p="translate3d(-50%, ".concat(f,"px, 0)"),g="none";i&&(g="blur(".concat(a.getBlurValue(this.isDynamicBlur,i,e),"px)")),this.setState({imgStyle:Object.assign(Object.assign({},s),{height:c,width:u,WebkitTransform:p,transform:p,WebkitFilter:g,filter:g}),percentage:e})}}},{key:"getImageHeight",value:function getImageHeight(){var e=this.props.strength,t=(e<0?2.5:1)*Math.abs(e);return Math.floor(this.contentHeight+t)}},{key:"loadImage",value:function loadImage(e,t,n){var r=this;this.releaseImage(),this.bgImageRef=new Image,this.bgImageRef.onload=function(){r.setState({bgImage:e,bgImageSrcSet:t,bgImageSizes:n},(function(){return r.updatePosition()}))},this.bgImageRef.onerror=this.bgImageRef.onload,this.bgImageRef.src=e,this.bgImageRef.srcset=t||"",this.bgImageRef.sizes=n||""}},{key:"releaseImage",value:function releaseImage(){this.bgImageRef&&(this.bgImageRef.onload=null,this.bgImageRef.onerror=null,delete this.bgImageRef)}},{key:"addListeners",value:function addListeners(){this.canUseDOM&&this.parent&&(this.parent.addEventListener("scroll",this.onScroll,!1),window.addEventListener("resize",this.onWindowResize,!1),window.addEventListener("load",this.onWindowLoad,!1))}},{key:"removeListeners",value:function removeListeners(e){this.canUseDOM&&(e&&e.removeEventListener("scroll",this.onScroll,!1),window.removeEventListener("resize",this.onWindowResize,!1),window.removeEventListener("load",this.onWindowLoad,!1))}},{key:"render",value:function render(){var e=this,t=this.props,n=t.className,r=t.style,i=t.bgClassName,a=t.contentClassName,c=t.bgImageAlt,s=t.renderLayer,l=t.bgImageStyle,f=this.state,p=f.bgImage,g=f.bgImageSrcSet,d=f.bgImageSizes,_=f.percentage,y=f.imgStyle,h=f.bgStyle,b=f.splitChildren;return o.default.createElement("div",{className:"react-parallax ".concat(n),style:Object.assign({position:"relative",overflow:"hidden"},r),ref:function ref(t){e.node=t}},p?o.default.createElement("img",{className:i,src:p,srcSet:g,sizes:d,ref:function ref(t){e.img=t},alt:c,style:Object.assign(Object.assign({},y),l)}):null,s?s(-(_-1)):null,b.bgChildren.length>0?o.default.createElement("div",{className:"react-parallax-background-children",ref:function ref(t){e.bg=t},style:h},b.bgChildren):null,o.default.createElement(u.default,{onMount:this.onContentMount,className:a},b.children))}}],[{key:"getDerivedStateFromProps",value:function getDerivedStateFromProps(e){return{splitChildren:a.getSplitChildren(e)}}}]),Parallax}(i.Parallax);l.defaultProps={bgClassName:"react-parallax-bgimage",bgImageAlt:"",className:"",contentClassName:"",disabled:!1,strength:100},t.default=l},function(e,t,n){"use strict";function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function _typeof(e){return typeof e}:function _typeof(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}Object.defineProperty(t,"__esModule",{value:!0}),t.setBlur=t.getBlurValue=t.getHasDynamicBlur=t.getSplitChildren=t.getRelativePosition=t.getPercentage=void 0;var r=n(0),o=n(2);t.getPercentage=function(e,t,n){return(n-e)/(t-e)||0},t.getRelativePosition=function(e,n){if(!n)return 0;var r=e.getBoundingClientRect(),i=r.top,a=r.height,c=o.getNodeHeight(n),u=a>c?a:c,s=Math.round(i>u?u:i);return t.getPercentage(0,u,s)},t.getSplitChildren=function(e){var t=[],n=r.Children.toArray(e.children);return n.forEach((function(e,r){var o=e;o.type&&o.type.isParallaxBackground&&(t=t.concat(n.splice(r,1)))})),{bgChildren:t,children:n}},t.getHasDynamicBlur=function(e){return"object"===_typeof(e)&&void 0!==e.min&&void 0!==e.max},t.getBlurValue=function(e,t,n){return e?t.min+(1-n)*t.max:t},t.setBlur=function(e,t){e.style.webkitFilter="blur(".concat(t,"px)"),e.style.filter="blur(".concat(t,"px)")}},function(e,t,n){"use strict";var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0});var o=r(n(0));t.default=function ParallaxChildren(e){var t=e.children,n=e.onMount,r=e.className;return o.default.createElement("div",{ref:function ref(e){return n(e)},className:r||"react-parallax-content",style:{position:"relative"}},t)}},function(e,t,n){"use strict";function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function _typeof(e){return typeof e}:function _typeof(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _defineProperties(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function _setPrototypeOf(e,t){return(_setPrototypeOf=Object.setPrototypeOf||function _setPrototypeOf(e,t){return e.__proto__=t,e})(e,t)}function _createSuper(e){var t=function _isNativeReflectConstruct(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}();return function _createSuperInternal(){var n,r=_getPrototypeOf(e);if(t){var o=_getPrototypeOf(this).constructor;n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments);return _possibleConstructorReturn(this,n)}}function _possibleConstructorReturn(e,t){return!t||"object"!==_typeof(t)&&"function"!=typeof t?function _assertThisInitialized(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e):t}function _getPrototypeOf(e){return(_getPrototypeOf=Object.setPrototypeOf?Object.getPrototypeOf:function _getPrototypeOf(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0});var o=r(n(0)),i=function(e){!function _inherits(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&_setPrototypeOf(e,t)}(Background,e);var t=_createSuper(Background);function Background(){return _classCallCheck(this,Background),t.apply(this,arguments)}return function _createClass(e,t,n){return t&&_defineProperties(e.prototype,t),n&&_defineProperties(e,n),e}(Background,[{key:"render",value:function render(){var e=this.props,t=e.className,n=e.children;return o.default.createElement("div",{className:"react-parallax-background ".concat(t)},n)}}]),Background}(n(1).Background);i.defaultProps={className:""},i.isParallaxBackground=!0,t.default=i}])}));
-
-/***/ }),
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1595,7 +1595,7 @@ module.exports = {"AboutMeWrapper":"AboutMeWrapper","AboutMeWrapper__title":"Abo
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"FAQWrapper":"FAQWrapper","FAQWrapper__title":"FAQWrapper__title"};
+module.exports = {"FAQWrapper":"FAQWrapper","FAQWrapper__title":"FAQWrapper__title","FAQWrapper__description":"FAQWrapper__description","FAQWrapper__answer":"FAQWrapper__answer"};
 
 /***/ }),
 /* 22 */
@@ -1721,7 +1721,7 @@ exports.default = {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"contact":"contact","contact__ImgWrapper":"contact__ImgWrapper","contact__image":"contact__image","contact__inlineStyle":"contact__inlineStyle","contact__title":"contact__title","contact__description":"contact__description","contact__input":"contact__input","contact__textarea":"contact__textarea","contact__subBtn":"contact__subBtn","contact__arrow":"contact__arrow","contact__dropZone":"contact__dropZone","contact__errors":"contact__errors"};
+module.exports = {"contact":"contact","contact__ImgWrapper":"contact__ImgWrapper","contact__image":"contact__image","contact__inlineStyle":"contact__inlineStyle","contact__title":"contact__title","contact__description":"contact__description","contact__input":"contact__input","contact__textarea":"contact__textarea","contact__subBtn":"contact__subBtn","contact__errors":"contact__errors","contact__iconWrapper":"contact__iconWrapper","contact__icon":"contact__icon","fa-envelope":"fa-envelope","fa-phone-alt":"fa-phone-alt","fa-facebook-f":"fa-facebook-f"};
 
 /***/ }),
 /* 24 */
@@ -1743,7 +1743,7 @@ module.exports = {"footer":"footer","footer__title":"footer__title","footer__lin
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var l=__webpack_require__(12),n=60103,p=60106;exports.Fragment=60107;exports.StrictMode=60108;exports.Profiler=60114;var q=60109,r=60110,t=60112;exports.Suspense=60113;var u=60115,v=60116;
+var l=__webpack_require__(13),n=60103,p=60106;exports.Fragment=60107;exports.StrictMode=60108;exports.Profiler=60114;var q=60109,r=60110,t=60112;exports.Suspense=60113;var u=60115,v=60116;
 if("function"===typeof Symbol&&Symbol.for){var w=Symbol.for;n=w("react.element");p=w("react.portal");exports.Fragment=w("react.fragment");exports.StrictMode=w("react.strict_mode");exports.Profiler=w("react.profiler");q=w("react.provider");r=w("react.context");t=w("react.forward_ref");exports.Suspense=w("react.suspense");u=w("react.memo");v=w("react.lazy")}var x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){if(null===a||"object"!==typeof a)return null;a=x&&a[x]||a["@@iterator"];return"function"===typeof a?a:null}function z(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}
 var A={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},B={};function C(a,b,c){this.props=a;this.context=b;this.refs=B;this.updater=c||A}C.prototype.isReactComponent={};C.prototype.setState=function(a,b){if("object"!==typeof a&&"function"!==typeof a&&null!=a)throw Error(z(85));this.updater.enqueueSetState(this,a,b,"setState")};C.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
@@ -1776,7 +1776,7 @@ exports.useLayoutEffect=function(a,b){return S().useLayoutEffect(a,b)};exports.u
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),m=__webpack_require__(12),r=__webpack_require__(27);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
+var aa=__webpack_require__(0),m=__webpack_require__(13),r=__webpack_require__(27);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
 function ea(a,b){ca[a]=b;for(a=0;a<b.length;a++)ba.add(b[a])}
 var fa=!("undefined"===typeof window||"undefined"===typeof window.document||"undefined"===typeof window.document.createElement),ha=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,ia=Object.prototype.hasOwnProperty,
 ja={},ka={};function la(a){if(ia.call(ka,a))return!0;if(ia.call(ja,a))return!1;if(ha.test(a))return ka[a]=!0;ja[a]=!0;return!1}function ma(a,b,c,d){if(null!==c&&0===c.type)return!1;switch(typeof b){case "function":case "symbol":return!0;case "boolean":if(d)return!1;if(null!==c)return!c.acceptsBooleans;a=a.toLowerCase().slice(0,5);return"data-"!==a&&"aria-"!==a;default:return!1}}
@@ -2124,7 +2124,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _scrollLink = __webpack_require__(8);
+var _scrollLink = __webpack_require__(9);
 
 var _scrollLink2 = _interopRequireDefault(_scrollLink);
 
@@ -2726,7 +2726,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _passiveEventListeners = __webpack_require__(10);
+var _passiveEventListeners = __webpack_require__(11);
 
 var events = ['mousedown', 'mousewheel', 'touchmove', 'keydown'];
 
@@ -2845,7 +2845,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _scrollLink = __webpack_require__(8);
+var _scrollLink = __webpack_require__(9);
 
 var _scrollLink2 = _interopRequireDefault(_scrollLink);
 
@@ -2903,7 +2903,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _scrollElement = __webpack_require__(15);
+var _scrollElement = __webpack_require__(16);
 
 var _scrollElement2 = _interopRequireDefault(_scrollElement);
 
@@ -2984,10 +2984,10 @@ var React = __webpack_require__(0);
 var ReactDOM = __webpack_require__(6);
 
 var utils = __webpack_require__(4);
-var scrollSpy = __webpack_require__(9);
+var scrollSpy = __webpack_require__(10);
 var defaultScroller = __webpack_require__(3);
 var PropTypes = __webpack_require__(5);
-var scrollHash = __webpack_require__(14);
+var scrollHash = __webpack_require__(15);
 
 var protoTypes = {
   to: PropTypes.string.isRequired,
@@ -3411,25 +3411,27 @@ var MenuItems = [{
   url: 'offer',
   cName: 'nav-links'
 }, {
-  title: 'ABC KLIENTA',
-  url: 'faq',
-  cName: 'nav-links'
-}, {
   title: 'KONTAKT',
   url: 'contact',
+  cName: 'nav-links'
+}, {
+  title: 'ABC KLIENTA',
+  url: 'faq',
   cName: 'nav-links'
 }];
 // EXTERNAL MODULE: ./src/components/Navbar/Navbar.module.scss
 var Navbar_module = __webpack_require__(17);
 var Navbar_module_default = /*#__PURE__*/__webpack_require__.n(Navbar_module);
 
+// CONCATENATED MODULE: ./src/assets/KC (1).png
+/* harmony default export */ var KC_1_ = (__webpack_require__.p + "9622d940aa8618d771e8986ff8e41b7c.png");
 // CONCATENATED MODULE: ./src/components/Navbar/Navbar.jsx
 
 
 
 
 
- // import img from "../../assets/logo.png";
+
 
 var style = bem_css_modules_default()(Navbar_module_default.a);
 
@@ -3463,11 +3465,9 @@ var Navbar = () => {
     if (!isMobile) {
       var currentScrollPos = window.pageYOffset;
       var newVisible = prevScrollpos > currentScrollPos;
-      setPrevScrollpos(currentScrollPos);
-      setVisible(newVisible);
-    } else {
-      setVisible(true);
-    }
+      setPrevScrollpos(currentScrollPos); // setVisible(newVisible);
+    } else {// setVisible(true);
+      }
   };
 
   var handleOnClick = () => {
@@ -3480,10 +3480,18 @@ var Navbar = () => {
 
   var itemStyle = isOpen ? style("nav-menu", {
     active: true
-  }) : style("nav-menu"); //   const logo = isMobile ? null: <Link smooth={true} duration={1000} to="home" className={style("logo")}>
-  //             <img className={style("logo")} src={img} alt="" />
-  //           </Link>
-
+  }) : style("nav-menu");
+  var logo = isMobile ? null : /*#__PURE__*/react_default.a.createElement(modules["Link"], {
+    smooth: true,
+    duration: 1000,
+    offset: -60,
+    to: "home",
+    className: style("logo")
+  }, /*#__PURE__*/react_default.a.createElement("img", {
+    className: style("logo"),
+    src: KC_1_,
+    alt: ""
+  }));
   return /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, /*#__PURE__*/react_default.a.createElement("nav", {
     className: style("")
   }, /*#__PURE__*/react_default.a.createElement("div", {
@@ -3493,20 +3501,13 @@ var Navbar = () => {
     onClick: handleOnClick
   }, /*#__PURE__*/react_default.a.createElement("i", {
     className: isOpen ? "fas fa-times" : "fas fa-bars"
-  })), /*#__PURE__*/react_default.a.createElement(modules["Link"], {
-    smooth: true,
-    duration: 1000,
-    to: "home",
-    offset: -60,
-    className: style("title")
-  }, /*#__PURE__*/react_default.a.createElement("h1", {
-    className: style("title")
-  }, "TU_LOGO")), /*#__PURE__*/react_default.a.createElement("ul", {
+  })), logo, /*#__PURE__*/react_default.a.createElement("ul", {
     className: itemStyle
   }, Items))), prevScrollpos ? /*#__PURE__*/react_default.a.createElement(modules["Link"], {
     smooth: true,
     duration: 1000,
     to: "home",
+    offset: -60,
     className: "scroll-up"
   }, /*#__PURE__*/react_default.a.createElement("i", {
     className: "fas fa-arrow-up"
@@ -3522,20 +3523,18 @@ var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
 var Home_module = __webpack_require__(19);
 var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 
-// CONCATENATED MODULE: ./src/assets/back1 (1).jpg
-/* harmony default export */ var back1_1_ = (__webpack_require__.p + "836018d88f733130e810e0dca56f9f74.jpg");
 // CONCATENATED MODULE: ./src/assets/back1 (2).jpg
 /* harmony default export */ var back1_2_ = (__webpack_require__.p + "e83752ba4f45e1526294028c26a92383.jpg");
-// CONCATENATED MODULE: ./src/assets/back1 (3).jpg
-/* harmony default export */ var back1_3_ = (__webpack_require__.p + "22dcb287488823ead5c9c935ea41f9a8.jpg");
-// CONCATENATED MODULE: ./src/assets/back1 (4).jpg
-/* harmony default export */ var back1_4_ = (__webpack_require__.p + "f0b4bb7dbaed16dbd590d0055d34e005.jpg");
+// CONCATENATED MODULE: ./src/assets/back1.jpg
+/* harmony default export */ var back1 = (__webpack_require__.p + "b016545cb3a67ded4fa214dda47cfa27.jpg");
+// CONCATENATED MODULE: ./src/assets/back2.jpg
+/* harmony default export */ var back2 = (__webpack_require__.p + "e9a7c3458c21167b637b991ff8e6fd2a.jpg");
 // CONCATENATED MODULE: ./src/components/Home/Home.jsx
 
 
 
 
-
+ // import img from "../../assets/back1 (1).jpg";
 
 
 
@@ -3543,9 +3542,6 @@ var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 var Home_style = bem_css_modules_default()(Home_module_default.a);
 function Home() {
   return /*#__PURE__*/react_default.a.createElement("section", {
-    styles: {
-      backgroundImage: "url(".concat(back1_1_, ")")
-    },
     id: "home",
     className: Home_style()
   }, /*#__PURE__*/react_default.a.createElement("h1", {
@@ -3562,18 +3558,20 @@ function Home() {
   }, /*#__PURE__*/react_default.a.createElement("i", {
     className: "fas fa-chevron-circle-down"
   }))), /*#__PURE__*/react_default.a.createElement(dist_default.a, {
-    images: [back1_1_, back1_2_, back1_3_, back1_4_],
+    images: [back1_2_, back1, back2],
     duration: 3,
     transition: 2
   }));
 }
 // EXTERNAL MODULE: ./node_modules/react-parallax/lib/index.js
-var lib = __webpack_require__(16);
+var lib = __webpack_require__(7);
 
 // EXTERNAL MODULE: ./src/components/AboutMe/AboutMe.module.scss
 var AboutMe_module = __webpack_require__(20);
 var AboutMe_module_default = /*#__PURE__*/__webpack_require__.n(AboutMe_module);
 
+// CONCATENATED MODULE: ./src/assets/pexels-miguel-á-padriñán-19670.jpg
+/* harmony default export */ var pexels_miguel_padri_n_19670 = (__webpack_require__.p + "cb174575dd33a1a6af68e98ce973f54d.jpg");
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-25.jpg
 /* harmony default export */ var Karolina_KCwedding_25 = (__webpack_require__.p + "120c08a3ddf5c96d7c0cd260d6b7316b.jpg");
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-53.jpg
@@ -3586,11 +3584,19 @@ var AboutMe_module_default = /*#__PURE__*/__webpack_require__.n(AboutMe_module);
 
 
 
+
 var AboutMe_style = bem_css_modules_default()(AboutMe_module_default.a);
 function AboutMe() {
   return /*#__PURE__*/react_default.a.createElement("section", {
     id: "about",
     className: AboutMe_style()
+  }, /*#__PURE__*/react_default.a.createElement(lib["Parallax"], {
+    bgImage: pexels_miguel_padri_n_19670,
+    strength: 1000
+  }, /*#__PURE__*/react_default.a.createElement("div", {
+    className: AboutMe_style("img")
+  }, /*#__PURE__*/react_default.a.createElement("div", {
+    className: AboutMe_style("inlineStyle")
   }, /*#__PURE__*/react_default.a.createElement("h1", {
     className: AboutMe_style("title")
   }, "Kto stoi za KC Wedding?"), /*#__PURE__*/react_default.a.createElement("div", {
@@ -3616,13 +3622,14 @@ function AboutMe() {
   }, /*#__PURE__*/react_default.a.createElement(modules["Link"], {
     to: "offer",
     smooth: true,
+    offset: -60,
     duration: 1000
   }, /*#__PURE__*/react_default.a.createElement("i", {
     className: "fas fa-chevron-circle-down"
-  }))));
+  })))))));
 }
 // EXTERNAL MODULE: ./src/components/Offer/Offer.module.scss
-var Offer_module = __webpack_require__(7);
+var Offer_module = __webpack_require__(8);
 var Offer_module_default = /*#__PURE__*/__webpack_require__.n(Offer_module);
 
 // CONCATENATED MODULE: ./src/components/Offer/subComponent/CardItem.jsx
@@ -3734,26 +3741,46 @@ function FAQ() {
     id: "faq",
     className: FAQ_style()
   }, /*#__PURE__*/react_default.a.createElement("h1", {
-    className: FAQ_style('title')
-  }, " ABC przysz\u0142ych nowo\u017Ce\u0144c\xF3w ", /*#__PURE__*/react_default.a.createElement("br", null), " Co powinni\u015Bcie wiedzie\u0107 na dobry pocz\u0105tek wsp\xF3\u0142pracy z KC Wedding?"), /*#__PURE__*/react_default.a.createElement("br", null), "Organizacja \u015Blubu i wesela to ogromna ilo\u015B\u0107 r\xF3\u017Cnych pyta\u0144 i w\u0105tpliwo\u015Bci. Zdecydowanie \u0142atwiej jest przez to przej\u015B\u0107, gdy mamy wsparcie w postaci do\u015Bwiadczenia i merytorycznej wiedzy specjalisty. Takim z ca\u0142\u0105 pewno\u015Bci\u0105 jest w\u0142a\u015Bnie konsultant \u015Blubny. I tutaj r\xF3wnie\u017C nasuwa si\u0119 wiele pyta\u0144. Funkcja konsultanta \u015Blubnego jest wci\u0105\u017C nie do ko\u0144ca oczywista dla wielu os\xF3b. Postanowi\u0142am zebra\u0107 kilka najcz\u0119stszych pyta\u0144, kt\xF3re padaj\u0105 w moim pierwszym kontakcie z przysz\u0142ymi nowo\u017Ce\u0144cami \u2013 i odpowiedzie\u0107 na nie na tyle wyczerpuj\u0105co, \u017Ceby\u015Bcie mieli pe\u0142en obraz sytuacji.", /*#__PURE__*/react_default.a.createElement("br", null), "Powinno u\u0142atwi\u0107 to Wam decyzj\u0119 o um\xF3wieniu si\u0119 na spotkanie.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: FAQ_style('question')
-  }, "1. Dla kogo dedykowana jest us\u0142uga konsultanta \u015Blubnego?"), /*#__PURE__*/react_default.a.createElement("br", null), "W zasadzie: dla ka\u017Cdego. Nieprawd\u0105 jest, \u017Ce tylko i wy\u0142\u0105cznie dla os\xF3b zamo\u017Cnych czy dla tych skrajnie zapracowanych. Konsultant \u015Blubny to odci\u0105\u017Cenie i wsparcie dla tych z Was, kt\xF3rzy lubi\u0105 mie\u0107 wszystko pod kontrol\u0105 ale niekoniecznie s\u0105 zorganizowani. R\xF3wnie\u017C dla tych, kt\xF3rzy potrzebuj\u0105 merytorycznego wsparcia w tworzeniu swoich wizji.", /*#__PURE__*/react_default.a.createElement("br", null), "Konsultant \u015Blubny to rozwi\u0105zanie idealne, je\u015Bli lubicie czu\u0107 si\u0119 doskonale przygotowani na ka\u017Cd\u0105 sytuacj\u0119. Taka wsp\xF3\u0142praca ma zapewni\u0107 Wam b\u0142ogi spok\xF3j, podczas gdy przed\u015Blubny harmonogram p\u0119ka w szwach. Zdejmuj\u0119 z Was ci\u0119\u017Car skrupulatnego planowania i przewidywania, zdaj\u0105c si\u0119 na swoje do\u015Bwiadczenie i wiedz\u0119.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: FAQ_style('question')
-  }, "2. Na jakim etapie przed\u015Blubnych przygotowa\u0144 \u2013 mo\u017Cecie zdecydowa\u0107 si\u0119 na wsparcie konsultanta \u015Blubnego?"), /*#__PURE__*/react_default.a.createElement("br", null), "Na ka\u017Cdym. Konsultant \u015Blubny zajmuje si\u0119 organizacj\u0105 \u015Blubu i/lub wesela \u2013 od ka\u017Cdego etapu przygotowa\u0144. Mo\u017Cemy podj\u0105\u0107 wsp\xF3\u0142prac\u0119 na samym starcie, rozpoczynaj\u0105c od \u201Ezera\u201D. Mog\u0119 r\xF3wnie\u017C otoczy\u0107 Was wsparciem i opiek\u0105 w nieco p\xF3\u017Aniejszym momencie, gdy uznacie \u017Ce zasz\u0142a taka potrzeba. Np. planujecie \u015Blub i wesele, nie macie jeszcze poczynionych \u017Cadnych krok\xF3w. Rozpoczynamy wsp\xF3\u0142prac\u0119 i odt\u0105d prowadz\u0119 organizacj\u0119 Waszego dnia od samiutkich podstaw, po drobniutkie detale. Zajmuj\u0119 si\u0119 wszystkimi Waszymi sprawami, do samego ko\u0144ca.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: FAQ_style('question')
-  }, "3. W czym mo\u017Ce wyr\u0119czy\u0107 Was konsultant \u015Blubny podczas organizacji \u015Blubu?"), /*#__PURE__*/react_default.a.createElement("br", null), "Tutaj nie ma jednoznacznej odpowiedzi. Nie istnieje r\xF3wnie\u017C uniwersalna lista takich spraw czy temat\xF3w. Ka\u017Cda Para M\u0142oda to zupe\u0142nie odr\u0119bny, niepowtarzalny przypadek. Taki przypadek rozpatruj\u0119 naprawd\u0119 mocno indywidualnie, dostosowuj\u0105c potrzebne dzia\u0142ania \u2013 do sytuacji i ludzi. W skr\xF3cie? Zajmuj\u0119 si\u0119 wszystkim tym, czym zaj\u0105\u0107 si\u0119 trzeba \u2013 a Wy nie macie czasu, ochoty lub kompetencji.", /*#__PURE__*/react_default.a.createElement("br", null), "Np. odwiedzam w Waszym imieniu potencjalne miejsca na uroczysto\u015B\u0107 i eliminuj\u0119 te, kt\xF3re nie spe\u0142niaj\u0105 Waszych wymog\xF3w. Zajmuj\u0119 si\u0119 r\xF3wnie\u017C zam\xF3wieniami papeterii, dodatk\xF3w, kreowaniem wizji dekoracji i negocjowaniem jej z wykonawcami us\u0142ugi. Je\u015Bli zachodzi taka ch\u0119\u0107 i potrzeba \u2013 uczestnicz\u0119 w przymiarkach sukni \u015Blubnej, garnituru. Sprawdzam umowy z us\u0142ugodawcami przed podpisaniem ich przez Was, negocjuj\u0119 ich poprawki oraz spersonalizowan\u0105 ofert\u0119.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: FAQ_style('question')
-  }, "4. Czy konsultant \u015Blubny wsp\xF3\u0142pracuje tylko ze \u201Eswoimi\u201D us\u0142ugodawcami?"), /*#__PURE__*/react_default.a.createElement("br", null), "To jeden z najcz\u0119\u015Bciej kr\u0105\u017C\u0105cych mit\xF3w. Owszem, ka\u017Cdy konsultant \u015Blubny tworzy sobie co\u015B na kszta\u0142t bazy sprawdzonych us\u0142ugodawc\xF3w. Takich, z kt\xF3rymi mia\u0142am okazj\u0119 ju\u017C wsp\xF3\u0142pracowa\u0107 i uwa\u017Cam ich za godnych zaufania profesjonalist\xF3w. R\xF3wnolegle jednak ca\u0142y czas poznaj\u0119 nowych, nierzadko bazuj\u0119 na rekomendacjach innych \u2013 zawsze jednak za wyznacznik bior\u0119 sobie rzetelne podej\u015Bcie do klienta. Dlatego te\u017C jestem otwarta na nowe kontakty, nowe pomys\u0142y i nowe wsp\xF3\u0142prace.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: FAQ_style('question')
-  }, "5. Na czym polega koordynacja dnia \u015Blubu?"), /*#__PURE__*/react_default.a.createElement("br", null), "Konsultant \u015Blubny osobi\u015Bcie czuwa nad przebiegiem ka\u017Cdego punktu \u015Blubnego harmonogramu. Koordynuje monta\u017C dekoracji, candy baru, rozk\u0142ada winietki czy inne elementy na \u017Cyczenie Pary M\u0142odej. Dzie\u0144 \u015Blubu to moment na tyle szczeg\xF3lny, \u017Ce je\u015Bli zabraknie tutaj w\u0142a\u015Bnie trzymania r\u0119ki na pulsie przez kogo\u015B do\u015Bwiadczonego \u2013 mo\u017Ce wkra\u015B\u0107 si\u0119 niepotrzebny nikomu chaos.", /*#__PURE__*/react_default.a.createElement("br", null), "Istotn\u0105 informacj\u0105 jest z ca\u0142\u0105 pewno\u015Bci\u0105 fakt, \u017Ce koordynacja dnia \u015Blubu to r\xF3wnie\u017C us\u0142uga niezale\u017Cna. Nie musi by\u0107 integralna z kompleksow\u0105 organizacj\u0105 uroczysto\u015Bci. Mo\u017Ce zosta\u0107 wybrana r\xF3wnie\u017C przez te Pary M\u0142ode, kt\xF3re samodzielnie zajmowa\u0142y si\u0119 organizacj\u0105 a na samym finiszu \u2013 chc\u0105 skupi\u0107 si\u0119 ju\u017C tylko i wy\u0142\u0105cznie na emocjach. Dlatego powierzaj\u0105 zadania zdecydowanie bardziej przyziemne, profesjonalistom.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: FAQ_style('question')
-  }, "6. Czy konsultant \u015Blubny jest dla Was na wy\u0142\u0105czno\u015B\u0107 w dniu \u015Blubu?"), /*#__PURE__*/react_default.a.createElement("br", null), "Nie wyobra\u017Cam sobie koordynowa\u0107 dw\xF3ch uroczysto\u015Bci w jeden dzie\u0144 \u2013 lub nawet w jeden weekend. Daj\u0119 Wam gwarancj\u0119, \u017Ce w Waszym tygodniu \u015Blubnym, jestem dla Was absolutnie na wy\u0142\u0105czno\u015B\u0107, gotowa do dzia\u0142ania na maksymalnych obrotach, w ca\u0142kowitym skupieniu.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: FAQ_style('question')
-  }, "7. Jak wygl\u0105da kontakt z konsultantem \u015Blubnym? W jakiej formie odbywa si\u0119 komunikacja?"), /*#__PURE__*/react_default.a.createElement("br", null), "To bardzo wa\u017Cne pytanie. Odpowied\u017A na nie jest do\u015B\u0107 niejednoznaczna: to zale\u017Cy od przysz\u0142ych nowo\u017Ce\u0144c\xF3w, ich potrzeb i mo\u017Cliwo\u015Bci. Je\u015Bli preferujecie kontakt e-mailowy, uzgodnimy w\u0142a\u015Bnie tak\u0105 drog\u0119 komunikacji. Je\u015Bli zdecydowanie bli\u017Csza jest Wam forma telefoniczna \u2013 b\u0119dziemy kontaktowa\u0107 si\u0119 w ten spos\xF3b.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: FAQ_style('question')
-  }, "8. Jak wygl\u0105da proces podj\u0119cia wsp\xF3\u0142pracy z konsultantem \u015Blubnym?"), /*#__PURE__*/react_default.a.createElement("br", null), "Najpierw mamy Wasz pierwszy kontakt. Piszecie do mnie wiadomo\u015B\u0107 e-mail, w kt\xF3rej opowiadacie o swoich planach i wizjach, o oczekiwaniach i wymogach. Je\u015Bli jest ju\u017C ustalony termin Waszej ceremonii \u2013 podajecie go, dzi\u0119ki czemu mog\u0119 od razu zweryfikowa\u0107 swoj\u0105 dost\u0119pno\u015B\u0107 i przej\u015B\u0107 do propozycji spotkania zapoznawczego. W obecnych czasach nieoceniona okazuje si\u0119 by\u0107 r\xF3wnie\u017C forma zdalna, na kt\xF3r\u0105 jestem jak najbardziej otwarta. Mo\u017Cemy spotka\u0107 si\u0119 zar\xF3wno przy kawie w przyjemnych okoliczno\u015Bciach, jak i przed monitorem \u2013 wystarczy, \u017Ce okre\u015Blicie swoje preferencje. Co najwa\u017Cniejsze: spotkanie jest niezobowi\u0105zuj\u0105ce.", /*#__PURE__*/react_default.a.createElement("br", null), "Po nim mo\u017Cemy rozmawia\u0107 ju\u017C nieco konkretniej. Przygotuj\u0119 Wam konkretnie wycenion\u0105 ofert\u0119. Je\u015Bli j\u0105 zaakceptujecie - w nast\u0119pnej kolejno\u015Bci omawiamy zar\xF3wno sam\u0105 umow\u0119, transze p\u0142atno\u015Bci, jak r\xF3wnie\u017C zarys naszych dalszych dzia\u0142a\u0144. Po dopi\u0119ciu wszelkich formalno\u015Bci z umow\u0105 \u2013 mog\u0119 przedstawi\u0107 gotowy harmonogram organizacji i bud\u017Cet ca\u0142ego przedsi\u0119wzi\u0119cia. Dalsza cz\u0119stotliwo\u015B\u0107 i formy spotka\u0144 oraz kontaktu \u2013 uzale\u017Cnione b\u0119d\u0105 od naszych ustale\u0144 w tym temacie.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: FAQ_style('question')
-  }, "9. Ile kosztuje us\u0142uga konsultanta \u015Blubnego?"), /*#__PURE__*/react_default.a.createElement("br", null), "By\u0107 mo\u017Ce Was rozczaruj\u0119: tutaj nie ma miejsca na konkretn\u0105 cen\u0119. Ka\u017Cda umowa to projekt szyty na miar\u0119. Zakres moich obowi\u0105zk\xF3w ustalamy wsp\xF3lnie \u2013 to podstawa naszych dalszych dzia\u0142a\u0144. Zazwyczaj nie zdarzaj\u0105 si\u0119 dwie identyczne umowy, tak samo jak niecz\u0119sto powtarzaj\u0105 si\u0119 dok\u0142adnie te same stawki. Mog\u0119 Was zapewni\u0107 z tego miejsca, \u017Ce finalne wynagrodzenie dla mnie \u2013 b\u0119dzie efektem dok\u0142adnych wylicze\u0144 tego, co jest do zrobienia oraz Waszych osobistych oczekiwa\u0144 w stosunku do mnie. Gwarantuj\u0119 rzetelno\u015B\u0107 w ocenie tego, ile czasu i pracy zajmie wsp\xF3lne dzia\u0142anie na Wasz\u0105 rzecz. I najwa\u017Cniejsze: zawsze uwa\u017Cnie Was s\u0142ucham, finalna oferta to efekt rozm\xF3w i zrozumienia zar\xF3wno Waszych potrzeb, jak i mo\u017Cliwo\u015Bci. R\xF3wnie\u017C finansowych.", /*#__PURE__*/react_default.a.createElement("br", null), "Mam nadziej\u0119, \u017Ce najwa\u017Cniejsze w\u0105tpliwo\u015Bci \u2013 zosta\u0142y rozwiane!", /*#__PURE__*/react_default.a.createElement("br", null), "Czekam teraz na Wasz kontakt.", /*#__PURE__*/react_default.a.createElement("br", null), "(tutaj wpisz adres e-mail firmowy)");
+    className: FAQ_style("title")
+  }, "ABC przysz\u0142ych nowo\u017Ce\u0144c\xF3w ", /*#__PURE__*/react_default.a.createElement("br", null), " Co powinni\u015Bcie wiedzie\u0107 na dobry pocz\u0105tek wsp\xF3\u0142pracy z KC Wedding?"), /*#__PURE__*/react_default.a.createElement("h3", {
+    className: FAQ_style("description")
+  }, "Organizacja \u015Blubu i wesela to ogromna ilo\u015B\u0107 r\xF3\u017Cnych pyta\u0144 i w\u0105tpliwo\u015Bci. Zdecydowanie \u0142atwiej jest przez to przej\u015B\u0107, gdy mamy wsparcie w postaci do\u015Bwiadczenia i merytorycznej wiedzy specjalisty. Takim z ca\u0142\u0105 pewno\u015Bci\u0105 jest w\u0142a\u015Bnie konsultant \u015Blubny. I tutaj r\xF3wnie\u017C nasuwa si\u0119 wiele pyta\u0144. Funkcja konsultanta \u015Blubnego jest wci\u0105\u017C nie do ko\u0144ca oczywista dla wielu os\xF3b. Postanowi\u0142am zebra\u0107 kilka najcz\u0119stszych pyta\u0144, kt\xF3re padaj\u0105 w moim pierwszym kontakcie z przysz\u0142ymi nowo\u017Ce\u0144cami \u2013 i odpowiedzie\u0107 na nie na tyle wyczerpuj\u0105co, \u017Ceby\u015Bcie mieli pe\u0142en obraz sytuacji.", /*#__PURE__*/react_default.a.createElement("br", null), "Powinno u\u0142atwi\u0107 to Wam decyzj\u0119 o um\xF3wieniu si\u0119 na spotkanie."), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: FAQ_style("question")
+  }, "1. Dla kogo dedykowana jest us\u0142uga konsultanta \u015Blubnego?"), /*#__PURE__*/react_default.a.createElement("h4", {
+    className: FAQ_style("answer")
+  }, "W zasadzie: dla ka\u017Cdego. Nieprawd\u0105 jest, \u017Ce tylko i wy\u0142\u0105cznie dla os\xF3b zamo\u017Cnych czy dla tych skrajnie zapracowanych. Konsultant \u015Blubny to odci\u0105\u017Cenie i wsparcie dla tych z Was, kt\xF3rzy lubi\u0105 mie\u0107 wszystko pod kontrol\u0105 ale niekoniecznie s\u0105 zorganizowani. R\xF3wnie\u017C dla tych, kt\xF3rzy potrzebuj\u0105 merytorycznego wsparcia w tworzeniu swoich wizji.", /*#__PURE__*/react_default.a.createElement("br", null), "Konsultant \u015Blubny to rozwi\u0105zanie idealne, je\u015Bli lubicie czu\u0107 si\u0119 doskonale przygotowani na ka\u017Cd\u0105 sytuacj\u0119. Taka wsp\xF3\u0142praca ma zapewni\u0107 Wam b\u0142ogi spok\xF3j, podczas gdy przed\u015Blubny harmonogram p\u0119ka w szwach. Zdejmuj\u0119 z Was ci\u0119\u017Car skrupulatnego planowania i przewidywania, zdaj\u0105c si\u0119 na swoje do\u015Bwiadczenie i wiedz\u0119."), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: FAQ_style("question")
+  }, "2. Na jakim etapie przed\u015Blubnych przygotowa\u0144 \u2013 mo\u017Cecie zdecydowa\u0107 si\u0119 na wsparcie konsultanta \u015Blubnego?"), /*#__PURE__*/react_default.a.createElement("h4", {
+    className: FAQ_style("answer")
+  }, " ", "Na ka\u017Cdym. Konsultant \u015Blubny zajmuje si\u0119 organizacj\u0105 \u015Blubu i/lub wesela \u2013 od ka\u017Cdego etapu przygotowa\u0144. Mo\u017Cemy podj\u0105\u0107 wsp\xF3\u0142prac\u0119 na samym starcie, rozpoczynaj\u0105c od \u201Ezera\u201D. Mog\u0119 r\xF3wnie\u017C otoczy\u0107 Was wsparciem i opiek\u0105 w nieco p\xF3\u017Aniejszym momencie, gdy uznacie \u017Ce zasz\u0142a taka potrzeba. Np. planujecie \u015Blub i wesele, nie macie jeszcze poczynionych \u017Cadnych krok\xF3w. Rozpoczynamy wsp\xF3\u0142prac\u0119 i odt\u0105d prowadz\u0119 organizacj\u0119 Waszego dnia od samiutkich podstaw, po drobniutkie detale. Zajmuj\u0119 si\u0119 wszystkimi Waszymi sprawami, do samego ko\u0144ca."), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: FAQ_style("question")
+  }, "3. W czym mo\u017Ce wyr\u0119czy\u0107 Was konsultant \u015Blubny podczas organizacji \u015Blubu?"), /*#__PURE__*/react_default.a.createElement("h4", {
+    className: FAQ_style("answer")
+  }, "Tutaj nie ma jednoznacznej odpowiedzi. Nie istnieje r\xF3wnie\u017C uniwersalna lista takich spraw czy temat\xF3w. Ka\u017Cda Para M\u0142oda to zupe\u0142nie odr\u0119bny, niepowtarzalny przypadek. Taki przypadek rozpatruj\u0119 naprawd\u0119 mocno indywidualnie, dostosowuj\u0105c potrzebne dzia\u0142ania \u2013 do sytuacji i ludzi. W skr\xF3cie? Zajmuj\u0119 si\u0119 wszystkim tym, czym zaj\u0105\u0107 si\u0119 trzeba \u2013 a Wy nie macie czasu, ochoty lub kompetencji.", /*#__PURE__*/react_default.a.createElement("br", null), "Np. odwiedzam w Waszym imieniu potencjalne miejsca na uroczysto\u015B\u0107 i eliminuj\u0119 te, kt\xF3re nie spe\u0142niaj\u0105 Waszych wymog\xF3w. Zajmuj\u0119 si\u0119 r\xF3wnie\u017C zam\xF3wieniami papeterii, dodatk\xF3w, kreowaniem wizji dekoracji i negocjowaniem jej z wykonawcami us\u0142ugi. Je\u015Bli zachodzi taka ch\u0119\u0107 i potrzeba \u2013 uczestnicz\u0119 w przymiarkach sukni \u015Blubnej, garnituru. Sprawdzam umowy z us\u0142ugodawcami przed podpisaniem ich przez Was, negocjuj\u0119 ich poprawki oraz spersonalizowan\u0105 ofert\u0119."), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: FAQ_style("question")
+  }, "4. Czy konsultant \u015Blubny wsp\xF3\u0142pracuje tylko ze \u201Eswoimi\u201D us\u0142ugodawcami?"), /*#__PURE__*/react_default.a.createElement("h4", {
+    className: FAQ_style("answer")
+  }, "To jeden z najcz\u0119\u015Bciej kr\u0105\u017C\u0105cych mit\xF3w. Owszem, ka\u017Cdy konsultant \u015Blubny tworzy sobie co\u015B na kszta\u0142t bazy sprawdzonych us\u0142ugodawc\xF3w. Takich, z kt\xF3rymi mia\u0142am okazj\u0119 ju\u017C wsp\xF3\u0142pracowa\u0107 i uwa\u017Cam ich za godnych zaufania profesjonalist\xF3w. R\xF3wnolegle jednak ca\u0142y czas poznaj\u0119 nowych, nierzadko bazuj\u0119 na rekomendacjach innych \u2013 zawsze jednak za wyznacznik bior\u0119 sobie rzetelne podej\u015Bcie do klienta. Dlatego te\u017C jestem otwarta na nowe kontakty, nowe pomys\u0142y i nowe wsp\xF3\u0142prace."), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: FAQ_style("question")
+  }, "5. Na czym polega koordynacja dnia \u015Blubu?"), /*#__PURE__*/react_default.a.createElement("h4", {
+    className: FAQ_style("answer")
+  }, "Konsultant \u015Blubny osobi\u015Bcie czuwa nad przebiegiem ka\u017Cdego punktu \u015Blubnego harmonogramu. Koordynuje monta\u017C dekoracji, candy baru, rozk\u0142ada winietki czy inne elementy na \u017Cyczenie Pary M\u0142odej. Dzie\u0144 \u015Blubu to moment na tyle szczeg\xF3lny, \u017Ce je\u015Bli zabraknie tutaj w\u0142a\u015Bnie trzymania r\u0119ki na pulsie przez kogo\u015B do\u015Bwiadczonego \u2013 mo\u017Ce wkra\u015B\u0107 si\u0119 niepotrzebny nikomu chaos.", /*#__PURE__*/react_default.a.createElement("br", null), "Istotn\u0105 informacj\u0105 jest z ca\u0142\u0105 pewno\u015Bci\u0105 fakt, \u017Ce koordynacja dnia \u015Blubu to r\xF3wnie\u017C us\u0142uga niezale\u017Cna. Nie musi by\u0107 integralna z kompleksow\u0105 organizacj\u0105 uroczysto\u015Bci. Mo\u017Ce zosta\u0107 wybrana r\xF3wnie\u017C przez te Pary M\u0142ode, kt\xF3re samodzielnie zajmowa\u0142y si\u0119 organizacj\u0105 a na samym finiszu \u2013 chc\u0105 skupi\u0107 si\u0119 ju\u017C tylko i wy\u0142\u0105cznie na emocjach. Dlatego powierzaj\u0105 zadania zdecydowanie bardziej przyziemne, profesjonalistom."), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: FAQ_style("question")
+  }, "6. Czy konsultant \u015Blubny jest dla Was na wy\u0142\u0105czno\u015B\u0107 w dniu \u015Blubu?"), /*#__PURE__*/react_default.a.createElement("h4", {
+    className: FAQ_style("answer")
+  }, "Nie wyobra\u017Cam sobie koordynowa\u0107 dw\xF3ch uroczysto\u015Bci w jeden dzie\u0144 \u2013 lub nawet w jeden weekend. Daj\u0119 Wam gwarancj\u0119, \u017Ce w Waszym tygodniu \u015Blubnym, jestem dla Was absolutnie na wy\u0142\u0105czno\u015B\u0107, gotowa do dzia\u0142ania na maksymalnych obrotach, w ca\u0142kowitym skupieniu."), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: FAQ_style("question")
+  }, "7. Jak wygl\u0105da kontakt z konsultantem \u015Blubnym? W jakiej formie odbywa si\u0119 komunikacja?"), /*#__PURE__*/react_default.a.createElement("h4", {
+    className: FAQ_style("answer")
+  }, "To bardzo wa\u017Cne pytanie. Odpowied\u017A na nie jest do\u015B\u0107 niejednoznaczna: to zale\u017Cy od przysz\u0142ych nowo\u017Ce\u0144c\xF3w, ich potrzeb i mo\u017Cliwo\u015Bci. Je\u015Bli preferujecie kontakt e-mailowy, uzgodnimy w\u0142a\u015Bnie tak\u0105 drog\u0119 komunikacji. Je\u015Bli zdecydowanie bli\u017Csza jest Wam forma telefoniczna \u2013 b\u0119dziemy kontaktowa\u0107 si\u0119 w ten spos\xF3b."), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: FAQ_style("question")
+  }, "8. Jak wygl\u0105da proces podj\u0119cia wsp\xF3\u0142pracy z konsultantem \u015Blubnym?"), /*#__PURE__*/react_default.a.createElement("h4", {
+    className: FAQ_style("answer")
+  }, "Najpierw mamy Wasz pierwszy kontakt. Piszecie do mnie wiadomo\u015B\u0107 e-mail, w kt\xF3rej opowiadacie o swoich planach i wizjach, o oczekiwaniach i wymogach. Je\u015Bli jest ju\u017C ustalony termin Waszej ceremonii \u2013 podajecie go, dzi\u0119ki czemu mog\u0119 od razu zweryfikowa\u0107 swoj\u0105 dost\u0119pno\u015B\u0107 i przej\u015B\u0107 do propozycji spotkania zapoznawczego. W obecnych czasach nieoceniona okazuje si\u0119 by\u0107 r\xF3wnie\u017C forma zdalna, na kt\xF3r\u0105 jestem jak najbardziej otwarta. Mo\u017Cemy spotka\u0107 si\u0119 zar\xF3wno przy kawie w przyjemnych okoliczno\u015Bciach, jak i przed monitorem \u2013 wystarczy, \u017Ce okre\u015Blicie swoje preferencje. Co najwa\u017Cniejsze: spotkanie jest niezobowi\u0105zuj\u0105ce.", /*#__PURE__*/react_default.a.createElement("br", null), "Po nim mo\u017Cemy rozmawia\u0107 ju\u017C nieco konkretniej. Przygotuj\u0119 Wam konkretnie wycenion\u0105 ofert\u0119. Je\u015Bli j\u0105 zaakceptujecie - w nast\u0119pnej kolejno\u015Bci omawiamy zar\xF3wno sam\u0105 umow\u0119, transze p\u0142atno\u015Bci, jak r\xF3wnie\u017C zarys naszych dalszych dzia\u0142a\u0144. Po dopi\u0119ciu wszelkich formalno\u015Bci z umow\u0105 \u2013 mog\u0119 przedstawi\u0107 gotowy harmonogram organizacji i bud\u017Cet ca\u0142ego przedsi\u0119wzi\u0119cia. Dalsza cz\u0119stotliwo\u015B\u0107 i formy spotka\u0144 oraz kontaktu \u2013 uzale\u017Cnione b\u0119d\u0105 od naszych ustale\u0144 w tym temacie."), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: FAQ_style("question")
+  }, "9. Ile kosztuje us\u0142uga konsultanta \u015Blubnego?"), /*#__PURE__*/react_default.a.createElement("h4", {
+    className: FAQ_style("answer")
+  }, "By\u0107 mo\u017Ce Was rozczaruj\u0119: tutaj nie ma miejsca na konkretn\u0105 cen\u0119. Ka\u017Cda umowa to projekt szyty na miar\u0119. Zakres moich obowi\u0105zk\xF3w ustalamy wsp\xF3lnie \u2013 to podstawa naszych dalszych dzia\u0142a\u0144. Zazwyczaj nie zdarzaj\u0105 si\u0119 dwie identyczne umowy, tak samo jak niecz\u0119sto powtarzaj\u0105 si\u0119 dok\u0142adnie te same stawki. Mog\u0119 Was zapewni\u0107 z tego miejsca, \u017Ce finalne wynagrodzenie dla mnie \u2013 b\u0119dzie efektem dok\u0142adnych wylicze\u0144 tego, co jest do zrobienia oraz Waszych osobistych oczekiwa\u0144 w stosunku do mnie. Gwarantuj\u0119 rzetelno\u015B\u0107 w ocenie tego, ile czasu i pracy zajmie wsp\xF3lne dzia\u0142anie na Wasz\u0105 rzecz. I najwa\u017Cniejsze: zawsze uwa\u017Cnie Was s\u0142ucham, finalna oferta to efekt rozm\xF3w i zrozumienia zar\xF3wno Waszych potrzeb, jak i mo\u017Cliwo\u015Bci. R\xF3wnie\u017C finansowych.", /*#__PURE__*/react_default.a.createElement("br", null), "Mam nadziej\u0119, \u017Ce najwa\u017Cniejsze w\u0105tpliwo\u015Bci \u2013 zosta\u0142y rozwiane!", /*#__PURE__*/react_default.a.createElement("br", null), "Czekam teraz na Wasz kontakt.", /*#__PURE__*/react_default.a.createElement("br", null), "(tutaj wpisz adres e-mail firmowy)"));
 }
 // EXTERNAL MODULE: ./node_modules/emailjs-com/source/index.js
 var source = __webpack_require__(22);
@@ -3771,6 +3798,8 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
 
 
 
@@ -3805,13 +3834,13 @@ function Contact() {
       setErrors("coś1");
     } else if (!state["text"]) {
       setErrors("coś1");
-    } else source_default.a.sendForm('service_f2ixcir', 'template_5g2c7io', e.target, 'user_ux3gKfqC84EoWJjDiNkqL').then(result => {
+    } else source_default.a.sendForm("service_f2ixcir", "template_5g2c7io", e.target, "user_ux3gKfqC84EoWJjDiNkqL").then(result => {
       console.log(result.text);
       setState({
-        name: '',
-        mail: '',
-        text: '',
-        date: ''
+        name: "",
+        mail: "",
+        text: "",
+        date: ""
       });
     }, error => {
       console.log(error.text);
@@ -3833,7 +3862,24 @@ function Contact() {
     className: Contact_style()
   }, /*#__PURE__*/react_default.a.createElement("div", {
     className: Contact_style("ImgWrapper")
-  }, "  ", /*#__PURE__*/react_default.a.createElement("img", {
+  }, /*#__PURE__*/react_default.a.createElement("div", {
+    className: Contact_style("iconWrapper")
+  }, /*#__PURE__*/react_default.a.createElement("a", {
+    className: Contact_style("icon"),
+    href: "https://www.facebook.com/kcwedding.konsultantkaslubna/"
+  }, /*#__PURE__*/react_default.a.createElement("i", {
+    className: "fab fa-facebook-f"
+  })), /*#__PURE__*/react_default.a.createElement("a", {
+    className: Contact_style("icon"),
+    href: "https://www.instagram.com/kc_weddingplanner/"
+  }, /*#__PURE__*/react_default.a.createElement("i", {
+    className: "fab fa-instagram"
+  })), /*#__PURE__*/react_default.a.createElement("a", {
+    className: Contact_style("icon"),
+    href: "https://www.instagram.com/kc_weddingplanner/"
+  }, /*#__PURE__*/react_default.a.createElement("i", {
+    className: "fab fa-instagram"
+  }))), /*#__PURE__*/react_default.a.createElement("img", {
     src: Karolina_KCwedding_37,
     alt: "",
     className: Contact_style("image")
@@ -3878,7 +3924,7 @@ function Contact() {
     onChange: onInputChange
   }), /*#__PURE__*/react_default.a.createElement("button", {
     className: Contact_style("subBtn")
-  }, "Wy\u015Blij"))));
+  }, "WY\u015ALIJ WIADOMO\u015A\u0106"))));
 }
 
 /* harmony default export */ var Contact_Contact = (Contact);
