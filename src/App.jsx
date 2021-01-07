@@ -35,7 +35,14 @@ const App = () => {
               </>
             )}
           /> */}
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact  render={() => (
+              <>
+                <Home />
+                <AboutMe />
+                <Offer />
+                <Contact />
+              </>
+            )} />
           <Route path="/faq" component={FAQ} />
         </Switch>
         <Footer />
