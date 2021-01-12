@@ -250,9 +250,9 @@ function CardItem(props) {
 
 /* harmony default export */ var subComponent_CardItem = (CardItem);
 // CONCATENATED MODULE: ./src/assets/square.jpg
-/* harmony default export */ var square = (__webpack_require__.p + "76a20ff55e4ec6ab146bec467f91eebd.jpg");
+/* harmony default export */ var square = (__webpack_require__.p + "f2065924204f265ac8f3d38427937118.jpg");
 // CONCATENATED MODULE: ./src/assets/square2.jpg
-/* harmony default export */ var square2 = (__webpack_require__.p + "5ec871af9cc4afe3d824bc36e48b0deb.jpg");
+/* harmony default export */ var square2 = (__webpack_require__.p + "26a0e9bf12e8b1f67abb709b3df69ea0.jpg");
 // CONCATENATED MODULE: ./src/components/Offer/Offer.jsx
 
 

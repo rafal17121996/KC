@@ -188,11 +188,11 @@ var AboutMe_module = __webpack_require__(51);
 var AboutMe_module_default = /*#__PURE__*/__webpack_require__.n(AboutMe_module);
 
 // CONCATENATED MODULE: ./src/assets/pexels-miguel-á-padriñán-19670.jpg
-/* harmony default export */ var pexels_miguel_padri_n_19670 = (__webpack_require__.p + "a5c36566d9be0b936dc61ae24b254919.jpg");
+/* harmony default export */ var pexels_miguel_padri_n_19670 = (__webpack_require__.p + "c5adaa8842dd8a6e3bcc0c1e78a1a509.jpg");
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-25.jpg
-/* harmony default export */ var Karolina_KCwedding_25 = (__webpack_require__.p + "5f6bc44e83ac78b7d82e149db986f6c8.jpg");
+/* harmony default export */ var Karolina_KCwedding_25 = (__webpack_require__.p + "f1e68db0be25861e66eaa26fa5a837f3.jpg");
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-53.jpg
-/* harmony default export */ var Karolina_KCwedding_53 = (__webpack_require__.p + "58ac5b7c90adee7a4299c9817c92b2f9.jpg");
+/* harmony default export */ var Karolina_KCwedding_53 = (__webpack_require__.p + "af38a52283cee34fe81e8a217294e948.jpg");
 // CONCATENATED MODULE: ./src/components/AboutMe/AboutMe.jsx
 
 
