@@ -206,10 +206,10 @@ var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
 var Home_module = __webpack_require__(50);
 var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 
-// CONCATENATED MODULE: ./src/assets/back1 (2).jpg
-/* harmony default export */ var back1_2_ = (__webpack_require__.p + "93d6e8182e470bd48d604340fa92dda2.jpg");
-// CONCATENATED MODULE: ./src/assets/back1.jpg
-/* harmony default export */ var back1 = (__webpack_require__.p + "0a67ee046f1cfddbd2b2e3b702bdeaf4.jpg");
+// CONCATENATED MODULE: ./src/assets/back1 (2)-1.jpg
+/* harmony default export */ var back1_2_1 = (__webpack_require__.p + "26f41f97eac0baab794fa8ac8fc66e07.jpg");
+// CONCATENATED MODULE: ./src/assets/back1-1.jpg
+/* harmony default export */ var back1_1 = (__webpack_require__.p + "1f4b850fceb2d72e78efcec2c7f13c91.jpg");
 // CONCATENATED MODULE: ./src/components/Home/Home.jsx
 
 
@@ -229,7 +229,7 @@ function Home() {
   }, "Cze\u015B\u0107, nazywam si\u0119 Karolina Chorz\u0119pa.", /*#__PURE__*/react_default.a.createElement("br", null), "Jestem Waszym wedding plannerem."), /*#__PURE__*/react_default.a.createElement("h2", {
     className: style('description')
   }, "Kreuj\u0119 rozwi\u0105zania na miar\u0119 Waszych potrzeb estetycznych i organizacyjnych. Wspieram w decyzjach, procesach, emocjach."), /*#__PURE__*/react_default.a.createElement(dist_default.a, {
-    images: [back1_2_, back1],
+    images: [back1_2_1, back1_1],
     duration: 3,
     transition: 2
   }));
