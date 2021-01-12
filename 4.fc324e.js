@@ -207,11 +207,11 @@ var Home_module = __webpack_require__(50);
 var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 
 // CONCATENATED MODULE: ./src/assets/back1 (2).jpg
-/* harmony default export */ var back1_2_ = (__webpack_require__.p + "e83752ba4f45e1526294028c26a92383.jpg");
+/* harmony default export */ var back1_2_ = (__webpack_require__.p + "26f41f97eac0baab794fa8ac8fc66e07.jpg");
 // CONCATENATED MODULE: ./src/assets/back1.jpg
-/* harmony default export */ var back1 = (__webpack_require__.p + "b016545cb3a67ded4fa214dda47cfa27.jpg");
+/* harmony default export */ var back1 = (__webpack_require__.p + "1f4b850fceb2d72e78efcec2c7f13c91.jpg");
 // CONCATENATED MODULE: ./src/assets/back2.jpg
-/* harmony default export */ var back2 = (__webpack_require__.p + "e9a7c3458c21167b637b991ff8e6fd2a.jpg");
+/* harmony default export */ var back2 = (__webpack_require__.p + "681fbdae8fc6822fd4992796011152c6.jpg");
 // CONCATENATED MODULE: ./src/components/Home/Home.jsx
 
 
