@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 
-const MenuItems = React.lazy(() => import("./MenuItem/MenuItem"));
+import { MenuItems } from "./MenuItem/MenuItem";
 import { StoreContext } from "../../store/StoreProvider";
 
 
