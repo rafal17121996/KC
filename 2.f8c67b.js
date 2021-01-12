@@ -454,7 +454,11 @@ function Contact() {
     href: "https://www.instagram.com/kc_weddingplanner/"
   }, /*#__PURE__*/react_default.a.createElement("i", {
     className: "fab fa-instagram"
-  })))), /*#__PURE__*/react_default.a.createElement("div", {
+  }))), /*#__PURE__*/react_default.a.createElement("img", {
+    src: Karolina_KCwedding_37,
+    alt: "",
+    className: style("image")
+  })), /*#__PURE__*/react_default.a.createElement("div", {
     className: style("inlineStyle")
   }, /*#__PURE__*/react_default.a.createElement("div", null, /*#__PURE__*/react_default.a.createElement("h1", {
     className: style("title")
