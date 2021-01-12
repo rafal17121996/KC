@@ -180,7 +180,7 @@ module.exports = {"homeWrapper":"homeWrapper","homeWrapper__text":"homeWrapper__
 
 /***/ }),
 
-/***/ 61:
+/***/ 63:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -209,9 +209,7 @@ var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 // CONCATENATED MODULE: ./src/assets/back1 (2).jpg
 /* harmony default export */ var back1_2_ = (__webpack_require__.p + "33d7a9bef02fb7a71ee6075a26cb9909.jpg");
 // CONCATENATED MODULE: ./src/assets/back1.jpg
-/* harmony default export */ var back1 = (__webpack_require__.p + "4046ac9f8e9162c19f01912437f3d799.jpg");
-// CONCATENATED MODULE: ./src/assets/back2.jpg
-/* harmony default export */ var back2 = (__webpack_require__.p + "07fd8d6a6bfa063b1595c7fe6151720d.jpg");
+/* harmony default export */ var back1 = (__webpack_require__.p + "b4356fc6ef12f6e9950e25205d64ac62.jpg");
 // CONCATENATED MODULE: ./src/components/Home/Home.jsx
 
 
@@ -219,7 +217,7 @@ var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
  // import img from "../../assets/back1 (1).jpg";
 
 
-
+ // import img3 from "../../assets/back2.jpg";
 
 var style = bem_css_modules_default()(Home_module_default.a);
 function Home() {
@@ -231,7 +229,7 @@ function Home() {
   }, "Cze\u015B\u0107, nazywam si\u0119 Karolina Chorz\u0119pa.", /*#__PURE__*/react_default.a.createElement("br", null), "Jestem Waszym wedding plannerem."), /*#__PURE__*/react_default.a.createElement("h2", {
     className: style('description')
   }, "Kreuj\u0119 rozwi\u0105zania na miar\u0119 Waszych potrzeb estetycznych i organizacyjnych. Wspieram w decyzjach, procesach, emocjach."), /*#__PURE__*/react_default.a.createElement(dist_default.a, {
-    images: [back1_2_, back1, back2],
+    images: [back1_2_, back1],
     duration: 3,
     transition: 2
   }));
