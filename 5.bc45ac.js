@@ -190,9 +190,9 @@ var AboutMe_module_default = /*#__PURE__*/__webpack_require__.n(AboutMe_module);
 // CONCATENATED MODULE: ./src/assets/pexels-miguel-á-padriñán-19670.jpg
 /* harmony default export */ var pexels_miguel_padri_n_19670 = (__webpack_require__.p + "6067a705ad5a2b5c8e1acafa609759f3.jpg");
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-25.jpg
-/* harmony default export */ var Karolina_KCwedding_25 = (__webpack_require__.p + "4020c7e58d9c2873034fc9087cbe3f5d.jpg");
+/* harmony default export */ var Karolina_KCwedding_25 = (__webpack_require__.p + "ecf90290dcf6f7647dea3e111fef5968.jpg");
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-53.jpg
-/* harmony default export */ var Karolina_KCwedding_53 = (__webpack_require__.p + "df601aea34d987833848db90f8c451b6.jpg");
+/* harmony default export */ var Karolina_KCwedding_53 = (__webpack_require__.p + "3eeeaf8fb955c6b0c960066a6f7dc37d.jpg");
 // CONCATENATED MODULE: ./src/components/AboutMe/AboutMe.jsx
 
 
