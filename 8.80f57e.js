@@ -8,7 +8,7 @@ module.exports = {"Navbar":"Navbar","Navbar_hidden":"Navbar_hidden","Navbar__wra
 
 /***/ }),
 
-/***/ 66:
+/***/ 64:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29,6 +29,26 @@ var modules = __webpack_require__(41);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
 var react_router_dom = __webpack_require__(8);
 
+// CONCATENATED MODULE: ./src/components/Navbar/MenuItem/MenuItem.jsx
+var MenuItems = [{
+  title: 'O MNIE',
+  url: 'about',
+  cName: 'nav-links'
+}, {
+  title: 'OFERTA',
+  url: 'offer',
+  cName: 'nav-links'
+}, {
+  title: 'KONTAKT',
+  url: 'contact',
+  cName: 'nav-links'
+} // ,
+// {
+//     title: 'ABC KLIENTA',
+//     url: 'faq',
+//     cName: 'nav-links'
+// }
+];
 // EXTERNAL MODULE: ./src/store/StoreProvider.jsx
 var StoreProvider = __webpack_require__(13);
 
@@ -43,7 +63,7 @@ var Navbar_module_default = /*#__PURE__*/__webpack_require__.n(Navbar_module);
 
 
 
-var MenuItems = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 10).then(__webpack_require__.bind(null, 62)));
+
 
 
 

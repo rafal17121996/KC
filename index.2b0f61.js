@@ -48,7 +48,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "." + {"1":"b70c7a","2":"9fd3eb","3":"f993e7","4":"c4703c","5":"92b70e","6":"6aed4d","7":"c0ca73","8":"66daf9","9":"dec1d5","10":"6b253f"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "." + {"1":"b70c7a","2":"556621","3":"f993e7","4":"c4703c","5":"b1a2fb","6":"6aed4d","7":"9eeedb","8":"80f57e","9":"dec1d5"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -86,7 +86,7 @@
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "style." + {"1":"31d6cf","2":"ce1243","3":"747168","4":"2aaaef","5":"57c187","6":"db7700","7":"3194b4","8":"5fd47b","9":"31d6cf","10":"31d6cf"}[chunkId] + ".css";
+/******/ 				var href = "style." + {"1":"31d6cf","2":"ce1243","3":"747168","4":"2aaaef","5":"57c187","6":"db7700","7":"3194b4","8":"5fd47b","9":"31d6cf"}[chunkId] + ".css";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -3883,12 +3883,12 @@ function ScrollToTop(_ref) {
 
 
 
-var Navbar = /*#__PURE__*/react_default.a.lazy(() => Promise.all(/* import() */[__webpack_require__.e(1), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, 66)));
-var Home = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 5).then(__webpack_require__.bind(null, 64)));
+var Navbar = /*#__PURE__*/react_default.a.lazy(() => Promise.all(/* import() */[__webpack_require__.e(1), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, 64)));
+var Home = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 5).then(__webpack_require__.bind(null, 63)));
 var AboutMe = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 3).then(__webpack_require__.bind(null, 65)));
-var Offer = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 7).then(__webpack_require__.bind(null, 63)));
+var Offer = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 7).then(__webpack_require__.bind(null, 62)));
 var FAQ = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 6).then(__webpack_require__.bind(null, 60)));
-var Contact = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 2).then(__webpack_require__.bind(null, 67)));
+var Contact = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 2).then(__webpack_require__.bind(null, 66)));
 var Footer = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 4).then(__webpack_require__.bind(null, 61))); // import Navbar from "./components/Navbar/Navbar";
 // import Home from "./components/Home/Home";
 // import AboutMe from "./components/AboutMe/AboutMe";
