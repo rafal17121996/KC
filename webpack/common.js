@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: "[name].[contenthash:6].js",
     path: path(__dirname, "..", "build"),
-  },
+  },  
   resolve: {
     extensions: [".js", ".jsx"],
   },
@@ -23,7 +23,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         use: [
           {
             loader: 'file-loader',

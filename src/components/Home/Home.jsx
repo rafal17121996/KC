@@ -1,6 +1,5 @@
 import React from "react";
 import bemCssModules from "bem-css-modules";
-import { Link } from "react-scroll";
 import BackgroundSlider from 'react-background-slider'
 
 import { default as HomeStyles } from "./Home.module.scss";
@@ -27,11 +26,6 @@ Wspieram w decyzjach, procesach, emocjach.</h2>
           <div className={style("inlineStyle")}></div>
         </div>
       </Parallax> */}
-        <div className={style("scroll-button")}>
-        <Link to="about" offset={-60} smooth={true} duration={1000}>
-          <i className="fas fa-chevron-circle-down"></i>
-        </Link>
-      </div>
       <BackgroundSlider
   images={[img1, img2, img3]}
   duration={3} transition={2} />

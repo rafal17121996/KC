@@ -1,26 +1,93 @@
-.FAQWrapper{ 
-    // background-image: url("../../assets/pexels-miguel-á-padriñán-19670.jpg");
-    // background-position: center; /* Center the image */
-    // background-repeat: no-repeat; /* Do not repeat the image */
-    // background-size: cover; /* Resize the background image to cover the entire container */
-    background-color: rgb(248, 247, 248);
-    min-height: 100vh;
+
+
+
+.FAQWrapper {
+  background-color: rgb(248, 247, 248);
+  min-height: 100vh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+
+  &__title {
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background-color: #FF9A80;
+  }
+
+  &__description{
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 30px;
-    margin-top: 60px;
-   
-    &__title{
-        padding: 15px 0;
-        background-color: rgba(60, 105, 96, 0.7);
-    }
-    &__description{
-        margin: 10px auto;
-        width: 75vw;
-    }
-    &__answer{
-        margin: 10px auto;
-        width: 75vw;
-    }
+  }
+
+  &__faqs{
+    width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+    padding: 15px;
+  }
+
+   &__faq{
+    margin: 15px;
+	padding: 15px;
+	background-color: #FFF;
+	border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  &__faqopen{
+    margin: 15px;
+	padding: 15px;
+	background-color: #FFF;
+	border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  &__question {
+	position: relative;
+	font-size: 20px;
+    padding-right: 80px;
+    background-color: rgb(255, 255, 255);
+	transition: all 0.4s ;
 }
+
+
+
+&__question::after {
+    content: '';
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 30px;
+
+	background-image: url('../../assets/arrow.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+ &__answer {
+	opacity: 0;
+	max-height: 0;
+	overflow-y: hidden;
+	transition: all 0.4s ease-out;
+}
+
+
+&__faqopen &__question {
+	margin-bottom: 15px;
+}
+
+&__faqopen &__question::after {
+	transform: translateY(-50%) rotate(180deg);
+}
+&__faqopen &__answer {
+	max-height: 1000px;
+	opacity: 1;
+}
+}
+

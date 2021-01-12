@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 
 
 
-import { MenuItems } from "./MenuItem/MenuItem";
+const MenuItems = React.lazy(() => import("./MenuItem/MenuItem"));
 import { StoreContext } from "../../store/StoreProvider";
+
 
 import { default as NavbarStyles } from "./Navbar.module.scss";
 
@@ -107,11 +108,6 @@ const Navbar = () => {
         </div>
        
       </nav>
-      {prevScrollpos ? (
-        <Link1 smooth={true} duration={1000} to="home" offset={-60} className="scroll-up">
-          <i className="fas fa-arrow-up"></i>
-        </Link1>
-      ) : null}
     </>
   );
 };

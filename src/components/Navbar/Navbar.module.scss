@@ -163,15 +163,3 @@ $base-color: black;
   }
 }
 
-.scroll-up{
-  z-index: 999;
-  display: block;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  transition: height ease 1s;
-  .fa-arrow-up{
-    font-size: 2.5rem;
-  }
-}

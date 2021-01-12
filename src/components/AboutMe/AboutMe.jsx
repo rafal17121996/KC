@@ -1,13 +1,12 @@
 import React from "react";
 import bemCssModules from "bem-css-modules";
-import { Parallax } from "react-parallax";
 
 import { default as AboutMeStyles } from "./AboutMe.module.scss";
 
 import bg from "../../assets/pexels-miguel-á-padriñán-19670.jpg";
 import img from "../../assets/Karolina_KCwedding-25.jpg";
 import img2 from "../../assets/Karolina_KCwedding-53.jpg";
-import { Link } from "react-scroll";
+
 
 const style = bemCssModules(AboutMeStyles);
 
@@ -64,11 +63,7 @@ export default function AboutMe() {
         </div>
       </div>
 
-      <div className={style("scroll-button")}>
-        <Link to="offer" smooth={true} offset={-60} duration={1000}>
-          <i className="fas fa-chevron-circle-down"></i>
-        </Link>
-      </div>
+
 {/* 
           </div>
           </div>
