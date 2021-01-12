@@ -207,9 +207,9 @@ var Home_module = __webpack_require__(50);
 var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 
 // CONCATENATED MODULE: ./src/assets/back1 (2).jpg
-/* harmony default export */ var back1_2_ = (__webpack_require__.p + "5ee8617db41ae6372a950ea0545e519d.jpg");
+/* harmony default export */ var back1_2_ = (__webpack_require__.p + "93d6e8182e470bd48d604340fa92dda2.jpg");
 // CONCATENATED MODULE: ./src/assets/back1.jpg
-/* harmony default export */ var back1 = (__webpack_require__.p + "b4356fc6ef12f6e9950e25205d64ac62.jpg");
+/* harmony default export */ var back1 = (__webpack_require__.p + "0a67ee046f1cfddbd2b2e3b702bdeaf4.jpg");
 // CONCATENATED MODULE: ./src/components/Home/Home.jsx
 
 
