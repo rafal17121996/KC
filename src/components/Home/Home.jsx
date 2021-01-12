@@ -6,7 +6,7 @@ import { default as HomeStyles } from "./Home.module.scss";
 // import img from "../../assets/back1 (1).jpg";
 import img1 from "../../assets/back1 (2).jpg";
 import img2 from "../../assets/back1.jpg";
-import img3 from "../../assets/back2.jpg";
+// import img3 from "../../assets/back2.jpg";
 
 
 const style = bemCssModules(HomeStyles);
@@ -21,13 +21,8 @@ export default function Home() {
       <h2  className={style('description')}>Kreuję rozwiązania na miarę Waszych potrzeb estetycznych i organizacyjnych.
 
 Wspieram w decyzjach, procesach, emocjach.</h2>
-      {/* <Parallax bgImage={img} strength={0}>
-        <div className={style("img")}>
-          <div className={style("inlineStyle")}></div>
-        </div>
-      </Parallax> */}
       <BackgroundSlider
-  images={[img1, img2, img3]}
+  images={[img1, img2]}
   duration={3} transition={2} />
     </section>
   );

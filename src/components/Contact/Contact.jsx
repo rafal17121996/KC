@@ -4,10 +4,9 @@ import emailjs from "emailjs-com";
 
 import { default as ContactStyles } from "./Contact.module.scss";
 import img from "../../assets/Karolina_KCwedding-37.jpg";
-import bg from "../../assets/pexels-miguel-á-padriñán-19670.jpg";
 
 import { StoreContext } from "../../store/StoreProvider";
-import { Parallax } from "react-parallax";
+
 
 const style = bemCssModules(ContactStyles);
 
@@ -64,9 +63,6 @@ function Contact() {
 
   return (
     <section id="contact" className={style()}>
-      {/* <Parallax bgImage={bg} strength={700}>
-        <div className={style("img")}>
-          <div className={style("inlineStyle")}> */}
             <div className={style("ImgWrapper")}>
               <div className={style("iconWrapper")}>
                 <a
@@ -140,9 +136,6 @@ function Contact() {
                 <button className={style("subBtn")}>WYŚLIJ WIADOMOŚĆ</button>
               </form>
             </div>
-          {/* </div>
-        </div>
-      </Parallax> */}
     </section>
   );
 }
