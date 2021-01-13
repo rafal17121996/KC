@@ -161,7 +161,7 @@ exports.default = bem;
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"AboutMeWrapper":"AboutMeWrapper","AboutMeWrapper__title":"AboutMeWrapper__title","AboutMeWrapper__wrapper":"AboutMeWrapper__wrapper","AboutMeWrapper__top":"AboutMeWrapper__top","AboutMeWrapper__bottom":"AboutMeWrapper__bottom","AboutMeWrapper__description":"AboutMeWrapper__description","AboutMeWrapper__picture":"AboutMeWrapper__picture","AboutMeWrapper__scroll-button":"AboutMeWrapper__scroll-button","fa-chevron-circle-down":"fa-chevron-circle-down"};
+module.exports = {"AboutMeWrapper":"AboutMeWrapper","AboutMeWrapper__title":"AboutMeWrapper__title","AboutMeWrapper__wrapper":"AboutMeWrapper__wrapper","AboutMeWrapper__description":"AboutMeWrapper__description","AboutMeWrapper__text1":"AboutMeWrapper__text1","AboutMeWrapper__text2":"AboutMeWrapper__text2","AboutMeWrapper__text3":"AboutMeWrapper__text3","AboutMeWrapper__text4":"AboutMeWrapper__text4","AboutMeWrapper__text5":"AboutMeWrapper__text5","AboutMeWrapper__text6":"AboutMeWrapper__text6","AboutMeWrapper__more":"AboutMeWrapper__more","AboutMeWrapper__picture":"AboutMeWrapper__picture"};
 
 /***/ }),
 
@@ -191,8 +191,6 @@ var AboutMe_module_default = /*#__PURE__*/__webpack_require__.n(AboutMe_module);
 /* harmony default export */ var pexels_miguel_padri_n_19670 = (__webpack_require__.p + "cb174575dd33a1a6af68e98ce973f54d.jpg");
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-25.jpg
 /* harmony default export */ var Karolina_KCwedding_25 = (__webpack_require__.p + "a6ddf3bed75cb6161b707deafd28d20c.jpg");
-// CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-53.jpg
-/* harmony default export */ var Karolina_KCwedding_53 = (__webpack_require__.p + "84bc6d6414066a5a8651509f54a14626.jpg");
 // CONCATENATED MODULE: ./src/components/AboutMe/AboutMe.jsx
 
 
@@ -210,23 +208,91 @@ function AboutMe() {
   }, "Kto stoi za KC Wedding?"), /*#__PURE__*/react_default.a.createElement("div", {
     className: style("wrapper")
   }, /*#__PURE__*/react_default.a.createElement("div", {
-    className: style("top")
-  }, /*#__PURE__*/react_default.a.createElement("p", {
     className: style("description")
-  }, "Cze\u015B\u0107! Nazywam si\u0119 Karolina Chorz\u0119pa i witam Was serdecznie w moich internetowych zorganizowanych progach, jak na dobrego gospodarza przysta\u0142o. Chocia\u017C zdecydowanie bardziej wol\u0119 okre\u015Blenie: jak na dobr\u0105 przyjaci\xF3\u0142k\u0119 przysta\u0142o. Bo w\u0142a\u015Bnie tak najcz\u0119\u015Bciej si\u0119 czuj\u0119, kiedy to Wy zapraszacie mnie do swojej historii. Jedynej w swoim rodzaju. W Waszym stylu. ", /*#__PURE__*/react_default.a.createElement("br", null), "Jestem absolwentk\u0105 Akademii Wychowania Fizycznego w Poznaniu oraz w Warszawie. Zaskakuj\u0105cy pocz\u0105tek drogi konsultantki \u015Blubnej, prawda? Turystyka i rekreacja to nie tylko moje wykszta\u0142cenie kierunkowe, to r\xF3wnie\u017C inspiruj\u0105cy pocz\u0105tek historii KC Wedding. Na studiach pojawi\u0142 si\u0119 przedmiot organizacji imprez, r\xF3wnolegle w moim \u017Cyciu osobistym wydarzy\u0107 si\u0119 mia\u0142y za\u015Blubiny bliskiej kuzynki. Wsparcie w tej organizacji \u2013 da\u0142o mi jasny sygna\u0142 do dalszych dzia\u0142a\u0144.", /*#__PURE__*/react_default.a.createElement("br", null)), /*#__PURE__*/react_default.a.createElement("img", {
-    className: style("picture"),
-    src: Karolina_KCwedding_53,
-    alt: ""
-  })), /*#__PURE__*/react_default.a.createElement("div", {
-    className: style("bottom")
-  }, /*#__PURE__*/react_default.a.createElement("img", {
+  }, /*#__PURE__*/react_default.a.createElement("h2", {
+    className: style("text1")
+  }, "Cze\u015B\u0107, nazywam si\u0119 ", /*#__PURE__*/react_default.a.createElement("strong", null, "Karolina Chorz\u0119pa."), /*#__PURE__*/react_default.a.createElement("br", null), "Jestem Waszym wedding plannerem."), /*#__PURE__*/react_default.a.createElement("h3", {
+    className: style("text2")
+  }, "Kreuj\u0119 rozwi\u0105zania na miar\u0119 Waszych potrzeb estetycznych i organizacyjnych. ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("strong", null, "Wspieram w decyzjach, procesach, emocjach.")), /*#__PURE__*/react_default.a.createElement("p", {
+    className: style("text3")
+  }, "Doskonale zdaj\u0119 sobie spraw\u0119 z tego, jak czasoch\u0142onnym i emocjonalnym zarazem, jest proces organizacji \u015Blubu i wesela. Z tego zrozumienia oraz z pasji do rozwi\u0105za\u0144 na miar\u0119 moich \u015Blubnych bohater\xF3w \u2013 powsta\u0142a w\u0142a\u015Bnie marka KC Wedding. ", /*#__PURE__*/react_default.a.createElement("strong", null, "Moim priorytetem jest zapewni\u0107 Wam niczym niezak\u0142\xF3cany spok\xF3j przygotowa\u0144 oraz celebrowania uroczysto\u015Bci \u015Blubnej.")), /*#__PURE__*/react_default.a.createElement("p", {
+    className: style("text4")
+  }, "Na co dzie\u0144 staram si\u0119 by\u0107 dla Was najlepsz\u0105 organizacyjn\u0105 przyjaci\xF3\u0142k\u0105. Zawsze mo\u017Cecie na mnie liczy\u0107, zwr\xF3ci\u0107 w\u0142a\u015Bnie na mnie swoje spojrzenia i przela\u0107 wszelkie w\u0105tpliwo\u015Bci. ", /*#__PURE__*/react_default.a.createElement("strong", null, "S\u0142u\u017C\u0119 nie tylko dobr\u0105 rad\u0105, r\xF3wnie\u017C inspiracj\u0105 i do\u015Bwiadczeniem."), " Zapewniam Wam wsparcie w takim stopniu i formie, jakiego potrzebujecie \u2013 by czu\u0107 si\u0119 troskliwie zaopiekowani w ca\u0142ym procesie przed\u015Blubnych powinno\u015Bci."), /*#__PURE__*/react_default.a.createElement("button", {
+    className: style("more")
+  }, "More..."), /*#__PURE__*/react_default.a.createElement("p", {
+    className: style("text5")
+  }, "KC Wedding powsta\u0142o z uwielbienia do naturalnych i niebanalnych rozwi\u0105za\u0144."), /*#__PURE__*/react_default.a.createElement("p", {
+    className: style("text6")
+  }, "Rozgo\u015B\u0107cie si\u0119 i wykreujmy razem co\u015B pi\u0119knego!")), /*#__PURE__*/react_default.a.createElement("img", {
     className: style("picture"),
     src: Karolina_KCwedding_25,
     alt: ""
-  }), /*#__PURE__*/react_default.a.createElement("p", {
-    className: style("description")
-  }, "Kurs na wedding plannera w Akademii Wytw\xF3rni \u015Alub\xF3w Agnieszki Kudeli, oficjalnie przypiecz\u0119towa\u0142 decyzj\u0119 o dok\u0142adnie takiej drodze zawodowej. W mi\u0119dzyczasie kompleksowa organizacja w\u0142asnej uroczysto\u015Bci \u2013 udowodni\u0142a mi dodatkowo, \u017Ce jestem do tego stworzona. Dobry plan, doskona\u0142a realizacja, namacalne efekty. Czyli wszystko to, co stanowi podstaw\u0119 w codziennej pracy konsultantki \u015Blubnej.", /*#__PURE__*/react_default.a.createElement("br", null), "Prywatnie uwielbiam taniec, swego czasu zajmowa\u0142am si\u0119 tym profesjonalnie. Kontuzja jednak nie pozwoli\u0142a na kontynuacj\u0119. Uwielbiam te\u017C prac\u0119 z dzie\u0107mi i mam w niej sporo do\u015Bwiadczenia, dzi\u0119ki czemu z entuzjazmem podchodz\u0119 do ma\u0142ych go\u015Bci weselnych. Co jeszcze? Nad wyraz ceni\u0119 sobie polskie morze, st\u0105d te\u017C \u015Bluby na pla\u017Cy w ofercie KC Wedding.", /*#__PURE__*/react_default.a.createElement("br", null), "Mog\u0142abym opowiada\u0107 o sobie wci\u0105\u017C i wci\u0105\u017C, jestem jednak zdecydowanie lepszym s\u0142uchaczem. Z przyjemno\u015Bci\u0105 o Was pos\u0142ucham. Przy kawie lub przy herbacie \u2013 jak wolicie? KC Wedding powsta\u0142o z uwielbienia do naturalnych i niebanalnych rozwi\u0105za\u0144."))));
-}
+  })));
+} // import React from "react";
+// import bemCssModules from "bem-css-modules";
+// import { default as AboutMeStyles } from "./AboutMe.module.scss";
+// import bg from "../../assets/pexels-miguel-á-padriñán-19670.jpg";
+// import img from "../../assets/Karolina_KCwedding-25.jpg";
+// import img2 from "../../assets/Karolina_KCwedding-53.jpg";
+// const style = bemCssModules(AboutMeStyles);
+// export default function AboutMe() {
+//   return (
+//     <section id="about" className={style()}>
+//       {/* <Parallax bgImage={bg} strength={1000}>
+//         <div className={style("img")}>
+//           <div className={style("inlineStyle")}> */}
+//   <h1 className={style("title")}>Kto stoi za KC Wedding?</h1>
+//       <div className={style("wrapper")}>
+//         <div className={style("top")}>
+//           <p className={style("description")}>
+//             Cześć! Nazywam się Karolina Chorzępa i witam Was serdecznie w moich
+//             internetowych zorganizowanych progach, jak na dobrego gospodarza
+//             przystało. Chociaż zdecydowanie bardziej wolę określenie: jak na
+//             dobrą przyjaciółkę przystało. Bo właśnie tak najczęściej się czuję,
+//             kiedy to Wy zapraszacie mnie do swojej historii. Jedynej w swoim
+//             rodzaju. W Waszym stylu. <br />
+//             Jestem absolwentką Akademii Wychowania Fizycznego w Poznaniu oraz w
+//             Warszawie. Zaskakujący początek drogi konsultantki ślubnej, prawda?
+//             Turystyka i rekreacja to nie tylko moje wykształcenie kierunkowe, to
+//             również inspirujący początek historii KC Wedding. Na studiach
+//             pojawił się przedmiot organizacji imprez, równolegle w moim życiu
+//             osobistym wydarzyć się miały zaślubiny bliskiej kuzynki. Wsparcie w
+//             tej organizacji – dało mi jasny sygnał do dalszych działań.
+//             <br />
+//           </p>
+//           <img className={style("picture")} src={img2} alt="" />
+//         </div>
+//         <div className={style("bottom")}>
+//           <img className={style("picture")} src={img} alt="" />
+//           <p className={style("description")}>
+//             Kurs na wedding plannera w Akademii Wytwórni Ślubów Agnieszki
+//             Kudeli, oficjalnie przypieczętował decyzję o dokładnie takiej drodze
+//             zawodowej. W międzyczasie kompleksowa organizacja własnej
+//             uroczystości – udowodniła mi dodatkowo, że jestem do tego stworzona.
+//             Dobry plan, doskonała realizacja, namacalne efekty. Czyli wszystko
+//             to, co stanowi podstawę w codziennej pracy konsultantki ślubnej.
+//             <br />
+//             Prywatnie uwielbiam taniec, swego czasu zajmowałam się tym
+//             profesjonalnie. Kontuzja jednak nie pozwoliła na kontynuację.
+//             Uwielbiam też pracę z dziećmi i mam w niej sporo doświadczenia,
+//             dzięki czemu z entuzjazmem podchodzę do małych gości weselnych. Co
+//             jeszcze? Nad wyraz cenię sobie polskie morze, stąd też śluby na
+//             plaży w ofercie KC Wedding.
+//             <br />
+//             Mogłabym opowiadać o sobie wciąż i wciąż, jestem jednak zdecydowanie
+//             lepszym słuchaczem. Z przyjemnością o Was posłucham. Przy kawie lub
+//             przy herbacie – jak wolicie? KC Wedding powstało z uwielbienia do
+//             naturalnych i niebanalnych rozwiązań.
+//           </p>
+//         </div>
+//       </div>
+// {/*
+//           </div>
+//           </div>
+//           </Parallax> */}
+//     </section>
+//   );
+// }
 
 /***/ })
 
