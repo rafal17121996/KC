@@ -13,11 +13,12 @@ var MenuItems = [{
   title: 'OFERTA',
   url: 'offer',
   cName: 'nav-links'
-}, {
-  title: 'KONTAKT',
-  url: 'contact',
-  cName: 'nav-links'
-} // ,
+} // {
+//     title: 'KONTAKT',
+//     url: 'contact',
+//     cName: 'nav-links'
+// }
+// ,
 // {
 //     title: 'ABC KLIENTA',
 //     url: 'faq',
@@ -136,7 +137,15 @@ var Navbar = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
     to: "/faq",
     className: style("nav-links")
-  }, "ABC KLIENTA"))))));
+  }, "ABC KLIENTA")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: style("nav-item")
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_scroll__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    smooth: true,
+    duration: 1000,
+    to: "contact",
+    offset: -60,
+    className: style("nav-links")
+  }, "KONTAKT"))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);

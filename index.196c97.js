@@ -48,7 +48,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "." + {"1":"8fc9c1","2":"aac804","3":"49ab40","4":"658662","5":"002803","6":"5b17cb","7":"c24fa7","8":"73d919","9":"9b6768","10":"027aab","11":"1f7e7b","12":"2900c9"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "." + {"1":"8fc9c1","2":"aac804","3":"9634d6","4":"658662","5":"002803","6":"1b02f2","7":"c24fa7","8":"73d919","9":"9b6768","10":"027aab","11":"1f7e7b","12":"2900c9"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -3936,7 +3936,7 @@ var App_App = () => {
   }, /*#__PURE__*/react_default.a.createElement(react_router["g" /* Switch */], null, /*#__PURE__*/react_default.a.createElement(react_router["d" /* Route */], {
     path: "/",
     exact: true,
-    render: () => /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, /*#__PURE__*/react_default.a.createElement(Navbar, null), /*#__PURE__*/react_default.a.createElement(Home, null), /*#__PURE__*/react_default.a.createElement(AboutMe, null), /*#__PURE__*/react_default.a.createElement(Offer, null), /*#__PURE__*/react_default.a.createElement(Contact, null), /*#__PURE__*/react_default.a.createElement(FAQ, null))
+    render: () => /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, /*#__PURE__*/react_default.a.createElement(Navbar, null), /*#__PURE__*/react_default.a.createElement(Home, null), /*#__PURE__*/react_default.a.createElement(AboutMe, null), /*#__PURE__*/react_default.a.createElement(Offer, null), /*#__PURE__*/react_default.a.createElement(FAQ, null), /*#__PURE__*/react_default.a.createElement(Contact, null))
   }), /*#__PURE__*/react_default.a.createElement(react_router["d" /* Route */], {
     path: "/faq",
     render: () => /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, /*#__PURE__*/react_default.a.createElement(NavbarFAQ, null), /*#__PURE__*/react_default.a.createElement(FAQMore, null))
