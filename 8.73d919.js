@@ -165,7 +165,7 @@ module.exports = {"FAQWrapper":"FAQWrapper","FAQWrapper__title":"FAQWrapper__tit
 
 /***/ }),
 
-/***/ 59:
+/***/ 65:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -178,7 +178,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2__);
 
 
-var Item = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(() => __webpack_require__.e(/* import() */ 0).then(__webpack_require__.bind(null, 40)));
+var Item = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(() => __webpack_require__.e(/* import() */ 12).then(__webpack_require__.bind(null, 42)));
 
 var style = bem_css_modules__WEBPACK_IMPORTED_MODULE_1___default()(_FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a);
 

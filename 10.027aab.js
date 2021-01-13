@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[9],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[10],{
 
 /***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
@@ -157,7 +157,7 @@ exports.default = bem;
 
 /***/ }),
 
-/***/ 36:
+/***/ 38:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -165,7 +165,7 @@ module.exports = {"cards":"cards","cards__popup":"cards__popup","cards__close":"
 
 /***/ }),
 
-/***/ 61:
+/***/ 67:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -181,7 +181,7 @@ var bem_css_modules = __webpack_require__(28);
 var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
 
 // EXTERNAL MODULE: ./src/components/Offer/Offer.module.scss
-var Offer_module = __webpack_require__(36);
+var Offer_module = __webpack_require__(38);
 var Offer_module_default = /*#__PURE__*/__webpack_require__.n(Offer_module);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
@@ -256,11 +256,9 @@ function CardItem(props) {
     onClick: () => setIsOpen(true)
   }, /*#__PURE__*/react_default.a.createElement("img", {
     className: CardItem_style("item__img"),
-    alt: "Travel Image",
+    alt: "KC Image",
     src: props.src
-  })), /*#__PURE__*/react_default.a.createElement("button", {
-    onClick: () => setIsOpen(true)
-  }, "Poka\u017C wi\u0119cej informacji"), /*#__PURE__*/react_default.a.createElement(Modal, {
+  })), /*#__PURE__*/react_default.a.createElement(Modal, {
     open: isOpen,
     onClose: () => setIsOpen(false)
   }, props.text), /*#__PURE__*/react_default.a.createElement("div", {
