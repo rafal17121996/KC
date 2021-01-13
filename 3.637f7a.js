@@ -416,8 +416,7 @@ var Navbar = () => {
     var elementPosition = el.offsetTop - offset;
     window.scroll({
       top: elementPosition,
-      left: 0,
-      behavior: "smooth"
+      left: 0
     });
   };
 
@@ -433,7 +432,6 @@ var Navbar = () => {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__["HashLink"], {
       to: "/#" + item.url,
       scroll: el => scrollWithOffset(el, 60),
-      smooth: true,
       className: style("nav-links")
     }, item.title));
   });
@@ -489,7 +487,6 @@ var Navbar = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__["HashLink"], {
     to: "/#contact",
     scroll: el => scrollWithOffset(el, 60),
-    smooth: true,
     className: style("nav-links")
   }, "KONTAKT"))))));
 };
