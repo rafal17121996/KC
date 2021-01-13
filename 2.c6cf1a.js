@@ -157,16 +157,16 @@ exports.default = bem;
 
 /***/ }),
 
-/***/ 58:
+/***/ 59:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.EmailJSResponseStatus = exports.sendForm = exports.send = exports.init = void 0;
-var EmailJSResponseStatus_1 = __webpack_require__(59);
+var EmailJSResponseStatus_1 = __webpack_require__(60);
 Object.defineProperty(exports, "EmailJSResponseStatus", { enumerable: true, get: function () { return EmailJSResponseStatus_1.EmailJSResponseStatus; } });
-var UI_1 = __webpack_require__(60);
+var UI_1 = __webpack_require__(61);
 var _userID = null;
 var _origin = 'https://api.emailjs.com';
 function sendPost(url, data, headers) {
@@ -277,7 +277,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 59:
+/***/ 60:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -296,7 +296,7 @@ exports.EmailJSResponseStatus = EmailJSResponseStatus;
 
 /***/ }),
 
-/***/ 60:
+/***/ 61:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -333,7 +333,7 @@ exports.UI = UI;
 
 /***/ }),
 
-/***/ 61:
+/***/ 62:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -341,7 +341,7 @@ module.exports = {"contact":"contact","contact__ImgWrapper":"contact__ImgWrapper
 
 /***/ }),
 
-/***/ 71:
+/***/ 72:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -357,11 +357,11 @@ var bem_css_modules = __webpack_require__(28);
 var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
 
 // EXTERNAL MODULE: ./node_modules/emailjs-com/source/index.js
-var source = __webpack_require__(58);
+var source = __webpack_require__(59);
 var source_default = /*#__PURE__*/__webpack_require__.n(source);
 
 // EXTERNAL MODULE: ./src/components/Contact/Contact.module.scss
-var Contact_module = __webpack_require__(61);
+var Contact_module = __webpack_require__(62);
 var Contact_module_default = /*#__PURE__*/__webpack_require__.n(Contact_module);
 
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-37.jpg

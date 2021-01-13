@@ -157,45 +157,33 @@ exports.default = bem;
 
 /***/ }),
 
-/***/ 57:
+/***/ 31:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"FAQMoreWrapper":"FAQMoreWrapper","FAQMoreWrapper__imgWrapper":"FAQMoreWrapper__imgWrapper","FAQMoreWrapper__faqTitle":"FAQMoreWrapper__faqTitle","FAQMoreWrapper__image":"FAQMoreWrapper__image","FAQMoreWrapper__title":"FAQMoreWrapper__title","FAQMoreWrapper__description":"FAQMoreWrapper__description","FAQMoreWrapper__faqs":"FAQMoreWrapper__faqs","FAQMoreWrapper__faq":"FAQMoreWrapper__faq","FAQMoreWrapper__faqopen":"FAQMoreWrapper__faqopen","FAQMoreWrapper__question":"FAQMoreWrapper__question","FAQMoreWrapper__answer":"FAQMoreWrapper__answer"};
+module.exports = {"FAQWrapper":"FAQWrapper","FAQWrapper__title":"FAQWrapper__title","FAQWrapper__description":"FAQWrapper__description","FAQWrapper__faqs":"FAQWrapper__faqs","FAQWrapper__faq":"FAQWrapper__faq","FAQWrapper__faqopen":"FAQWrapper__faqopen","FAQWrapper__question":"FAQWrapper__question","FAQWrapper__answer":"FAQWrapper__answer"};
 
 /***/ }),
 
-/***/ 70:
+/***/ 66:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(0);
-var react_default = /*#__PURE__*/__webpack_require__.n(react);
-
-// EXTERNAL MODULE: ./node_modules/bem-css-modules/dist/bem-css-modules.js
-var bem_css_modules = __webpack_require__(28);
-var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
-
-// EXTERNAL MODULE: ./src/components/FAQ/FAQMore.module.scss
-var FAQMore_module = __webpack_require__(57);
-var FAQMore_module_default = /*#__PURE__*/__webpack_require__.n(FAQMore_module);
-
-// CONCATENATED MODULE: ./src/assets/faq.jpg
-/* harmony default export */ var assets_faq = (__webpack_require__.p + "7b5d0bdc489f67bb8103aa4c90a807a0.jpg");
-// CONCATENATED MODULE: ./src/components/FAQ/FAQMore.jsx
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var bem_css_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
+/* harmony import */ var bem_css_modules__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bem_css_modules__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(31);
+/* harmony import */ var _FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2__);
 
 
-var Item = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 11).then(__webpack_require__.bind(null, 42)));
+var Item = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(() => __webpack_require__.e(/* import() */ 12).then(__webpack_require__.bind(null, 42)));
 
-
-var style = bem_css_modules_default()(FAQMore_module_default.a);
+var style = bem_css_modules__WEBPACK_IMPORTED_MODULE_1___default()(_FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a);
 
 function FAQ() {
-  var [faqs, setFaqs] = Object(react["useState"])([{
+  var [faqs, setFaqs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([{
     question: '1. Dla kogo dedykowana jest usługa konsultanta ślubnego?',
     answer: ' W zasadzie: dla każdego. Nieprawdą jest, że tylko i wyłącznie dla osób zamożnych czy dla tych skrajnie zapracowanych. Konsultant ślubny to odciążenie i wsparcie dla tych z Was, którzy lubią mieć wszystko pod     kontrolą ale niekoniecznie są zorganizowani. Również dla tych, którzy potrzebują merytorycznego wsparcia w tworzeniu swoich wizji. Konsultant ślubny to rozwiązanie idealne, jeśli lubicie czuć się doskonale przygotowani na każdą sytuację. Taka współpraca ma zapewnić Wam błogi spokój, podczas gdy przedślubny harmonogram pęka w szwach. Zdejmuję z Was ciężar skrupulatnego planowania i przewidywania, zdającsię na swoje doświadczenie i wiedzę.',
     open: false
@@ -245,24 +233,16 @@ function FAQ() {
     }));
   };
 
-  return /*#__PURE__*/react_default.a.createElement("section", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     id: "faq",
     className: style()
-  }, /*#__PURE__*/react_default.a.createElement("div", {
-    className: style("imgWrapper")
-  }, /*#__PURE__*/react_default.a.createElement("img", {
-    src: assets_faq,
-    alt: "",
-    className: style("image")
-  }), /*#__PURE__*/react_default.a.createElement("h1", {
-    className: style("faqTitle")
-  }, "ABC KLIENTA")), /*#__PURE__*/react_default.a.createElement("h1", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: style("title")
-  }, "Co powinni\u015Bcie wiedzie\u0107 na dobry pocz\u0105tek wsp\xF3\u0142pracy z KC Wedding?"), /*#__PURE__*/react_default.a.createElement("h3", {
+  }, "ABC przysz\u0142ych nowo\u017Ce\u0144c\xF3w ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " Co powinni\u015Bcie wiedzie\u0107 na dobry pocz\u0105tek wsp\xF3\u0142pracy z KC Wedding?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: style("description")
-  }, "Organizacja \u015Blubu i wesela to ogromna ilo\u015B\u0107 r\xF3\u017Cnych pyta\u0144 i w\u0105tpliwo\u015Bci. Zdecydowanie \u0142atwiej jest przez to przej\u015B\u0107, gdy mamy wsparcie w postaci do\u015Bwiadczenia i merytorycznej wiedzy specjalisty. Takim z ca\u0142\u0105 pewno\u015Bci\u0105 jest w\u0142a\u015Bnie konsultant \u015Blubny. I tutaj r\xF3wnie\u017C nasuwa si\u0119 wiele pyta\u0144. Funkcja konsultanta \u015Blubnego jest wci\u0105\u017C nie do ko\u0144ca oczywista dla wielu os\xF3b. Postanowi\u0142am zebra\u0107 kilka najcz\u0119stszych pyta\u0144, kt\xF3re padaj\u0105 w moim pierwszym kontakcie z przysz\u0142ymi nowo\u017Ce\u0144cami \u2013 i odpowiedzie\u0107 na nie na tyle wyczerpuj\u0105co, \u017Ceby\u015Bcie mieli pe\u0142en obraz sytuacji. Powinno u\u0142atwi\u0107 to Wam decyzj\u0119 o um\xF3wieniu si\u0119 na spotkanie."), /*#__PURE__*/react_default.a.createElement("div", {
+  }, "Organizacja \u015Blubu i wesela to ogromna ilo\u015B\u0107 r\xF3\u017Cnych pyta\u0144 i w\u0105tpliwo\u015Bci. Zdecydowanie \u0142atwiej jest przez to przej\u015B\u0107, gdy mamy wsparcie w postaci do\u015Bwiadczenia i merytorycznej wiedzy specjalisty. Takim z ca\u0142\u0105 pewno\u015Bci\u0105 jest w\u0142a\u015Bnie konsultant \u015Blubny. I tutaj r\xF3wnie\u017C nasuwa si\u0119 wiele pyta\u0144. Funkcja konsultanta \u015Blubnego jest wci\u0105\u017C nie do ko\u0144ca oczywista dla wielu os\xF3b. Postanowi\u0142am zebra\u0107 kilka najcz\u0119stszych pyta\u0144, kt\xF3re padaj\u0105 w moim pierwszym kontakcie z przysz\u0142ymi nowo\u017Ce\u0144cami \u2013 i odpowiedzie\u0107 na nie na tyle wyczerpuj\u0105co, \u017Ceby\u015Bcie mieli pe\u0142en obraz sytuacji.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Powinno u\u0142atwi\u0107 to Wam decyzj\u0119 o um\xF3wieniu si\u0119 na spotkanie."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: style("faqs")
-  }, faqs.map((faq, i) => /*#__PURE__*/react_default.a.createElement(Item, {
+  }, faqs.map((faq, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Item, {
     faq: faq,
     index: i,
     key: i,
@@ -270,7 +250,7 @@ function FAQ() {
   }))));
 }
 
-/* harmony default export */ var FAQMore = __webpack_exports__["default"] = (FAQ);
+/* harmony default export */ __webpack_exports__["default"] = (FAQ);
 
 /***/ })
 
