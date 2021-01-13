@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[7],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[9],{
 
 /***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
@@ -157,7 +157,7 @@ exports.default = bem;
 
 /***/ }),
 
-/***/ 35:
+/***/ 36:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -165,7 +165,7 @@ module.exports = {"cards":"cards","cards__popup":"cards__popup","cards__close":"
 
 /***/ }),
 
-/***/ 60:
+/***/ 61:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -181,7 +181,7 @@ var bem_css_modules = __webpack_require__(28);
 var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
 
 // EXTERNAL MODULE: ./src/components/Offer/Offer.module.scss
-var Offer_module = __webpack_require__(35);
+var Offer_module = __webpack_require__(36);
 var Offer_module_default = /*#__PURE__*/__webpack_require__.n(Offer_module);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
@@ -201,6 +201,17 @@ function Modal(_ref) {
     onClose
   } = _ref;
   if (!open) return null;
+  var escFunction = Object(react["useCallback"])(event => {
+    if (event.keyCode === 27) {
+      onClose();
+    }
+  }, []);
+  Object(react["useEffect"])(() => {
+    document.addEventListener("keydown", escFunction, false);
+    return () => {
+      document.removeEventListener("keydown", escFunction, false);
+    };
+  }, []);
   return /*#__PURE__*/react_dom_default.a.createPortal( /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, /*#__PURE__*/react_default.a.createElement("div", {
     className: style("popup_background")
   }), /*#__PURE__*/react_default.a.createElement("div", {
@@ -221,7 +232,18 @@ function Modal(_ref) {
 var CardItem_style = bem_css_modules_default()(Offer_module_default.a);
 
 function CardItem(props) {
-  var [isOpen, setIsOpen] = Object(react["useState"])(false);
+  var [isOpen, setIsOpen] = Object(react["useState"])(false); // const escFunction = useCallback((event) => {
+  //   if(event.keyCode === 27) {
+  //     setIsOpen(false)
+  //   }
+  // }, []);
+  // useEffect(() => {
+  //   document.addEventListener("keydown", escFunction, false);
+  //   return () => {
+  //     document.removeEventListener("keydown", escFunction, false);
+  //   };
+  // }, []);
+
   var clas = props.clsName;
   return /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, /*#__PURE__*/react_default.a.createElement("li", {
     className: CardItem_style("item")
@@ -250,9 +272,9 @@ function CardItem(props) {
 
 /* harmony default export */ var subComponent_CardItem = (CardItem);
 // CONCATENATED MODULE: ./src/assets/square.jpg
-/* harmony default export */ var square = (__webpack_require__.p + "cf80b2eb55a0b061d05657a0d8cdc979.jpg");
+/* harmony default export */ var square = (__webpack_require__.p + "f4bdb555e740f18938399ff1f33d2881.jpg");
 // CONCATENATED MODULE: ./src/assets/square2.jpg
-/* harmony default export */ var square2 = (__webpack_require__.p + "dc6826902de6641f6c499bc7ae3677c0.jpg");
+/* harmony default export */ var square2 = (__webpack_require__.p + "8b41ecd91a6efd771c353438e0acd90f.jpg");
 // CONCATENATED MODULE: ./src/components/Offer/Offer.jsx
 
 

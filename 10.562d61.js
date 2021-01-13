@@ -1,6 +1,6 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[8],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[10],{
 
-/***/ 48:
+/***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -8,7 +8,7 @@ module.exports = {"Navbar":"Navbar","Navbar_hidden":"Navbar_hidden","Navbar__wra
 
 /***/ }),
 
-/***/ 62:
+/***/ 63:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24,7 +24,7 @@ var bem_css_modules = __webpack_require__(28);
 var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
 
 // EXTERNAL MODULE: ./node_modules/react-scroll/modules/index.js
-var modules = __webpack_require__(40);
+var modules = __webpack_require__(41);
 
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
 var react_router_dom = __webpack_require__(8);
@@ -53,7 +53,7 @@ var MenuItems = [{
 var StoreProvider = __webpack_require__(13);
 
 // EXTERNAL MODULE: ./src/components/Navbar/Navbar.module.scss
-var Navbar_module = __webpack_require__(48);
+var Navbar_module = __webpack_require__(49);
 var Navbar_module_default = /*#__PURE__*/__webpack_require__.n(Navbar_module);
 
 // CONCATENATED MODULE: ./src/assets/KC (1).png

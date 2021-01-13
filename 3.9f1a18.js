@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[2],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[3],{
 
 /***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
@@ -157,16 +157,16 @@ exports.default = bem;
 
 /***/ }),
 
-/***/ 52:
+/***/ 53:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.EmailJSResponseStatus = exports.sendForm = exports.send = exports.init = void 0;
-var EmailJSResponseStatus_1 = __webpack_require__(53);
+var EmailJSResponseStatus_1 = __webpack_require__(54);
 Object.defineProperty(exports, "EmailJSResponseStatus", { enumerable: true, get: function () { return EmailJSResponseStatus_1.EmailJSResponseStatus; } });
-var UI_1 = __webpack_require__(54);
+var UI_1 = __webpack_require__(55);
 var _userID = null;
 var _origin = 'https://api.emailjs.com';
 function sendPost(url, data, headers) {
@@ -277,7 +277,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 53:
+/***/ 54:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -296,7 +296,7 @@ exports.EmailJSResponseStatus = EmailJSResponseStatus;
 
 /***/ }),
 
-/***/ 54:
+/***/ 55:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -333,15 +333,15 @@ exports.UI = UI;
 
 /***/ }),
 
-/***/ 55:
+/***/ 56:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"contact":"contact","contact__ImgWrapper":"contact__ImgWrapper","contact__image":"contact__image","contact__inlineStyle":"contact__inlineStyle","contact__title":"contact__title","contact__description":"contact__description","contact__input":"contact__input","contact__textarea":"contact__textarea","contact__subBtn":"contact__subBtn","contact__errors":"contact__errors","contact__iconWrapper":"contact__iconWrapper","contact__icon":"contact__icon","fa-envelope":"fa-envelope","fa-phone-alt":"fa-phone-alt","fa-facebook-f":"fa-facebook-f"};
+module.exports = {"contact":"contact","contact__ImgWrapper":"contact__ImgWrapper","contact__image":"contact__image","contact__inlineStyle":"contact__inlineStyle","contact__title":"contact__title","contact__description":"contact__description","contact__input":"contact__input","contact__textarea":"contact__textarea","contact__subBtn":"contact__subBtn","contact__errors":"contact__errors","contact__iconWrapper":"contact__iconWrapper","contact__icon":"contact__icon","contact__date":"contact__date","fa-envelope":"fa-envelope","fa-phone-alt":"fa-phone-alt","fa-facebook-f":"fa-facebook-f"};
 
 /***/ }),
 
-/***/ 64:
+/***/ 65:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -357,15 +357,15 @@ var bem_css_modules = __webpack_require__(28);
 var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
 
 // EXTERNAL MODULE: ./node_modules/emailjs-com/source/index.js
-var source = __webpack_require__(52);
+var source = __webpack_require__(53);
 var source_default = /*#__PURE__*/__webpack_require__.n(source);
 
 // EXTERNAL MODULE: ./src/components/Contact/Contact.module.scss
-var Contact_module = __webpack_require__(55);
+var Contact_module = __webpack_require__(56);
 var Contact_module_default = /*#__PURE__*/__webpack_require__.n(Contact_module);
 
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-37.jpg
-/* harmony default export */ var Karolina_KCwedding_37 = (__webpack_require__.p + "c9bfc06b17f44aa576a94ffd62b8cd39.jpg");
+/* harmony default export */ var Karolina_KCwedding_37 = (__webpack_require__.p + "fe7981405484249e5c74dc388f185ad8.jpg");
 // EXTERNAL MODULE: ./src/store/StoreProvider.jsx
 var StoreProvider = __webpack_require__(13);
 
@@ -402,13 +402,11 @@ function Contact() {
     e.preventDefault();
 
     if (!state["name"]) {
-      setErrors("coś1");
+      setErrors("Podaj swoje imię");
     } else if (!state["mail"]) {
-      setErrors("coś1");
-    } else if (!state["date"]) {
-      setErrors("coś1");
+      setErrors("Wprowadz adres e-mail");
     } else if (!state["text"]) {
-      setErrors("coś1");
+      setErrors("Wprowadz teks wiadomości");
     } else source_default.a.sendForm("service_f2ixcir", "template_5g2c7io", e.target, "user_ux3gKfqC84EoWJjDiNkqL").then(result => {
       console.log(result.text);
       setState({
@@ -482,9 +480,12 @@ function Contact() {
     type: "email",
     value: state.mail,
     onChange: onInputChange
-  }), /*#__PURE__*/react_default.a.createElement("input", {
+  }), /*#__PURE__*/react_default.a.createElement("h4", {
+    className: style("date")
+  }, "Data \u015Blubu:"), /*#__PURE__*/react_default.a.createElement("input", {
     className: style("input"),
     placeholder: "Podaj dat\u0119 \u015Blubu",
+    id: "date",
     name: "date",
     type: "date",
     value: state.date,
