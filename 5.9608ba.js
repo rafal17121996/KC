@@ -206,7 +206,7 @@ var Home_module = __webpack_require__(55);
 var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 
 // CONCATENATED MODULE: ./src/assets/back1 (2)-1.jpg
-/* harmony default export */ var back1_2_1 = (__webpack_require__.p + "3b44f46b1ea6ad1014bb503012b3bba5.jpg");
+/* harmony default export */ var back1_2_1 = (__webpack_require__.p + "e83752ba4f45e1526294028c26a92383.jpg");
 // CONCATENATED MODULE: ./src/components/Home/Home.jsx
 
 

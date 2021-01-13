@@ -416,7 +416,8 @@ var Navbar = () => {
     var elementPosition = el.offsetTop - offset;
     window.scroll({
       top: elementPosition,
-      left: 0
+      left: 0,
+      behavior: "smooth"
     });
   };
 
@@ -430,26 +431,12 @@ var Navbar = () => {
       key: index,
       className: style("nav-item")
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__["HashLink"], {
+      smooth: true,
       to: "/#" + item.url,
       scroll: el => scrollWithOffset(el, 60),
       className: style("nav-links")
     }, item.title));
   });
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [prevScrollpos]);
-
-  var handleScroll = () => {
-    if (!isMobile) {
-      var currentScrollPos = window.pageYOffset;
-      var newVisible = prevScrollpos > currentScrollPos;
-      setPrevScrollpos(currentScrollPos); // setVisible(newVisible);
-    } else {// setVisible(true);
-      }
-  };
 
   var handleOnClick = () => {
     setIsOpen(prev => !prev);
@@ -480,11 +467,13 @@ var Navbar = () => {
   }, Items, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: style("nav-item")
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__["HashLink"], {
+    smooth: true,
     to: "/faq",
     className: style("nav-links")
   }, "ABC KLIENTA")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: style("nav-item")
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__["HashLink"], {
+    smooth: true,
     to: "/#contact",
     scroll: el => scrollWithOffset(el, 60),
     className: style("nav-links")

@@ -48,7 +48,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "." + {"1":"8fc9c1","2":"aac804","3":"637f7a","4":"658662","5":"002803","6":"1b02f2","7":"c24fa7","8":"73d919","9":"9b6768","10":"027aab","11":"1f7e7b","12":"2900c9"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "." + {"1":"8fc9c1","2":"9200cc","3":"81ad41","4":"658662","5":"9608ba","6":"1b02f2","7":"272d8d","8":"73d919","9":"b860d2","10":"7370ff","11":"1f7e7b","12":"2900c9"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -86,7 +86,7 @@
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "style." + {"1":"31d6cf","2":"f02908","3":"b881ef","4":"2aaaef","5":"1a5b22","6":"6543e4","7":"747168","8":"db7700","9":"d031e1","10":"679315","11":"db7700","12":"31d6cf"}[chunkId] + ".css";
+/******/ 				var href = "style." + {"1":"31d6cf","2":"f02908","3":"b881ef","4":"2aaaef","5":"842782","6":"6543e4","7":"747168","8":"db7700","9":"41ba41","10":"679315","11":"db7700","12":"31d6cf"}[chunkId] + ".css";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -3909,6 +3909,7 @@ function ScrollToTop(_ref) {
 /* harmony default export */ var Scroll_ScrollToTop = (Object(react_router["o" /* withRouter */])(ScrollToTop));
 // CONCATENATED MODULE: ./src/App.jsx
 
+ // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 

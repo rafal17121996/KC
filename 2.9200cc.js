@@ -365,7 +365,7 @@ var Contact_module = __webpack_require__(61);
 var Contact_module_default = /*#__PURE__*/__webpack_require__.n(Contact_module);
 
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-37.jpg
-/* harmony default export */ var Karolina_KCwedding_37 = (__webpack_require__.p + "fe7981405484249e5c74dc388f185ad8.jpg");
+/* harmony default export */ var Karolina_KCwedding_37 = (__webpack_require__.p + "cefa5a9f705494fed483172bda5c9ade.jpg");
 // EXTERNAL MODULE: ./src/store/StoreProvider.jsx
 var StoreProvider = __webpack_require__(13);
 

@@ -184,8 +184,8 @@ var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules
 var FAQMore_module = __webpack_require__(57);
 var FAQMore_module_default = /*#__PURE__*/__webpack_require__.n(FAQMore_module);
 
-// CONCATENATED MODULE: ./src/assets/_MG_9412.jpg
-/* harmony default export */ var _MG_9412 = (__webpack_require__.p + "3b44f46b1ea6ad1014bb503012b3bba5.jpg");
+// CONCATENATED MODULE: ./src/assets/faq.jpg
+/* harmony default export */ var assets_faq = (__webpack_require__.p + "7b5d0bdc489f67bb8103aa4c90a807a0.jpg");
 // CONCATENATED MODULE: ./src/components/FAQ/FAQMore.jsx
 
 
@@ -251,7 +251,7 @@ function FAQ() {
   }, /*#__PURE__*/react_default.a.createElement("div", {
     className: style("imgWrapper")
   }, /*#__PURE__*/react_default.a.createElement("img", {
-    src: _MG_9412,
+    src: assets_faq,
     alt: "",
     className: style("image")
   }), /*#__PURE__*/react_default.a.createElement("h1", {
