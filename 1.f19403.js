@@ -1,5 +1,6 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[1],Array(28).concat([
-/* 28 */
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[1],{
+
+/***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -155,7 +156,8 @@ exports.default = bem;
 
 
 /***/ }),
-/* 29 */
+
+/***/ 30:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -167,15 +169,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _utils = __webpack_require__(30);
+var _utils = __webpack_require__(31);
 
 var _utils2 = _interopRequireDefault(_utils);
 
-var _animateScroll = __webpack_require__(39);
+var _animateScroll = __webpack_require__(42);
 
 var _animateScroll2 = _interopRequireDefault(_animateScroll);
 
-var _scrollEvents = __webpack_require__(35);
+var _scrollEvents = __webpack_require__(36);
 
 var _scrollEvents2 = _interopRequireDefault(_scrollEvents);
 
@@ -272,7 +274,8 @@ exports.default = {
 };
 
 /***/ }),
-/* 30 */
+
+/***/ 31:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -314,8 +317,8 @@ exports.default = {
 };
 
 /***/ }),
-/* 31 */,
-/* 32 */
+
+/***/ 33:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -333,11 +336,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _scrollSpy = __webpack_require__(33);
+var _scrollSpy = __webpack_require__(34);
 
 var _scrollSpy2 = _interopRequireDefault(_scrollSpy);
 
-var _scroller = __webpack_require__(29);
+var _scroller = __webpack_require__(30);
 
 var _scroller2 = _interopRequireDefault(_scroller);
 
@@ -345,7 +348,7 @@ var _propTypes = __webpack_require__(7);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _scrollHash = __webpack_require__(40);
+var _scrollHash = __webpack_require__(43);
 
 var _scrollHash2 = _interopRequireDefault(_scrollHash);
 
@@ -612,7 +615,8 @@ exports.default = function (Component, customScroller) {
 };
 
 /***/ }),
-/* 33 */
+
+/***/ 34:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -622,11 +626,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _lodash = __webpack_require__(45);
+var _lodash = __webpack_require__(48);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-var _passiveEventListeners = __webpack_require__(34);
+var _passiveEventListeners = __webpack_require__(35);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -719,7 +723,8 @@ var scrollSpy = {
 exports.default = scrollSpy;
 
 /***/ }),
-/* 34 */
+
+/***/ 35:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -754,7 +759,8 @@ var removePassiveEventListener = exports.removePassiveEventListener = function r
 };
 
 /***/ }),
-/* 35 */
+
+/***/ 36:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -779,10 +785,8 @@ var Events = {
 exports.default = Events;
 
 /***/ }),
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */
+
+/***/ 42:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -794,19 +798,19 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _utils = __webpack_require__(30);
+var _utils = __webpack_require__(31);
 
 var _utils2 = _interopRequireDefault(_utils);
 
-var _smooth = __webpack_require__(46);
+var _smooth = __webpack_require__(49);
 
 var _smooth2 = _interopRequireDefault(_smooth);
 
-var _cancelEvents = __webpack_require__(47);
+var _cancelEvents = __webpack_require__(50);
 
 var _cancelEvents2 = _interopRequireDefault(_cancelEvents);
 
-var _scrollEvents = __webpack_require__(35);
+var _scrollEvents = __webpack_require__(36);
 
 var _scrollEvents2 = _interopRequireDefault(_scrollEvents);
 
@@ -1048,7 +1052,8 @@ exports.default = {
 };
 
 /***/ }),
-/* 40 */
+
+/***/ 43:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1058,9 +1063,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _passiveEventListeners = __webpack_require__(34);
+var _passiveEventListeners = __webpack_require__(35);
 
-var _utils = __webpack_require__(30);
+var _utils = __webpack_require__(31);
 
 var _utils2 = _interopRequireDefault(_utils);
 
@@ -1132,7 +1137,8 @@ var scrollHash = {
 exports.default = scrollHash;
 
 /***/ }),
-/* 41 */
+
+/***/ 44:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1154,7 +1160,7 @@ var _reactDom = __webpack_require__(12);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _scroller = __webpack_require__(29);
+var _scroller = __webpack_require__(30);
 
 var _scroller2 = _interopRequireDefault(_scroller);
 
@@ -1234,8 +1240,8 @@ exports.default = function (Component) {
 };
 
 /***/ }),
-/* 42 */,
-/* 43 */
+
+/***/ 46:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1246,43 +1252,43 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Helpers = exports.ScrollElement = exports.ScrollLink = exports.animateScroll = exports.scrollSpy = exports.Events = exports.scroller = exports.Element = exports.Button = exports.Link = undefined;
 
-var _Link = __webpack_require__(44);
+var _Link = __webpack_require__(47);
 
 var _Link2 = _interopRequireDefault(_Link);
 
-var _Button = __webpack_require__(48);
+var _Button = __webpack_require__(51);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _Element = __webpack_require__(49);
+var _Element = __webpack_require__(52);
 
 var _Element2 = _interopRequireDefault(_Element);
 
-var _scroller = __webpack_require__(29);
+var _scroller = __webpack_require__(30);
 
 var _scroller2 = _interopRequireDefault(_scroller);
 
-var _scrollEvents = __webpack_require__(35);
+var _scrollEvents = __webpack_require__(36);
 
 var _scrollEvents2 = _interopRequireDefault(_scrollEvents);
 
-var _scrollSpy = __webpack_require__(33);
+var _scrollSpy = __webpack_require__(34);
 
 var _scrollSpy2 = _interopRequireDefault(_scrollSpy);
 
-var _animateScroll = __webpack_require__(39);
+var _animateScroll = __webpack_require__(42);
 
 var _animateScroll2 = _interopRequireDefault(_animateScroll);
 
-var _scrollLink = __webpack_require__(32);
+var _scrollLink = __webpack_require__(33);
 
 var _scrollLink2 = _interopRequireDefault(_scrollLink);
 
-var _scrollElement = __webpack_require__(41);
+var _scrollElement = __webpack_require__(44);
 
 var _scrollElement2 = _interopRequireDefault(_scrollElement);
 
-var _Helpers = __webpack_require__(50);
+var _Helpers = __webpack_require__(53);
 
 var _Helpers2 = _interopRequireDefault(_Helpers);
 
@@ -1301,7 +1307,8 @@ exports.Helpers = _Helpers2.default;
 exports.default = { Link: _Link2.default, Button: _Button2.default, Element: _Element2.default, scroller: _scroller2.default, Events: _scrollEvents2.default, scrollSpy: _scrollSpy2.default, animateScroll: _animateScroll2.default, ScrollLink: _scrollLink2.default, ScrollElement: _scrollElement2.default, Helpers: _Helpers2.default };
 
 /***/ }),
-/* 44 */
+
+/***/ 47:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1315,7 +1322,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _scrollLink = __webpack_require__(32);
+var _scrollLink = __webpack_require__(33);
 
 var _scrollLink2 = _interopRequireDefault(_scrollLink);
 
@@ -1358,7 +1365,8 @@ var LinkElement = function (_React$Component) {
 exports.default = (0, _scrollLink2.default)(LinkElement);
 
 /***/ }),
-/* 45 */
+
+/***/ 48:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -1804,7 +1812,8 @@ module.exports = throttle;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(17)))
 
 /***/ }),
-/* 46 */
+
+/***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1881,7 +1890,8 @@ exports.default = {
 };
 
 /***/ }),
-/* 47 */
+
+/***/ 50:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1891,7 +1901,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _passiveEventListeners = __webpack_require__(34);
+var _passiveEventListeners = __webpack_require__(35);
 
 var events = ['mousedown', 'mousewheel', 'touchmove', 'keydown'];
 
@@ -1904,7 +1914,8 @@ exports.default = {
 };
 
 /***/ }),
-/* 48 */
+
+/***/ 51:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1920,7 +1931,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _scrollLink = __webpack_require__(32);
+var _scrollLink = __webpack_require__(33);
 
 var _scrollLink2 = _interopRequireDefault(_scrollLink);
 
@@ -1960,7 +1971,8 @@ var ButtonElement = function (_React$Component) {
 exports.default = (0, _scrollLink2.default)(ButtonElement);
 
 /***/ }),
-/* 49 */
+
+/***/ 52:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1978,7 +1990,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _scrollElement = __webpack_require__(41);
+var _scrollElement = __webpack_require__(44);
 
 var _scrollElement2 = _interopRequireDefault(_scrollElement);
 
@@ -2037,7 +2049,8 @@ ElementWrapper.propTypes = {
 exports.default = (0, _scrollElement2.default)(ElementWrapper);
 
 /***/ }),
-/* 50 */
+
+/***/ 53:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2058,11 +2071,11 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var React = __webpack_require__(0);
 var ReactDOM = __webpack_require__(12);
 
-var utils = __webpack_require__(30);
-var scrollSpy = __webpack_require__(33);
-var defaultScroller = __webpack_require__(29);
+var utils = __webpack_require__(31);
+var scrollSpy = __webpack_require__(34);
+var defaultScroller = __webpack_require__(30);
 var PropTypes = __webpack_require__(7);
-var scrollHash = __webpack_require__(40);
+var scrollHash = __webpack_require__(43);
 
 var protoTypes = {
   to: PropTypes.string.isRequired,
@@ -2367,4 +2380,5 @@ var Helpers = {
 module.exports = Helpers;
 
 /***/ })
-])]);
+
+}]);
