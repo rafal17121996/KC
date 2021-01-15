@@ -48,7 +48,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "." + {"1":"f19403","2":"510882","3":"0b4708","4":"9e92f6","5":"5ca1d1","6":"f70ed2","7":"fdc455","8":"26b25c","9":"96e3fd","10":"9b4525","11":"ffc12b","12":"d5d82a"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "." + {"1":"764608","2":"ac3349","3":"273a7a","4":"9f50e6","5":"262943","6":"7259f9","7":"d2af4e","8":"75e4ad","9":"15da77","10":"5a70c4","11":"224beb","12":"641c20"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -86,7 +86,7 @@
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "style." + {"1":"31d6cf","2":"5940fc","3":"b881ef","4":"56e0ff","5":"333e16","6":"2aaaef","7":"d7e5c1","8":"6543e4","9":"f85161","10":"60b07b","11":"f85161","12":"31d6cf"}[chunkId] + ".css";
+/******/ 				var href = "style." + {"1":"31d6cf","2":"5940fc","3":"b881ef","4":"56e0ff","5":"6bae80","6":"aaf423","7":"6543e4","8":"5b79ed","9":"cd3f28","10":"1cd7d9","11":"cd3f28","12":"31d6cf"}[chunkId] + ".css";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -3044,40 +3044,6 @@ function pathToRegexp (path, keys, options) {
 
 /***/ }),
 /* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function checkDCE() {
-  /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
-  if (
-    typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' ||
-    typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function'
-  ) {
-    return;
-  }
-  if (false) {}
-  try {
-    // Verify that the code above has been dead code eliminated (DCE'd).
-    __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(checkDCE);
-  } catch (err) {
-    // DevTools shouldn't crash React, no matter what.
-    // We should still report in case we break this code.
-    console.error(err);
-  }
-}
-
-if (true) {
-  // DCE check should happen before ReactDOM bundle executes so that
-  // DevTools can report bad minification during injection.
-  checkDCE();
-  module.exports = __webpack_require__(19);
-} else {}
-
-
-/***/ }),
-/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3113,6 +3079,40 @@ var StoreProvider = (_ref) => {
 };
 
 /* harmony default export */ __webpack_exports__["b"] = (StoreProvider);
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function checkDCE() {
+  /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
+  if (
+    typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' ||
+    typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function'
+  ) {
+    return;
+  }
+  if (false) {}
+  try {
+    // Verify that the code above has been dead code eliminated (DCE'd).
+    __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(checkDCE);
+  } catch (err) {
+    // DevTools shouldn't crash React, no matter what.
+    // We should still report in case we break this code.
+    console.error(err);
+  }
+}
+
+if (true) {
+  // DCE check should happen before ReactDOM bundle executes so that
+  // DevTools can report bad minification during injection.
+  checkDCE();
+  module.exports = __webpack_require__(19);
+} else {}
+
 
 /***/ }),
 /* 14 */
@@ -3872,11 +3872,11 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(12);
+var react_dom = __webpack_require__(13);
 var react_dom_default = /*#__PURE__*/__webpack_require__.n(react_dom);
 
 // EXTERNAL MODULE: ./src/store/StoreProvider.jsx
-var StoreProvider = __webpack_require__(13);
+var StoreProvider = __webpack_require__(12);
 
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
 var react_router_dom = __webpack_require__(8);
@@ -3913,15 +3913,15 @@ function ScrollToTop(_ref) {
 
 
 
-var Navbar = /*#__PURE__*/react_default.a.lazy(() => Promise.all(/* import() */[__webpack_require__.e(1), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, 64)));
-var NavbarFAQ = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 3).then(__webpack_require__.bind(null, 65)));
-var Home = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 7).then(__webpack_require__.bind(null, 69)));
-var AboutMe = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 5).then(__webpack_require__.bind(null, 70)));
-var Offer = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 10).then(__webpack_require__.bind(null, 68)));
-var FAQ = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 9).then(__webpack_require__.bind(null, 66)));
-var FAQMore = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 4).then(__webpack_require__.bind(null, 71)));
-var Contact = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 2).then(__webpack_require__.bind(null, 72)));
-var Footer = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 6).then(__webpack_require__.bind(null, 67))); // import Navbar from "./components/Navbar/Navbar";
+var Navbar = /*#__PURE__*/react_default.a.lazy(() => Promise.all(/* import() */[__webpack_require__.e(1), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, 63)));
+var NavbarFAQ = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 3).then(__webpack_require__.bind(null, 64)));
+var Home = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 6).then(__webpack_require__.bind(null, 68)));
+var AboutMe = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 8).then(__webpack_require__.bind(null, 69)));
+var Offer = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 10).then(__webpack_require__.bind(null, 67)));
+var FAQ = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 9).then(__webpack_require__.bind(null, 65)));
+var FAQMore = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 4).then(__webpack_require__.bind(null, 70)));
+var Contact = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 2).then(__webpack_require__.bind(null, 71)));
+var Footer = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 5).then(__webpack_require__.bind(null, 66))); // import Navbar from "./components/Navbar/Navbar";
 // import Home from "./components/Home/Home";
 // import AboutMe from "./components/AboutMe/AboutMe";
 // import Offer from "./components/Offer/Offer";
