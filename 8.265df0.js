@@ -1,6 +1,6 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[7],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[8],{
 
-/***/ 36:
+/***/ 38:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28,7 +28,7 @@ var MenuItems = [{
 
 /***/ }),
 
-/***/ 37:
+/***/ 39:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44,7 +44,7 @@ module.exports = {"Navbar":"Navbar","Navbar_hidden":"Navbar_hidden","Navbar__wra
 
 /***/ }),
 
-/***/ 63:
+/***/ 67:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -56,11 +56,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(45);
 /* harmony import */ var react_scroll__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_scroll__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
-/* harmony import */ var _MenuItem_MenuItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(36);
-/* harmony import */ var _store_StoreProvider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(12);
+/* harmony import */ var _MenuItem_MenuItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(38);
+/* harmony import */ var _store_StoreProvider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(13);
 /* harmony import */ var _Navbar_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(53);
 /* harmony import */ var _Navbar_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Navbar_module_scss__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _assets_KC_1_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(37);
+/* harmony import */ var _assets_KC_1_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(39);
 
 
 
@@ -77,16 +77,22 @@ var Navbar = () => {
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_store_StoreProvider__WEBPACK_IMPORTED_MODULE_5__[/* StoreContext */ "a"]);
   var [prevScrollpos, setPrevScrollpos] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(window.pageYOffset);
   var [isOpen, setIsOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+
+  var handleOnClick = () => {
+    setIsOpen(prev => !prev);
+  };
+
   var Items = _MenuItem_MenuItem__WEBPACK_IMPORTED_MODULE_4__[/* MenuItems */ "a"].map((item, index) => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
       key: index,
       className: style("nav-item")
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_scroll__WEBPACK_IMPORTED_MODULE_2__["Link"], {
       smooth: true,
-      duration: 1000,
+      duration: isMobile ? 0 : 1000,
       to: item.url,
-      offset: -60,
-      className: style("nav-links")
+      offset: isMobile ? 0 : -60,
+      className: style("nav-links"),
+      onClick: () => handleOnClick()
     }, item.title));
   });
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
@@ -103,10 +109,6 @@ var Navbar = () => {
       setPrevScrollpos(currentScrollPos); // setVisible(newVisible);
     } else {// setVisible(true);
       }
-  };
-
-  var handleOnClick = () => {
-    setIsOpen(prev => !prev);
   };
 
   var itemStyle = isOpen ? style("nav-menu", {
@@ -140,10 +142,11 @@ var Navbar = () => {
     className: style("nav-item")
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_scroll__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     smooth: true,
-    duration: 1000,
+    duration: isMobile ? 0 : 1000,
     to: "contact",
-    offset: -60,
-    className: style("nav-links")
+    offset: isMobile ? 0 : -60,
+    className: style("nav-links"),
+    onClick: handleOnClick
   }, "KONTAKT"))))));
 };
 

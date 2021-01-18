@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[10],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[12],{
 
 /***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
@@ -165,7 +165,7 @@ module.exports = {"cards":"cards","cards__popup":"cards__popup","cards__close":"
 
 /***/ }),
 
-/***/ 67:
+/***/ 71:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -185,7 +185,7 @@ var Offer_module = __webpack_require__(40);
 var Offer_module_default = /*#__PURE__*/__webpack_require__.n(Offer_module);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(13);
+var react_dom = __webpack_require__(12);
 var react_dom_default = /*#__PURE__*/__webpack_require__.n(react_dom);
 
 // CONCATENATED MODULE: ./src/components/Offer/subComponent/Popup.jsx

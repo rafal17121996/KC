@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[3],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[4],{
 
 /***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
@@ -157,43 +157,7 @@ exports.default = bem;
 
 /***/ }),
 
-/***/ 36:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuItems; });
-var MenuItems = [{
-  title: 'O MNIE',
-  url: 'about',
-  cName: 'nav-links'
-}, {
-  title: 'OFERTA',
-  url: 'offer',
-  cName: 'nav-links'
-} // {
-//     title: 'KONTAKT',
-//     url: 'contact',
-//     cName: 'nav-links'
-// }
-// ,
-// {
-//     title: 'ABC KLIENTA',
-//     url: 'faq',
-//     cName: 'nav-links'
-// }
-];
-
-/***/ }),
-
-/***/ 37:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "9622d940aa8618d771e8986ff8e41b7c.png");
-
-/***/ }),
-
-/***/ 38:
+/***/ 29:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -377,15 +341,51 @@ NavHashLink.propTypes = propTypes;
 
 /***/ }),
 
+/***/ 38:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuItems; });
+var MenuItems = [{
+  title: 'O MNIE',
+  url: 'about',
+  cName: 'nav-links'
+}, {
+  title: 'OFERTA',
+  url: 'offer',
+  cName: 'nav-links'
+} // {
+//     title: 'KONTAKT',
+//     url: 'contact',
+//     cName: 'nav-links'
+// }
+// ,
+// {
+//     title: 'ABC KLIENTA',
+//     url: 'faq',
+//     cName: 'nav-links'
+// }
+];
+
+/***/ }),
+
+/***/ 39:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "9622d940aa8618d771e8986ff8e41b7c.png");
+
+/***/ }),
+
 /***/ 54:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"NavbarFAQ":"NavbarFAQ","NavbarFAQ_hidden":"NavbarFAQ_hidden","NavbarFAQ__wrapper":"NavbarFAQ__wrapper","NavbarFAQ__logo":"NavbarFAQ__logo","NavbarFAQ__title":"NavbarFAQ__title","NavbarFAQ__nav-menu":"NavbarFAQ__nav-menu","NavbarFAQ__nav-item":"NavbarFAQ__nav-item","NavbarFAQ__nav-links":"NavbarFAQ__nav-links","fa-bars":"fa-bars","NavbarFAQ__menu-button":"NavbarFAQ__menu-button","NavbarFAQ__nav-menu_active":"NavbarFAQ__nav-menu_active","NavbarFAQ__navbar-logo":"NavbarFAQ__navbar-logo","fa-times":"fa-times","NavbarFAQ__nav-links-mobile":"NavbarFAQ__nav-links-mobile","NavbarFAQ__flags":"NavbarFAQ__flags"};
+module.exports = {"Navbar":"Navbar","Navbar_hidden":"Navbar_hidden","Navbar__wrapper":"Navbar__wrapper","Navbar__logo":"Navbar__logo","Navbar__title":"Navbar__title","Navbar__nav-menu":"Navbar__nav-menu","Navbar__nav-item":"Navbar__nav-item","Navbar__nav-links":"Navbar__nav-links","fa-bars":"fa-bars","Navbar__menu-button":"Navbar__menu-button","Navbar__nav-menu_active":"Navbar__nav-menu_active","Navbar__navbar-logo":"Navbar__navbar-logo","fa-times":"fa-times","Navbar__nav-links-mobile":"Navbar__nav-links-mobile","Navbar__flags":"Navbar__flags"};
 
 /***/ }),
 
-/***/ 64:
+/***/ 68:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -394,13 +394,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var bem_css_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
 /* harmony import */ var bem_css_modules__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bem_css_modules__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(38);
+/* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(29);
 /* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _MenuItem_MenuItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(36);
-/* harmony import */ var _store_StoreProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(12);
+/* harmony import */ var _MenuItem_MenuItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(38);
+/* harmony import */ var _store_StoreProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(13);
 /* harmony import */ var _NavbarFAQ_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(54);
 /* harmony import */ var _NavbarFAQ_module_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_NavbarFAQ_module_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _assets_KC_1_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(37);
+/* harmony import */ var _assets_KC_1_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(39);
 
  // import { Link } from "react-router-dom";
 
@@ -433,7 +433,7 @@ var Navbar = () => {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__["HashLink"], {
       smooth: true,
       to: "/#" + item.url,
-      scroll: el => scrollWithOffset(el, 60),
+      scroll: el => scrollWithOffset(el, isMobile ? 0 : 60),
       className: style("nav-links")
     }, item.title));
   });
@@ -475,7 +475,7 @@ var Navbar = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__["HashLink"], {
     smooth: true,
     to: "/#contact",
-    scroll: el => scrollWithOffset(el, 60),
+    scroll: el => scrollWithOffset(el, isMobile ? 0 : 60),
     className: style("nav-links")
   }, "KONTAKT"))))));
 };
