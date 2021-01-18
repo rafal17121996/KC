@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import bemCssModules from "bem-css-modules";
 
@@ -9,7 +9,7 @@ const style = bemCssModules(OfferStyles);
 
 function CardItem(props) {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   const clas = props.clsName;
   return (
     <>
@@ -25,8 +25,7 @@ function CardItem(props) {
               src={props.src}
             />
           </figure>
-          <button onClick={() => setIsOpen(true)}>Pokaż więcej informacji</button>
-          <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+          <Modal text={props.text} title={props.title} open={isOpen} onClose={() => setIsOpen(false)}>
             {props.text}
           </Modal>
           <div className={style("item__info")}>

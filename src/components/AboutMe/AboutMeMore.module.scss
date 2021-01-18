@@ -1,0 +1,136 @@
+.AboutMeMoreWrapper {
+    background-color: white;
+    min-height: 100vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    &__img {
+      height: 100vh;
+      min-height: 650px;
+    }
+    &__inlineStyle {
+      top: 50%;
+      left: 68%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 30%;
+      @media screen and (max-width: 1800px) {
+        width: 40%;
+      }
+
+
+    }
+    &__faqTitle {
+      text-align: center;
+      margin-bottom: 10px;
+      color: rgb(255, 255, 255);
+      font-family: "Fraunces", serif;
+      font-size: 3rem;
+      font-weight: 300;
+      @media screen and (max-width: 1600px) {
+        font-size: 2rem;
+      }
+      @media screen and (max-width: 1800px) {
+        font-size: 2rem;
+      }
+      @media screen and (max-width: 1300px) {
+        font-size: 2rem;
+      }
+    }
+    &__title {
+      color: rgb(56, 56, 56);
+      text-align: justify;
+      padding: 10px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+      background-color:  rgb(252, 173, 153);box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
+      -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+      filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+      @media screen and (max-width: 1600px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 1600px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 1800px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 1300px) {
+        font-size: 0.8rem;
+      }
+    }
+    &__description {
+      margin: 50px auto;
+      width: 100%;
+      text-align: justify;
+      font-weight: 200;
+      color: rgb(0, 0, 0);
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      background-color: rgba(255, 154, 128, 0.5);
+      padding: 10px;
+      box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
+      -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+      filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+      @media screen and (max-width: 1600px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 1800px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 1300px) {
+        font-size: 0.8rem;
+      }
+    }
+  &__bottom{
+    display: flex;
+  }
+    &__text{
+      margin: 20px auto;
+      width: 50%;
+      text-align: center;
+      font-weight: 200;
+      color: rgb(82, 82, 82);
+      font-size: 1.2rem;
+      letter-spacing: 2.5px;
+    }
+    &__text2{
+      margin: 20px auto;
+      width: 50%;
+      text-align: center;
+      font-weight: 200;
+      color: rgb(82, 82, 82);
+      font-size: 1.2rem;
+      letter-spacing: 2.5px;
+    }
+    &__picture {
+      align-self: center;
+      height: 60vh;
+      margin: 50px auto;
+      display: block;
+      box-shadow: 0 6px 20px rgba(43,50,63,.6);
+      -webkit-filter: drop-shadow(0 6px 20px rgba(43,50,63,.6));
+      filter: drop-shadow(0 6px 20px rgba(43,50,63,.6));
+      @media screen and (max-width: 960px) {
+      width: 50%;
+      height: auto;
+      margin-top: 20px;
+    }
+    }
+    &__contact{
+      margin-bottom: 60px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      text-decoration: underline;
+      text-align: center;
+      font-weight: 200;
+      color: rgb(82, 82, 82);
+      font-size: 1.2rem;
+      letter-spacing: 2.5px;
+    }
+  }
+  

@@ -23,9 +23,9 @@ function Item({faq, index, toggleFAQ}) {
         <div className={style("question")}>
             {faq.question}
         </div>
-        <div className={style("answer")}>
-            {faq.answer}
-        </div>
+        <div className={style("answer")} dangerouslySetInnerHTML={{ __html: faq.answer }}/>
+        
+        
     </div>
     )
 }

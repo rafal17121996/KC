@@ -43,7 +43,7 @@ module.exports = {
           // Name
           'gifsicle',
           // Name with options
-          ['mozjpeg', { quality: 40 }],
+          ['mozjpeg', { quality: 80 }],
           [
             'pngquant',
             {

@@ -21,19 +21,24 @@ const Navbar = () => {
 
 
   const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
-  // const [visible, setVisible] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleOnClick = () => {
+    setIsOpen((prev) => !prev);
+  };
 
 
   const Items = MenuItems.map((item, index) => {
     return (
-      <li  key={index} className={style("nav-item")}>
+      <li  key={index} className={style("nav-item")}  >
         <Link1
           smooth={true}
-          duration={1000}
+          duration={isMobile?0:1000}
           to={item.url}
-          offset={-60}
+          offset={isMobile?0:-60}
           className={style("nav-links")}
+          onClick={()=>handleOnClick()}
+         
         >
           {item.title}
         </Link1>
@@ -62,14 +67,7 @@ const Navbar = () => {
       // setVisible(true);
     }
   };
-  const handleOnClick = () => {
-    setIsOpen((prev) => !prev);
-  };
-
-  function handleClickLang(lang) {
-    i18next.changeLanguage(lang)
-  }
-
+ 
 
   const itemStyle = isOpen
     ? style("nav-menu", { active: true })
@@ -87,26 +85,29 @@ const Navbar = () => {
             <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
           {logo}
-         
-          {/* <Link smooth={true} duration={1000} to="home"  offset={-60} className={style("title")}>
-            <h1 className={style("title")}>TU_LOGO</h1>
-          </Link> */}
-
           <ul className={itemStyle}>{Items}
           <li   className={style("nav-item")}>         
         <Link
           to="/faq"
           className={style("nav-links")}
         >
-
             ABC KLIENTA
-        </Link>
+        </Link>       
+      </li>
+      <li className={style("nav-item")}>
+      <Link1
+          smooth={true}
+          duration={isMobile?0:1000}
+          to="contact"
+          offset={isMobile?0:-60}
+          className={style("nav-links")}
+          onClick={handleOnClick}
+        >
+          KONTAKT
+        </Link1>
       </li>
           </ul> 
-        
-         
         </div>
-       
       </nav>
     </>
   );

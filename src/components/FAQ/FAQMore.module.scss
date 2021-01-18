@@ -1,0 +1,184 @@
+.FAQMoreWrapper {
+  background-color: white;
+  min-height: 100vh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  // padding-top: 60px;
+  &__img {
+    min-height: 100vh;
+  }
+  &__inlineStyle {
+    top: 50%;
+    left: 3%;
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 30%;
+    @media screen and (max-width: 1800px) {
+      width: 50%;
+      left: 3%;
+    }
+  }
+  &__title {
+    padding: 15px 0;
+    color: rgb(56, 56, 56);
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    background-color:  rgb(252, 173, 153);box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+    filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+    @media screen and (max-width: 1600px) {
+      font-size: 1rem;
+      width: 70%;
+    }
+    @media screen and (max-width: 1800px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 1300px) {
+      font-size: 1rem;
+    }
+
+
+  }
+
+  &__description {
+    width: 100%;
+    text-align: justify;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    background-color: rgba(255, 154, 128, 0.5);
+    padding: 10px;
+    box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+    filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
+    @media screen and (max-width: 1600px) {
+      font-size: 1rem;
+      width: 70%;
+    }
+    @media screen and (max-width: 1800px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 1300px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__x{
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    font-weight: 200;
+    color: rgb(82, 82, 82);
+    font-size: 1.2rem;
+    letter-spacing: 2.5px;
+  }
+
+  &__faqTitle {
+    text-align: center;
+    text-align: left;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+    font-family: "Fraunces", serif;
+    font-size: 4rem;
+    font-weight: 300;   
+     @media screen and (max-width: 1600px) {
+      font-size: 3rem;
+    }
+    @media screen and (max-width: 1800px) {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 1300px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__faqs {
+    color: rgb(82, 82, 82);
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  &__faq {
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  &__faqopen {
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  &__question {
+    position: relative;
+    font-size: 20px;
+    padding-right: 80px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s;
+  }
+
+  &__question::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../../assets/arrow.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__answer {
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.4s ease-out;
+  }
+
+  &__faqopen &__question {
+    margin-bottom: 15px;
+  }
+
+  &__faqopen &__question::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  &__faqopen &__answer {
+    max-height: 1000px;
+    opacity: 1;
+  }
+  &__end{
+    text-align: center;
+    font-weight: 200;
+    color: rgb(82, 82, 82);
+    font-size: 1.2rem;
+    letter-spacing: 2.5px;
+  }
+  &__contact{
+    margin-bottom: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 200;
+    color: rgb(82, 82, 82);
+    font-size: 1.2rem;
+    letter-spacing: 2.5px;
+  }
+}

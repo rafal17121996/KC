@@ -1,74 +1,70 @@
-import React from "react";
+import React, { useContext } from "react";
 import bemCssModules from "bem-css-modules";
 
 import { default as AboutMeStyles } from "./AboutMe.module.scss";
 
-import bg from "../../assets/pexels-miguel-á-padriñán-19670.jpg";
-import img from "../../assets/Karolina_KCwedding-25.jpg";
-import img2 from "../../assets/Karolina_KCwedding-53.jpg";
 
+import img2 from "../../assets/Karolina_KCwedding-25.jpg";
+import { StoreContext } from "../../store/StoreProvider";
+import { Link } from "react-router-dom";
 
 const style = bemCssModules(AboutMeStyles);
 
-export default function AboutMe() {
+const AboutMe = () =>  {
+  const { isMobile } = useContext(StoreContext);
   return (
     <section id="about" className={style()}>
-      {/* <Parallax bgImage={bg} strength={1000}>
-        <div className={style("img")}>
-          <div className={style("inlineStyle")}> */}
-
-  <h1 className={style("title")}>Kto stoi za KC Wedding?</h1>
+      <h1 className={style("title")}>Kto stoi za KC Wedding?</h1>
       <div className={style("wrapper")}>
-        <div className={style("top")}>
-          <p className={style("description")}>
-            Cześć! Nazywam się Karolina Chorzępa i witam Was serdecznie w moich
-            internetowych zorganizowanych progach, jak na dobrego gospodarza
-            przystało. Chociaż zdecydowanie bardziej wolę określenie: jak na
-            dobrą przyjaciółkę przystało. Bo właśnie tak najczęściej się czuję,
-            kiedy to Wy zapraszacie mnie do swojej historii. Jedynej w swoim
-            rodzaju. W Waszym stylu. <br />
-            Jestem absolwentką Akademii Wychowania Fizycznego w Poznaniu oraz w
-            Warszawie. Zaskakujący początek drogi konsultantki ślubnej, prawda?
-            Turystyka i rekreacja to nie tylko moje wykształcenie kierunkowe, to
-            również inspirujący początek historii KC Wedding. Na studiach
-            pojawił się przedmiot organizacji imprez, równolegle w moim życiu
-            osobistym wydarzyć się miały zaślubiny bliskiej kuzynki. Wsparcie w
-            tej organizacji – dało mi jasny sygnał do dalszych działań.
-            <br />
-          </p>
-          <img className={style("picture")} src={img2} alt="" />
-        </div>
-        <div className={style("bottom")}>
-          <img className={style("picture")} src={img} alt="" />
-          <p className={style("description")}>
-            Kurs na wedding plannera w Akademii Wytwórni Ślubów Agnieszki
-            Kudeli, oficjalnie przypieczętował decyzję o dokładnie takiej drodze
-            zawodowej. W międzyczasie kompleksowa organizacja własnej
-            uroczystości – udowodniła mi dodatkowo, że jestem do tego stworzona.
-            Dobry plan, doskonała realizacja, namacalne efekty. Czyli wszystko
-            to, co stanowi podstawę w codziennej pracy konsultantki ślubnej.
-            <br />
-            Prywatnie uwielbiam taniec, swego czasu zajmowałam się tym
-            profesjonalnie. Kontuzja jednak nie pozwoliła na kontynuację.
-            Uwielbiam też pracę z dziećmi i mam w niej sporo doświadczenia,
-            dzięki czemu z entuzjazmem podchodzę do małych gości weselnych. Co
-            jeszcze? Nad wyraz cenię sobie polskie morze, stąd też śluby na
-            plaży w ofercie KC Wedding.
-            <br />
-            Mogłabym opowiadać o sobie wciąż i wciąż, jestem jednak zdecydowanie
-            lepszym słuchaczem. Z przyjemnością o Was posłucham. Przy kawie lub
-            przy herbacie – jak wolicie? KC Wedding powstało z uwielbienia do
-            naturalnych i niebanalnych rozwiązań.
-          </p>
-        </div>
-      </div>
+        
+          <div className={style("description")}>
+            {isMobile? <div className={style("imgWrapper")}><img className={style("picture")} src={img2} alt="" /></div> : null }
+            <h2 className={style("text1")}>
+              Cześć, nazywam się <strong>Karolina Chorzępa.</strong><br />
+              Jestem Waszym wedding plannerem.
+            </h2>
 
+            <h3 className={style("text2")}>
+              Kreuję rozwiązania na miarę Waszych potrzeb estetycznych i
+              organizacyjnych. <br/>
+              <strong>Wspieram w decyzjach, procesach, emocjach.</strong>
+            </h3>
 
-{/* 
+            <p className={style("text3")}>
+              Doskonale zdaję sobie sprawę z tego, jak czasochłonnym i
+              emocjonalnym zarazem, jest proces organizacji ślubu i wesela. Z
+              tego zrozumienia oraz z pasji do rozwiązań na miarę moich ślubnych
+              bohaterów – powstała właśnie marka KC Wedding. <strong>Moim priorytetem jest zapewnić Wam niczym niezakłócany spokój przygotowań oraz
+              celebrowania uroczystości ślubnej.</strong>
+              
+            </p>
+            <p className={style("text4")}>
+              Na co dzień staram się być dla Was najlepszą organizacyjną
+              przyjaciółką. Zawsze możecie na mnie liczyć, zwrócić właśnie na
+              mnie swoje spojrzenia i przelać wszelkie wątpliwości. <strong>Służę nie
+              tylko dobrą radą, również inspiracją i doświadczeniem.</strong> Zapewniam
+              Wam wsparcie w takim stopniu i formie, jakiego potrzebujecie – by
+              czuć się troskliwie zaopiekowani w całym procesie przedślubnych
+              powinności.
+            </p>
+            <Link
+          to="/about"
+          className={style("more")}
+        >
+           More...
+        </Link>
+            <p className={style("text5")}>
+              KC Wedding powstało z uwielbienia do naturalnych i niebanalnych
+              rozwiązań.
+            </p>
+
+            <p className={style("text6")}>Rozgośćcie się i wykreujmy razem coś pięknego!</p>
           </div>
-          </div>
-          </Parallax> */}
-    
+          
+          {isMobile? null:<div className={style("imgWrapper")}><img className={style("picture")} src={img2} alt="" /></div>}
+        </div>
+
     </section>
   );
 }
+export default AboutMe;

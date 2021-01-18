@@ -1,15 +1,11 @@
 .contact {
   height: 100vh;
   position: relative;
-  // background-image: url("../../assets/pexels-miguel-á-padriñán-19670.jpg");
-  // background-position: center; /* Center the image */
-  // background-repeat: no-repeat; /* Do not repeat the image */
-  // background-size: cover; /* Resize the background image to cover the entire container */
-  background-color: rgb(250, 245, 250);
-  // &__img{
-  //   height: 100vh;
-  // }
-
+  background-image: url("../../assets/pexels-miguel-á-padriñán-19670.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-color: #fafafa;
   &__ImgWrapper {
     position: relative;
     width: 50%;
@@ -41,14 +37,14 @@
     }
   }
   &__title {
-    color: #FF9A80;
+    color: #3c6960;
     margin-top: 20px;
     font-size: 2.5rem;
     text-shadow: 1px 1px black;
   }
 
   &__description {
-    color: #FF9A80;
+    color: #51b4a0;
     text-shadow: 1px 1px black;
     padding: 20px;
     font-size: 1.1rem;
@@ -77,7 +73,7 @@
   }
 
   &__subBtn {
-    background-color: #FF9A80;
+    background-color: #3c6960;
     border: none;
     width: 80%;
     padding: 20px;
@@ -88,7 +84,7 @@
     font-size: 1.1rem;
     font-weight: 700;
     &:hover {
-      background-color: #af523b;
+      background-color: #244942;
     }
   }
   
@@ -104,11 +100,11 @@
     flex-direction: column;
     text-align: center;
     padding: 35px;
-    background-color:rgba(255, 154, 128, 0.5)
+    background-color: rgba(81, 180, 160, 0.5);
   }
   &__icon{
     width: 100%;
-    color: #ff7b5b;
+    color: #062922;
     font-size: 2.3rem;
     text-decoration: none;
     padding: 20px;
@@ -140,5 +136,3 @@
     padding: 0;
   }
 }
-
-//   background-color: #3c6960;

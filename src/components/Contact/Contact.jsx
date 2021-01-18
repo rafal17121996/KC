@@ -10,9 +10,8 @@ import { StoreContext } from "../../store/StoreProvider";
 
 const style = bemCssModules(ContactStyles);
 
-function Contact() {
+const Contact=()=> {
   let today = new Date().toISOString().substr(0, 10);
-
   const { isMobile } = useContext(StoreContext);
   const [state, setState] = useState({
     name: "",
@@ -63,7 +62,7 @@ function Contact() {
 
   return (
     <section id="contact" className={style()}>
-            <div className={style("ImgWrapper")}>
+      {isMobile?null:    <div className={style("ImgWrapper")}>
               <div className={style("iconWrapper")}>
                 <a
                   className={style("icon")}
@@ -86,8 +85,8 @@ function Contact() {
               </div>
 
               <img src={img} alt="" className={style("image")} />
-            </div>
-
+            </div>}
+        
             <div className={style("inlineStyle")}>
               <div>
                 <h1 className={style("title")}>Napisz do mnie wiadomość!</h1>
