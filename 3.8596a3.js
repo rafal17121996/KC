@@ -157,16 +157,16 @@ exports.default = bem;
 
 /***/ }),
 
-/***/ 62:
+/***/ 61:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.EmailJSResponseStatus = exports.sendForm = exports.send = exports.init = void 0;
-var EmailJSResponseStatus_1 = __webpack_require__(63);
+var EmailJSResponseStatus_1 = __webpack_require__(62);
 Object.defineProperty(exports, "EmailJSResponseStatus", { enumerable: true, get: function () { return EmailJSResponseStatus_1.EmailJSResponseStatus; } });
-var UI_1 = __webpack_require__(64);
+var UI_1 = __webpack_require__(63);
 var _userID = null;
 var _origin = 'https://api.emailjs.com';
 function sendPost(url, data, headers) {
@@ -277,7 +277,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 63:
+/***/ 62:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -296,7 +296,7 @@ exports.EmailJSResponseStatus = EmailJSResponseStatus;
 
 /***/ }),
 
-/***/ 64:
+/***/ 63:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -333,7 +333,7 @@ exports.UI = UI;
 
 /***/ }),
 
-/***/ 65:
+/***/ 64:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -357,17 +357,17 @@ var bem_css_modules = __webpack_require__(28);
 var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
 
 // EXTERNAL MODULE: ./node_modules/emailjs-com/source/index.js
-var source = __webpack_require__(62);
+var source = __webpack_require__(61);
 var source_default = /*#__PURE__*/__webpack_require__.n(source);
 
 // EXTERNAL MODULE: ./src/components/Contact/Contact.module.scss
-var Contact_module = __webpack_require__(65);
+var Contact_module = __webpack_require__(64);
 var Contact_module_default = /*#__PURE__*/__webpack_require__.n(Contact_module);
 
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-37.jpg
 /* harmony default export */ var Karolina_KCwedding_37 = (__webpack_require__.p + "cefa5a9f705494fed483172bda5c9ade.jpg");
 // EXTERNAL MODULE: ./src/store/StoreProvider.jsx
-var StoreProvider = __webpack_require__(13);
+var StoreProvider = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./src/components/Contact/Contact.jsx
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }

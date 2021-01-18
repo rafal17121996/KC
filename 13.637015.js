@@ -28,7 +28,6 @@ var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules
 
 // EXTERNAL MODULE: ./node_modules/typewriter-effect/dist/react.js
 var dist_react = __webpack_require__(55);
-var dist_react_default = /*#__PURE__*/__webpack_require__.n(dist_react);
 
 // EXTERNAL MODULE: ./src/components/Home/Home.module.scss
 var Home_module = __webpack_require__(56);
@@ -41,9 +40,6 @@ var lib = __webpack_require__(30);
 
 // EXTERNAL MODULE: ./node_modules/react-div-100vh/dist/esm/index.js
 var esm = __webpack_require__(57);
-
-// EXTERNAL MODULE: ./node_modules/react-spring/renderprops.js
-var renderprops = __webpack_require__(58);
 
 // CONCATENATED MODULE: ./src/components/Home/Home.jsx
 
@@ -73,33 +69,13 @@ function Home() {
     style: {
       height: height
     }
-  }, /*#__PURE__*/react_default.a.createElement(dist_react_default.a, {
-    options: {
-      wrapperClassName: style("text")
-    },
-    onInit: typewriter => {
-      typewriter.typeString("KAROLINA CHORZĘPA").callFunction(() => {
-        console.log("String typed out!");
-      }).callFunction(() => {
-        setText("KC WEDDING");
-        setDescription("Kreuję rozwiązania na miarę Waszych potrzeb estetycznych i organizacyjnych. Wspieram w decyzjach, procesach, emocjach.");
-      }).start();
-    }
-  }), text ? /*#__PURE__*/react_default.a.createElement(renderprops["Spring"], {
-    from: {
-      opacity: 0
-    },
-    to: {
-      opacity: 1
-    }
-  }, props => /*#__PURE__*/react_default.a.createElement("div", {
-    style: props,
-    className: style("text2")
-  }, /*#__PURE__*/react_default.a.createElement("h2", {
-    className: style("text2")
-  }, text), /*#__PURE__*/react_default.a.createElement("h2", {
+  }, /*#__PURE__*/react_default.a.createElement("h1", {
+    className: style("text")
+  }, "KAROLINA CHORZ\u0118PA", /*#__PURE__*/react_default.a.createElement("br", null), "WEDDING PLANNER"), description ? /*#__PURE__*/react_default.a.createElement("h2", {
     className: style("description")
-  }, description))) : null))));
+  }) : null, text ? /*#__PURE__*/react_default.a.createElement("h2", {
+    className: style("text2")
+  }, text) : null))));
 }
 
 /***/ })
