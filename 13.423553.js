@@ -8,7 +8,7 @@ module.exports = {"homeWrapper":"homeWrapper","homeWrapper__text":"homeWrapper__
 
 /***/ }),
 
-/***/ 81:
+/***/ 75:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35,14 +35,16 @@ var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 
 // CONCATENATED MODULE: ./src/assets/back1 (2)-1.jpg
 /* harmony default export */ var back1_2_1 = (__webpack_require__.p + "e83752ba4f45e1526294028c26a92383.jpg");
+// CONCATENATED MODULE: ./src/assets/imgMobile.jpg
+/* harmony default export */ var imgMobile = (__webpack_require__.p + "d2a7ab290a7542c6d0a53779ea1e256c.jpg");
 // EXTERNAL MODULE: ./node_modules/react-parallax/lib/index.js
 var lib = __webpack_require__(30);
 
 // EXTERNAL MODULE: ./node_modules/react-div-100vh/dist/esm/index.js
-var esm = __webpack_require__(62);
+var esm = __webpack_require__(40);
 
-// EXTERNAL MODULE: ./node_modules/react-reveal/Fade.js
-var Fade = __webpack_require__(63);
+// EXTERNAL MODULE: ./src/store/StoreProvider.jsx
+var StoreProvider = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./src/components/Home/Home.jsx
 
@@ -57,6 +59,9 @@ var Fade = __webpack_require__(63);
 var style = bem_css_modules_default()(Home_module_default.a);
 function Home() {
   var height = Object(esm["b" /* use100vh */])();
+  var {
+    isMobile
+  } = Object(react["useContext"])(StoreProvider["a" /* StoreContext */]);
   return /*#__PURE__*/react_default.a.createElement("section", {
     id: "home",
     className: style()
@@ -65,8 +70,8 @@ function Home() {
       min: -5,
       max: 5
     },
-    bgImage: back1_2_1,
-    strength: 400
+    bgImage: isMobile ? imgMobile : back1_2_1,
+    strength: 500
   }, /*#__PURE__*/react_default.a.createElement("div", {
     style: {
       height: height
@@ -75,7 +80,9 @@ function Home() {
     className: style("text")
   }, "KAROLINA CHORZ\u0118PA", /*#__PURE__*/react_default.a.createElement("br", null), "WEDDING PLANNER"), /*#__PURE__*/react_default.a.createElement("h2", {
     className: style("text2")
-  }, "KC WEDDING")))));
+  }, "KC WEDDING"), isMobile ? /*#__PURE__*/react_default.a.createElement("h2", {
+    className: style("description")
+  }, "Kreuj\u0119 rozwi\u0105zania na miar\u0119 Waszych potrzeb estetycznych i organizacyjnych. Wspieram w decyzjach, procesach, emocjach.") : null))));
 }
 
 /***/ })

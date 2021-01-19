@@ -158,6 +158,91 @@ exports.default = bem;
 /***/ }),
 
 /***/ 40:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Div100vh; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return use100vh; });
+/* unused harmony export measureHeight */
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __rest = (undefined && undefined.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+
+var warned = false;
+function Div100vh(_a) {
+    var _b = _a.style, style = _b === void 0 ? {} : _b, other = __rest(_a, ["style"]);
+    var height = use100vh();
+    // TODO: warn only in development
+    if (!warned && style.height) {
+        warned = true;
+        console.warn('<ReactDiv100vh /> overrides the height property of the style prop');
+    }
+    var styleWithRealHeight = __assign(__assign({}, style), { height: height ? height + "px" : '100vh' });
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", __assign({ style: styleWithRealHeight }, other));
+}
+function use100vh() {
+    var _a = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(measureHeight), height = _a[0], setHeight = _a[1];
+    var wasRenderedOnClientAtLeastOnce = useWasRenderedOnClientAtLeastOnce();
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+        if (!wasRenderedOnClientAtLeastOnce)
+            return;
+        function setMeasuredHeight() {
+            var measuredHeight = measureHeight();
+            setHeight(measuredHeight);
+        }
+        window.addEventListener('resize', setMeasuredHeight);
+        return function () { return window.removeEventListener('resize', setMeasuredHeight); };
+    }, [wasRenderedOnClientAtLeastOnce]);
+    return wasRenderedOnClientAtLeastOnce ? height : null;
+}
+function measureHeight() {
+    var _a;
+    if (!isClient())
+        return null;
+    return ((_a = document.documentElement) === null || _a === void 0 ? void 0 : _a.clientHeight) || window.innerHeight;
+}
+// Once we ended up on client, the first render must look the same as on
+// the server so hydration happens without problems. _Then_ we immediately
+// schedule a subsequent update and return the height measured on the client.
+// It's not needed for CSR-only apps, but is critical for SSR.
+function useWasRenderedOnClientAtLeastOnce() {
+    var _a = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false), wasRenderedOnClientAtLeastOnce = _a[0], setWasRenderedOnClientAtLeastOnce = _a[1];
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+        if (isClient()) {
+            setWasRenderedOnClientAtLeastOnce(true);
+        }
+    }, []);
+    return wasRenderedOnClientAtLeastOnce;
+}
+function isClient() {
+    return typeof window !== 'undefined' && typeof document !== 'undefined';
+}
+
+
+/***/ }),
+
+/***/ 41:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -165,13 +250,13 @@ module.exports = {"cards":"cards","cards__popup":"cards__popup","cards__one":"ca
 
 /***/ }),
 
-/***/ 41:
+/***/ 42:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(43);
 /* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_1__);
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -349,14 +434,14 @@ var InstagramEmbed = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 42:
+/***/ 43:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var strictUriEncode = __webpack_require__(43);
+var strictUriEncode = __webpack_require__(44);
 var objectAssign = __webpack_require__(13);
-var decodeComponent = __webpack_require__(44);
+var decodeComponent = __webpack_require__(45);
 
 function encoderForArrayFormat(opts) {
 	switch (opts.arrayFormat) {
@@ -581,7 +666,7 @@ exports.parseUrl = function (str, opts) {
 
 /***/ }),
 
-/***/ 43:
+/***/ 44:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -595,7 +680,7 @@ module.exports = function (str) {
 
 /***/ }),
 
-/***/ 44:
+/***/ 45:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -697,7 +782,7 @@ module.exports = function (encodedURI) {
 
 /***/ }),
 
-/***/ 79:
+/***/ 74:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -713,14 +798,22 @@ var bem_css_modules = __webpack_require__(28);
 var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
 
 // EXTERNAL MODULE: ./src/components/Offer/Offer.module.scss
-var Offer_module = __webpack_require__(40);
+var Offer_module = __webpack_require__(41);
 var Offer_module_default = /*#__PURE__*/__webpack_require__.n(Offer_module);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
 var react_dom = __webpack_require__(14);
 var react_dom_default = /*#__PURE__*/__webpack_require__.n(react_dom);
 
+// EXTERNAL MODULE: ./src/store/StoreProvider.jsx
+var StoreProvider = __webpack_require__(12);
+
+// EXTERNAL MODULE: ./node_modules/react-div-100vh/dist/esm/index.js
+var esm = __webpack_require__(40);
+
 // CONCATENATED MODULE: ./src/components/Offer/subComponent/Popup.jsx
+
+
 
 
 
@@ -735,6 +828,9 @@ function Modal(_ref) {
     onClose
   } = _ref;
   if (!open) return null;
+  var {
+    isMobile
+  } = Object(react["useContext"])(StoreProvider["a" /* StoreContext */]);
   var escFunction = Object(react["useCallback"])(event => {
     if (event.keyCode === 27) {
       onClose();
@@ -753,7 +849,7 @@ function Modal(_ref) {
   }, /*#__PURE__*/react_default.a.createElement("div", {
     className: style("border")
   }, /*#__PURE__*/react_default.a.createElement("div", {
-    className: style('imgWrapper')
+    className: style("imgWrapper")
   }, /*#__PURE__*/react_default.a.createElement("img", {
     src: img,
     alt: ""
@@ -762,15 +858,15 @@ function Modal(_ref) {
     onClick: onClose
   }, /*#__PURE__*/react_default.a.createElement("i", {
     className: "fas fa-times"
-  })), /*#__PURE__*/react_default.a.createElement("div", {
+  })), isMobile ? null : /*#__PURE__*/react_default.a.createElement("div", {
     className: style("one")
   }), /*#__PURE__*/react_default.a.createElement("div", {
     className: style("two")
   }, /*#__PURE__*/react_default.a.createElement("h1", {
-    className: style('titlePop')
+    className: style("titlePop")
   }, title), /*#__PURE__*/react_default.a.createElement("p", {
-    className: style('textPop')
-  }, text), " "))), document.getElementById("portal"));
+    className: style("textPop")
+  }, text)))), document.getElementById("portal"));
 }
 // CONCATENATED MODULE: ./src/components/Offer/subComponent/CardItem.jsx
 
@@ -823,7 +919,7 @@ function CardItem(props) {
 // CONCATENATED MODULE: ./src/assets/offer6.jpg
 /* harmony default export */ var offer6 = (__webpack_require__.p + "2911274b52ef12ffd6410b3965e31a4e.jpg");
 // EXTERNAL MODULE: ./node_modules/react-instagram-embed/es/index.js
-var es = __webpack_require__(41);
+var es = __webpack_require__(42);
 
 // CONCATENATED MODULE: ./src/components/Offer/Offer.jsx
 
