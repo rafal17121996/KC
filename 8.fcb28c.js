@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[6],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[8],{
 
 /***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
@@ -348,7 +348,7 @@ NavHashLink.propTypes = propTypes;
 
 /***/ }),
 
-/***/ 60:
+/***/ 68:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -356,7 +356,7 @@ module.exports = {"FAQMoreWrapper":"FAQMoreWrapper","FAQMoreWrapper__img":"FAQMo
 
 /***/ }),
 
-/***/ 75:
+/***/ 83:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -375,7 +375,7 @@ var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules
 var lib = __webpack_require__(29);
 
 // EXTERNAL MODULE: ./src/components/FAQ/FAQMore.module.scss
-var FAQMore_module = __webpack_require__(60);
+var FAQMore_module = __webpack_require__(68);
 var FAQMore_module_default = /*#__PURE__*/__webpack_require__.n(FAQMore_module);
 
 // CONCATENATED MODULE: ./src/assets/faq2.jpg
@@ -386,7 +386,7 @@ var react_parallax_lib = __webpack_require__(30);
 // CONCATENATED MODULE: ./src/components/FAQ/FAQMore.jsx
 
 
-var Item = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 0).then(__webpack_require__.bind(null, 44)));
+var Item = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 0).then(__webpack_require__.bind(null, 49)));
 
 
 

@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[9],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[11],{
 
 /***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
@@ -157,7 +157,7 @@ exports.default = bem;
 
 /***/ }),
 
-/***/ 58:
+/***/ 66:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -165,7 +165,7 @@ module.exports = {"AboutMeWrapper":"AboutMeWrapper","AboutMeWrapper__title":"Abo
 
 /***/ }),
 
-/***/ 74:
+/***/ 82:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -181,7 +181,7 @@ var bem_css_modules = __webpack_require__(28);
 var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
 
 // EXTERNAL MODULE: ./src/components/AboutMe/AboutMe.module.scss
-var AboutMe_module = __webpack_require__(58);
+var AboutMe_module = __webpack_require__(66);
 var AboutMe_module_default = /*#__PURE__*/__webpack_require__.n(AboutMe_module);
 
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-25.jpg

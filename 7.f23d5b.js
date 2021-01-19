@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[5],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[7],{
 
 /***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
@@ -348,7 +348,7 @@ NavHashLink.propTypes = propTypes;
 
 /***/ }),
 
-/***/ 59:
+/***/ 67:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -356,7 +356,7 @@ module.exports = {"AboutMeMoreWrapper":"AboutMeMoreWrapper","AboutMeMoreWrapper_
 
 /***/ }),
 
-/***/ 72:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -375,11 +375,11 @@ var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules
 var lib = __webpack_require__(29);
 
 // EXTERNAL MODULE: ./src/components/AboutMe/AboutMeMore.module.scss
-var AboutMeMore_module = __webpack_require__(59);
+var AboutMeMore_module = __webpack_require__(67);
 var AboutMeMore_module_default = /*#__PURE__*/__webpack_require__.n(AboutMeMore_module);
 
-// CONCATENATED MODULE: ./src/assets/back1 (3).jpg
-/* harmony default export */ var back1_3_ = (__webpack_require__.p + "22dcb287488823ead5c9c935ea41f9a8.jpg");
+// CONCATENATED MODULE: ./src/assets/back1 (4).jpg
+/* harmony default export */ var back1_4_ = (__webpack_require__.p + "f0b4bb7dbaed16dbd590d0055d34e005.jpg");
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-53-1.jpg
 /* harmony default export */ var Karolina_KCwedding_53_1 = (__webpack_require__.p + "b5251b133e0f87dda0bc9ac6d30168ce.jpg");
 // EXTERNAL MODULE: ./node_modules/react-parallax/lib/index.js
@@ -388,7 +388,7 @@ var react_parallax_lib = __webpack_require__(30);
 // CONCATENATED MODULE: ./src/components/AboutMe/AboutMeMore.jsx
 
 
-var Item = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 0).then(__webpack_require__.bind(null, 44)));
+var Item = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 0).then(__webpack_require__.bind(null, 49)));
 
  // import img from "../../assets/faq2.jpg";
 
@@ -411,8 +411,8 @@ function AboutMeMore() {
     id: "faq",
     className: style()
   }, /*#__PURE__*/react_default.a.createElement(react_parallax_lib["Parallax"], {
-    bgImage: back1_3_,
-    strength: 600
+    bgImage: back1_4_,
+    strength: 100
   }, /*#__PURE__*/react_default.a.createElement("div", {
     className: style("img")
   }, /*#__PURE__*/react_default.a.createElement("div", {
@@ -421,13 +421,11 @@ function AboutMeMore() {
     className: style("faqTitle")
   }, "Kto stoi za KC Wedding?"), /*#__PURE__*/react_default.a.createElement("h1", {
     className: style("title")
-  }, "Cze\u015B\u0107! Nazywam si\u0119 Karolina Chorz\u0119pa i witam Was serdecznie w moich internetowych zorganizowanych progach, jak na dobrego gospodarza przysta\u0142o. Chocia\u017C zdecydowanie bardziej wol\u0119 okre\u015Blenie:", /*#__PURE__*/react_default.a.createElement("strong", null, "jak na dobr\u0105 przyjaci\xF3\u0142k\u0119 przysta\u0142o."), "  Bo w\u0142a\u015Bnie tak najcz\u0119\u015Bciej si\u0119 czuj\u0119, kiedy to Wy zapraszacie mnie do swojej historii. Jedynej w swoim rodzaju. W Waszym stylu."), /*#__PURE__*/react_default.a.createElement("h3", {
-    className: style("description")
-  }, "Jestem absolwentk\u0105 Akademii Wychowania Fizycznego w Poznaniu oraz w Warszawie. Zaskakuj\u0105cy pocz\u0105tek drogi konsultantki \u015Blubnej, prawda? Turystyka i rekreacja to nie tylko moje wykszta\u0142cenie kierunkowe,", /*#__PURE__*/react_default.a.createElement("strong", null, " sto r\xF3wnie\u017C inspiruj\u0105cy pocz\u0105tek historii KC Wedding."), " Na studiach pojawi\u0142 si\u0119 przedmiot organizacji imprez, r\xF3wnolegle w moim \u017Cyciu osobistym wydarzy\u0107 si\u0119 mia\u0142y za\u015Blubiny bliskiej kuzynki. Wsparcie w tej organizacji \u2013 da\u0142o mi jasny sygna\u0142 do dalszych dzia\u0142a\u0144.")))), /*#__PURE__*/react_default.a.createElement("div", {
+  }, "Cze\u015B\u0107! Nazywam si\u0119 Karolina Chorz\u0119pa i witam Was serdecznie w moich internetowych zorganizowanych progach, jak na dobrego gospodarza przysta\u0142o. Chocia\u017C zdecydowanie bardziej wol\u0119 okre\u015Blenie:", /*#__PURE__*/react_default.a.createElement("strong", null, " jak na dobr\u0105 przyjaci\xF3\u0142k\u0119 przysta\u0142o."), "  Bo w\u0142a\u015Bnie tak najcz\u0119\u015Bciej si\u0119 czuj\u0119, kiedy to Wy zapraszacie mnie do swojej historii. Jedynej w swoim rodzaju. W Waszym stylu.")))), /*#__PURE__*/react_default.a.createElement("div", {
     className: style("bottom")
   }, /*#__PURE__*/react_default.a.createElement("h3", {
     className: style("text")
-  }, "Kurs na wedding plannera w Akademii Wytw\xF3rni \u015Alub\xF3w Agnieszki Kudeli, oficjalnie przypiecz\u0119towa\u0142 decyzj\u0119 o dok\u0142adnie takiej drodze zawodowej. W mi\u0119dzyczasie kompleksowa organizacja w\u0142asnej uroczysto\u015Bci \u2013 udowodni\u0142a mi dodatkowo, \u017Ce jestem do tego stworzona. ", /*#__PURE__*/react_default.a.createElement("strong", null, "Dobry plan, doskona\u0142a realizacja, namacalne efekty"), ". Czyli wszystko to, co stanowi podstaw\u0119 w codziennej pracy konsultantki \u015Blubnej. ", /*#__PURE__*/react_default.a.createElement("br", null), "Prywatnie uwielbiam taniec, swego czasu zajmowa\u0142am si\u0119 tym profesjonalnie. Kontuzja jednak nie pozwoli\u0142a na kontynuacj\u0119. ", /*#__PURE__*/react_default.a.createElement("strong", null, "Uwielbiam te\u017C prac\u0119 z dzie\u0107mi i mam w niej sporo do\u015Bwiadczenia, dzi\u0119ki czemu z entuzjazmem podchodz\u0119 do ma\u0142ych go\u015Bci weselnych"), " . Co jeszcze? Nad wyraz ceni\u0119 sobie polskie morze, st\u0105d te\u017C \u015Bluby na pla\u017Cy w ofercie KC Wedding.", /*#__PURE__*/react_default.a.createElement("br", null), "Mog\u0142abym opowiada\u0107 o sobie wci\u0105\u017C i wci\u0105\u017C, jestem jednak zdecydowanie lepszym s\u0142uchaczem. ", /*#__PURE__*/react_default.a.createElement("strong", null, "Z przyjemno\u015Bci\u0105 o Was pos\u0142ucham. Przy kawie lub przy herbacie \u2013 jak wolicie?"), " ", /*#__PURE__*/react_default.a.createElement("br", null), "KC Wedding powsta\u0142o z uwielbienia do naturalnych i niebanalnych rozwi\u0105za\u0144."), /*#__PURE__*/react_default.a.createElement("img", {
+  }, "Kurs na wedding plannera w Akademii Wytw\xF3rni \u015Alub\xF3w Agnieszki Kudeli, oficjalnie przypiecz\u0119towa\u0142 decyzj\u0119 o dok\u0142adnie takiej drodze zawodowej. W mi\u0119dzyczasie kompleksowa organizacja w\u0142asnej uroczysto\u015Bci \u2013 udowodni\u0142a mi dodatkowo, \u017Ce jestem do tego stworzona. ", /*#__PURE__*/react_default.a.createElement("strong", null, "Dobry plan, doskona\u0142a realizacja, namacalne efekty"), ". Czyli wszystko to, co stanowi podstaw\u0119 w codziennej pracy konsultantki \u015Blubnej. ", /*#__PURE__*/react_default.a.createElement("br", null), " ", /*#__PURE__*/react_default.a.createElement("br", null), "Prywatnie uwielbiam taniec, swego czasu zajmowa\u0142am si\u0119 tym profesjonalnie. Kontuzja jednak nie pozwoli\u0142a na kontynuacj\u0119. ", /*#__PURE__*/react_default.a.createElement("strong", null, "Uwielbiam te\u017C prac\u0119 z dzie\u0107mi i mam w niej sporo do\u015Bwiadczenia, dzi\u0119ki czemu z entuzjazmem podchodz\u0119 do ma\u0142ych go\u015Bci weselnych"), " . Co jeszcze? Nad wyraz ceni\u0119 sobie polskie morze, st\u0105d te\u017C \u015Bluby na pla\u017Cy w ofercie KC Wedding.", /*#__PURE__*/react_default.a.createElement("br", null), " ", /*#__PURE__*/react_default.a.createElement("br", null), "Mog\u0142abym opowiada\u0107 o sobie wci\u0105\u017C i wci\u0105\u017C, jestem jednak zdecydowanie lepszym s\u0142uchaczem. ", /*#__PURE__*/react_default.a.createElement("strong", null, "Z przyjemno\u015Bci\u0105 o Was pos\u0142ucham. Przy kawie lub przy herbacie \u2013 jak wolicie?"), " ", /*#__PURE__*/react_default.a.createElement("br", null), " ", /*#__PURE__*/react_default.a.createElement("br", null), "KC Wedding powsta\u0142o z uwielbienia do naturalnych i niebanalnych rozwi\u0105za\u0144."), /*#__PURE__*/react_default.a.createElement("img", {
     className: style("picture"),
     src: Karolina_KCwedding_53_1,
     alt: ""
