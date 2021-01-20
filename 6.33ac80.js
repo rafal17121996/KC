@@ -352,7 +352,7 @@ NavHashLink.propTypes = propTypes;
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"AboutMeMoreWrapper":"AboutMeMoreWrapper","AboutMeMoreWrapper__img":"AboutMeMoreWrapper__img","AboutMeMoreWrapper__inlineStyle":"AboutMeMoreWrapper__inlineStyle","AboutMeMoreWrapper__faqTitle":"AboutMeMoreWrapper__faqTitle","AboutMeMoreWrapper__title":"AboutMeMoreWrapper__title","AboutMeMoreWrapper__description":"AboutMeMoreWrapper__description","AboutMeMoreWrapper__bottom":"AboutMeMoreWrapper__bottom","AboutMeMoreWrapper__text":"AboutMeMoreWrapper__text","AboutMeMoreWrapper__textEnd":"AboutMeMoreWrapper__textEnd","AboutMeMoreWrapper__text2":"AboutMeMoreWrapper__text2","AboutMeMoreWrapper__picture":"AboutMeMoreWrapper__picture","AboutMeMoreWrapper__contact":"AboutMeMoreWrapper__contact"};
+module.exports = {"AboutMeMoreWrapper":"AboutMeMoreWrapper","AboutMeMoreWrapper__img":"AboutMeMoreWrapper__img","AboutMeMoreWrapper__inlineStyle":"AboutMeMoreWrapper__inlineStyle","AboutMeMoreWrapper__faqTitle":"AboutMeMoreWrapper__faqTitle","AboutMeMoreWrapper__title":"AboutMeMoreWrapper__title","AboutMeMoreWrapper__bottom":"AboutMeMoreWrapper__bottom","AboutMeMoreWrapper__text":"AboutMeMoreWrapper__text","AboutMeMoreWrapper__textEnd":"AboutMeMoreWrapper__textEnd","AboutMeMoreWrapper__text2":"AboutMeMoreWrapper__text2","AboutMeMoreWrapper__picture":"AboutMeMoreWrapper__picture","AboutMeMoreWrapper__contact":"AboutMeMoreWrapper__contact"};
 
 /***/ }),
 

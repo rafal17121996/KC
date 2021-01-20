@@ -352,7 +352,7 @@ NavHashLink.propTypes = propTypes;
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"FAQMoreWrapper":"FAQMoreWrapper","FAQMoreWrapper__img":"FAQMoreWrapper__img","FAQMoreWrapper__inlineStyle":"FAQMoreWrapper__inlineStyle","FAQMoreWrapper__title":"FAQMoreWrapper__title","FAQMoreWrapper__description":"FAQMoreWrapper__description","FAQMoreWrapper__x":"FAQMoreWrapper__x","FAQMoreWrapper__faqTitle":"FAQMoreWrapper__faqTitle","FAQMoreWrapper__faqs":"FAQMoreWrapper__faqs","FAQMoreWrapper__faq":"FAQMoreWrapper__faq","FAQMoreWrapper__faqopen":"FAQMoreWrapper__faqopen","FAQMoreWrapper__question":"FAQMoreWrapper__question","FAQMoreWrapper__answer":"FAQMoreWrapper__answer","FAQMoreWrapper__end":"FAQMoreWrapper__end","FAQMoreWrapper__contact":"FAQMoreWrapper__contact"};
+module.exports = {"FAQMoreWrapper":"FAQMoreWrapper","FAQMoreWrapper__img":"FAQMoreWrapper__img","FAQMoreWrapper__inlineStyle":"FAQMoreWrapper__inlineStyle","FAQMoreWrapper__faqTitle":"FAQMoreWrapper__faqTitle","FAQMoreWrapper__textWrapper":"FAQMoreWrapper__textWrapper","FAQMoreWrapper__title":"FAQMoreWrapper__title","FAQMoreWrapper__description":"FAQMoreWrapper__description","FAQMoreWrapper__x":"FAQMoreWrapper__x","FAQMoreWrapper__faqs":"FAQMoreWrapper__faqs","FAQMoreWrapper__faq":"FAQMoreWrapper__faq","FAQMoreWrapper__faqopen":"FAQMoreWrapper__faqopen","FAQMoreWrapper__question":"FAQMoreWrapper__question","FAQMoreWrapper__answer":"FAQMoreWrapper__answer","FAQMoreWrapper__end":"FAQMoreWrapper__end","FAQMoreWrapper__contact":"FAQMoreWrapper__contact"};
 
 /***/ }),
 
@@ -472,11 +472,13 @@ function FAQ() {
     className: style("inlineStyle")
   }, /*#__PURE__*/react_default.a.createElement("h1", {
     className: style("faqTitle")
-  }, "ABC PRZYSZ\u0141YCH NOWO\u017BE\u0143C\xD3W"), /*#__PURE__*/react_default.a.createElement("h1", {
+  }, "ABC PRZYSZ\u0141YCH NOWO\u017BE\u0143C\xD3W"), /*#__PURE__*/react_default.a.createElement("div", {
+    className: style("textWrapper")
+  }, /*#__PURE__*/react_default.a.createElement("h1", {
     className: style("title")
   }, "Co powinni\u015Bcie wiedzie\u0107 na dobry pocz\u0105tek wsp\xF3\u0142pracy z KC Wedding?"), isMobile ? null : /*#__PURE__*/react_default.a.createElement("h3", {
     className: style("description")
-  }, "Organizacja \u015Blubu i wesela to ogromna ilo\u015B\u0107 r\xF3\u017Cnych pyta\u0144 i w\u0105tpliwo\u015Bci. Zdecydowanie \u0142atwiej jest przez to przej\u015B\u0107, gdy mamy wsparcie w postaci do\u015Bwiadczenia i merytorycznej wiedzy specjalisty. Takim z ca\u0142\u0105 pewno\u015Bci\u0105 jest w\u0142a\u015Bnie konsultant \u015Blubny. I tutaj r\xF3wnie\u017C nasuwa si\u0119 wiele pyta\u0144. Funkcja konsultanta \u015Blubnego jest wci\u0105\u017C nie do ko\u0144ca oczywista dla wielu os\xF3b.")))), isMobile ? /*#__PURE__*/react_default.a.createElement("h3", {
+  }, "Organizacja \u015Blubu i wesela to ogromna ilo\u015B\u0107 r\xF3\u017Cnych pyta\u0144 i w\u0105tpliwo\u015Bci. Zdecydowanie \u0142atwiej jest przez to przej\u015B\u0107, gdy mamy wsparcie w postaci do\u015Bwiadczenia i merytorycznej wiedzy specjalisty. Takim z ca\u0142\u0105 pewno\u015Bci\u0105 jest w\u0142a\u015Bnie konsultant \u015Blubny. I tutaj r\xF3wnie\u017C nasuwa si\u0119 wiele pyta\u0144. Funkcja konsultanta \u015Blubnego jest wci\u0105\u017C nie do ko\u0144ca oczywista dla wielu os\xF3b."))))), isMobile ? /*#__PURE__*/react_default.a.createElement("h3", {
     className: style("x")
   }, "Organizacja \u015Blubu i wesela to ogromna ilo\u015B\u0107 r\xF3\u017Cnych pyta\u0144 i w\u0105tpliwo\u015Bci. Zdecydowanie \u0142atwiej jest przez to przej\u015B\u0107, gdy mamy wsparcie w postaci do\u015Bwiadczenia i merytorycznej wiedzy specjalisty. Takim z ca\u0142\u0105 pewno\u015Bci\u0105 jest w\u0142a\u015Bnie konsultant \u015Blubny. I tutaj r\xF3wnie\u017C nasuwa si\u0119 wiele pyta\u0144. Funkcja konsultanta \u015Blubnego jest wci\u0105\u017C nie do ko\u0144ca oczywista dla wielu os\xF3b.") : null, /*#__PURE__*/react_default.a.createElement("h3", {
     className: style("x")
