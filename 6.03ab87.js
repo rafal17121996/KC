@@ -442,8 +442,7 @@ function AboutMeMore() {
   }, "KC Wedding powsta\u0142o z uwielbienia do naturalnych i niebanalnych rozwi\u0105za\u0144."), /*#__PURE__*/react_default.a.createElement(lib["HashLink"], {
     smooth: true,
     to: "/#contact",
-    scroll: el => scrollWithOffset(el, 60),
-    className: style("nav-links")
+    scroll: el => scrollWithOffset(el, 60)
   }, /*#__PURE__*/react_default.a.createElement("button", {
     className: style("contact")
   }, "Skontatkuj si\u0119 ze mn\u0105!")));

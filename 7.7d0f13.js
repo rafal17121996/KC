@@ -383,10 +383,14 @@ var FAQMore_module_default = /*#__PURE__*/__webpack_require__.n(FAQMore_module);
 // EXTERNAL MODULE: ./node_modules/react-parallax/lib/index.js
 var react_parallax_lib = __webpack_require__(30);
 
+// EXTERNAL MODULE: ./src/store/StoreProvider.jsx
+var StoreProvider = __webpack_require__(12);
+
 // CONCATENATED MODULE: ./src/components/FAQ/FAQMore.jsx
 
 
 var Item = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 0).then(__webpack_require__.bind(null, 49)));
+
 
 
 
@@ -403,6 +407,9 @@ function FAQ() {
     });
   };
 
+  var {
+    isMobile
+  } = Object(react["useContext"])(StoreProvider["a" /* StoreContext */]);
   var [faqs, setFaqs] = Object(react["useState"])([{
     question: "1. Dla kogo dedykowana jest usługa konsultanta ślubnego?",
     answer: "<strong>W zasadzie: dla każdego. </strong> Nieprawdą jest, że tylko i wyłącznie dla osób zamożnych czy dla tych skrajnie zapracowanych. Konsultant ślubny to <strong>odciążenie i wsparcie dla tych z Was, którzy lubią mieć wszystko pod kontrolą</strong> ale niekoniecznie są zorganizowani. Również dla tych, <strong>którzy potrzebują merytorycznego wsparcia w tworzeniu swoich wizji.</strong/><br/> Konsultant ślubny to rozwiązanie idealne, jeśli lubicie czuć się doskonale przygotowani na każdą sytuację. Taka współpraca ma zapewnić Wam błogi spokój, podczas gdy przedślubny harmonogram pęka w szwach. <strong>Zdejmuję z Was ciężar skrupulatnego planowania i przewidywania, zdającsię na swoje doświadczenie i wiedzę.</strong>",
@@ -437,7 +444,7 @@ function FAQ() {
     open: false
   }, {
     question: "9. Ile kosztuje usługa konsultanta ślubnego?",
-    answer: 'Być może Was rozczaruję: tutaj nie ma miejsca na konkretną cenę. <strong>Każda umowa to projekt szyty na miarę.</strong> Zakres moich obowiązków ustalamy wspólnie – to podstawa naszych dalszych działań. Zazwyczaj nie zdarzają się dwie identyczne umowy, tak samo jak nieczęsto powtarzają się dokładnie te same stawki. <br/>Mogę Was zapewnić z tego miejsca, że finalne wynagrodzenie dla mnie – będzie efektem dokładnych wyliczeń tego, co jest do zrobienia oraz Waszych osobistych oczekiwań w stosunku do mnie. <strong>Gwarantuję rzetelność w ocenie tego, ile czasu i pracy zajmie wspólne działanie na Waszą rzecz.</strong> I najważniejsze: zawsze uważnie Was słucham, finalna oferta to efekt rozmów i zrozumienia zarówno Waszych potrzeb, jak i możliwości. Również finansowych.',
+    answer: "Być może Was rozczaruję: tutaj nie ma miejsca na konkretną cenę. <strong>Każda umowa to projekt szyty na miarę.</strong> Zakres moich obowiązków ustalamy wspólnie – to podstawa naszych dalszych działań. Zazwyczaj nie zdarzają się dwie identyczne umowy, tak samo jak nieczęsto powtarzają się dokładnie te same stawki. <br/>Mogę Was zapewnić z tego miejsca, że finalne wynagrodzenie dla mnie – będzie efektem dokładnych wyliczeń tego, co jest do zrobienia oraz Waszych osobistych oczekiwań w stosunku do mnie. <strong>Gwarantuję rzetelność w ocenie tego, ile czasu i pracy zajmie wspólne działanie na Waszą rzecz.</strong> I najważniejsze: zawsze uważnie Was słucham, finalna oferta to efekt rozmów i zrozumienia zarówno Waszych potrzeb, jak i możliwości. Również finansowych.",
     open: false
   }]);
 
@@ -467,9 +474,11 @@ function FAQ() {
     className: style("faqTitle")
   }, "ABC PRZYSZ\u0141YCH NOWO\u017BE\u0143C\xD3W"), /*#__PURE__*/react_default.a.createElement("h1", {
     className: style("title")
-  }, "Co powinni\u015Bcie wiedzie\u0107 na dobry pocz\u0105tek wsp\xF3\u0142pracy z KC Wedding?"), /*#__PURE__*/react_default.a.createElement("h3", {
+  }, "Co powinni\u015Bcie wiedzie\u0107 na dobry pocz\u0105tek wsp\xF3\u0142pracy z KC Wedding?"), isMobile ? null : /*#__PURE__*/react_default.a.createElement("h3", {
     className: style("description")
-  }, "Organizacja \u015Blubu i wesela to ogromna ilo\u015B\u0107 r\xF3\u017Cnych pyta\u0144 i w\u0105tpliwo\u015Bci. Zdecydowanie \u0142atwiej jest przez to przej\u015B\u0107, gdy mamy wsparcie w postaci do\u015Bwiadczenia i merytorycznej wiedzy specjalisty. Takim z ca\u0142\u0105 pewno\u015Bci\u0105 jest w\u0142a\u015Bnie konsultant \u015Blubny. I tutaj r\xF3wnie\u017C nasuwa si\u0119 wiele pyta\u0144. Funkcja konsultanta \u015Blubnego jest wci\u0105\u017C nie do ko\u0144ca oczywista dla wielu os\xF3b.")))), /*#__PURE__*/react_default.a.createElement("h3", {
+  }, "Organizacja \u015Blubu i wesela to ogromna ilo\u015B\u0107 r\xF3\u017Cnych pyta\u0144 i w\u0105tpliwo\u015Bci. Zdecydowanie \u0142atwiej jest przez to przej\u015B\u0107, gdy mamy wsparcie w postaci do\u015Bwiadczenia i merytorycznej wiedzy specjalisty. Takim z ca\u0142\u0105 pewno\u015Bci\u0105 jest w\u0142a\u015Bnie konsultant \u015Blubny. I tutaj r\xF3wnie\u017C nasuwa si\u0119 wiele pyta\u0144. Funkcja konsultanta \u015Blubnego jest wci\u0105\u017C nie do ko\u0144ca oczywista dla wielu os\xF3b.")))), isMobile ? /*#__PURE__*/react_default.a.createElement("h3", {
+    className: style("x")
+  }, "Organizacja \u015Blubu i wesela to ogromna ilo\u015B\u0107 r\xF3\u017Cnych pyta\u0144 i w\u0105tpliwo\u015Bci. Zdecydowanie \u0142atwiej jest przez to przej\u015B\u0107, gdy mamy wsparcie w postaci do\u015Bwiadczenia i merytorycznej wiedzy specjalisty. Takim z ca\u0142\u0105 pewno\u015Bci\u0105 jest w\u0142a\u015Bnie konsultant \u015Blubny. I tutaj r\xF3wnie\u017C nasuwa si\u0119 wiele pyta\u0144. Funkcja konsultanta \u015Blubnego jest wci\u0105\u017C nie do ko\u0144ca oczywista dla wielu os\xF3b.") : null, /*#__PURE__*/react_default.a.createElement("h3", {
     className: style("x")
   }, "Postanowi\u0142am zebra\u0107 kilka najcz\u0119stszych pyta\u0144, kt\xF3re padaj\u0105 w moim pierwszym kontakcie z przysz\u0142ymi nowo\u017Ce\u0144cami \u2013 i odpowiedzie\u0107 na nie na tyle wyczerpuj\u0105co, \u017Ceby\u015Bcie mieli pe\u0142en obraz sytuacji. Powinno u\u0142atwi\u0107 to Wam decyzj\u0119 o um\xF3wieniu si\u0119 na spotkanie."), /*#__PURE__*/react_default.a.createElement("div", {
     className: style("faqs")
