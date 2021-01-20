@@ -246,7 +246,7 @@ function isClient() {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"cards":"cards","cards__popup":"cards__popup","cards__border":"cards__border","cards__imgWrapper":"cards__imgWrapper","cards__titlePop":"cards__titlePop","cards__textPop":"cards__textPop","cards__close":"cards__close","cards__popup_background":"cards__popup_background","cards__title":"cards__title","cards__container":"cards__container","cards__wrapper":"cards__wrapper","cards__items":"cards__items","cards__item":"cards__item","cards__item__link":"cards__item__link","cards_clas_item__pic-wrap":"cards_clas_item__pic-wrap","cards__item__img":"cards__item__img","cards__item__info":"cards__item__info","cards__item__text":"cards__item__text"};
+module.exports = {"cards":"cards","cards__popup":"cards__popup","cards__two":"cards__two","cards__border":"cards__border","cards__imgWrapper":"cards__imgWrapper","cards__titlePop":"cards__titlePop","cards__textPop":"cards__textPop","cards__close":"cards__close","cards__popup_background":"cards__popup_background","cards__title":"cards__title","cards__container":"cards__container","cards__wrapper":"cards__wrapper","cards__items":"cards__items","cards__item":"cards__item","cards__item__link":"cards__item__link","cards_clas_item__pic-wrap":"cards_clas_item__pic-wrap","cards__item__img":"cards__item__img","cards__item__info":"cards__item__info","cards__item__text":"cards__item__text"};
 
 /***/ }),
 
@@ -858,11 +858,13 @@ function Modal(_ref) {
     onClick: onClose
   }, /*#__PURE__*/react_default.a.createElement("i", {
     className: "fas fa-times"
-  })), /*#__PURE__*/react_default.a.createElement("h1", {
+  })), /*#__PURE__*/react_default.a.createElement("div", {
+    className: style("two")
+  }, /*#__PURE__*/react_default.a.createElement("h1", {
     className: style("titlePop")
   }, title), /*#__PURE__*/react_default.a.createElement("p", {
     className: style("textPop")
-  }, text))), document.getElementById("portal"));
+  }, text)))), document.getElementById("portal"));
 }
 // CONCATENATED MODULE: ./src/components/Offer/subComponent/CardItem.jsx
 
