@@ -465,7 +465,7 @@ function FAQ() {
     className: style()
   }, /*#__PURE__*/react_default.a.createElement(react_parallax_lib["Parallax"], {
     bgImage: faq2,
-    strength: 600
+    strength: isMobile ? 100 : 600
   }, /*#__PURE__*/react_default.a.createElement("div", {
     className: style("img")
   }, /*#__PURE__*/react_default.a.createElement("div", {
