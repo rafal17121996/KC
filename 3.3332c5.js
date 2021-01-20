@@ -928,7 +928,7 @@ var Contact = () => {
   var [state, setState] = Object(react["useState"])({
     name: "",
     mail: "",
-    date: 'Podaj datę ślubu',
+    date: 'Podaj datę przyjęcia',
     text: ""
   });
   var [errors, setErrors] = Object(react["useState"])("");
