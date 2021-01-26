@@ -1,6 +1,6 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[13],{
 
-/***/ 61:
+/***/ 62:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -8,7 +8,7 @@ module.exports = {"homeWrapper":"homeWrapper","homeWrapper__text":"homeWrapper__
 
 /***/ }),
 
-/***/ 75:
+/***/ 76:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23,14 +23,14 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/bem-css-modules/dist/bem-css-modules.js
-var bem_css_modules = __webpack_require__(28);
+var bem_css_modules = __webpack_require__(29);
 var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
 
 // EXTERNAL MODULE: ./node_modules/typewriter-effect/dist/react.js
-var dist_react = __webpack_require__(60);
+var dist_react = __webpack_require__(61);
 
 // EXTERNAL MODULE: ./src/components/Home/Home.module.scss
-var Home_module = __webpack_require__(61);
+var Home_module = __webpack_require__(62);
 var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 
 // CONCATENATED MODULE: ./src/assets/back1 (2)-1.jpg
@@ -38,10 +38,10 @@ var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 // CONCATENATED MODULE: ./src/assets/imgMobile.jpg
 /* harmony default export */ var imgMobile = (__webpack_require__.p + "d2a7ab290a7542c6d0a53779ea1e256c.jpg");
 // EXTERNAL MODULE: ./node_modules/react-parallax/lib/index.js
-var lib = __webpack_require__(30);
+var lib = __webpack_require__(31);
 
 // EXTERNAL MODULE: ./node_modules/react-div-100vh/dist/esm/index.js
-var esm = __webpack_require__(40);
+var esm = __webpack_require__(41);
 
 // EXTERNAL MODULE: ./src/store/StoreProvider.jsx
 var StoreProvider = __webpack_require__(12);

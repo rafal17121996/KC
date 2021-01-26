@@ -48,7 +48,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "." + {"0":"988d2c","2":"b7cea5","3":"3332c5","4":"37b600","5":"bb813b","6":"33ac80","7":"56eda5","8":"f5ac6d","9":"8a5820","10":"6f0ed9","11":"493d8a","12":"94176e","13":"423553","14":"29681e"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "." + {"0":"42a2a1","2":"d53861","3":"5d5d39","4":"cf743d","5":"5dbab6","6":"455009","7":"23a093","8":"676dd7","9":"c466bd","10":"fb9d12","11":"f84b42","12":"7c0ac8","13":"cc5c75","14":"94d174"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -86,7 +86,7 @@
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "style." + {"0":"652a9a","2":"31d6cf","3":"684bfc","4":"8698bf","5":"a9597f","6":"d689b0","7":"3d504c","8":"6bae80","9":"40a122","10":"90f525","11":"652a9a","12":"31d6cf","13":"9eb3ae","14":"31d6cf"}[chunkId] + ".css";
+/******/ 				var href = "style." + {"0":"652a9a","2":"31d6cf","3":"684bfc","4":"ebece7","5":"a9597f","6":"d689b0","7":"3d504c","8":"6bae80","9":"40a122","10":"90f525","11":"652a9a","12":"31d6cf","13":"9eb3ae","14":"31d6cf"}[chunkId] + ".css";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -242,7 +242,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 27);
+/******/ 	return __webpack_require__(__webpack_require__.s = 28);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2614,7 +2614,7 @@ var index = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext || create
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(25)
+var isarray = __webpack_require__(26)
 
 /**
  * Expose `pathToRegexp`.
@@ -3219,7 +3219,7 @@ if (true) {
 
 
 if (true) {
-  module.exports = __webpack_require__(26);
+  module.exports = __webpack_require__(27);
 } else {}
 
 
@@ -3736,7 +3736,246 @@ exports.unstable_wrapCallback=function(a){var b=P;return function(){var c=P;P=b;
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Orientation = undefined;
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(7);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Orientation = exports.Orientation = function (_Component) {
+  _inherits(Orientation, _Component);
+
+  function Orientation() {
+    _classCallCheck(this, Orientation);
+
+    return _possibleConstructorReturn(this, (Orientation.__proto__ || Object.getPrototypeOf(Orientation)).apply(this, arguments));
+  }
+
+  _createClass(Orientation, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          orientation = _props.orientation,
+          children = _props.children,
+          className = _props.className;
+
+      return _react2.default.createElement(
+        'div',
+        { className: className + ' react-orientation react-orientation--' + orientation },
+        children
+      );
+    }
+  }]);
+
+  return Orientation;
+}(_react.Component);
+
+Orientation.propTypes = {
+  alwaysRender: _propTypes2.default.bool,
+  children: _propTypes2.default.node,
+  className: _propTypes2.default.string,
+  orientation: _propTypes2.default.oneOf(['portrait', 'landscape']).isRequired
+};
+
+Orientation.defaultProps = {
+  className: '',
+  alwaysRender: true
+};
+
+var noop = function noop() {
+  return false;
+};
+
+window.screen.lockOrientationUniversal = window.screen.lockOrientation || window.screen.mozLockOrientation || window.screen.msLockOrientation;
+
+var lock = function lock(orientation) {
+  var _window = window,
+      screen = _window.screen;
+
+  if (screen.orientation && typeof screen.orientation.lock === 'function') {
+    return window.screen.orientation.lock(orientation);
+  } else if (screen.lockOrientationUniversal) {
+    return new Promise(function (resolve, reject) {
+      if (screen.lockOrientationUniversal(orientation)) {
+        resolve();
+      } else {
+        reject();
+      }
+    });
+  } else {
+    return new Promise(function (resolve, reject) {
+      return reject();
+    });
+  }
+};
+
+var DeviceOrientation = function (_Component2) {
+  _inherits(DeviceOrientation, _Component2);
+
+  function DeviceOrientation(props) {
+    _classCallCheck(this, DeviceOrientation);
+
+    var _this2 = _possibleConstructorReturn(this, (DeviceOrientation.__proto__ || Object.getPrototypeOf(DeviceOrientation)).call(this, props));
+
+    _this2.lockOrientation(props);
+    _this2.onOrientationChange = _this2.onOrientationChange.bind(_this2);
+
+    _this2.state = {
+      orientation: null,
+      type: null,
+      angle: null
+    };
+    return _this2;
+  }
+
+  _createClass(DeviceOrientation, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.onOrientationChange(null);
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      console.log('DeviceOrientation', 'componentDidMount');
+      if (window.screen.orientation && 'onchange' in window.screen.orientation) {
+        console.log('Using screen.orientation.onchange');
+        window.screen.orientation.addEventListener('change', this.onOrientationChange);
+      } else if ('onorientationchange' in window) {
+        console.log('Using window.onorientationchange');
+        window.addEventListener('orientationchange', this.onOrientationChange);
+      } else {
+        console.warn('No orientationchange events');
+      }
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      console.log('DeviceOrientation', 'componentWillUnmount');
+      if (window.screen.orientation && 'onchange' in window.screen.orientation) {
+        console.log('Removing screen.orientation.onchange');
+        window.screen.orientation.removeEventListener('change', this.onOrientationChange);
+      } else if ('onorientationchange' in window) {
+        console.log('Removing window.onorientationchange');
+        window.removeEventListener('orientationchange', this.onOrientationChange);
+      }
+    }
+  }, {
+    key: 'onOrientationChange',
+    value: function onOrientationChange(event) {
+      var onOrientationChange = this.props.onOrientationChange || noop;
+      var orientation = 'portrait';
+      var type = 'primary';
+      var angle = 0;
+      if (window.orientation) {
+        angle = window.orientation;
+        orientation = Math.abs(angle) === 90 ? 'landscape' : 'portrait';
+      }
+
+      if (window.screen.orientation) {
+        var _window$screen$orient = window.screen.orientation.type.split('-');
+
+        var _window$screen$orient2 = _slicedToArray(_window$screen$orient, 2);
+
+        orientation = _window$screen$orient2[0];
+        type = _window$screen$orient2[1];
+
+        angle = window.screen.orientation;
+      }
+      this.setState({
+        orientation: orientation,
+        type: type,
+        angle: angle
+      });
+      onOrientationChange(orientation, type, angle);
+    }
+  }, {
+    key: 'lockOrientation',
+    value: function lockOrientation(_ref) {
+      var _lockOrientation = _ref.lockOrientation;
+
+      if (typeof _lockOrientation !== 'string') {
+        return;
+      }
+      var onLockOrientation = this.props.onLockOrientation || noop;
+      return lock(_lockOrientation).then(function () {
+        onLockOrientation(true);
+      }).catch(function () {
+        onLockOrientation(false);
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props2 = this.props,
+          children = _props2.children,
+          className = _props2.className;
+      var orientation = this.state.orientation;
+
+      return _react2.default.createElement(
+        'div',
+        { className: '' + className },
+        _react.Children.map(children, function (child) {
+          var props = child.props;
+
+          if (props.alwaysRender || props.orientation === orientation) {
+            return child;
+            // } else {
+            //   console.log('Skipping child', child)
+          }
+        })
+      );
+    }
+  }]);
+
+  return DeviceOrientation;
+}(_react.Component);
+
+// https://developer.mozilla.org/en-US/docs/Web/API/screen/lockOrientation
+
+
+exports.default = DeviceOrientation;
+var LOCK_ORIENTATIONS = ['portrait-primary', 'portrait-secondary', 'landscape-primary', 'landscape-secondary', 'portrait', 'landscape', 'default'];
+
+var isOrientation = function isOrientation(props, propName, componentName, location, propFullName) {
+  var propValue = props[propName];
+  if (propValue.type !== Orientation) {
+    return new Error('Invalid ' + location + ' \'' + propFullName + '\' supplied to \'' + componentName + '\', expected \'Orientation\' component.');
+  }
+};
+
+DeviceOrientation.propTypes = {
+  children: _propTypes2.default.oneOfType([isOrientation, _propTypes2.default.arrayOf(isOrientation)]).isRequired,
+  className: _propTypes2.default.string,
+  lockOrientation: _propTypes2.default.oneOfType([_propTypes2.default.oneOf(LOCK_ORIENTATIONS), _propTypes2.default.arrayOf(_propTypes2.default.oneOf(LOCK_ORIENTATIONS))]),
+  onLockOrientation: _propTypes2.default.func,
+  onOrientationChange: _propTypes2.default.func
+};
+
+DeviceOrientation.defaultProps = {
+  className: ''
+};
 
 /***/ }),
 /* 23 */
@@ -3830,6 +4069,12 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 /* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = Array.isArray || function (arr) {
@@ -3838,7 +4083,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3860,7 +4105,7 @@ exports.isValidElementType=function(a){return"string"===typeof a||"function"===t
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3884,8 +4129,11 @@ var react_router_dom = __webpack_require__(8);
 // EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
 var react_router = __webpack_require__(1);
 
+// EXTERNAL MODULE: ./node_modules/react-screen-orientation/lib/index.js
+var lib = __webpack_require__(22);
+
 // EXTERNAL MODULE: ./src/App.scss
-var App = __webpack_require__(22);
+var App = __webpack_require__(25);
 
 // CONCATENATED MODULE: ./src/components/Scroll/ScrollToTop.jsx
 
@@ -3913,28 +4161,44 @@ function ScrollToTop(_ref) {
 
 
 
-var Navbar = /*#__PURE__*/react_default.a.lazy(() => Promise.all(/* import() */[__webpack_require__.e(2), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, 70)));
-var NavbarFAQ = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 5).then(__webpack_require__.bind(null, 71)));
-var Home = /*#__PURE__*/react_default.a.lazy(() => Promise.all(/* import() */[__webpack_require__.e(12), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, 75)));
-var AboutMe = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 10).then(__webpack_require__.bind(null, 77)));
-var AboutMeMore = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 6).then(__webpack_require__.bind(null, 76)));
-var Offer = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 4).then(__webpack_require__.bind(null, 74)));
-var FAQ = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 11).then(__webpack_require__.bind(null, 72)));
-var FAQMore = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 7).then(__webpack_require__.bind(null, 78)));
-var Contact = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 3).then(__webpack_require__.bind(null, 79)));
-var Footer = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 8).then(__webpack_require__.bind(null, 73))); // import Navbar from "./components/Navbar/Navbar";
-// import Home from "./components/Home/Home";
-// import AboutMe from "./components/AboutMe/AboutMe";
-// import Offer from "./components/Offer/Offer";
-// import FAQ from "./components/FAQ/FAQ";
-// import Contact from "./components/Contact/Contact";
-// import Footer from "./components/Footer/Footer";
 
+var Navbar = /*#__PURE__*/react_default.a.lazy(() => Promise.all(/* import() */[__webpack_require__.e(2), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, 71)));
+var NavbarFAQ = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 5).then(__webpack_require__.bind(null, 72)));
+var Home = /*#__PURE__*/react_default.a.lazy(() => Promise.all(/* import() */[__webpack_require__.e(12), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, 76)));
+var AboutMe = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 10).then(__webpack_require__.bind(null, 78)));
+var AboutMeMore = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 6).then(__webpack_require__.bind(null, 77)));
+var Offer = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 4).then(__webpack_require__.bind(null, 75)));
+var FAQ = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 11).then(__webpack_require__.bind(null, 73)));
+var FAQMore = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 7).then(__webpack_require__.bind(null, 79)));
+var Contact = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 3).then(__webpack_require__.bind(null, 80)));
+var Footer = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 8).then(__webpack_require__.bind(null, 74)));
 
 
 var App_App = () => {
-  return /*#__PURE__*/react_default.a.createElement(react_router_dom["HashRouter"], null, /*#__PURE__*/react_default.a.createElement(Scroll_ScrollToTop, null), /*#__PURE__*/react_default.a.createElement(StoreProvider["b" /* default */], null, /*#__PURE__*/react_default.a.createElement(react["Suspense"], {
-    fallback: /*#__PURE__*/react_default.a.createElement("div", null, "Loading...")
+  var [isMobile, setIsMobile] = Object(react["useState"])(false);
+
+  var handleIsMoblie = () => {
+    if (window.innerWidth <= 960 & window.innerWidth > window.innerHeight) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  Object(react["useEffect"])(() => {
+    handleIsMoblie();
+  }, []);
+  window.addEventListener('resize', handleIsMoblie);
+  return isMobile ? /*#__PURE__*/react_default.a.createElement("div", {
+    className: "overlay"
+  }, /*#__PURE__*/react_default.a.createElement("i", {
+    className: "fas fa-sync-alt"
+  }), " ", /*#__PURE__*/react_default.a.createElement("p", null, "Obr\xF3\u0107 swoje urz\u0105dzenie")) : /*#__PURE__*/react_default.a.createElement(react_router_dom["HashRouter"], null, /*#__PURE__*/react_default.a.createElement(Scroll_ScrollToTop, null), /*#__PURE__*/react_default.a.createElement(StoreProvider["b" /* default */], null, /*#__PURE__*/react_default.a.createElement(react["Suspense"], {
+    fallback: /*#__PURE__*/react_default.a.createElement("div", {
+      style: {
+        height: "100vh"
+      }
+    }, "Loading...")
   }, /*#__PURE__*/react_default.a.createElement(react_router["g" /* Switch */], null, /*#__PURE__*/react_default.a.createElement(react_router["d" /* Route */], {
     path: "/",
     exact: true,
@@ -3945,7 +4209,8 @@ var App_App = () => {
   }), /*#__PURE__*/react_default.a.createElement(react_router["d" /* Route */], {
     path: "/about",
     render: () => /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, /*#__PURE__*/react_default.a.createElement(NavbarFAQ, null), /*#__PURE__*/react_default.a.createElement(AboutMeMore, null))
-  })), /*#__PURE__*/react_default.a.createElement(Footer, null))));
+  })), /*#__PURE__*/react_default.a.createElement(Footer, null)))) // <div className={"overlay"}><i className="fas fa-sync-alt"></i> <p>Obróć swoje urządzenie</p></div> 
+  ;
 };
 
 /* harmony default export */ var src_App = (App_App);

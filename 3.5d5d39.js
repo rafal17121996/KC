@@ -1,6 +1,6 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[3],{
 
-/***/ 28:
+/***/ 29:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -157,13 +157,13 @@ exports.default = bem;
 
 /***/ }),
 
-/***/ 42:
+/***/ 43:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(43);
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(44);
 /* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_1__);
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -341,14 +341,14 @@ var InstagramEmbed = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 43:
+/***/ 44:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var strictUriEncode = __webpack_require__(44);
+var strictUriEncode = __webpack_require__(45);
 var objectAssign = __webpack_require__(13);
-var decodeComponent = __webpack_require__(45);
+var decodeComponent = __webpack_require__(46);
 
 function encoderForArrayFormat(opts) {
 	switch (opts.arrayFormat) {
@@ -573,7 +573,7 @@ exports.parseUrl = function (str, opts) {
 
 /***/ }),
 
-/***/ 44:
+/***/ 45:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -587,7 +587,7 @@ module.exports = function (str) {
 
 /***/ }),
 
-/***/ 45:
+/***/ 46:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -689,16 +689,16 @@ module.exports = function (encodedURI) {
 
 /***/ }),
 
-/***/ 65:
+/***/ 66:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.EmailJSResponseStatus = exports.sendForm = exports.send = exports.init = void 0;
-var EmailJSResponseStatus_1 = __webpack_require__(66);
+var EmailJSResponseStatus_1 = __webpack_require__(67);
 Object.defineProperty(exports, "EmailJSResponseStatus", { enumerable: true, get: function () { return EmailJSResponseStatus_1.EmailJSResponseStatus; } });
-var UI_1 = __webpack_require__(67);
+var UI_1 = __webpack_require__(68);
 var _userID = null;
 var _origin = 'https://api.emailjs.com';
 function sendPost(url, data, headers) {
@@ -809,7 +809,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 66:
+/***/ 67:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -828,7 +828,7 @@ exports.EmailJSResponseStatus = EmailJSResponseStatus;
 
 /***/ }),
 
-/***/ 67:
+/***/ 68:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -865,7 +865,7 @@ exports.UI = UI;
 
 /***/ }),
 
-/***/ 68:
+/***/ 69:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -873,7 +873,7 @@ module.exports = {"contact":"contact","contact__ImgWrapper":"contact__ImgWrapper
 
 /***/ }),
 
-/***/ 79:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -885,18 +885,18 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/bem-css-modules/dist/bem-css-modules.js
-var bem_css_modules = __webpack_require__(28);
+var bem_css_modules = __webpack_require__(29);
 var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
 
 // EXTERNAL MODULE: ./node_modules/emailjs-com/source/index.js
-var source = __webpack_require__(65);
+var source = __webpack_require__(66);
 var source_default = /*#__PURE__*/__webpack_require__.n(source);
 
 // EXTERNAL MODULE: ./node_modules/react-instagram-embed/es/index.js
-var es = __webpack_require__(42);
+var es = __webpack_require__(43);
 
 // EXTERNAL MODULE: ./src/components/Contact/Contact.module.scss
-var Contact_module = __webpack_require__(68);
+var Contact_module = __webpack_require__(69);
 var Contact_module_default = /*#__PURE__*/__webpack_require__.n(Contact_module);
 
 // CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-37.jpg
