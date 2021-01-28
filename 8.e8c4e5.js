@@ -1,6 +1,6 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[10],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[8],{
 
-/***/ 29:
+/***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -157,95 +157,57 @@ exports.default = bem;
 
 /***/ }),
 
-/***/ 63:
+/***/ 69:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"AboutMeWrapper":"AboutMeWrapper","AboutMeWrapper__title":"AboutMeWrapper__title","AboutMeWrapper__description":"AboutMeWrapper__description","AboutMeWrapper__wrapper":"AboutMeWrapper__wrapper","AboutMeWrapper__text1":"AboutMeWrapper__text1","AboutMeWrapper__text2":"AboutMeWrapper__text2","AboutMeWrapper__text3":"AboutMeWrapper__text3","AboutMeWrapper__text4":"AboutMeWrapper__text4","AboutMeWrapper__text5":"AboutMeWrapper__text5","AboutMeWrapper__text6":"AboutMeWrapper__text6","AboutMeWrapper__more":"AboutMeWrapper__more","AboutMeWrapper__imgWrapper":"AboutMeWrapper__imgWrapper","AboutMeWrapper__picture":"AboutMeWrapper__picture"};
+module.exports = {"footer":"footer","footer__title":"footer__title","footer__link":"footer__link","footer__sm":"footer__sm","fa-envelope":"fa-envelope","fa-phone-alt":"fa-phone-alt","fa-facebook-f":"fa-facebook-f"};
 
 /***/ }),
 
-/***/ 78:
+/***/ 74:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(0);
-var react_default = /*#__PURE__*/__webpack_require__.n(react);
-
-// EXTERNAL MODULE: ./node_modules/bem-css-modules/dist/bem-css-modules.js
-var bem_css_modules = __webpack_require__(29);
-var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
-
-// EXTERNAL MODULE: ./src/components/AboutMe/AboutMe.module.scss
-var AboutMe_module = __webpack_require__(63);
-var AboutMe_module_default = /*#__PURE__*/__webpack_require__.n(AboutMe_module);
-
-// CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-25.jpg
-/* harmony default export */ var Karolina_KCwedding_25 = (__webpack_require__.p + "a6ddf3bed75cb6161b707deafd28d20c.jpg");
-// EXTERNAL MODULE: ./src/store/StoreProvider.jsx
-var StoreProvider = __webpack_require__(12);
-
-// EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
-var react_router_dom = __webpack_require__(8);
-
-// CONCATENATED MODULE: ./src/components/AboutMe/AboutMe.jsx
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var bem_css_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
+/* harmony import */ var bem_css_modules__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bem_css_modules__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Footer_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(69);
+/* harmony import */ var _Footer_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Footer_module_scss__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
+var style = bem_css_modules__WEBPACK_IMPORTED_MODULE_1___default()(_Footer_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a);
 
-
-
-var style = bem_css_modules_default()(AboutMe_module_default.a);
-
-var AboutMe = () => {
-  var {
-    isMobile
-  } = Object(react["useContext"])(StoreProvider["a" /* StoreContext */]);
-  return /*#__PURE__*/react_default.a.createElement("section", {
-    id: "about",
+function Footer() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
     className: style()
-  }, /*#__PURE__*/react_default.a.createElement("h1", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: style("sm")
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: style("title")
-  }, "Kto stoi za KC Wedding?"), /*#__PURE__*/react_default.a.createElement("div", {
-    className: style("wrapper")
-  }, /*#__PURE__*/react_default.a.createElement("div", {
-    className: style("description")
-  }, isMobile ? /*#__PURE__*/react_default.a.createElement("div", {
-    className: style("imgWrapper")
-  }, /*#__PURE__*/react_default.a.createElement("img", {
-    className: style("picture"),
-    src: Karolina_KCwedding_25,
-    alt: ""
-  })) : null, /*#__PURE__*/react_default.a.createElement("h2", {
-    className: style("text1")
-  }, "Cze\u015B\u0107, nazywam si\u0119 ", /*#__PURE__*/react_default.a.createElement("strong", null, "Karolina Chorz\u0119pa."), /*#__PURE__*/react_default.a.createElement("br", null), "Jestem Waszym wedding plannerem."), /*#__PURE__*/react_default.a.createElement("h3", {
-    className: style("text2")
-  }, "Kreuj\u0119 rozwi\u0105zania na miar\u0119 Waszych potrzeb estetycznych i organizacyjnych. ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("strong", null, "Wspieram w decyzjach, procesach, emocjach.")), /*#__PURE__*/react_default.a.createElement("p", {
-    className: style("text3")
-  }, "Doskonale zdaj\u0119 sobie spraw\u0119 z tego, jak czasoch\u0142onnym i emocjonalnym zarazem, jest proces organizacji \u015Blubu i wesela. Z tego zrozumienia oraz z pasji do rozwi\u0105za\u0144 na miar\u0119 moich \u015Blubnych bohater\xF3w \u2013 powsta\u0142a w\u0142a\u015Bnie marka KC Wedding. ", /*#__PURE__*/react_default.a.createElement("strong", null, "Moim priorytetem jest zapewni\u0107 Wam niczym niezak\u0142\xF3cany spok\xF3j przygotowa\u0144 oraz celebrowania uroczysto\u015Bci \u015Blubnej.")), /*#__PURE__*/react_default.a.createElement("p", {
-    className: style("text4")
-  }, "Na co dzie\u0144 staram si\u0119 by\u0107 dla Was najlepsz\u0105 organizacyjn\u0105 przyjaci\xF3\u0142k\u0105. Zawsze mo\u017Cecie na mnie liczy\u0107, zwr\xF3ci\u0107 w\u0142a\u015Bnie na mnie swoje spojrzenia i przela\u0107 wszelkie w\u0105tpliwo\u015Bci. ", /*#__PURE__*/react_default.a.createElement("strong", null, "S\u0142u\u017C\u0119 nie tylko dobr\u0105 rad\u0105, r\xF3wnie\u017C inspiracj\u0105 i do\u015Bwiadczeniem."), " Zapewniam Wam wsparcie w takim stopniu i formie, jakiego potrzebujecie \u2013 by czu\u0107 si\u0119 troskliwie zaopiekowani w ca\u0142ym procesie przed\u015Blubnych powinno\u015Bci."), /*#__PURE__*/react_default.a.createElement(react_router_dom["Link"], {
-    to: "/about"
-  }, /*#__PURE__*/react_default.a.createElement("button", {
-    className: style("more")
-  }, "More!")), /*#__PURE__*/react_default.a.createElement("p", {
-    className: style("text5")
-  }, "KC Wedding powsta\u0142o z uwielbienia do naturalnych i niebanalnych rozwi\u0105za\u0144."), /*#__PURE__*/react_default.a.createElement("p", {
-    className: style("text6")
-  }, "Rozgo\u015B\u0107cie si\u0119 i wykreujmy razem co\u015B pi\u0119knego!")), isMobile ? null : /*#__PURE__*/react_default.a.createElement("div", {
-    className: style("imgWrapper")
-  }, /*#__PURE__*/react_default.a.createElement("img", {
-    className: style("picture"),
-    src: Karolina_KCwedding_25,
-    alt: ""
-  }))));
-};
+  }, "KC WEDDING"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.facebook.com/kcwedding.konsultantkaslubna/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fab fa-facebook-f"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: style("link")
+  }, "Facebook"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.instagram.com/kc_weddingplanner/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fab fa-instagram"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: style("link")
+  }, "Instagram"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fas fa-phone-alt"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: style("link")
+  }, "111 111 111"))));
+}
 
-/* harmony default export */ var AboutMe_AboutMe = __webpack_exports__["default"] = (AboutMe);
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
 
 /***/ })
 

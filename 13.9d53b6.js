@@ -1,6 +1,6 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[13],{
 
-/***/ 62:
+/***/ 61:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -23,25 +23,25 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/bem-css-modules/dist/bem-css-modules.js
-var bem_css_modules = __webpack_require__(29);
+var bem_css_modules = __webpack_require__(28);
 var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
 
 // EXTERNAL MODULE: ./node_modules/typewriter-effect/dist/react.js
-var dist_react = __webpack_require__(61);
+var dist_react = __webpack_require__(60);
 
 // EXTERNAL MODULE: ./src/components/Home/Home.module.scss
-var Home_module = __webpack_require__(62);
+var Home_module = __webpack_require__(61);
 var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 
 // CONCATENATED MODULE: ./src/assets/back1 (2)-1.jpg
 /* harmony default export */ var back1_2_1 = (__webpack_require__.p + "ee84d7f0a46a3cd1016bfbb25a09272d.jpg");
 // CONCATENATED MODULE: ./src/assets/imgMobile.jpg
-/* harmony default export */ var imgMobile = (__webpack_require__.p + "d2a7ab290a7542c6d0a53779ea1e256c.jpg");
+/* harmony default export */ var imgMobile = (__webpack_require__.p + "34bcfb7fbc9698d87f1dfdd84884d992.jpg");
 // EXTERNAL MODULE: ./node_modules/react-parallax/lib/index.js
-var lib = __webpack_require__(31);
+var lib = __webpack_require__(30);
 
 // EXTERNAL MODULE: ./node_modules/react-div-100vh/dist/esm/index.js
-var esm = __webpack_require__(41);
+var esm = __webpack_require__(40);
 
 // EXTERNAL MODULE: ./src/store/StoreProvider.jsx
 var StoreProvider = __webpack_require__(12);

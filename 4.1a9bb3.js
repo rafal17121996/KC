@@ -1,6 +1,6 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[4],{
 
-/***/ 29:
+/***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -157,7 +157,7 @@ exports.default = bem;
 
 /***/ }),
 
-/***/ 41:
+/***/ 40:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -242,7 +242,7 @@ function isClient() {
 
 /***/ }),
 
-/***/ 42:
+/***/ 41:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -250,13 +250,13 @@ module.exports = {"cards":"cards","cards__popup":"cards__popup","cards__two":"ca
 
 /***/ }),
 
-/***/ 43:
+/***/ 42:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(44);
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(43);
 /* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_1__);
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -434,14 +434,14 @@ var InstagramEmbed = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 44:
+/***/ 43:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var strictUriEncode = __webpack_require__(45);
+var strictUriEncode = __webpack_require__(44);
 var objectAssign = __webpack_require__(13);
-var decodeComponent = __webpack_require__(46);
+var decodeComponent = __webpack_require__(45);
 
 function encoderForArrayFormat(opts) {
 	switch (opts.arrayFormat) {
@@ -666,7 +666,7 @@ exports.parseUrl = function (str, opts) {
 
 /***/ }),
 
-/***/ 45:
+/***/ 44:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -680,7 +680,7 @@ module.exports = function (str) {
 
 /***/ }),
 
-/***/ 46:
+/***/ 45:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -794,11 +794,11 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/bem-css-modules/dist/bem-css-modules.js
-var bem_css_modules = __webpack_require__(29);
+var bem_css_modules = __webpack_require__(28);
 var bem_css_modules_default = /*#__PURE__*/__webpack_require__.n(bem_css_modules);
 
 // EXTERNAL MODULE: ./src/components/Offer/Offer.module.scss
-var Offer_module = __webpack_require__(42);
+var Offer_module = __webpack_require__(41);
 var Offer_module_default = /*#__PURE__*/__webpack_require__.n(Offer_module);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
@@ -809,7 +809,7 @@ var react_dom_default = /*#__PURE__*/__webpack_require__.n(react_dom);
 var StoreProvider = __webpack_require__(12);
 
 // EXTERNAL MODULE: ./node_modules/react-div-100vh/dist/esm/index.js
-var esm = __webpack_require__(41);
+var esm = __webpack_require__(40);
 
 // CONCATENATED MODULE: ./src/components/Offer/subComponent/Popup.jsx
 
@@ -919,7 +919,7 @@ function CardItem(props) {
 // CONCATENATED MODULE: ./src/assets/offer6.jpg
 /* harmony default export */ var offer6 = (__webpack_require__.p + "9b6255e93e3cc0a1fac6441c58b86de5.jpg");
 // EXTERNAL MODULE: ./node_modules/react-instagram-embed/es/index.js
-var es = __webpack_require__(43);
+var es = __webpack_require__(42);
 
 // CONCATENATED MODULE: ./src/components/Offer/Offer.jsx
 
