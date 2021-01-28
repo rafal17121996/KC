@@ -11,11 +11,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var bem_css_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8893);
 /* harmony import */ var _FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5602);
-/* harmony import */ var _FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
-var style = (0,bem_css_modules__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z)((_FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2___default()));
+var style = (0,bem_css_modules__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z)(_FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2__/* .default */ .Z);
 
 function Item(_ref) {
   var {
@@ -42,10 +41,14 @@ function Item(_ref) {
 /***/ }),
 
 /***/ 5602:
-/***/ ((module) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
 // extracted by mini-css-extract-plugin
-module.exports = {"FAQWrapper":"FAQWrapper","FAQWrapper__title":"FAQWrapper__title","FAQWrapper__description":"FAQWrapper__description","FAQWrapper__faqs":"FAQWrapper__faqs","FAQWrapper__faq":"FAQWrapper__faq","FAQWrapper__faqopen":"FAQWrapper__faqopen","FAQWrapper__question":"FAQWrapper__question","FAQWrapper__answer":"FAQWrapper__answer"};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"FAQWrapper":"FAQWrapper","FAQWrapper__title":"FAQWrapper__title","FAQWrapper__description":"FAQWrapper__description","FAQWrapper__faqs":"FAQWrapper__faqs","FAQWrapper__faq":"FAQWrapper__faq","FAQWrapper__faqopen":"FAQWrapper__faqopen","FAQWrapper__question":"FAQWrapper__question","FAQWrapper__answer":"FAQWrapper__answer"});
 
 /***/ })
 

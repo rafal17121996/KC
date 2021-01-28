@@ -1,4 +1,4 @@
-(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[914],{
+(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[185],{
 
 /***/ 1689:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -30,22 +30,34 @@ var MenuItems = [{
 
 /***/ }),
 
-/***/ 9914:
+/***/ 9185:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-/* harmony import */ var bem_css_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8893);
-/* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7853);
-/* harmony import */ var _MenuItem_MenuItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1689);
-/* harmony import */ var _store_StoreProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7567);
-/* harmony import */ var _NavbarFAQ_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4545);
-/* harmony import */ var _NavbarFAQ_module_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_NavbarFAQ_module_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _assets_KC_1_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8954);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => /* binding */ NavbarFAQ
+});
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(7294);
+// EXTERNAL MODULE: ./node_modules/bem-css-modules/dist/bem-css-modules.js
+var bem_css_modules = __webpack_require__(8893);
+// EXTERNAL MODULE: ./node_modules/react-router-hash-link/lib/index.js
+var lib = __webpack_require__(7853);
+// EXTERNAL MODULE: ./src/components/Navbar/MenuItem/MenuItem.jsx
+var MenuItem = __webpack_require__(1689);
+// EXTERNAL MODULE: ./src/store/StoreProvider.jsx
+var StoreProvider = __webpack_require__(7567);
+;// CONCATENATED MODULE: ./src/components/Navbar/NavbarFAQ.module.scss
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const NavbarFAQ_module = ({"Navbar":"Navbar","Navbar_hidden":"Navbar_hidden","Navbar__wrapper":"Navbar__wrapper","Navbar__logo":"Navbar__logo","Navbar__title":"Navbar__title","Navbar__nav-menu":"Navbar__nav-menu","Navbar__nav-item":"Navbar__nav-item","Navbar__nav-links":"Navbar__nav-links","fa-bars":"fa-bars","Navbar__menu-button":"Navbar__menu-button","Navbar__nav-menu_active":"Navbar__nav-menu_active","Navbar__navbar-logo":"Navbar__navbar-logo","fa-times":"fa-times","Navbar__nav-links-mobile":"Navbar__nav-links-mobile","Navbar__flags":"Navbar__flags"});
+// EXTERNAL MODULE: ./src/assets/KC (1).png
+var KC_1_ = __webpack_require__(8954);
+;// CONCATENATED MODULE: ./src/components/Navbar/NavbarFAQ.jsx
 
  // import { Link } from "react-router-dom";
 
@@ -54,7 +66,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var style = (0,bem_css_modules__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z)((_NavbarFAQ_module_scss__WEBPACK_IMPORTED_MODULE_5___default()));
+var style = (0,bem_css_modules/* default */.Z)(NavbarFAQ_module);
 
 var Navbar = () => {
   var scrollWithOffset = (el, offset) => {
@@ -68,14 +80,14 @@ var Navbar = () => {
 
   var {
     isMobile
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_store_StoreProvider__WEBPACK_IMPORTED_MODULE_4__/* .StoreContext */ .x);
-  var [prevScrollpos, setPrevScrollpos] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(window.pageYOffset);
-  var [isOpen, setIsOpen] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  var Items = _MenuItem_MenuItem__WEBPACK_IMPORTED_MODULE_3__/* .MenuItems.map */ .s.map((item, index) => {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+  } = (0,react.useContext)(StoreProvider/* StoreContext */.x);
+  var [prevScrollpos, setPrevScrollpos] = (0,react.useState)(window.pageYOffset);
+  var [isOpen, setIsOpen] = (0,react.useState)(false);
+  var Items = MenuItem/* MenuItems.map */.s.map((item, index) => {
+    return /*#__PURE__*/react.createElement("li", {
       key: index,
       className: style("nav-item")
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__/* .HashLink */ .fO, {
+    }, /*#__PURE__*/react.createElement(lib/* HashLink */.fO, {
       smooth: true,
       to: "/#" + item.url,
       scroll: el => scrollWithOffset(el, isMobile ? 0 : 60),
@@ -90,34 +102,34 @@ var Navbar = () => {
   var itemStyle = isOpen ? style("nav-menu", {
     active: true
   }) : style("nav-menu");
-  var logo = isMobile ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__/* .HashLink */ .fO, {
+  var logo = isMobile ? null : /*#__PURE__*/react.createElement(lib/* HashLink */.fO, {
     to: "/",
     className: style("logo")
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }, /*#__PURE__*/react.createElement("img", {
     className: style("logo"),
-    src: _assets_KC_1_png__WEBPACK_IMPORTED_MODULE_6__/* .default */ .Z,
+    src: KC_1_/* default */.Z,
     alt: ""
   }));
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("nav", {
     className: style("")
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react.createElement("div", {
     className: style("wrapper")
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react.createElement("div", {
     className: style("menu-button"),
     onClick: handleOnClick
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+  }, /*#__PURE__*/react.createElement("i", {
     className: isOpen ? "fas fa-times" : "fas fa-bars"
-  })), logo, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
+  })), logo, /*#__PURE__*/react.createElement("ul", {
     className: itemStyle
-  }, Items, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+  }, Items, /*#__PURE__*/react.createElement("li", {
     className: style("nav-item")
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__/* .HashLink */ .fO, {
+  }, /*#__PURE__*/react.createElement(lib/* HashLink */.fO, {
     smooth: true,
     to: "/faq",
     className: style("nav-links")
-  }, "ABC KLIENTA")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+  }, "ABC KLIENTA")), /*#__PURE__*/react.createElement("li", {
     className: style("nav-item")
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_2__/* .HashLink */ .fO, {
+  }, /*#__PURE__*/react.createElement(lib/* HashLink */.fO, {
     smooth: true,
     to: "/#contact",
     scroll: el => scrollWithOffset(el, isMobile ? 0 : 60),
@@ -125,7 +137,7 @@ var Navbar = () => {
   }, "KONTAKT"))))));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
+/* harmony default export */ const NavbarFAQ = (Navbar);
 
 /***/ }),
 
@@ -295,14 +307,6 @@ exports.Z = bem;
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "9622d940aa8618d771e8986ff8e41b7c.png");
-
-/***/ }),
-
-/***/ 4545:
-/***/ ((module) => {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"Navbar":"Navbar","Navbar_hidden":"Navbar_hidden","Navbar__wrapper":"Navbar__wrapper","Navbar__logo":"Navbar__logo","Navbar__title":"Navbar__title","Navbar__nav-menu":"Navbar__nav-menu","Navbar__nav-item":"Navbar__nav-item","Navbar__nav-links":"Navbar__nav-links","fa-bars":"fa-bars","Navbar__menu-button":"Navbar__menu-button","Navbar__nav-menu_active":"Navbar__nav-menu_active","Navbar__navbar-logo":"Navbar__navbar-logo","fa-times":"fa-times","Navbar__nav-links-mobile":"Navbar__nav-links-mobile","Navbar__flags":"Navbar__flags"};
 
 /***/ }),
 

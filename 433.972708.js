@@ -1,6 +1,6 @@
-(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[586],{
+(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[433],{
 
-/***/ 7586:
+/***/ 5433:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18,9 +18,9 @@ var react = __webpack_require__(7294);
 var bem_css_modules = __webpack_require__(8893);
 // EXTERNAL MODULE: ./node_modules/typewriter-effect/dist/react.js
 var dist_react = __webpack_require__(5459);
-// EXTERNAL MODULE: ./src/components/Home/Home.module.scss
-var Home_module = __webpack_require__(292);
-var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
+;// CONCATENATED MODULE: ./src/components/Home/Home.module.scss
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Home_module = ({"homeWrapper":"homeWrapper","homeWrapper__text":"homeWrapper__text","fadein":"fadein","homeWrapper__text2":"homeWrapper__text2","homeWrapper__description":"homeWrapper__description"});
 ;// CONCATENATED MODULE: ./src/assets/back1 (2)-1.jpg
 /* harmony default export */ const back1_2_1 = (__webpack_require__.p + "ee84d7f0a46a3cd1016bfbb25a09272d.jpg");
 ;// CONCATENATED MODULE: ./src/assets/imgMobile.jpg
@@ -41,7 +41,7 @@ var StoreProvider = __webpack_require__(7567);
 
 
 
-var style = (0,bem_css_modules/* default */.Z)((Home_module_default()));
+var style = (0,bem_css_modules/* default */.Z)(Home_module);
 function Home() {
   var height = (0,esm/* use100vh */.g)();
   var {
@@ -69,14 +69,6 @@ function Home() {
     className: style("description")
   }, "Kreuj\u0119 rozwi\u0105zania na miar\u0119 Waszych potrzeb estetycznych i organizacyjnych. Wspieram w decyzjach, procesach, emocjach.") : null))));
 }
-
-/***/ }),
-
-/***/ 292:
-/***/ ((module) => {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"homeWrapper":"homeWrapper","homeWrapper__text":"homeWrapper__text","fadein":"fadein","homeWrapper__text2":"homeWrapper__text2","homeWrapper__description":"homeWrapper__description"};
 
 /***/ }),
 

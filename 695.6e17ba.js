@@ -1,6 +1,6 @@
-(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[209],{
+(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[695],{
 
-/***/ 8209:
+/***/ 9695:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18,9 +18,9 @@ var react = __webpack_require__(7294);
 var bem_css_modules = __webpack_require__(8893);
 // EXTERNAL MODULE: ./node_modules/react-router-hash-link/lib/index.js
 var lib = __webpack_require__(7853);
-// EXTERNAL MODULE: ./src/components/FAQ/FAQMore.module.scss
-var FAQMore_module = __webpack_require__(7326);
-var FAQMore_module_default = /*#__PURE__*/__webpack_require__.n(FAQMore_module);
+;// CONCATENATED MODULE: ./src/components/FAQ/FAQMore.module.scss
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const FAQMore_module = ({"FAQMoreWrapper":"FAQMoreWrapper","FAQMoreWrapper__img":"FAQMoreWrapper__img","FAQMoreWrapper__inlineStyle":"FAQMoreWrapper__inlineStyle","FAQMoreWrapper__faqTitle":"FAQMoreWrapper__faqTitle","FAQMoreWrapper__textWrapper":"FAQMoreWrapper__textWrapper","FAQMoreWrapper__title":"FAQMoreWrapper__title","FAQMoreWrapper__description":"FAQMoreWrapper__description","FAQMoreWrapper__x":"FAQMoreWrapper__x","FAQMoreWrapper__faqs":"FAQMoreWrapper__faqs","FAQMoreWrapper__faq":"FAQMoreWrapper__faq","FAQMoreWrapper__faqopen":"FAQMoreWrapper__faqopen","FAQMoreWrapper__question":"FAQMoreWrapper__question","FAQMoreWrapper__answer":"FAQMoreWrapper__answer","FAQMoreWrapper__end":"FAQMoreWrapper__end","FAQMoreWrapper__contact":"FAQMoreWrapper__contact"});
 ;// CONCATENATED MODULE: ./src/assets/faq2.jpg
 /* harmony default export */ const faq2 = (__webpack_require__.p + "aa3b591209853f40d400b5c91d0a8d3e.jpg");
 // EXTERNAL MODULE: ./node_modules/react-parallax/lib/index.js
@@ -36,7 +36,7 @@ var Item = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 51
 
 
 
-var style = (0,bem_css_modules/* default */.Z)((FAQMore_module_default()));
+var style = (0,bem_css_modules/* default */.Z)(FAQMore_module);
 
 function FAQ() {
   var scrollWithOffset = (el, offset) => {
@@ -143,14 +143,6 @@ function FAQ() {
 }
 
 /* harmony default export */ const FAQMore = (FAQ);
-
-/***/ }),
-
-/***/ 7326:
-/***/ ((module) => {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"FAQMoreWrapper":"FAQMoreWrapper","FAQMoreWrapper__img":"FAQMoreWrapper__img","FAQMoreWrapper__inlineStyle":"FAQMoreWrapper__inlineStyle","FAQMoreWrapper__faqTitle":"FAQMoreWrapper__faqTitle","FAQMoreWrapper__textWrapper":"FAQMoreWrapper__textWrapper","FAQMoreWrapper__title":"FAQMoreWrapper__title","FAQMoreWrapper__description":"FAQMoreWrapper__description","FAQMoreWrapper__x":"FAQMoreWrapper__x","FAQMoreWrapper__faqs":"FAQMoreWrapper__faqs","FAQMoreWrapper__faq":"FAQMoreWrapper__faq","FAQMoreWrapper__faqopen":"FAQMoreWrapper__faqopen","FAQMoreWrapper__question":"FAQMoreWrapper__question","FAQMoreWrapper__answer":"FAQMoreWrapper__answer","FAQMoreWrapper__end":"FAQMoreWrapper__end","FAQMoreWrapper__contact":"FAQMoreWrapper__contact"};
 
 /***/ }),
 

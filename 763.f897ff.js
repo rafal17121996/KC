@@ -1,6 +1,6 @@
-(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[444],{
+(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[763],{
 
-/***/ 6444:
+/***/ 8763:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -9,316 +9,176 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => /* binding */ Offer_Offer
+  "default": () => /* binding */ Contact_Contact
 });
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
 // EXTERNAL MODULE: ./node_modules/bem-css-modules/dist/bem-css-modules.js
 var bem_css_modules = __webpack_require__(8893);
-// EXTERNAL MODULE: ./src/components/Offer/Offer.module.scss
-var Offer_module = __webpack_require__(4884);
-var Offer_module_default = /*#__PURE__*/__webpack_require__.n(Offer_module);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(3935);
+// EXTERNAL MODULE: ./node_modules/emailjs-com/source/index.js
+var source = __webpack_require__(3631);
+// EXTERNAL MODULE: ./node_modules/react-instagram-embed/es/index.js
+var es = __webpack_require__(5064);
+;// CONCATENATED MODULE: ./src/components/Contact/Contact.module.scss
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Contact_module = ({"contact":"contact","contact__ImgWrapper":"contact__ImgWrapper","contact__image":"contact__image","contact__inlineStyle":"contact__inlineStyle","contact__title":"contact__title","contact__description":"contact__description","contact__input":"contact__input","contact__textarea":"contact__textarea","contact__subBtn":"contact__subBtn","contact__errors":"contact__errors","contact__iconWrapper":"contact__iconWrapper","contact__icon":"contact__icon","fa-envelope":"fa-envelope","fa-phone-alt":"fa-phone-alt","fa-facebook-f":"fa-facebook-f"});
+;// CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-37.jpg
+/* harmony default export */ const Karolina_KCwedding_37 = (__webpack_require__.p + "cefa5a9f705494fed483172bda5c9ade.jpg");
+;// CONCATENATED MODULE: ./src/assets/pexels-miguel-á-padriñán-19670.jpg
+/* harmony default export */ const pexels_miguel_padri_n_19670 = (__webpack_require__.p + "cb174575dd33a1a6af68e98ce973f54d.jpg");
 // EXTERNAL MODULE: ./src/store/StoreProvider.jsx
 var StoreProvider = __webpack_require__(7567);
-// EXTERNAL MODULE: ./node_modules/react-div-100vh/dist/esm/index.js
-var esm = __webpack_require__(6409);
-;// CONCATENATED MODULE: ./src/components/Offer/subComponent/Popup.jsx
+;// CONCATENATED MODULE: ./src/components/Contact/Contact.jsx
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
 
 
 
-var style = (0,bem_css_modules/* default */.Z)((Offer_module_default()));
-function Modal(_ref) {
-  var {
-    img,
-    open,
-    title,
-    text,
-    onClose
-  } = _ref;
-  if (!open) return null;
+
+
+
+var style = (0,bem_css_modules/* default */.Z)(Contact_module);
+
+var Contact = () => {
+  var today = new Date().toISOString().substr(0, 10);
   var {
     isMobile
   } = (0,react.useContext)(StoreProvider/* StoreContext */.x);
-  var escFunction = (0,react.useCallback)(event => {
-    if (event.keyCode === 27) {
-      onClose();
-    }
-  }, []);
-  (0,react.useEffect)(() => {
-    document.addEventListener("keydown", escFunction, false);
-    return () => {
-      document.removeEventListener("keydown", escFunction, false);
-    };
-  }, []);
-  return /*#__PURE__*/react_dom.createPortal( /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: style("popup_background")
-  }), /*#__PURE__*/react.createElement("div", {
-    className: style("popup")
+  var [state, setState] = (0,react.useState)({
+    name: "",
+    mail: "",
+    date: 'Podaj datę przyjęcia',
+    text: ""
+  });
+  var [errors, setErrors] = (0,react.useState)("");
+  var [result, setResult] = (0,react.useState)({});
+
+  var handleOnSubmit = e => {
+    e.preventDefault();
+
+    if (!state["name"]) {
+      setErrors("coś1");
+    } else if (!state["mail"]) {
+      setErrors("coś1");
+    } else if (!state["date"]) {
+      setErrors("coś1");
+    } else if (!state["text"]) {
+      setErrors("coś1");
+    } else source/* default.sendForm */.ZP.sendForm("service_f2ixcir", "template_5g2c7io", e.target, "user_ux3gKfqC84EoWJjDiNkqL").then(result => {
+      console.log(result.text);
+      setState({
+        name: "",
+        mail: "",
+        text: "",
+        date: ""
+      });
+    }, error => {
+      console.log(error.text);
+    });
+  };
+
+  var onInputChange = event => {
+    var {
+      name,
+      value
+    } = event.target;
+    setState(_objectSpread(_objectSpread({}, state), {}, {
+      [name]: value
+    }));
+  }; //  const onFocus =(e)=> {
+  //     e.currentTarget.type = "date";
+  // },
+  // const onBlur = (e)=> {
+  //     e.currentTarget.type = "text";
+  //     e.currentTarget.placeholder = "Enter a Date";
+  // },
+
+
+  return /*#__PURE__*/react.createElement("section", {
+    id: "contact",
+    style: {
+      backgroundImage: "url(".concat(pexels_miguel_padri_n_19670, ")")
+    },
+    className: style()
+  }, isMobile ? null : /*#__PURE__*/react.createElement("div", {
+    className: style("ImgWrapper")
   }, /*#__PURE__*/react.createElement("div", {
-    className: style("border")
-  }, /*#__PURE__*/react.createElement("div", {
-    className: style("imgWrapper")
-  }, /*#__PURE__*/react.createElement("img", {
-    src: img,
-    alt: ""
-  }))), /*#__PURE__*/react.createElement("div", {
-    className: style("close"),
-    onClick: onClose
+    className: style("iconWrapper")
+  }, /*#__PURE__*/react.createElement("a", {
+    className: style("icon"),
+    href: "https://www.facebook.com/kcwedding.konsultantkaslubna/"
   }, /*#__PURE__*/react.createElement("i", {
-    className: "fas fa-times"
+    className: "fab fa-facebook-f"
+  })), /*#__PURE__*/react.createElement("a", {
+    className: style("icon"),
+    href: "https://www.instagram.com/kc_weddingplanner/"
+  }, /*#__PURE__*/react.createElement("i", {
+    className: "fab fa-instagram"
+  })), /*#__PURE__*/react.createElement("a", {
+    className: style("icon"),
+    href: "https://www.instagram.com/kc_weddingplanner/"
+  }, /*#__PURE__*/react.createElement("i", {
+    className: "fab fa-instagram"
+  }))), /*#__PURE__*/react.createElement("img", {
+    src: Karolina_KCwedding_37,
+    alt: "",
+    className: style("image")
   })), /*#__PURE__*/react.createElement("div", {
-    className: style("two")
-  }, /*#__PURE__*/react.createElement("h1", {
-    className: style("titlePop")
-  }, title), /*#__PURE__*/react.createElement("p", {
-    className: style("textPop")
-  }, text)))), document.getElementById("portal"));
-}
-;// CONCATENATED MODULE: ./src/components/Offer/subComponent/CardItem.jsx
+    className: style("inlineStyle")
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h1", {
+    className: style("title")
+  }, "Napisz do mnie"), /*#__PURE__*/react.createElement("h1", {
+    className: style("description")
+  }, "Um\xF3wimy si\u0119 na kaw\u0119 i om\xF3wimy szczeg\xF3\u0142y")), /*#__PURE__*/react.createElement("form", {
+    onSubmit: handleOnSubmit
+  }, /*#__PURE__*/react.createElement("h2", {
+    className: style("errors")
+  }, errors), /*#__PURE__*/react.createElement("input", {
+    className: style("input"),
+    placeholder: "Podaj swoje imi\u0119",
+    name: "name",
+    type: "text",
+    value: state.name,
+    onChange: onInputChange
+  }), /*#__PURE__*/react.createElement("input", {
+    className: style("input"),
+    placeholder: "Podaj sw\xF3j adres e-mail",
+    name: "mail",
+    type: "email",
+    value: state.mail,
+    onChange: onInputChange
+  }), /*#__PURE__*/react.createElement("input", {
+    type: "text",
+    onFocus: e => {
+      e.currentTarget.type = "date";
+      e.currentTarget.focus();
+    },
+    className: style("input"),
+    placeholder: "Podaj dat\u0119 przyj\u0119cia",
+    name: "date",
+    value: state.date,
+    onChange: onInputChange
+  }), /*#__PURE__*/react.createElement("textarea", {
+    className: style("textarea"),
+    rows: "5",
+    name: "text",
+    type: "text",
+    placeholder: "Opowiedz mi o swoim przyj\u0119ciu",
+    value: state.text,
+    onChange: onInputChange
+  }), /*#__PURE__*/react.createElement("button", {
+    className: style("subBtn")
+  }, "WY\u015ALIJ WIADOMO\u015A\u0106"))));
+};
 
-
-
-
-
-var CardItem_style = (0,bem_css_modules/* default */.Z)((Offer_module_default()));
-
-function CardItem(props) {
-  var [isOpen, setIsOpen] = (0,react.useState)(false);
-  var clas = props.clsName;
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("li", {
-    className: CardItem_style("item")
-  }, /*#__PURE__*/react.createElement("div", {
-    className: CardItem_style("item__link")
-  }, /*#__PURE__*/react.createElement("figure", {
-    className: CardItem_style({
-      clas
-    }),
-    onClick: () => setIsOpen(true)
-  }, /*#__PURE__*/react.createElement("img", {
-    className: CardItem_style("item__img"),
-    alt: "Travel Image",
-    src: props.src
-  })), /*#__PURE__*/react.createElement(Modal, {
-    img: props.src2,
-    text: props.text,
-    title: props.title,
-    open: isOpen,
-    onClose: () => setIsOpen(false)
-  }, props.text), /*#__PURE__*/react.createElement("div", {
-    className: CardItem_style("item__info")
-  }, /*#__PURE__*/react.createElement("h5", {
-    className: CardItem_style("item__text")
-  }, props.title)))));
-}
-
-/* harmony default export */ const subComponent_CardItem = (CardItem);
-;// CONCATENATED MODULE: ./src/assets/offer1.jpg
-/* harmony default export */ const offer1 = (__webpack_require__.p + "35c5ba0e325a22088b4d4c8e5340bdec.jpg");
-;// CONCATENATED MODULE: ./src/assets/16_9.jpg
-/* harmony default export */ const _16_9 = (__webpack_require__.p + "7c996d398f4f97db013e7532d01ce4b6.jpg");
-;// CONCATENATED MODULE: ./src/assets/offer2.jpg
-/* harmony default export */ const offer2 = (__webpack_require__.p + "b2ea2c7ed765f93874d87fde9e49275b.jpg");
-;// CONCATENATED MODULE: ./src/assets/offer3.jpg
-/* harmony default export */ const offer3 = (__webpack_require__.p + "759c4180eef5e40c2989b901b46dc970.jpg");
-;// CONCATENATED MODULE: ./src/assets/offer4.jpg
-/* harmony default export */ const offer4 = (__webpack_require__.p + "3ea0aee0200614fa96d152db36a0bc73.jpg");
-;// CONCATENATED MODULE: ./src/assets/offer5.jpg
-/* harmony default export */ const offer5 = (__webpack_require__.p + "a979d4201dab21e339072e4452cdae78.jpg");
-;// CONCATENATED MODULE: ./src/assets/offer6.jpg
-/* harmony default export */ const offer6 = (__webpack_require__.p + "9b6255e93e3cc0a1fac6441c58b86de5.jpg");
-// EXTERNAL MODULE: ./node_modules/react-instagram-embed/es/index.js
-var es = __webpack_require__(5064);
-;// CONCATENATED MODULE: ./src/components/Offer/Offer.jsx
-
-
-
-
-
-
-
-
-
-
-
-
-var Offer_style = (0,bem_css_modules/* default */.Z)((Offer_module_default()));
-
-function Offer() {
-  return /*#__PURE__*/react.createElement("div", {
-    id: "offer",
-    className: Offer_style()
-  }, /*#__PURE__*/react.createElement("h1", {
-    className: Offer_style("title")
-  }, "Czym dok\u0142adnie si\u0119 zajmuj\u0119? ", /*#__PURE__*/react.createElement("br", null), " Co mog\u0119 dla Was zorganizowa\u0107?"), /*#__PURE__*/react.createElement("div", {
-    className: Offer_style("container")
-  }, /*#__PURE__*/react.createElement("div", {
-    className: Offer_style("wrapper")
-  }, /*#__PURE__*/react.createElement("ul", {
-    className: Offer_style("items")
-  }, /*#__PURE__*/react.createElement(subComponent_CardItem, {
-    src: offer1,
-    src2: _16_9,
-    title: "Kompleksowa organizacja \u015Blubu i wesela.",
-    path: "/",
-    clsName: "item__pic-wrap",
-    text: "Kompleksowa organizacja \u015Blubu i wesela. Zajmuj\u0119 si\u0119 organizacj\u0105 uroczysto\u015Bci od\r pierwszych krok\xF3w \u2013 do samej koordynacji dnia \u015Blubu i zako\u0144czenia imprezy. Jestem\r odpowiedzialna za ka\u017Cdy etap przed\u015Blubnych dzia\u0142a\u0144, wsp\xF3\u0142pracuj\u0105c \u015Bci\u015Ble z Par\u0105 M\u0142od\u0105 i\r wybranymi us\u0142ugodawcami. W tym przypadku mo\u017Cecie oddelegowa\u0107 dla mnie znakomit\u0105\r wi\u0119kszo\u015B\u0107 oko\u0142o\u015Blubnych spraw, pozostaj\u0105c spokojni o ich przebieg. Podstaw\u0105 mojej\r pracy jest ramowy bud\u017Cet (zaakceptowany przez Was) oraz szczeg\xF3\u0142owa wizja (ustalana\r wsp\xF3lnie), jak uroczysto\u015B\u0107 ma wygl\u0105da\u0107 i przebiega\u0107."
-  }), /*#__PURE__*/react.createElement(subComponent_CardItem, {
-    src: offer2,
-    src2: _16_9,
-    title: "Cz\u0119\u015Bciowa organizacja \u015Blubu i wesela.",
-    path: "/",
-    clsName: "item__pic-wrap",
-    text: "Cz\u0119\u015Bciowa organizacja \u015Blubu i wesela. Dotarli\u015Bcie do takiego momentu organizacji\r \u015Blubu, w kt\xF3rym decyzja o zatrudnieniu specjalisty \u2013 okazuje si\u0119 ju\u017C by\u0107 niezb\u0119dn\u0105.\r Powody mog\u0105 by\u0107 r\xF3\u017Cne. Niezale\u017Cnie od nich, pozostaj\u0119 do Waszej dyspozycji i jestem\r gotowa podj\u0105\u0107 si\u0119 kontynuacji Waszych dotychczasowych dzia\u0142a\u0144. Moje wsparcie\r mo\u017Cliwe jest w ka\u017Cdym momencie, niezale\u017Cnie od wyznaczonego terminu uroczysto\u015Bci."
-  }), /*#__PURE__*/react.createElement(subComponent_CardItem, {
-    src: offer3,
-    src2: _16_9,
-    title: "Koordynacja dnia \u015Blubu i wesela.",
-    path: "/",
-    clsName: "item__pic-wrap",
-    text: "Koordynacja dnia \u015Blubu i wesela. To us\u0142uga zar\xF3wno integralna z us\u0142ug\u0105 organizacji\r \u015Blubu, jak i zupe\u0142nie niezale\u017Cna. Skrojona na Wasz\u0105 miar\u0119, profesjonalna opieka w dniu\r uroczysto\u015Bci. Osobi\u015Bcie czuwam nad przygotowanym scenariuszem i dbam o to, \u017Ceby\r ka\u017Cdy z us\u0142ugodawc\xF3w spisa\u0142 si\u0119 na medal. Jestem wsparciem estetycznym, logistycznym,\r tw\xF3rczym i nierzadko duchowym. Sprawuj\u0119 piecz\u0119 nad wszystkim, co w\xF3wczas tego\r wymaga."
-  })), /*#__PURE__*/react.createElement("ul", {
-    className: "cards__items"
-  }, /*#__PURE__*/react.createElement(subComponent_CardItem, {
-    src: offer4,
-    src2: _16_9,
-    title: "\u015Alub w plenerze. \u015Alub na pla\u017Cy.",
-    path: "/",
-    clsName: "item__pic-wrap",
-    text: "\u015Alub w plenerze. \u015Alub na pla\u017Cy. Organizacja ceremonii \u015Blubnej w plenerze \u2013 jest coraz\r cz\u0119stsz\u0105 praktyk\u0105. Przyszli nowo\u017Ce\u0144cy bardzo cz\u0119sto stawiaj\u0105 na takie rozwi\u0105zanie,\r dokonuj\u0105c coraz bardziej \u015Bmia\u0142ych wybor\xF3w. Jestem zagorza\u0142\u0105 zwolenniczk\u0105\r oryginalnych pomys\u0142\xF3w. Dlatego z przyjemno\u015Bci\u0105 zar\xF3wno zorganizuj\u0119, jak i skoordynuj\u0119\r Wasze za\u015Blubiny w plenerze. Niezale\u017Cnie od tego, jak\u0105 macie wizj\u0119 \u2013 jestem gotowa j\u0105\r wsp\xF3\u0142tworzy\u0107."
-  }), /*#__PURE__*/react.createElement(subComponent_CardItem, {
-    src: offer5,
-    src2: _16_9,
-    title: "\u015Alub mi\u0119dzynarodowy.",
-    path: "/",
-    clsName: "item__pic-wrap",
-    text: "\u015Alub mi\u0119dzynarodowy. Doskonale rozumiem, jak wiele pracy mo\u017Ce kosztowa\u0107\r organizacja ceremonii \u015Blubnej, w kt\xF3rej maj\u0105 spotka\u0107 si\u0119 dwie zupe\u0142nie r\xF3\u017Cne kultury.\r Elastyczno\u015B\u0107 i do\u015Bwiadczenie s\u0105 tutaj kluczowe. To naturalne, \u017Ce niezast\u0105pione jest wi\u0119c\r wsparcie profesjonalisty. Wtedy wkraczam ja i zajmuj\u0119 si\u0119 wszystkim tym, czym zaj\u0105\u0107 si\u0119\r trzeba a Wy niekoniecznie mo\u017Cecie."
-  }), /*#__PURE__*/react.createElement(subComponent_CardItem, {
-    src: offer6,
-    src2: _16_9,
-    title: "Przyj\u0119cia okoliczno\u015Bciowe.",
-    path: "/",
-    clsName: "item__pic-wrap",
-    text: "Przyj\u0119cia okoliczno\u015Bciowe. Ka\u017Cda okazja wymaga odpowiedniej oprawy. Doskonale to\r rozumiem i wspieram! Zajmuj\u0119 si\u0119 r\xF3wnie\u017C kompleksow\u0105 oraz cz\u0119\u015Bciow\u0105 organizacj\u0105\r przyj\u0119\u0107 o charakterze nie\u015Blubnym. Urodziny, wiecz\xF3r panie\u0144ski, komunia, chrzest \u015Bw.,\r jubileusz, baby shower a mo\u017Ce impreza firmowa? Zale\u017Cnie od potrzeb i pomys\u0142\xF3w \u2013\r stworz\u0119 mo\u017Cliwo\u015B\u0107 celebrowania w doskona\u0142ej scenerii."
-  })))), /*#__PURE__*/react.createElement(es/* default */.Z, {
-    clientAccessToken: "<appId>|<clientToken>",
-    url: "https://instagr.am/p/Zw9o4/",
-    maxWidth: 375,
-    hideCaption: false,
-    containerTagName: "div",
-    injectScript: true,
-    protocol: "",
-    onLoading: () => {},
-    onSuccess: () => {},
-    onAfterRender: () => {},
-    onFailure: () => {}
-  }));
-}
-
-/* harmony default export */ const Offer_Offer = (Offer); // import React, { useState } from "react";
-// import bemCssModules from "bem-css-modules";
-// import CardItem from "./subComponent/CardItem";
-// import { default as OfferStyles } from "./Offer.module.scss";
-// import img1 from "../../assets/square.jpg";
-// import img2 from "../../assets/square.jpg";
-// import img3 from "../../assets/square.jpg";
-// import img4 from "../../assets/square2.jpg";
-// import img5 from "../../assets/square2.jpg";
-// import img6 from "../../assets/square2.jpg";
-// const style = bemCssModules(OfferStyles);
-// function Offer() {
-//   return (
-//     <div id="offer" className={style()}>
-//       <h1 className={style("title")}>
-//         Czym dokładnie się zajmuję? <br /> Co mogę dla Was zorganizować?
-//       </h1>
-//       <div className={style("container")}>
-//         <div className={style("wrapper")}>
-//           <ul className={style("items")}>
-//             <CardItem
-//               src={img1}
-//               title="Kompleksowa organizacja ślubu i wesela."
-//               path="/"
-//               clsName="item__pic-wrap"
-//               text="Kompleksowa organizacja ślubu i wesela. Zajmuję się organizacją uroczystości od
-//               pierwszych kroków – do samej koordynacji dnia ślubu i zakończenia imprezy. Jestem
-//               odpowiedzialna za każdy etap przedślubnych działań, współpracując ściśle z Parą Młodą i
-//               wybranymi usługodawcami. W tym przypadku możecie oddelegować dla mnie znakomitą
-//               większość okołoślubnych spraw, pozostając spokojni o ich przebieg. Podstawą mojej
-//               pracy jest ramowy budżet (zaakceptowany przez Was) oraz szczegółowa wizja (ustalana
-//               wspólnie), jak uroczystość ma wyglądać i przebiegać."
-//             />
-//             <CardItem
-//               src={img2}
-//               title="Częściowa organizacja ślubu i wesela."
-//               path="/"
-//               clsName="item__pic-wrap"
-//               text="Częściowa organizacja ślubu i wesela. Dotarliście do takiego momentu organizacji
-//               ślubu, w którym decyzja o zatrudnieniu specjalisty – okazuje się już być niezbędną.
-//               Powody mogą być różne. Niezależnie od nich, pozostaję do Waszej dyspozycji i jestem
-//               gotowa podjąć się kontynuacji Waszych dotychczasowych działań. Moje wsparcie
-//               możliwe jest w każdym momencie, niezależnie od wyznaczonego terminu uroczystości."
-//             />
-//             <CardItem
-//               src={img3}
-//               title="Koordynacja dnia ślubu i wesela."
-//               path="/"
-//               clsName="item__pic-wrap"
-//               text="Koordynacja dnia ślubu i wesela. To usługa zarówno integralna z usługą organizacji
-//               ślubu, jak i zupełnie niezależna. Skrojona na Waszą miarę, profesjonalna opieka w dniu
-//               uroczystości. Osobiście czuwam nad przygotowanym scenariuszem i dbam o to, żeby
-//               każdy z usługodawców spisał się na medal. Jestem wsparciem estetycznym, logistycznym,
-//               twórczym i nierzadko duchowym. Sprawuję pieczę nad wszystkim, co wówczas tego
-//               wymaga."
-//             />
-//           </ul>
-//           <ul className="cards__items">
-//             <CardItem
-//               src={img4}
-//               title="Ślub w plenerze. Ślub na plaży."
-//               path="/"
-//               clsName="item__pic-wrap"
-//               text="Ślub w plenerze. Ślub na plaży. Organizacja ceremonii ślubnej w plenerze – jest coraz
-//               częstszą praktyką. Przyszli nowożeńcy bardzo często stawiają na takie rozwiązanie,
-//               dokonując coraz bardziej śmiałych wyborów. Jestem zagorzałą zwolenniczką
-//               oryginalnych pomysłów. Dlatego z przyjemnością zarówno zorganizuję, jak i skoordynuję
-//               Wasze zaślubiny w plenerze. Niezależnie od tego, jaką macie wizję – jestem gotowa ją
-//               współtworzyć."
-//             />
-//             <CardItem
-//               src={img5}
-//               title="Ślub międzynarodowy."
-//               path="/"
-//               clsName="item__pic-wrap"
-//               text="Ślub międzynarodowy. Doskonale rozumiem, jak wiele pracy może kosztować
-//               organizacja ceremonii ślubnej, w której mają spotkać się dwie zupełnie różne kultury.
-//               Elastyczność i doświadczenie są tutaj kluczowe. To naturalne, że niezastąpione jest więc
-//               wsparcie profesjonalisty. Wtedy wkraczam ja i zajmuję się wszystkim tym, czym zająć się
-//               trzeba a Wy niekoniecznie możecie."
-//             />
-//             <CardItem
-//               src={img6}
-//               title="Przyjęcia okolicznościowe."
-//               path="/"
-//               clsName="item__pic-wrap"
-//               text="Przyjęcia okolicznościowe. Każda okazja wymaga odpowiedniej oprawy. Doskonale to
-//               rozumiem i wspieram! Zajmuję się również kompleksową oraz częściową organizacją
-//               przyjęć o charakterze nieślubnym. Urodziny, wieczór panieński, komunia, chrzest św.,
-//               jubileusz, baby shower a może impreza firmowa? Zależnie od potrzeb i pomysłów –
-//               stworzę możliwość celebrowania w doskonałej scenerii."
-//             />
-//           </ul>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-// export default Offer;
+/* harmony default export */ const Contact_Contact = (Contact);
 
 /***/ }),
 
@@ -582,11 +442,180 @@ module.exports = function (encodedURI) {
 
 /***/ }),
 
-/***/ 4884:
-/***/ ((module) => {
+/***/ 3631:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-// extracted by mini-css-extract-plugin
-module.exports = {"cards":"cards","cards__popup":"cards__popup","cards__two":"cards__two","cards__border":"cards__border","cards__imgWrapper":"cards__imgWrapper","cards__titlePop":"cards__titlePop","cards__textPop":"cards__textPop","cards__close":"cards__close","cards__popup_background":"cards__popup_background","cards__title":"cards__title","cards__container":"cards__container","cards__wrapper":"cards__wrapper","cards__items":"cards__items","cards__item":"cards__item","cards__item__link":"cards__item__link","cards_clas_item__pic-wrap":"cards_clas_item__pic-wrap","cards__item__img":"cards__item__img","cards__item__info":"cards__item__info","cards__item__text":"cards__item__text"};
+"use strict";
+var __webpack_unused_export__;
+
+__webpack_unused_export__ = ({ value: true });
+__webpack_unused_export__ = __webpack_unused_export__ = __webpack_unused_export__ = __webpack_unused_export__ = void 0;
+var EmailJSResponseStatus_1 = __webpack_require__(6848);
+__webpack_unused_export__ = ({ enumerable: true, get: function () { return EmailJSResponseStatus_1.EmailJSResponseStatus; } });
+var UI_1 = __webpack_require__(378);
+var _userID = null;
+var _origin = 'https://api.emailjs.com';
+function sendPost(url, data, headers) {
+    if (headers === void 0) { headers = {}; }
+    return new Promise(function (resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhr.addEventListener('load', function (event) {
+            var responseStatus = new EmailJSResponseStatus_1.EmailJSResponseStatus(event.target);
+            if (responseStatus.status === 200 || responseStatus.text === 'OK') {
+                resolve(responseStatus);
+            }
+            else {
+                reject(responseStatus);
+            }
+        });
+        xhr.addEventListener('error', function (event) {
+            reject(new EmailJSResponseStatus_1.EmailJSResponseStatus(event.target));
+        });
+        xhr.open('POST', url, true);
+        for (var key in headers) {
+            xhr.setRequestHeader(key, headers[key]);
+        }
+        xhr.send(data);
+    });
+}
+function appendGoogleCaptcha(templatePrams) {
+    var element = document && document.getElementById('g-recaptcha-response');
+    if (element && element.value) {
+        templatePrams['g-recaptcha-response'] = element.value;
+    }
+    element = null;
+    return templatePrams;
+}
+function fixIdSelector(selector) {
+    if (selector[0] !== '#' && selector[0] !== '.') {
+        return '#' + selector;
+    }
+    return selector;
+}
+/**
+ * Initiation
+ * @param {string} userID - set the EmailJS user ID
+ * @param {string} origin - set the EmailJS origin
+ */
+function init(userID, origin) {
+    _userID = userID;
+    _origin = origin || 'https://api.emailjs.com';
+}
+__webpack_unused_export__ = init;
+/**
+ * Send a template to the specific EmailJS service
+ * @param {string} serviceID - the EmailJS service ID
+ * @param {string} templateID - the EmailJS template ID
+ * @param {Object} templatePrams - the template params, what will be set to the EmailJS template
+ * @param {string} userID - the EmailJS user ID
+ * @returns {Promise<EmailJSResponseStatus>}
+ */
+function send(serviceID, templateID, templatePrams, userID) {
+    var params = {
+        lib_version: '2.6.4',
+        user_id: userID || _userID,
+        service_id: serviceID,
+        template_id: templateID,
+        template_params: appendGoogleCaptcha(templatePrams)
+    };
+    return sendPost(_origin + '/api/v1.0/email/send', JSON.stringify(params), {
+        'Content-type': 'application/json'
+    });
+}
+__webpack_unused_export__ = send;
+/**
+ * Send a form the specific EmailJS service
+ * @param {string} serviceID - the EmailJS service ID
+ * @param {string} templateID - the EmailJS template ID
+ * @param {string | HTMLFormElement} form - the form element or selector
+ * @param {string} userID - the EmailJS user ID
+ * @returns {Promise<EmailJSResponseStatus>}
+ */
+function sendForm(serviceID, templateID, form, userID) {
+    if (typeof form === 'string') {
+        form = document.querySelector(fixIdSelector(form));
+    }
+    if (!form || form.nodeName !== 'FORM') {
+        throw 'Expected the HTML form element or the style selector of form';
+    }
+    UI_1.UI.progressState(form);
+    var formData = new FormData(form);
+    formData.append('lib_version', '2.6.4');
+    formData.append('service_id', serviceID);
+    formData.append('template_id', templateID);
+    formData.append('user_id', userID || _userID);
+    return sendPost(_origin + '/api/v1.0/email/send-form', formData)
+        .then(function (response) {
+        UI_1.UI.successState(form);
+        return response;
+    }, function (error) {
+        UI_1.UI.errorState(form);
+        return Promise.reject(error);
+    });
+}
+__webpack_unused_export__ = sendForm;
+exports.ZP = {
+    init: init,
+    send: send,
+    sendForm: sendForm
+};
+
+
+/***/ }),
+
+/***/ 6848:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.EmailJSResponseStatus = void 0;
+var EmailJSResponseStatus = /** @class */ (function () {
+    function EmailJSResponseStatus(httpResponse) {
+        this.status = httpResponse.status;
+        this.text = httpResponse.responseText;
+    }
+    return EmailJSResponseStatus;
+}());
+exports.EmailJSResponseStatus = EmailJSResponseStatus;
+
+
+/***/ }),
+
+/***/ 378:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.UI = void 0;
+var UI = /** @class */ (function () {
+    function UI() {
+    }
+    UI.clearAll = function (form) {
+        form.classList.remove(this.PROGRESS);
+        form.classList.remove(this.DONE);
+        form.classList.remove(this.ERROR);
+    };
+    UI.progressState = function (form) {
+        this.clearAll(form);
+        form.classList.add(this.PROGRESS);
+    };
+    UI.successState = function (form) {
+        form.classList.remove(this.PROGRESS);
+        form.classList.add(this.DONE);
+    };
+    UI.errorState = function (form) {
+        form.classList.remove(this.PROGRESS);
+        form.classList.add(this.ERROR);
+    };
+    UI.PROGRESS = 'emailjs-sending';
+    UI.DONE = 'emailjs-success';
+    UI.ERROR = 'emailjs-error';
+    return UI;
+}());
+exports.UI = UI;
+
 
 /***/ }),
 
@@ -819,92 +848,6 @@ __webpack_unused_export__ = function (str, opts) {
 		query: parse(extract(str), opts)
 	};
 };
-
-
-/***/ }),
-
-/***/ 6409:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ZP": () => /* binding */ Div100vh,
-/* harmony export */   "g": () => /* binding */ use100vh
-/* harmony export */ });
-/* unused harmony export measureHeight */
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-var __assign = (undefined && undefined.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-var __rest = (undefined && undefined.__rest) || function (s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-};
-
-var warned = false;
-function Div100vh(_a) {
-    var _b = _a.style, style = _b === void 0 ? {} : _b, other = __rest(_a, ["style"]);
-    var height = use100vh();
-    // TODO: warn only in development
-    if (!warned && style.height) {
-        warned = true;
-        console.warn('<ReactDiv100vh /> overrides the height property of the style prop');
-    }
-    var styleWithRealHeight = __assign(__assign({}, style), { height: height ? height + "px" : '100vh' });
-    return react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", __assign({ style: styleWithRealHeight }, other));
-}
-function use100vh() {
-    var _a = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(measureHeight), height = _a[0], setHeight = _a[1];
-    var wasRenderedOnClientAtLeastOnce = useWasRenderedOnClientAtLeastOnce();
-    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-        if (!wasRenderedOnClientAtLeastOnce)
-            return;
-        function setMeasuredHeight() {
-            var measuredHeight = measureHeight();
-            setHeight(measuredHeight);
-        }
-        window.addEventListener('resize', setMeasuredHeight);
-        return function () { return window.removeEventListener('resize', setMeasuredHeight); };
-    }, [wasRenderedOnClientAtLeastOnce]);
-    return wasRenderedOnClientAtLeastOnce ? height : null;
-}
-function measureHeight() {
-    var _a;
-    if (!isClient())
-        return null;
-    return ((_a = document.documentElement) === null || _a === void 0 ? void 0 : _a.clientHeight) || window.innerHeight;
-}
-// Once we ended up on client, the first render must look the same as on
-// the server so hydration happens without problems. _Then_ we immediately
-// schedule a subsequent update and return the height measured on the client.
-// It's not needed for CSR-only apps, but is critical for SSR.
-function useWasRenderedOnClientAtLeastOnce() {
-    var _a = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false), wasRenderedOnClientAtLeastOnce = _a[0], setWasRenderedOnClientAtLeastOnce = _a[1];
-    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-        if (isClient()) {
-            setWasRenderedOnClientAtLeastOnce(true);
-        }
-    }, []);
-    return wasRenderedOnClientAtLeastOnce;
-}
-function isClient() {
-    return typeof window !== 'undefined' && typeof document !== 'undefined';
-}
 
 
 /***/ }),

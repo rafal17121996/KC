@@ -1,6 +1,6 @@
-(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[75],{
+(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[208],{
 
-/***/ 8075:
+/***/ 7208:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18,9 +18,9 @@ var react = __webpack_require__(7294);
 var bem_css_modules = __webpack_require__(8893);
 // EXTERNAL MODULE: ./node_modules/react-router-hash-link/lib/index.js
 var lib = __webpack_require__(7853);
-// EXTERNAL MODULE: ./src/components/AboutMe/AboutMeMore.module.scss
-var AboutMeMore_module = __webpack_require__(9090);
-var AboutMeMore_module_default = /*#__PURE__*/__webpack_require__.n(AboutMeMore_module);
+;// CONCATENATED MODULE: ./src/components/AboutMe/AboutMeMore.module.scss
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const AboutMeMore_module = ({"AboutMeMoreWrapper":"AboutMeMoreWrapper","AboutMeMoreWrapper__img":"AboutMeMoreWrapper__img","AboutMeMoreWrapper__inlineStyle":"AboutMeMoreWrapper__inlineStyle","AboutMeMoreWrapper__faqTitle":"AboutMeMoreWrapper__faqTitle","AboutMeMoreWrapper__title":"AboutMeMoreWrapper__title","AboutMeMoreWrapper__bottom":"AboutMeMoreWrapper__bottom","AboutMeMoreWrapper__text":"AboutMeMoreWrapper__text","AboutMeMoreWrapper__textEnd":"AboutMeMoreWrapper__textEnd","AboutMeMoreWrapper__text2":"AboutMeMoreWrapper__text2","AboutMeMoreWrapper__picture":"AboutMeMoreWrapper__picture","AboutMeMoreWrapper__contact":"AboutMeMoreWrapper__contact"});
 ;// CONCATENATED MODULE: ./src/assets/back1 (4).jpg
 /* harmony default export */ const back1_4_ = (__webpack_require__.p + "f0b4bb7dbaed16dbd590d0055d34e005.jpg");
 ;// CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-53-1.jpg
@@ -40,7 +40,7 @@ var Item = /*#__PURE__*/(/* unused pure expression or super */ null && (React.la
 
 
 
-var style = (0,bem_css_modules/* default */.Z)((AboutMeMore_module_default()));
+var style = (0,bem_css_modules/* default */.Z)(AboutMeMore_module);
 
 function AboutMeMore() {
   var {
@@ -90,14 +90,6 @@ function AboutMeMore() {
 }
 
 /* harmony default export */ const AboutMe_AboutMeMore = (AboutMeMore);
-
-/***/ }),
-
-/***/ 9090:
-/***/ ((module) => {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"AboutMeMoreWrapper":"AboutMeMoreWrapper","AboutMeMoreWrapper__img":"AboutMeMoreWrapper__img","AboutMeMoreWrapper__inlineStyle":"AboutMeMoreWrapper__inlineStyle","AboutMeMoreWrapper__faqTitle":"AboutMeMoreWrapper__faqTitle","AboutMeMoreWrapper__title":"AboutMeMoreWrapper__title","AboutMeMoreWrapper__bottom":"AboutMeMoreWrapper__bottom","AboutMeMoreWrapper__text":"AboutMeMoreWrapper__text","AboutMeMoreWrapper__textEnd":"AboutMeMoreWrapper__textEnd","AboutMeMoreWrapper__text2":"AboutMeMoreWrapper__text2","AboutMeMoreWrapper__picture":"AboutMeMoreWrapper__picture","AboutMeMoreWrapper__contact":"AboutMeMoreWrapper__contact"};
 
 /***/ }),
 
