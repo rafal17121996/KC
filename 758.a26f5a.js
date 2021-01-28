@@ -312,7 +312,7 @@ var InstagramEmbed = /** @class */ (function (_super) {
     };
     return InstagramEmbed;
 }(react.PureComponent));
-/* harmony default export */ const es = (InstagramEmbed);
+/* harmony default export */ const es = ((/* unused pure expression or super */ null && (InstagramEmbed)));
 
 ;// CONCATENATED MODULE: ./src/components/Offer/Offer.jsx
 
@@ -385,19 +385,7 @@ function Offer() {
     path: "/",
     clsName: "item__pic-wrap",
     text: "Przyj\u0119cia okoliczno\u015Bciowe. Ka\u017Cda okazja wymaga odpowiedniej oprawy. Doskonale to\r rozumiem i wspieram! Zajmuj\u0119 si\u0119 r\xF3wnie\u017C kompleksow\u0105 oraz cz\u0119\u015Bciow\u0105 organizacj\u0105\r przyj\u0119\u0107 o charakterze nie\u015Blubnym. Urodziny, wiecz\xF3r panie\u0144ski, komunia, chrzest \u015Bw.,\r jubileusz, baby shower a mo\u017Ce impreza firmowa? Zale\u017Cnie od potrzeb i pomys\u0142\xF3w \u2013\r stworz\u0119 mo\u017Cliwo\u015B\u0107 celebrowania w doskona\u0142ej scenerii."
-  })))), /*#__PURE__*/react.createElement(es, {
-    clientAccessToken: "<appId>|<clientToken>",
-    url: "https://instagr.am/p/Zw9o4/",
-    maxWidth: 375,
-    hideCaption: false,
-    containerTagName: "div",
-    injectScript: true,
-    protocol: "",
-    onLoading: () => {},
-    onSuccess: () => {},
-    onAfterRender: () => {},
-    onFailure: () => {}
-  }));
+  })))));
 }
 
 /* harmony default export */ const Offer_Offer = (Offer); // import React, { useState } from "react";
