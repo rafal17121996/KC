@@ -34,7 +34,7 @@ var Home_module = __webpack_require__(62);
 var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 
 // CONCATENATED MODULE: ./src/assets/back1 (2)-1.jpg
-/* harmony default export */ var back1_2_1 = (__webpack_require__.p + "e83752ba4f45e1526294028c26a92383.jpg");
+/* harmony default export */ var back1_2_1 = (__webpack_require__.p + "ee84d7f0a46a3cd1016bfbb25a09272d.jpg");
 // CONCATENATED MODULE: ./src/assets/imgMobile.jpg
 /* harmony default export */ var imgMobile = (__webpack_require__.p + "d2a7ab290a7542c6d0a53779ea1e256c.jpg");
 // EXTERNAL MODULE: ./node_modules/react-parallax/lib/index.js

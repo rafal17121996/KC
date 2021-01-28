@@ -905,19 +905,19 @@ function CardItem(props) {
 
 /* harmony default export */ var subComponent_CardItem = (CardItem);
 // CONCATENATED MODULE: ./src/assets/offer1.jpg
-/* harmony default export */ var offer1 = (__webpack_require__.p + "135822b26b7bf1ec85f0ad1a82ce9b81.jpg");
+/* harmony default export */ var offer1 = (__webpack_require__.p + "35c5ba0e325a22088b4d4c8e5340bdec.jpg");
 // CONCATENATED MODULE: ./src/assets/16_9.jpg
 /* harmony default export */ var _16_9 = (__webpack_require__.p + "7c996d398f4f97db013e7532d01ce4b6.jpg");
 // CONCATENATED MODULE: ./src/assets/offer2.jpg
-/* harmony default export */ var offer2 = (__webpack_require__.p + "1bc40fe0dd8a789520177281d73289df.jpg");
+/* harmony default export */ var offer2 = (__webpack_require__.p + "b2ea2c7ed765f93874d87fde9e49275b.jpg");
 // CONCATENATED MODULE: ./src/assets/offer3.jpg
-/* harmony default export */ var offer3 = (__webpack_require__.p + "fcf1c9a91575e75b4110f814ab456733.jpg");
+/* harmony default export */ var offer3 = (__webpack_require__.p + "759c4180eef5e40c2989b901b46dc970.jpg");
 // CONCATENATED MODULE: ./src/assets/offer4.jpg
-/* harmony default export */ var offer4 = (__webpack_require__.p + "dd1c86e615a6ca141addd16468f5a31e.jpg");
+/* harmony default export */ var offer4 = (__webpack_require__.p + "3ea0aee0200614fa96d152db36a0bc73.jpg");
 // CONCATENATED MODULE: ./src/assets/offer5.jpg
-/* harmony default export */ var offer5 = (__webpack_require__.p + "e45b76dc2e4852e2ad51d0f21351e1d9.jpg");
+/* harmony default export */ var offer5 = (__webpack_require__.p + "a979d4201dab21e339072e4452cdae78.jpg");
 // CONCATENATED MODULE: ./src/assets/offer6.jpg
-/* harmony default export */ var offer6 = (__webpack_require__.p + "2911274b52ef12ffd6410b3965e31a4e.jpg");
+/* harmony default export */ var offer6 = (__webpack_require__.p + "9b6255e93e3cc0a1fac6441c58b86de5.jpg");
 // EXTERNAL MODULE: ./node_modules/react-instagram-embed/es/index.js
 var es = __webpack_require__(43);
 
