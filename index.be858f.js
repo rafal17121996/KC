@@ -4063,7 +4063,7 @@ function invariant(condition, message) {
 /******/ 			        preloadLinkTag.as = 'style'
 /******/ 			        preloadLinkTag.href = linkTag.href
 /******/ 			        document.head.appendChild(preloadLinkTag)
-/******/ 			        // document.head.appendChild(linkTag)
+/******/ 			         document.head.appendChild(linkTag)
 /******/ 			    })(linkTag)
 /******/ 			return linkTag;
 /******/ 		};
