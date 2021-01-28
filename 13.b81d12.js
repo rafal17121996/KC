@@ -80,7 +80,7 @@ function Home() {
     className: style("text")
   }, "KAROLINA CHORZ\u0118PA", /*#__PURE__*/react_default.a.createElement("br", null), "WEDDING PLANNER"), /*#__PURE__*/react_default.a.createElement("h2", {
     className: style("text2")
-  }, "KC WEDDING"), isMobile ? /*#__PURE__*/react_default.a.createElement("h2", {
+  }, "KC WWEDDING"), isMobile ? /*#__PURE__*/react_default.a.createElement("h2", {
     className: style("description")
   }, "Kreuj\u0119 rozwi\u0105zania na miar\u0119 Waszych potrzeb estetycznych i organizacyjnych. Wspieram w decyzjach, procesach, emocjach.") : null))));
 }
