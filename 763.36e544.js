@@ -64,13 +64,11 @@ var Contact = () => {
     e.preventDefault();
 
     if (!state["name"]) {
-      setErrors("coś1");
+      setErrors("Podaj swoje imię");
     } else if (!state["mail"]) {
-      setErrors("coś1");
-    } else if (!state["date"]) {
-      setErrors("coś1");
+      setErrors("Podaj swój mail");
     } else if (!state["text"]) {
-      setErrors("coś1");
+      setErrors("Wprowadz teks wiadomości");
     } else source/* default.sendForm */.ZP.sendForm("service_f2ixcir", "template_5g2c7io", e.target, "user_ux3gKfqC84EoWJjDiNkqL").then(result => {
       console.log(result.text);
       setState({
