@@ -4,7 +4,9 @@ import emailjs from "emailjs-com";
 import InstagramEmbed from 'react-instagram-embed';
 
 import { default as ContactStyles } from "./Contact.module.scss";
+
 import img from "../../assets/Karolina_KCwedding-37.jpg";
+import bg from "../../assets/pexels-miguel-á-padriñán-19670.jpg"
 
 import { StoreContext } from "../../store/StoreProvider";
 
@@ -69,7 +71,7 @@ const Contact=()=> {
 // },
 
   return (
-    <section id="contact" className={style()}>
+    <section id="contact" style={{backgroundImage: `url(${bg})`}} className={style()}>
       {isMobile?null:    <div className={style("ImgWrapper")}>
               <div className={style("iconWrapper")}>
                 <a

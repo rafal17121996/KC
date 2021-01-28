@@ -1,6 +1,7 @@
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+// const PreloadWebpackPlugin = require('preload-webpack-plugin');
 
 module.exports = {
   optimization: {
@@ -31,7 +32,7 @@ module.exports = {
       {
         test: /\.(scss|css)$/,
         exclude: /\.module.scss$/,
-        loader: [
+        use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
           {
@@ -42,6 +43,7 @@ module.exports = {
           },
         ],
       },
+      
     ],
   },
   plugins: [
@@ -49,7 +51,19 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "style.[contenthash:6].css",
       chunkFilename: "style.[contenthash:6].css",
-      publicPath: "./",
+      insert: (linkTag) => {
+        const preloadLinkTag = document.createElement('link')
+        preloadLinkTag.rel = 'preload'
+        preloadLinkTag.as = 'style'
+        preloadLinkTag.href = linkTag.href
+        document.head.appendChild(preloadLinkTag)
+         document.head.appendChild(linkTag)
+    }
     }),
+    // new PreloadWebpackPlugin({
+    //   rel: 'preload',
+    //   as: 'script'
+    // })
+
   ],
 };

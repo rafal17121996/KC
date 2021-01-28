@@ -4,15 +4,13 @@ import StoreProvider, { StoreContext } from "./store/StoreProvider";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import DeviceOrientation, { Orientation } from "react-screen-orientation";
 
-// import "./App.scss";
-React.lazy(() => import("./App.scss"));
+import "./App.scss";
+
 const Navbar = React.lazy(() => import("./components/Navbar/Navbar"));
 const NavbarFAQ = React.lazy(() => import("./components/Navbar/NavbarFAQ"));
 const Home = React.lazy(() => import("./components/Home/Home"));
 const AboutMe = React.lazy(() => import("./components/AboutMe/AboutMe"));
-const AboutMeMore = React.lazy(() =>
-  import("./components/AboutMe/AboutMeMore")
-);
+const AboutMeMore = React.lazy(() =>import("./components/AboutMe/AboutMeMore"));
 const Offer = React.lazy(() => import("./components/Offer/Offer"));
 const FAQ = React.lazy(() => import("./components/FAQ/FAQ"));
 const FAQMore = React.lazy(() => import("./components/FAQ/FAQMore"));

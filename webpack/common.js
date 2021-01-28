@@ -1,7 +1,6 @@
 const path = require("path").resolve;
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-const PreloadWebpackPlugin = require('preload-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -64,7 +63,6 @@ module.exports = {
         ],
       },
     }),
-    // new PreloadWebpackPlugin(),
   ],
 };
 
