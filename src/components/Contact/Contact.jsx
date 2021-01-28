@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import bemCssModules from "bem-css-modules";
 import emailjs from "emailjs-com";
+import InstagramEmbed from 'react-instagram-embed';
 
 import { default as ContactStyles } from "./Contact.module.scss";
 import img from "../../assets/Karolina_KCwedding-37.jpg";
@@ -16,7 +17,7 @@ const Contact=()=> {
   const [state, setState] = useState({
     name: "",
     mail: "",
-    date: today,
+    date: 'Podaj datę przyjęcia',
     text: "",
   });
   const [errors, setErrors] = useState("");
@@ -59,6 +60,13 @@ const Contact=()=> {
       [name]: value,
     });
   };
+//  const onFocus =(e)=> {
+//     e.currentTarget.type = "date";
+// },
+// const onBlur = (e)=> {
+//     e.currentTarget.type = "text";
+//     e.currentTarget.placeholder = "Enter a Date";
+// },
 
   return (
     <section id="contact" className={style()}>
@@ -89,9 +97,9 @@ const Contact=()=> {
         
             <div className={style("inlineStyle")}>
               <div>
-                <h1 className={style("title")}>Napisz do mnie wiadomość!</h1>
+                <h1 className={style("title")}>Napisz do mnie</h1>
                 <h1 className={style("description")}>
-                  Odpowiem najszybciej jak to będzie możliwe
+                Umówimy się na kawę i omówimy szczegóły
                 </h1>
               </div>
               <form onSubmit={handleOnSubmit}>
@@ -114,10 +122,16 @@ const Contact=()=> {
                 />
 
                 <input
+                  type="text"
+                  onFocus={
+                    (e)=> {
+                      e.currentTarget.type = "date";
+                      e.currentTarget.focus();
+                     }
+                   }
                   className={style("input")}
-                  placeholder="Podaj datę ślubu"
+                  placeholder="Podaj datę przyjęcia"
                   name="date"
-                  type="date"
                   value={state.date}
                   onChange={onInputChange}
                 />
@@ -127,7 +141,7 @@ const Contact=()=> {
                   rows="5"
                   name="text"
                   type="text"
-                  placeholder="Podaj treść wiadomości"
+                  placeholder="Opowiedz mi o swoim przyjęciu"
                   value={state.text}
                   onChange={onInputChange}
                 />

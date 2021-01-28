@@ -6,11 +6,13 @@ import CardItem from "./subComponent/CardItem";
 import { default as OfferStyles } from "./Offer.module.scss";
 
 import img1 from "../../assets/offer1.jpg";
+import img1_2 from "../../assets/16_9.jpg";
 import img2 from "../../assets/offer2.jpg";
 import img3 from "../../assets/offer3.jpg";
 import img4 from "../../assets/offer4.jpg";
 import img5 from "../../assets/offer5.jpg";
 import img6 from "../../assets/offer6.jpg";
+import InstagramEmbed from "react-instagram-embed";
 
 
 const style = bemCssModules(OfferStyles);
@@ -30,6 +32,7 @@ function Offer() {
           <ul className={style("items")}>
             <CardItem
               src={img1}
+              src2={img1_2}
               title="Kompleksowa organizacja ślubu i wesela."
               path="/"
               clsName="item__pic-wrap"
@@ -43,6 +46,7 @@ function Offer() {
             />
             <CardItem
               src={img2}
+              src2={img1_2}
               title="Częściowa organizacja ślubu i wesela."
               path="/"
               clsName="item__pic-wrap"
@@ -55,6 +59,7 @@ function Offer() {
             />
             <CardItem
               src={img3}
+              src2={img1_2}
               title="Koordynacja dnia ślubu i wesela."
               path="/"
               clsName="item__pic-wrap"
@@ -70,6 +75,7 @@ function Offer() {
           <ul className="cards__items">
             <CardItem
               src={img4}
+              src2={img1_2}
               title="Ślub w plenerze. Ślub na plaży."
               path="/"
               clsName="item__pic-wrap"
@@ -83,6 +89,7 @@ function Offer() {
 
             <CardItem
               src={img5}
+              src2={img1_2}
               title="Ślub międzynarodowy."
               path="/"
               clsName="item__pic-wrap"
@@ -94,6 +101,7 @@ function Offer() {
             />
             <CardItem
               src={img6}
+              src2={img1_2}
               title="Przyjęcia okolicznościowe."
               path="/"
               clsName="item__pic-wrap"
@@ -106,6 +114,19 @@ function Offer() {
           </ul>
         </div>
       </div>
+      <InstagramEmbed
+  clientAccessToken='<appId>|<clientToken>'
+  url='https://instagr.am/p/Zw9o4/'
+  maxWidth={375}
+  hideCaption={false}
+  containerTagName='div'
+  injectScript
+  protocol=''
+  onLoading={() => {}}
+  onSuccess={() => {}}
+  onAfterRender={() => {}}
+  onFailure={() => {}}
+/>
     </div>
   );
 }

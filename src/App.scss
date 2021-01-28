@@ -5,6 +5,10 @@
     // font-family: 'Raleway', sans-serif;
     font-family: 'Poppins', sans-serif;
   }
+  html {
+    margin:    0 auto;
+    max-width: 2600px;
+}
   ::-webkit-scrollbar{
     width: 15px;
   }
@@ -15,4 +19,34 @@
   ::-webkit-scrollbar-thumb {
     background: #555555;
     border-radius: 3px;
+  }
+
+
+  .overlay{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(219, 177, 177);
+  }
+
+  .fa-sync-alt {
+    display: block;
+    padding: 10px;
+    color: #c78b8b;
+    animation: rotation 2s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
   }

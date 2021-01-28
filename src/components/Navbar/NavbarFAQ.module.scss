@@ -10,6 +10,7 @@ $base-color: black;
   align-items: center;
   font-size: 1.7rem;
   transition: top 0.6s;
+  font-weight: 200;
   background-color: white;
 
   z-index: 999;
@@ -93,7 +94,7 @@ $base-color: black;
       transition: all 0.5s ease;
     }
     &__nav-menu_active {
-      background: #555454;
+      background: #ffffff;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -128,7 +129,7 @@ $base-color: black;
     }
   
     .fa-times {
-      color: #fff;
+      color: rgb(0, 0, 0);
       font-size: 2rem;
 
     }

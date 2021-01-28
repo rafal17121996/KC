@@ -4,43 +4,140 @@
   // background-position: center; /* Center the image */
   // background-repeat: no-repeat; /* Do not repeat the image */
   // background-size: cover; /* Resize the background image to cover the entire container */
-  &__popup{
-  position: fixed;
-  width: 75vw;
-  height: 50vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #FFF;
-  padding: 50px;
-  z-index: 1000;
+  &__popup {
+    position: fixed;
+    width: 75vw;
+    min-height: 60vh;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f7e3de;
+    padding: 50px;
+    z-index: 2;
+    border: 2px solid #b87333;
+    @media screen and (max-width: 960px) {
+      top:18%;
+      transform: translate(-50%, 0);
+      width: 75vw;
+    }
   }
-  &__close{
- position: absolute;
- right: 0;
- top: 0;
- font-size: 2rem;
-padding: 5px;
- cursor: pointer;
+
+  &__two {
+   width: 55%;
+   @media screen and (max-width: 960px) {
+    width: 100%;
   }
-  &__popup_background{
+  }
+
+  &__border {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 45%;
+    transform: translate(20%, -20%);
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #b87333;
+    }
+    @media screen and (max-width: 960px) {
+      width: 70%;
+      left: 25%;
+    }
+  }
+  &__imgWrapper {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 56.25% 0 0 0; 
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  &__titlePop {
+    display: block;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+    border-bottom: 3px solid #b87333;
+    @media screen and (max-width: 1600px) {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 1400px) {
+      font-size: 1.6rem;
+
+    }
+    @media screen and (max-width: 1200px) {
+      font-size: 1.4rem;
+
+    }
+    @media screen and (max-width: 1000px) {
+      font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 960px) {
+      font-size: 1rem;
+      width: 100%;
+      margin: 0;
+      margin-top: 70px;
+    }
+  }
+  &__textPop {
+    font-size: 1.2rem;
+    margin-top: 50px;
+    text-align: justify;
+    width: 100%;
+    @media screen and (max-width: 1600px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 1400px) {
+      font-size: 0.8rem;
+    }
+    @media screen and (max-width: 960px) {
+      font-size: 0.6rem;
+      margin-top: 10px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    left: -35px;
+    top: -35px;
+    font-size: 2rem;
+    padding: 5px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  &__popup_background {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .7);
-    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
   }
- 
-
 
   &__title {
     text-align: center;
     padding: 15px 0;
-    background-color: rgba(61, 124, 119, 0.8);   
-     font-weight: 400;
-     color: rgb(73, 73, 73);
+    background-color: rgba(61, 124, 119, 0.8);
+    font-weight: 400;
+    color: rgb(73, 73, 73);
     letter-spacing: 1px;
     @media screen and (max-width: 960px) {
       font-size: 1.2rem;
@@ -62,7 +159,6 @@ padding: 5px;
     @media screen and (max-width: 960px) {
       width: 80%;
     }
-  
   }
 
   &__items {
@@ -74,22 +170,22 @@ padding: 5px;
     flex: 1;
     justify-content: center;
     position: relative;
-    }
+  }
   &__item__link {
     display: flex;
     flex-flow: column;
     width: 80%;
     border-radius: 10px;
     text-decoration: none;
-    &:after{
-      content: '';
+    &:after {
+      content: "";
       position: absolute;
       bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
       width: 60%;
       height: 40px;
-      background: rgba(0,0,0,0.2);
+      background: rgba(0, 0, 0, 0.2);
       border-radius: 50%;
       filter: blur(10px);
     }
@@ -114,7 +210,6 @@ padding: 5px;
     width: 100%;
     height: 100%;
     transition: all 0.2s linear;
-    
 
     &:hover {
       transform: scale(1.1);
@@ -129,7 +224,7 @@ padding: 5px;
     display: flex;
     height: 100%;
     text-align: center;
-    color: #3D7C77;
+    color: #3d7c77;
     font-size: 18px;
     line-height: 24px;
     cursor: pointer;
@@ -147,157 +242,3 @@ padding: 5px;
     margin-bottom: 2rem;
   }
 }
-
-
-
-
-
-
-// .cards {
-
-//   // background-image: url("../../assets/pexels-miguel-á-padriñán-19670.jpg");
-//   // background-position: center; /* Center the image */
-//   // background-repeat: no-repeat; /* Do not repeat the image */
-//   // background-size: cover; /* Resize the background image to cover the entire container */
-//   background-color: white;
-//   &__popup{
-//   position: fixed;
-//   width: 75vw;
-//   height: 50vh;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   background-color: #FFF;
-//   padding: 50px;
-//   z-index: 1000;
-//   }
-//   &__close{
-//  position: absolute;
-//  right: 0;
-//  top: 0;
-//  font-size: 2rem;
-// padding: 5px;
-//  cursor: pointer;
-//   }
-//   &__popup_background{
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background-color: rgba(0, 0, 0, .7);
-//     z-index: 1000;
-//   }
- 
-
-
-//   &__title {
-//     text-align: center;
-//     padding: 15px 0;
-//     background-color: rgba(250, 234, 214, 0.6);
-//   }
-//   &__container {
-//     display: flex;
-//     flex-flow: column;
-//     align-items: center;
-//     max-width: 1120px;
-//     width: 100%;
-//     margin: 0 auto;
-//   }
-
-//   &__wrapper {
-//     position: relative;
-//     margin: 50px 0 45px;
-//     width: 100%;
-//   }
-
-//   &__items {
-//     margin-bottom: 24px;
-//   }
-
-//   &__item {
-//     display: flex;
-//     flex: 1;
-//     margin: 0 1rem;
-//     border-radius: 10px;
-//   }
-//   &__item__link {
-//     display: flex;
-//     flex-flow: column;
-//     width: 100%;
-//     border-radius: 10px;
-//     overflow: hidden;
-//     text-decoration: none;
-//   }
-
-//   &_clas_item__pic-wrap {
-//     border-radius: 50%;
-//     position: relative;
-//     width: 100%;
-//     padding-top: 90%;
-//     overflow: hidden;
-//   }
-//   &_clas_item__pic-wrapp {
-//     position: relative;
-//     width: 100%;
-//     padding-top: 100%;
-//     overflow: hidden;
-//     &:after {
-//       content: attr(data-category);
-//       position: absolute;
-//       bottom: 0;
-//       left: 5px;
-//       padding: 6px 8px;
-//       max-width: calc((100%) - 60px);
-//       font-size: 15px;
-//       font-weight: 700;
-//       color: #fff;
-//       background-color: #4b4149;
-//       box-sizing: border-box;
-//     }
-//   }
-
-//   &__item__img {
-//     cursor: pointer;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//     transition: all 0.2s linear;
-
-//     &:hover {
-//       transform: scale(1.1);
-//     }
-//   }
-
-//   &__item__info {
-//     padding: 20px 30px 30px;
-//   }
-
-//   &__item__text {
-//     color: #252e48;
-//     font-size: 18px;
-//     line-height: 24px;
-//     cursor: pointer;
-//     &:hover{
-//       color: #FF9A80;
-//     }
-//   }
-// }
-
-// @media only screen and (min-width: 960px) {
-//   .cards__items {
-//     display: flex;
-//   }
-// }
-
-// @media only screen and (max-width: 960px) {
-//   .cards__item {
-//     margin-bottom: 2rem;
-//   }
-// }
-

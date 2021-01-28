@@ -1,6 +1,7 @@
 const path = require("path").resolve;
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+const PreloadWebpackPlugin = require('preload-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -36,7 +37,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path(__dirname, "..", "public", "index.html"),
     }),
-
     new ImageMinimizerPlugin({
       minimizerOptions: {
         plugins: [
@@ -64,6 +64,7 @@ module.exports = {
         ],
       },
     }),
+    // new PreloadWebpackPlugin(),
   ],
 };
 

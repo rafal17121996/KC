@@ -1,24 +1,26 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import bemCssModules from "bem-css-modules";
 const Item = React.lazy(() => import("../FAQ/Item"));
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from "react-router-hash-link";
 
 import { default as FAQMoreStyles } from "./FAQMore.module.scss";
 import img from "../../assets/faq2.jpg";
 import { Parallax } from "react-parallax";
+import { StoreContext } from "../../store/StoreProvider";
 
 const style = bemCssModules(FAQMoreStyles);
 
 function FAQ() {
-
   const scrollWithOffset = (el, offset) => {
     const elementPosition = el.offsetTop - offset;
     window.scroll({
       top: elementPosition,
       left: 0,
-      behavior: "smooth"
-    })}
+      behavior: "smooth",
+    });
+  };
 
+  const { isMobile } = useContext(StoreContext);
 
   const [faqs, setFaqs] = useState([
     {
@@ -77,7 +79,8 @@ function FAQ() {
     },
     {
       question: "9. Ile kosztuje usługa konsultanta ślubnego?",
-      answer: 'Być może Was rozczaruję: tutaj nie ma miejsca na konkretną cenę. <strong>Każda umowa to projekt szyty na miarę.</strong> Zakres moich obowiązków ustalamy wspólnie – to podstawa naszych dalszych działań. Zazwyczaj nie zdarzają się dwie identyczne umowy, tak samo jak nieczęsto powtarzają się dokładnie te same stawki. <br/>Mogę Was zapewnić z tego miejsca, że finalne wynagrodzenie dla mnie – będzie efektem dokładnych wyliczeń tego, co jest do zrobienia oraz Waszych osobistych oczekiwań w stosunku do mnie. <strong>Gwarantuję rzetelność w ocenie tego, ile czasu i pracy zajmie wspólne działanie na Waszą rzecz.</strong> I najważniejsze: zawsze uważnie Was słucham, finalna oferta to efekt rozmów i zrozumienia zarówno Waszych potrzeb, jak i możliwości. Również finansowych.', 
+      answer:
+        "Być może Was rozczaruję: tutaj nie ma miejsca na konkretną cenę. <strong>Każda umowa to projekt szyty na miarę.</strong> Zakres moich obowiązków ustalamy wspólnie – to podstawa naszych dalszych działań. Zazwyczaj nie zdarzają się dwie identyczne umowy, tak samo jak nieczęsto powtarzają się dokładnie te same stawki. <br/>Mogę Was zapewnić z tego miejsca, że finalne wynagrodzenie dla mnie – będzie efektem dokładnych wyliczeń tego, co jest do zrobienia oraz Waszych osobistych oczekiwań w stosunku do mnie. <strong>Gwarantuję rzetelność w ocenie tego, ile czasu i pracy zajmie wspólne działanie na Waszą rzecz.</strong> I najważniejsze: zawsze uważnie Was słucham, finalna oferta to efekt rozmów i zrozumienia zarówno Waszych potrzeb, jak i możliwości. Również finansowych.",
       open: false,
     },
   ]);
@@ -98,26 +101,40 @@ function FAQ() {
 
   return (
     <section id="faq" className={style()}>
-      <Parallax bgImage={img} strength={600}>
+      <Parallax bgImage={img} strength={isMobile?100:600}>
         <div className={style("img")}>
           <div className={style("inlineStyle")}>
             <h1 className={style("faqTitle")}>ABC PRZYSZŁYCH NOWOŻEŃCÓW</h1>
-            <h1 className={style("title")}>
+            <div className={style("textWrapper")}>
+               <h1 className={style("title")}>
               Co powinniście wiedzieć na dobry początek współpracy z KC Wedding?
             </h1>
-            <h3 className={style("description")}>
-              Organizacja ślubu i wesela to ogromna ilość różnych pytań i
-              wątpliwości. Zdecydowanie łatwiej jest przez to przejść, gdy mamy
-              wsparcie w postaci doświadczenia i merytorycznej wiedzy
-              specjalisty. Takim z całą pewnością jest właśnie konsultant
-              ślubny. I tutaj również nasuwa się wiele pytań. Funkcja
-              konsultanta ślubnego jest wciąż nie do końca oczywista dla wielu
-              osób.
-            </h3>
+            {isMobile ? null : (
+              <h3 className={style("description")}>
+                Organizacja ślubu i wesela to ogromna ilość różnych pytań i
+                wątpliwości. Zdecydowanie łatwiej jest przez to przejść, gdy
+                mamy wsparcie w postaci doświadczenia i merytorycznej wiedzy
+                specjalisty. Takim z całą pewnością jest właśnie konsultant
+                ślubny. I tutaj również nasuwa się wiele pytań. Funkcja
+                konsultanta ślubnego jest wciąż nie do końca oczywista dla wielu
+                osób.
+              </h3>
+            )}
+            </div>
+           
           </div>
         </div>
       </Parallax>
-
+      {isMobile ? (
+        <h3 className={style("x")}>
+          Organizacja ślubu i wesela to ogromna ilość różnych pytań i
+          wątpliwości. Zdecydowanie łatwiej jest przez to przejść, gdy mamy
+          wsparcie w postaci doświadczenia i merytorycznej wiedzy specjalisty.
+          Takim z całą pewnością jest właśnie konsultant ślubny. I tutaj również
+          nasuwa się wiele pytań. Funkcja konsultanta ślubnego jest wciąż nie do
+          końca oczywista dla wielu osób.
+        </h3>
+      ) : null}
       <h3 className={style("x")}>
         Postanowiłam zebrać kilka najczęstszych pytań, które padają w moim
         pierwszym kontakcie z przyszłymi nowożeńcami – i odpowiedzieć na nie na
@@ -129,18 +146,18 @@ function FAQ() {
           <Item faq={faq} index={i} key={i} toggleFAQ={toggleFAQ} />
         ))}
       </div>
-      <div className={style("end")}>Mam nadzieję, że najważniejsze wątpliwości – zostały rozwiane! <br/>
-Czekam teraz na Wasz kontakt.</div>
-<Link
-      smooth
-          to="/#contact"
-          
-          scroll={el => scrollWithOffset(el, 60)}
-          className={style("nav-links")}
-        >
-         <button className={style("contact")}>Skontatkuj się ze mną!</button>
-        </Link>
-
+      <div className={style("end")}>
+        Mam nadzieję, że najważniejsze wątpliwości – zostały rozwiane! <br />
+        Czekam teraz na Wasz kontakt.
+      </div>
+      <Link
+        smooth
+        to="/#contact"
+        scroll={(el) => scrollWithOffset(el, 60)}
+        className={style("nav-links")}
+      >
+        <button className={style("contact")}>Skontatkuj się ze mną!</button>
+      </Link>
     </section>
   );
 }

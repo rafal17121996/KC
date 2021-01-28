@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import bemCssModules from "bem-css-modules";
 
 import { default as AboutMeStyles } from "./AboutMe.module.scss";
+// const AboutMeStyles = React.lazy(() => import("./AboutMe.module.scss"));
+
 
 
 import img2 from "../../assets/Karolina_KCwedding-25.jpg";
@@ -49,9 +51,9 @@ const AboutMe = () =>  {
             </p>
             <Link
           to="/about"
-          className={style("more")}
         >
-           More...
+          <button className={style("more")}>More!</button>
+           
         </Link>
             <p className={style("text5")}>
               KC Wedding powstało z uwielbienia do naturalnych i niebanalnych

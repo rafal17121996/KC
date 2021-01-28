@@ -25,7 +25,7 @@ function CardItem(props) {
               src={props.src}
             />
           </figure>
-          <Modal text={props.text} title={props.title} open={isOpen} onClose={() => setIsOpen(false)}>
+          <Modal img={props.src2} text={props.text} title={props.title} open={isOpen} onClose={() => setIsOpen(false)}>
             {props.text}
           </Modal>
           <div className={style("item__info")}>
