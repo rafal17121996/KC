@@ -52,6 +52,10 @@ var lib = __webpack_require__(7853);
 var MenuItem = __webpack_require__(1689);
 // EXTERNAL MODULE: ./src/store/StoreProvider.jsx
 var StoreProvider = __webpack_require__(7567);
+// EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js + 1 modules
+var index_es = __webpack_require__(7625);
+// EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.es.js
+var free_solid_svg_icons_index_es = __webpack_require__(1436);
 ;// CONCATENATED MODULE: ./src/components/Navbar/NavbarFAQ.module.scss
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const NavbarFAQ_module = ({"Navbar":"Navbar","Navbar_hidden":"Navbar_hidden","Navbar__wrapper":"Navbar__wrapper","Navbar__logo":"Navbar__logo","Navbar__title":"Navbar__title","Navbar__nav-menu":"Navbar__nav-menu","Navbar__nav-item":"Navbar__nav-item","Navbar__nav-links":"Navbar__nav-links","fa-bars":"fa-bars","Navbar__menu-button":"Navbar__menu-button","Navbar__nav-menu_active":"Navbar__nav-menu_active","Navbar__navbar-logo":"Navbar__navbar-logo","fa-times":"fa-times","Navbar__nav-links-mobile":"Navbar__nav-links-mobile","Navbar__flags":"Navbar__flags"});
@@ -60,6 +64,8 @@ var KC_1_ = __webpack_require__(8954);
 ;// CONCATENATED MODULE: ./src/components/Navbar/NavbarFAQ.jsx
 
  // import { Link } from "react-router-dom";
+
+
 
 
 
@@ -117,8 +123,10 @@ var Navbar = () => {
   }, /*#__PURE__*/react.createElement("div", {
     className: style("menu-button"),
     onClick: handleOnClick
-  }, /*#__PURE__*/react.createElement("i", {
-    className: isOpen ? "fas fa-times" : "fas fa-bars"
+  }, isOpen ? /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
+    icon: free_solid_svg_icons_index_es/* faTimes */.NBC
+  }) : /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
+    icon: free_solid_svg_icons_index_es/* faBars */.xiG
   })), logo, /*#__PURE__*/react.createElement("ul", {
     className: itemStyle
   }, Items, /*#__PURE__*/react.createElement("li", {
@@ -138,164 +146,6 @@ var Navbar = () => {
 };
 
 /* harmony default export */ const NavbarFAQ = (Navbar);
-
-/***/ }),
-
-/***/ 8893:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-var __webpack_unused_export__;
-
-__webpack_unused_export__ = ({ value: true });
-var isDev = "production" !== 'production';
-var settings = {
-    throwOnError: false,
-    elementDelimiter: '__',
-    modifierDelimiter: '_'
-};
-/**
- * Base function for bem naming with css modules
- * @param {Object} cssModule. Imported css module
- * @param {String} name. BEM name
- * @param {String} [element]
- * @param {Object} [mods]
- * @param {Object} [states]
- * @return {String}
- */
-function block(cssModule, name, elementParam, modsParam, statesParam) {
-    var isElementAsModes = elementParam && typeof elementParam === 'object';
-    var mods = isElementAsModes ? elementParam : modsParam;
-    var states = isElementAsModes ? modsParam : statesParam;
-    var element = isElementAsModes ? '' : elementParam;
-    var modifierDelimiter = settings.modifierDelimiter, elementDelimiter = settings.elementDelimiter, throwOnError = settings.throwOnError;
-    var baseBlock = element ? "" + name + elementDelimiter + element : name;
-    var result = cssModule[baseBlock] || '';
-    if (isDev) {
-        if (!result && !mods) {
-            var message = "There is no " + name + elementDelimiter + element + " in cssModule";
-            if (throwOnError) {
-                throw Error(message);
-            }
-            else {
-                console.warn(message);
-                return '';
-            }
-        }
-    }
-    if (mods) {
-        result = Object.keys(mods)
-            .reduce(function (acc, next) {
-            var modValue = mods[next];
-            var mod;
-            if (modValue === undefined) {
-                return acc;
-            }
-            if (typeof modValue === 'boolean') {
-                if (isDev) {
-                    if (!("" + baseBlock + modifierDelimiter + next in cssModule)) {
-                        var message = "There is no " + baseBlock + modifierDelimiter + next + " in cssModule";
-                        if (throwOnError) {
-                            throw Error(message);
-                        }
-                        else {
-                            console.warn(message);
-                            return acc;
-                        }
-                    }
-                }
-                if (modValue) {
-                    mod = cssModule["" + baseBlock + modifierDelimiter + next];
-                }
-                else {
-                    return acc;
-                }
-            }
-            else {
-                var currentMode = "" + baseBlock + modifierDelimiter + next + modifierDelimiter + mods[next];
-                if (isDev) {
-                    if (!(currentMode in cssModule)) {
-                        var message = "There is no " + currentMode + " in cssModule";
-                        if (throwOnError) {
-                            throw Error(message);
-                        }
-                        else {
-                            console.warn(message);
-                            return acc;
-                        }
-                    }
-                }
-                mod = cssModule[currentMode];
-            }
-            return acc + " " + mod;
-        }, result);
-    }
-    if (states) {
-        result = Object.keys(states)
-            .reduce(function (acc, next) {
-            if (!states[next]) {
-                return acc;
-            }
-            var state = cssModule["is-" + next];
-            if (!state) {
-                var message = "There is no is-" + next + " in cssModule";
-                if (throwOnError) {
-                    throw Error(message);
-                }
-                else {
-                    console.warn(message);
-                    return acc;
-                }
-            }
-            return acc + " " + state;
-        }, result);
-    }
-    return result.trim();
-}
-var extractModuleName = function (cssModule) {
-    if (isDev) {
-        if (!cssModule || typeof cssModule !== 'object' || Array.isArray(cssModule)) {
-            var message = 'cssModule object should be an Object with keys';
-            if (settings.throwOnError) {
-                throw Error(message);
-            }
-            else {
-                console.warn(message);
-                return '';
-            }
-        }
-    }
-    var name = Object.keys(cssModule)[0];
-    if (isDev) {
-        if (!name) {
-            var message = 'cssModule has no keys';
-            if (settings.throwOnError) {
-                throw Error(message);
-            }
-            else {
-                console.warn(message);
-                return '';
-            }
-        }
-    }
-    var indexElement = name.indexOf(settings.elementDelimiter);
-    if (indexElement !== -1) {
-        name = name.slice(0, indexElement);
-    }
-    var indexModifier = name.indexOf(settings.modifierDelimiter);
-    if (indexModifier !== -1) {
-        name = name.slice(0, indexModifier);
-    }
-    return name;
-};
-var bem = function (cssModule, name) {
-    return block.bind(null, cssModule, name || extractModuleName(cssModule));
-};
-bem.setSettings = function (newSettings) {
-    return Object.assign(settings, newSettings);
-};
-exports.Z = bem;
-
 
 /***/ }),
 

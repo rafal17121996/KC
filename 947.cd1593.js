@@ -50,16 +50,22 @@ var bem_css_modules = __webpack_require__(8893);
 var modules = __webpack_require__(6261);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
 var react_router_dom = __webpack_require__(3727);
+// EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js + 1 modules
+var index_es = __webpack_require__(7625);
+// EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.es.js
+var free_solid_svg_icons_index_es = __webpack_require__(1436);
 // EXTERNAL MODULE: ./src/components/Navbar/MenuItem/MenuItem.jsx
 var MenuItem = __webpack_require__(1689);
 // EXTERNAL MODULE: ./src/store/StoreProvider.jsx
 var StoreProvider = __webpack_require__(7567);
 ;// CONCATENATED MODULE: ./src/components/Navbar/Navbar.module.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Navbar_module = ({"Navbar":"Navbar","Navbar_hidden":"Navbar_hidden","Navbar__wrapper":"Navbar__wrapper","Navbar__logo":"Navbar__logo","Navbar__title":"Navbar__title","Navbar__nav-menu":"Navbar__nav-menu","Navbar__nav-item":"Navbar__nav-item","Navbar__nav-links":"Navbar__nav-links","fa-bars":"fa-bars","Navbar__menu-button":"Navbar__menu-button","Navbar__nav-menu_active":"Navbar__nav-menu_active","Navbar__navbar-logo":"Navbar__navbar-logo","fa-times":"fa-times","Navbar__nav-links-mobile":"Navbar__nav-links-mobile","Navbar__flags":"Navbar__flags"});
+/* harmony default export */ const Navbar_module = ({"Navbar":"Navbar","Navbar_hidden":"Navbar_hidden","Navbar__wrapper":"Navbar__wrapper","Navbar__logo":"Navbar__logo","Navbar__title":"Navbar__title","Navbar__nav-menu":"Navbar__nav-menu","Navbar__nav-item":"Navbar__nav-item","Navbar__nav-links":"Navbar__nav-links","fa-bars":"fa-bars","Navbar__menu-button":"Navbar__menu-button","Navbar__nav-menu_active":"Navbar__nav-menu_active","Navbar__navbar-logo":"Navbar__navbar-logo","Navbar__nav-links-mobile":"Navbar__nav-links-mobile","Navbar__flags":"Navbar__flags"});
 // EXTERNAL MODULE: ./src/assets/KC (1).png
 var KC_1_ = __webpack_require__(8954);
 ;// CONCATENATED MODULE: ./src/components/Navbar/Navbar.jsx
+
+
 
 
 
@@ -128,8 +134,10 @@ var Navbar = () => {
   }, /*#__PURE__*/react.createElement("div", {
     className: style("menu-button"),
     onClick: handleOnClick
-  }, /*#__PURE__*/react.createElement("i", {
-    className: isOpen ? "fas fa-times" : "fas fa-bars"
+  }, isOpen ? /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
+    icon: free_solid_svg_icons_index_es/* faTimes */.NBC
+  }) : /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
+    icon: free_solid_svg_icons_index_es/* faBars */.xiG
   })), logo, /*#__PURE__*/react.createElement("ul", {
     className: itemStyle
   }, Items, /*#__PURE__*/react.createElement("li", {
