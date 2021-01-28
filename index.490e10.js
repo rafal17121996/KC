@@ -48,7 +48,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "." + {"0":"13a1da","2":"b7cea5","3":"070c26","4":"1a9bb3","5":"3ea1a5","6":"15a9dd","7":"0444dc","8":"e8c4e5","9":"53d845","10":"d4d9d5","11":"407461","12":"94176e","13":"9d53b6","14":"94440d","15":"07ff20"}[chunkId] + ".js"
+/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + "." + {"0":"42a2a1","2":"d53861","3":"5d5d39","4":"4dd829","5":"5dbab6","6":"455009","7":"23a093","8":"676dd7","9":"c466bd","10":"f0b8f9","11":"f84b42","12":"7c0ac8","13":"e24775","14":"94d174"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -82,11 +82,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"0":1,"3":1,"4":1,"5":1,"6":1,"7":1,"8":1,"9":1,"10":1,"11":1,"13":1,"14":1};
+/******/ 		var cssChunks = {"0":1,"3":1,"4":1,"5":1,"6":1,"7":1,"8":1,"9":1,"10":1,"11":1,"13":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "style." + {"0":"652a9a","2":"31d6cf","3":"684bfc","4":"ebece7","5":"a9597f","6":"d689b0","7":"3d504c","8":"6bae80","9":"40a122","10":"90f525","11":"652a9a","12":"31d6cf","13":"9eb3ae","14":"9aa5a8","15":"31d6cf"}[chunkId] + ".css";
+/******/ 				var href = "style." + {"0":"652a9a","2":"31d6cf","3":"684bfc","4":"ebece7","5":"a9597f","6":"d689b0","7":"3d504c","8":"6bae80","9":"40a122","10":"90f525","11":"652a9a","12":"31d6cf","13":"9eb3ae","14":"31d6cf"}[chunkId] + ".css";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -242,7 +242,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 27);
+/******/ 	return __webpack_require__(__webpack_require__.s = 28);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2614,7 +2614,7 @@ var index = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext || create
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(25)
+var isarray = __webpack_require__(26)
 
 /**
  * Expose `pathToRegexp`.
@@ -3219,7 +3219,7 @@ if (true) {
 
 
 if (true) {
-  module.exports = __webpack_require__(26);
+  module.exports = __webpack_require__(27);
 } else {}
 
 
@@ -4069,6 +4069,12 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 /* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = Array.isArray || function (arr) {
@@ -4077,7 +4083,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4099,7 +4105,7 @@ exports.isValidElementType=function(a){return"string"===typeof a||"function"===t
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4126,6 +4132,9 @@ var react_router = __webpack_require__(1);
 // EXTERNAL MODULE: ./node_modules/react-screen-orientation/lib/index.js
 var lib = __webpack_require__(22);
 
+// EXTERNAL MODULE: ./src/App.scss
+var App = __webpack_require__(25);
+
 // CONCATENATED MODULE: ./src/components/Scroll/ScrollToTop.jsx
 
 
@@ -4151,10 +4160,8 @@ function ScrollToTop(_ref) {
  // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
- // import "./App.scss";
 
-/*#__PURE__*/
-react_default.a.lazy(() => __webpack_require__.e(/* import() */ 14).then(__webpack_require__.t.bind(null, 70, 7)));
+
 var Navbar = /*#__PURE__*/react_default.a.lazy(() => Promise.all(/* import() */[__webpack_require__.e(2), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, 71)));
 var NavbarFAQ = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 5).then(__webpack_require__.bind(null, 72)));
 var Home = /*#__PURE__*/react_default.a.lazy(() => Promise.all(/* import() */[__webpack_require__.e(12), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, 76)));
@@ -4167,7 +4174,7 @@ var Contact = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* i
 var Footer = /*#__PURE__*/react_default.a.lazy(() => __webpack_require__.e(/* import() */ 8).then(__webpack_require__.bind(null, 74)));
 
 
-var App = () => {
+var App_App = () => {
   var [isMobile, setIsMobile] = Object(react["useState"])(false);
 
   var handleIsMoblie = () => {
@@ -4206,7 +4213,7 @@ var App = () => {
   ;
 };
 
-/* harmony default export */ var src_App = (App);
+/* harmony default export */ var src_App = (App_App);
 // CONCATENATED MODULE: ./src/index.js
 
 
