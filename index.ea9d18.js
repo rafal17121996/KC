@@ -3933,7 +3933,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "style." + {"185":"67ed5f","208":"10131f","424":"1423b4","433":"71aadc","513":"1423b4","695":"c94eb2","719":"1eebeb","763":"2cd31e","766":"ad9017","926":"646a7f","947":"454af3"}[chunkId] + ".css";
+/******/ 			return "" + chunkId + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
