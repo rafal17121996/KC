@@ -3924,7 +3924,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + {"185":"29f14b","208":"b7eb25","261":"746d55","424":"78d3cd","433":"972708","436":"03eae8","513":"731a92","695":"6e17ba","719":"981578","758":"a26f5a","763":"af0262","786":"db59c8","808":"9a6519","815":"48f1fe","926":"02786e","947":"cd1593","968":"4a8606"}[chunkId] + ".js";
+/******/ 			return "" + chunkId + "." + {"185":"29f14b","208":"b7eb25","261":"746d55","417":"3699dd","424":"78d3cd","433":"972708","436":"03eae8","513":"731a92","695":"6e17ba","719":"5f788d","758":"a26f5a","763":"e6629e","786":"db59c8","808":"9a6519","815":"48f1fe","926":"02786e","947":"cd1593"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -3933,7 +3933,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "style." + {"185":"e05094","208":"10131f","424":"1423b4","433":"71aadc","513":"1423b4","695":"c94eb2","719":"1eebeb","758":"ad9017","763":"c1e4c1","926":"646a7f","947":"2828cd"}[chunkId] + ".css";
+/******/ 			return "style." + {"185":"e05094","208":"10131f","424":"1423b4","433":"71aadc","513":"1423b4","695":"c94eb2","719":"e3a79c","758":"ad9017","763":"c1e4c1","926":"646a7f","947":"2828cd"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -4257,8 +4257,8 @@ var AboutMeMore = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__web
 var Offer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(815), __webpack_require__.e(436), __webpack_require__.e(758)]).then(__webpack_require__.bind(__webpack_require__, 1758)));
 var FAQ = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 424).then(__webpack_require__.bind(__webpack_require__, 424)));
 var FAQMore = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(786), __webpack_require__.e(695)]).then(__webpack_require__.bind(__webpack_require__, 9695)));
-var Contact = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(815), __webpack_require__.e(968), __webpack_require__.e(763)]).then(__webpack_require__.bind(__webpack_require__, 8763)));
-var Footer = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 719).then(__webpack_require__.bind(__webpack_require__, 7719)));
+var Contact = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(815), __webpack_require__.e(417), __webpack_require__.e(763)]).then(__webpack_require__.bind(__webpack_require__, 8763)));
+var Footer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(815), __webpack_require__.e(417), __webpack_require__.e(719)]).then(__webpack_require__.bind(__webpack_require__, 7719)));
 
 
 var App = () => {
