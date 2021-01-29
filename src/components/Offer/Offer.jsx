@@ -114,7 +114,7 @@ function Offer() {
           </ul>
         </div>
       </div>
-      <InstagramEmbed
+      {/* <InstagramEmbed
   clientAccessToken='<appId>|<clientToken>'
   url='https://instagr.am/p/Zw9o4/'
   maxWidth={375}
@@ -126,7 +126,7 @@ function Offer() {
   onSuccess={() => {}}
   onAfterRender={() => {}}
   onFailure={() => {}}
-/>
+/> */}
     </div>
   );
 }

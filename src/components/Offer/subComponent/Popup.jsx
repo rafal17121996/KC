@@ -2,6 +2,12 @@ import React, { useCallback, useContext, useEffect, useState } from "react";
 import ReactDom from "react-dom";
 import bemCssModules from "bem-css-modules";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTimes,
+  faBars
+} from "@fortawesome/free-solid-svg-icons";
+
 import { default as OfferStyles } from "../Offer.module.scss";
 import { StoreContext } from "../../../store/StoreProvider";
 import Div100vh from "react-div-100vh";
@@ -35,7 +41,7 @@ export default function Modal({ img, open, title, text, onClose }) {
           </div>
         </div>
         <div className={style("close")} onClick={onClose}>
-          <i className="fas fa-times"></i>
+        <FontAwesomeIcon icon={faTimes}  />
         </div>
         {/* {isMobile?null:<div className={style("one")}></div>} */}
         <div className={style("two")}>

@@ -6,6 +6,12 @@ import { HashLink as Link } from "react-router-hash-link";
 import { MenuItems } from "./MenuItem/MenuItem";
 import { StoreContext } from "../../store/StoreProvider";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTimes,
+  faBars
+} from "@fortawesome/free-solid-svg-icons";
+
 import { default as NavbarFAQStyles } from "./NavbarFAQ.module.scss";
 
 import img from "../../assets/KC (1).png";
@@ -60,7 +66,7 @@ const Navbar = () => {
       <nav className={style("")}>
         <div className={style("wrapper")}>
           <div className={style("menu-button")} onClick={handleOnClick}>
-            <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
+          {isOpen? <FontAwesomeIcon icon={faTimes}  /> : <FontAwesomeIcon icon={faBars}  /> }
           </div>
           {logo}
           <ul className={itemStyle}>

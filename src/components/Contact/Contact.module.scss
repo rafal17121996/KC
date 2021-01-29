@@ -92,7 +92,7 @@
   }
   
   &__errors {
-    color: white;
+    color: black;
   }
   &__iconWrapper{
     position: absolute;
@@ -108,7 +108,7 @@
   &__icon{
     width: 100%;
     color: #062922;
-    font-size: 2.3rem;
+    font-size: 5rem;
     text-decoration: none;
     padding: 20px;
    &:hover{

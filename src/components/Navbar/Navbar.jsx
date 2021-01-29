@@ -3,6 +3,12 @@ import bemCssModules from "bem-css-modules";
 import { Link as Link1 } from "react-scroll";
 import { Link } from "react-router-dom";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTimes,
+  faBars
+} from "@fortawesome/free-solid-svg-icons";
+
 
 
 import { MenuItems } from "./MenuItem/MenuItem";
@@ -82,7 +88,7 @@ const Navbar = () => {
       <nav className={style("")}>
         <div className={style("wrapper")}>
           <div className={style("menu-button")} onClick={handleOnClick}>
-            <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
+          {isOpen? <FontAwesomeIcon icon={faTimes}  /> : <FontAwesomeIcon icon={faBars}  /> }
           </div>
           {logo}
           <ul className={itemStyle}>{Items}

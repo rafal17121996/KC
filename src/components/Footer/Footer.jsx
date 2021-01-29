@@ -1,6 +1,15 @@
 import React from "react";
 import bemCssModules from "bem-css-modules";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookSquare,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faPhoneAlt
+} from "@fortawesome/free-solid-svg-icons";
+
 import { default as FooterStyles } from "./Footer.module.scss";
 
 const style = bemCssModules(FooterStyles);
@@ -10,17 +19,17 @@ function Footer() {
     <footer className={style()}>
       <div className={style("sm")}>
         <p className={style("title")}>KC WEDDING</p>
-        <a href="https://www.facebook.com/kcwedding.konsultantkaslubna/"><i className="fab fa-facebook-f">
-          <p className={style("link")}>Facebook</p>
-        </i></a>
-        <a href="https://www.instagram.com/kc_weddingplanner/"><i className="fab fa-instagram">
-          <p className={style("link")}>Instagram</p>
-        </i></a>
-
-        <i className="fas fa-phone-alt">
-          <p className={style("link")}>111 111 111</p>
-        </i>
-      
+        <div className={style("iconWrapper")}>
+           <a href="https://www.facebook.com/kcwedding.konsultantkaslubna/">
+          <FontAwesomeIcon icon={faFacebookSquare} className={style("icon")} />
+        </a>
+        <a href="https://www.instagram.com/kc_weddingplanner/">
+          <FontAwesomeIcon icon={faInstagram} className={style("icon")} />
+        </a>
+        </div>
+        <a href="tel:123-132-123" className={style("number")}> <p>+48 123-132-123</p> </a>
+        <p className={style("coppy")}>© Copyright 2021. All Rights Reserved</p>
+        <p className={style("author")}>Rafał Szczurek</p>
       </div>
     </footer>
   );
