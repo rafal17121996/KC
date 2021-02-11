@@ -135,8 +135,10 @@ var Navbar = () => {
     className: style("menu-button"),
     onClick: handleOnClick
   }, isOpen ? /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
+    className: style("icon"),
     icon: free_solid_svg_icons_index_es/* faTimes */.NBC
   }) : /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
+    className: style("icon"),
     icon: free_solid_svg_icons_index_es/* faBars */.xiG
   })), logo, /*#__PURE__*/react.createElement("ul", {
     className: itemStyle

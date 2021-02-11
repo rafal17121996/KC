@@ -56,14 +56,14 @@ function Home() {
       max: 5
     },
     bgImage: isMobile ? imgMobile : back1_2_1,
-    strength: 500
+    strength: isMobile ? 0 : 500
   }, /*#__PURE__*/react.createElement("div", {
     style: {
       height: height
     }
   }, /*#__PURE__*/react.createElement("h1", {
     className: style("text")
-  }, "KAROLINA CHORZ\u0118PA", /*#__PURE__*/react.createElement("br", null), "WEDDING PLANNER"), /*#__PURE__*/react.createElement("h2", {
+  }, "KAROLINA CHORZ\u0118PA", /*#__PURE__*/react.createElement("br", null), "WEDDING PLANNER", isMobile ? null : "WEDDING PLANNER"), isMobile ? null : /*#__PURE__*/react.createElement("h2", {
     className: style("text2")
   }, "KC WEDDING"), isMobile ? /*#__PURE__*/react.createElement("h2", {
     className: style("description")

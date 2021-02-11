@@ -137,7 +137,7 @@ var Contact = () => {
     className: style("title")
   }, "Napisz do mnie"), /*#__PURE__*/react.createElement("h1", {
     className: style("description")
-  }, "Um\xF3wimy si\u0119 na kaw\u0119 i om\xF3wimy szczeg\xF3\u0142y")), /*#__PURE__*/react.createElement("form", {
+  }, "Um\xF3wimy si\u0119 na kaw\u0119 i om\xF3wimy szczeg\xF3\u0142y Twojego przyj\u0119cia")), /*#__PURE__*/react.createElement("form", {
     onSubmit: handleOnSubmit
   }, /*#__PURE__*/react.createElement("h2", {
     className: style("errors")

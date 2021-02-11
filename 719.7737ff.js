@@ -54,7 +54,7 @@ function Footer() {
   }))), /*#__PURE__*/react.createElement("a", {
     href: "tel:123-132-123",
     className: style("number")
-  }, " ", /*#__PURE__*/react.createElement("p", null, "+48 123-132-123"), " "), /*#__PURE__*/react.createElement("p", {
+  }, " ", /*#__PURE__*/react.createElement("p", null, "kontakt@kcwedding.pl"), " "), /*#__PURE__*/react.createElement("p", {
     className: style("coppy")
   }, "\xA9 Copyright 2021. All Rights Reserved"), /*#__PURE__*/react.createElement("p", {
     className: style("author")
