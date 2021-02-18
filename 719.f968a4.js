@@ -52,7 +52,6 @@ function Footer() {
     icon: free_brands_svg_icons_index_es/* faInstagram */.Zzi,
     className: style("icon")
   }))), /*#__PURE__*/react.createElement("a", {
-    href: "tel:123-456-7890",
     className: style("number")
   }, " ", /*#__PURE__*/react.createElement("p", null, "kontakt@kcwedding.pl"), " "), /*#__PURE__*/react.createElement("a", {
     href: "tel:732 845 993",
