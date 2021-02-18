@@ -28,7 +28,6 @@ var react_router_dom = __webpack_require__(3727);
 ;// CONCATENATED MODULE: ./src/components/AboutMe/AboutMe.jsx
 
 
- // const AboutMeStyles = React.lazy(() => import("./AboutMe.module.scss"));
 
 
 
@@ -68,7 +67,7 @@ var AboutMe = () => {
     className: style("more")
   }, "More!")), /*#__PURE__*/react.createElement("p", {
     className: style("text5")
-  }, "KC Wedding powsta\u0142o z uwielbienia do naturalnych i niebanalnych rozwi\u0105za\u0144."), /*#__PURE__*/react.createElement("p", {
+  }, /*#__PURE__*/react.createElement("i", null, "KC Wedding powsta\u0142o z uwielbienia do naturalnych i niebanalnych rozwi\u0105za\u0144 "), " ."), /*#__PURE__*/react.createElement("p", {
     className: style("text6")
   }, "Rozgo\u015B\u0107cie si\u0119 i wykreujmy razem co\u015B pi\u0119knego!")), isMobile ? null : /*#__PURE__*/react.createElement("div", {
     className: style("imgWrapper")

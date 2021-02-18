@@ -1,6 +1,6 @@
-(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[763],{
+(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[356],{
 
-/***/ 8763:
+/***/ 8356:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -27,8 +27,6 @@ var free_brands_svg_icons_index_es = __webpack_require__(1417);
 /* harmony default export */ const Contact_module = ({"contact":"contact","contact__ImgWrapper":"contact__ImgWrapper","contact__image":"contact__image","contact__inlineStyle":"contact__inlineStyle","contact__title":"contact__title","contact__description":"contact__description","contact__input":"contact__input","contact__textarea":"contact__textarea","contact__subBtn":"contact__subBtn","contact__errors":"contact__errors","contact__iconWrapper":"contact__iconWrapper","contact__icon":"contact__icon","fa-envelope":"fa-envelope","fa-phone-alt":"fa-phone-alt","fa-facebook-f":"fa-facebook-f"});
 ;// CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-37.jpg
 /* harmony default export */ const Karolina_KCwedding_37 = (__webpack_require__.p + "cefa5a9f705494fed483172bda5c9ade.jpg");
-;// CONCATENATED MODULE: ./src/assets/pexels-miguel-á-padriñán-19670.jpg
-/* harmony default export */ const pexels_miguel_padri_n_19670 = (__webpack_require__.p + "cb174575dd33a1a6af68e98ce973f54d.jpg");
 // EXTERNAL MODULE: ./src/store/StoreProvider.jsx
 var StoreProvider = __webpack_require__(7567);
 ;// CONCATENATED MODULE: ./src/components/Contact/Contact.jsx
@@ -37,7 +35,6 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 
 
 
@@ -104,9 +101,6 @@ var Contact = () => {
 
   return /*#__PURE__*/react.createElement("section", {
     id: "contact",
-    style: {
-      backgroundImage: "url(".concat(pexels_miguel_padri_n_19670, ")")
-    },
     className: style()
   }, isMobile ? null : /*#__PURE__*/react.createElement("div", {
     className: style("ImgWrapper")
