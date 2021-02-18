@@ -18,9 +18,11 @@ var react = __webpack_require__(7294);
 var bem_css_modules = __webpack_require__(8893);
 ;// CONCATENATED MODULE: ./src/components/Offer/Offer.module.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Offer_module = ({"cards":"cards","cards__popup":"cards__popup","cards__two":"cards__two","cards__border":"cards__border","cards__imgWrapper":"cards__imgWrapper","cards__titlePop":"cards__titlePop","cards__textPop":"cards__textPop","cards__close":"cards__close","cards__popup_background":"cards__popup_background","cards__title":"cards__title","cards__container":"cards__container","cards__wrapper":"cards__wrapper","cards__items":"cards__items","cards__item":"cards__item","cards__item__link":"cards__item__link","cards_clas_item__pic-wrap":"cards_clas_item__pic-wrap","cards__item__img":"cards__item__img","cards__item__info":"cards__item__info","cards__item__text":"cards__item__text"});
+/* harmony default export */ const Offer_module = ({"cards":"cards","cards__popup":"cards__popup","cards__center":"cards__center","cards__contact":"cards__contact","cards__two":"cards__two","cards__border":"cards__border","cards__imgWrapper":"cards__imgWrapper","cards__titlePop":"cards__titlePop","cards__textPop":"cards__textPop","cards__close":"cards__close","cards__popup_background":"cards__popup_background","cards__title":"cards__title","cards__container":"cards__container","cards__wrapper":"cards__wrapper","cards__items":"cards__items","cards__item":"cards__item","cards__item__link":"cards__item__link","cards_clas_item__pic-wrap":"cards_clas_item__pic-wrap","cards__item__img":"cards__item__img","cards__item__info":"cards__item__info","cards__item__text":"cards__item__text"});
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
 var react_dom = __webpack_require__(3935);
+// EXTERNAL MODULE: ./node_modules/react-scroll/modules/index.js
+var modules = __webpack_require__(6261);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js + 1 modules
 var index_es = __webpack_require__(7625);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.es.js
@@ -30,6 +32,7 @@ var StoreProvider = __webpack_require__(7567);
 // EXTERNAL MODULE: ./node_modules/react-div-100vh/dist/esm/index.js
 var esm = __webpack_require__(6409);
 ;// CONCATENATED MODULE: ./src/components/Offer/subComponent/Popup.jsx
+
 
 
 
@@ -84,7 +87,18 @@ function Modal(_ref) {
     className: style("titlePop")
   }, title), /*#__PURE__*/react.createElement("p", {
     className: style("textPop")
-  }, text)))), document.getElementById("portal"));
+  }, text)), /*#__PURE__*/react.createElement("div", {
+    className: style("center")
+  }, /*#__PURE__*/react.createElement(modules/* Link */.rU, {
+    smooth: true,
+    duration: isMobile ? 0 : 1000,
+    to: "contact",
+    offset: isMobile ? 0 : -60,
+    className: style("nav-links"),
+    onClick: onClose
+  }, /*#__PURE__*/react.createElement("button", {
+    className: style("contact")
+  }, "Skontatkuj si\u0119 ze mn\u0105!"))))), document.getElementById("portal"));
 }
 ;// CONCATENATED MODULE: ./src/components/Offer/subComponent/CardItem.jsx
 
