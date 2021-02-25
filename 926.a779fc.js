@@ -67,7 +67,7 @@ var AboutMe = () => {
     className: style("more")
   }, "More!")), /*#__PURE__*/react.createElement("p", {
     className: style("text5")
-  }, /*#__PURE__*/react.createElement("i", null, "KC Wedding powsta\u0142o z uwielbienia do naturalnych i niebanalnych rozwi\u0105za\u0144 "), " ."), /*#__PURE__*/react.createElement("p", {
+  }, "KC Wedding powsta\u0142o z uwielbienia do naturalnych i niebanalnych rozwi\u0105za\u0144  ."), /*#__PURE__*/react.createElement("p", {
     className: style("text6")
   }, "Rozgo\u015B\u0107cie si\u0119 i wykreujmy razem co\u015B pi\u0119knego!")), isMobile ? null : /*#__PURE__*/react.createElement("div", {
     className: style("imgWrapper")
