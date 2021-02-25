@@ -3924,7 +3924,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + {"185":"29f14b","208":"64ba9c","261":"746d55","356":"438efe","417":"3699dd","424":"a6b8a2","433":"eee336","436":"03eae8","513":"731a92","695":"6e17ba","719":"f968a4","758":"02ad6c","786":"db59c8","808":"9a6519","815":"48f1fe","926":"a779fc","947":"0dfee5"}[chunkId] + ".js";
+/******/ 			return "" + chunkId + "." + {"185":"29f14b","208":"64ba9c","261":"746d55","356":"438efe","358":"f6d9d8","417":"3699dd","424":"a6b8a2","433":"bcf3c6","436":"03eae8","513":"731a92","571":"2f8a2a","695":"6e17ba","719":"f968a4","758":"02ad6c","786":"db59c8","808":"9a6519","815":"48f1fe","926":"4b801e","947":"0dfee5"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -3933,7 +3933,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "style." + {"185":"79b1df","208":"9a8e17","356":"bd8c57","424":"901aa9","433":"aec33b","513":"901aa9","695":"c32cad","719":"9935cc","758":"9ee891","926":"eafba2","947":"69cdde"}[chunkId] + ".css";
+/******/ 			return "style." + {"185":"79b1df","208":"9a8e17","356":"bd8c57","424":"901aa9","433":"99b930","513":"901aa9","695":"c32cad","719":"9935cc","758":"9ee891","926":"eafba2","947":"69cdde"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -4251,8 +4251,8 @@ function ScrollToTop(_ref) {
 
 var Navbar = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(815), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(947)]).then(__webpack_require__.bind(__webpack_require__, 9947)));
 var NavbarFAQ = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(815), __webpack_require__.e(436), __webpack_require__.e(185)]).then(__webpack_require__.bind(__webpack_require__, 9185)));
-var Home = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(786), __webpack_require__.e(433)]).then(__webpack_require__.bind(__webpack_require__, 5433)));
-var AboutMe = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 926).then(__webpack_require__.bind(__webpack_require__, 5926)));
+var Home = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(786), __webpack_require__.e(358), __webpack_require__.e(433)]).then(__webpack_require__.bind(__webpack_require__, 5433)));
+var AboutMe = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(571), __webpack_require__.e(926)]).then(__webpack_require__.bind(__webpack_require__, 5926)));
 var AboutMeMore = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(786), __webpack_require__.e(208)]).then(__webpack_require__.bind(__webpack_require__, 7208)));
 var Offer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(815), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(758)]).then(__webpack_require__.bind(__webpack_require__, 1758)));
 var FAQ = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 424).then(__webpack_require__.bind(__webpack_require__, 424)));

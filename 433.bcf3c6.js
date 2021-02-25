@@ -18,9 +18,11 @@ var react = __webpack_require__(7294);
 var bem_css_modules = __webpack_require__(8893);
 // EXTERNAL MODULE: ./node_modules/react-parallax/lib/index.js
 var lib = __webpack_require__(1113);
+// EXTERNAL MODULE: ./node_modules/gsap/index.js + 2 modules
+var gsap = __webpack_require__(6358);
 ;// CONCATENATED MODULE: ./src/components/Home/Home.module.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Home_module = ({"homeWrapper":"homeWrapper","homeWrapper__text":"homeWrapper__text","fadein":"fadein","homeWrapper__text2":"homeWrapper__text2","homeWrapper__description":"homeWrapper__description"});
+/* harmony default export */ const Home_module = ({"homeWrapper":"homeWrapper","homeWrapper__text":"homeWrapper__text","homeWrapper__text2":"homeWrapper__text2","homeWrapper__description":"homeWrapper__description"});
 ;// CONCATENATED MODULE: ./src/assets/back1 (2)-1.jpg
 /* harmony default export */ const back1_2_1 = (__webpack_require__.p + "ee84d7f0a46a3cd1016bfbb25a09272d.jpg");
 ;// CONCATENATED MODULE: ./src/assets/imgMobile.jpg
@@ -38,6 +40,7 @@ var StoreProvider = __webpack_require__(7567);
 
 
 
+
 var style = (0,bem_css_modules/* default */.Z)(Home_module);
 function Home() {
   var height = (0,esm/* use100vh */.g)();
@@ -45,6 +48,8 @@ function Home() {
     isMobile
   } = (0,react.useContext)(StoreProvider/* StoreContext */.x);
   var [offset, setOffset] = (0,react.useState)();
+  var text1 = (0,react.useRef)(null);
+  var text2 = (0,react.useRef)(null);
 
   var handleScroll = () => setOffset(window.pageYOffset);
 
@@ -53,6 +58,30 @@ function Home() {
     backgroundImage: "url(".concat(back1_2_1, ")"),
     backgroundPositionY: offset * 0.7 + "px"
   };
+  (0,react.useEffect)(() => {
+    gsap/* default.set */.ZP.set([text1, text2], {
+      autoAlpha: 0
+    });
+    var tl = gsap/* default.timeline */.ZP.timeline({
+      defaults: {
+        ease: 'power3.inOut'
+      }
+    });
+    tl.fromTo(text1, {
+      y: '-=300'
+    }, {
+      duration: 1,
+      y: '+=300',
+      autoAlpha: 1
+    });
+    tl.fromTo(text2, {
+      y: '+=300'
+    }, {
+      duration: 1,
+      y: '-=300',
+      autoAlpha: 1
+    });
+  }, []);
   return /*#__PURE__*/react.createElement("section", {
     id: "home",
     className: style()
@@ -64,8 +93,14 @@ function Home() {
       height: height
     }
   }, /*#__PURE__*/react.createElement("h1", {
+    ref: el => {
+      text1 = el;
+    },
     className: style("text")
   }, "KAROLINA CHORZ\u0118PA", /*#__PURE__*/react.createElement("br", null), isMobile ? null : "WEDDING PLANNER"), isMobile ? null : /*#__PURE__*/react.createElement("h2", {
+    ref: el => {
+      text2 = el;
+    },
     className: style("text2")
   }, "KC WEDDING"), isMobile ? /*#__PURE__*/react.createElement("h2", {
     className: style("description")
