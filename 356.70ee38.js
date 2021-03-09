@@ -170,7 +170,7 @@ var Contact = () => {
     className: style("subBtn")
   }, "WY\u015ALIJ WIADOMO\u015A\u0106"))), "//  IGQVJVamVzTE04S3RjOG5qaE1nN2VFSE1KMFh1Q0J1S2N3OFFkdGwxbHUtSHlaNGJlUGJEZADh5T0pPSGtxX19LeWRBck1mdk5vZAUdKLVpQS3FlcGFQY2lmYnNaOWkxX3p1a3l1VXZAzNlRCM2lIUm12TgZDZD IGQVJWX212ZAm5qM1FhSDNFLUx5XzRRR1poNzRrRms0VFJRaHRONHhKZAFVEaGJqQVdhaFFwZATVGY2lVM1N2SzNZAeFoxalE2bW1KV3gwT1lRUC1uMXhzbnRKeHJ5V2JRM1JoaUlIQ21EcDl2T0lrTlZAqMQZDZD", /*#__PURE__*/react.createElement(es/* default */.Z, {
     clientAccessToken: "5148931658515424|IGQVJVamVzTE04S3RjOG5qaE1nN2VFSE1KMFh1Q0J1S2N3OFFkdGwxbHUtSHlaNGJlUGJEZADh5T0pPSGtxX19LeWRBck1mdk5vZAUdKLVpQS3FlcGFQY2lmYnNaOWkxX3p1a3l1VXZAzNlRCM2lIUm12TgZDZD",
-    url: "https://www.instagram.com/p/CMKNOUslMtL/",
+    url: "https://www.instagram.com/p/CMM4cyrDGQs/",
     maxWidth: 375,
     hideCaption: false,
     containerTagName: "div",
