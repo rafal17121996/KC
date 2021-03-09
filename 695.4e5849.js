@@ -113,7 +113,7 @@ function FAQ() {
     className: style("inlineStyle")
   }, /*#__PURE__*/react.createElement("h1", {
     className: style("faqTitle")
-  }, "ABC PRZYSZ\u0141YCH NOWO\u017BE\u0143C\xD3W"), /*#__PURE__*/react.createElement("div", {
+  }, "ABC Przysz\u0142ych Nowo\u017Ce\u0144c\xF3w"), /*#__PURE__*/react.createElement("div", {
     className: style("textWrapper")
   }, /*#__PURE__*/react.createElement("h1", {
     className: style("title")

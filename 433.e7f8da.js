@@ -22,7 +22,7 @@ var lib = __webpack_require__(1113);
 var gsap = __webpack_require__(6358);
 ;// CONCATENATED MODULE: ./src/components/Home/Home.module.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Home_module = ({"homeWrapper":"homeWrapper","homeWrapper__text":"homeWrapper__text","homeWrapper__text2":"homeWrapper__text2","homeWrapper__description":"homeWrapper__description"});
+/* harmony default export */ const Home_module = ({"homeWrapper":"homeWrapper","zoom":"zoom","homeWrapper__text":"homeWrapper__text","homeWrapper__text2":"homeWrapper__text2","homeWrapper__description":"homeWrapper__description"});
 ;// CONCATENATED MODULE: ./src/assets/back1 (2)-1.jpg
 /* harmony default export */ const back1_2_1 = (__webpack_require__.p + "ee84d7f0a46a3cd1016bfbb25a09272d.jpg");
 ;// CONCATENATED MODULE: ./src/assets/imgMobile.jpg
@@ -84,10 +84,8 @@ function Home() {
   }, []);
   return /*#__PURE__*/react.createElement("section", {
     id: "home",
-    className: style()
-  }, /*#__PURE__*/react.createElement(lib.Parallax, {
-    bgImage: back1_2_1,
-    strength: 100
+    className: style(),
+    style: mystyle
   }, /*#__PURE__*/react.createElement(esm/* default */.ZP, null, /*#__PURE__*/react.createElement("div", {
     style: {
       height: height
@@ -104,7 +102,7 @@ function Home() {
     className: style("text2")
   }, "KC WEDDING"), isMobile ? /*#__PURE__*/react.createElement("h2", {
     className: style("description")
-  }, "Kreuj\u0119 rozwi\u0105zania na miar\u0119 Waszych potrzeb estetycznych i organizacyjnych. Wspieram w decyzjach, procesach, emocjach.") : null))));
+  }, "Kreuj\u0119 rozwi\u0105zania na miar\u0119 Waszych potrzeb estetycznych i organizacyjnych. Wspieram w decyzjach, procesach, emocjach.") : null)));
 }
 
 /***/ }),
