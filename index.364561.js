@@ -108,6 +108,164 @@ var StoreProvider = (_ref) => {
 
 /***/ }),
 
+/***/ 8893:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+var __webpack_unused_export__;
+
+__webpack_unused_export__ = ({ value: true });
+var isDev = "production" !== 'production';
+var settings = {
+    throwOnError: false,
+    elementDelimiter: '__',
+    modifierDelimiter: '_'
+};
+/**
+ * Base function for bem naming with css modules
+ * @param {Object} cssModule. Imported css module
+ * @param {String} name. BEM name
+ * @param {String} [element]
+ * @param {Object} [mods]
+ * @param {Object} [states]
+ * @return {String}
+ */
+function block(cssModule, name, elementParam, modsParam, statesParam) {
+    var isElementAsModes = elementParam && typeof elementParam === 'object';
+    var mods = isElementAsModes ? elementParam : modsParam;
+    var states = isElementAsModes ? modsParam : statesParam;
+    var element = isElementAsModes ? '' : elementParam;
+    var modifierDelimiter = settings.modifierDelimiter, elementDelimiter = settings.elementDelimiter, throwOnError = settings.throwOnError;
+    var baseBlock = element ? "" + name + elementDelimiter + element : name;
+    var result = cssModule[baseBlock] || '';
+    if (isDev) {
+        if (!result && !mods) {
+            var message = "There is no " + name + elementDelimiter + element + " in cssModule";
+            if (throwOnError) {
+                throw Error(message);
+            }
+            else {
+                console.warn(message);
+                return '';
+            }
+        }
+    }
+    if (mods) {
+        result = Object.keys(mods)
+            .reduce(function (acc, next) {
+            var modValue = mods[next];
+            var mod;
+            if (modValue === undefined) {
+                return acc;
+            }
+            if (typeof modValue === 'boolean') {
+                if (isDev) {
+                    if (!("" + baseBlock + modifierDelimiter + next in cssModule)) {
+                        var message = "There is no " + baseBlock + modifierDelimiter + next + " in cssModule";
+                        if (throwOnError) {
+                            throw Error(message);
+                        }
+                        else {
+                            console.warn(message);
+                            return acc;
+                        }
+                    }
+                }
+                if (modValue) {
+                    mod = cssModule["" + baseBlock + modifierDelimiter + next];
+                }
+                else {
+                    return acc;
+                }
+            }
+            else {
+                var currentMode = "" + baseBlock + modifierDelimiter + next + modifierDelimiter + mods[next];
+                if (isDev) {
+                    if (!(currentMode in cssModule)) {
+                        var message = "There is no " + currentMode + " in cssModule";
+                        if (throwOnError) {
+                            throw Error(message);
+                        }
+                        else {
+                            console.warn(message);
+                            return acc;
+                        }
+                    }
+                }
+                mod = cssModule[currentMode];
+            }
+            return acc + " " + mod;
+        }, result);
+    }
+    if (states) {
+        result = Object.keys(states)
+            .reduce(function (acc, next) {
+            if (!states[next]) {
+                return acc;
+            }
+            var state = cssModule["is-" + next];
+            if (!state) {
+                var message = "There is no is-" + next + " in cssModule";
+                if (throwOnError) {
+                    throw Error(message);
+                }
+                else {
+                    console.warn(message);
+                    return acc;
+                }
+            }
+            return acc + " " + state;
+        }, result);
+    }
+    return result.trim();
+}
+var extractModuleName = function (cssModule) {
+    if (isDev) {
+        if (!cssModule || typeof cssModule !== 'object' || Array.isArray(cssModule)) {
+            var message = 'cssModule object should be an Object with keys';
+            if (settings.throwOnError) {
+                throw Error(message);
+            }
+            else {
+                console.warn(message);
+                return '';
+            }
+        }
+    }
+    var name = Object.keys(cssModule)[0];
+    if (isDev) {
+        if (!name) {
+            var message = 'cssModule has no keys';
+            if (settings.throwOnError) {
+                throw Error(message);
+            }
+            else {
+                console.warn(message);
+                return '';
+            }
+        }
+    }
+    var indexElement = name.indexOf(settings.elementDelimiter);
+    if (indexElement !== -1) {
+        name = name.slice(0, indexElement);
+    }
+    var indexModifier = name.indexOf(settings.modifierDelimiter);
+    if (indexModifier !== -1) {
+        name = name.slice(0, indexModifier);
+    }
+    return name;
+};
+var bem = function (cssModule, name) {
+    return block.bind(null, cssModule, name || extractModuleName(cssModule));
+};
+bem.setSettings = function (newSettings) {
+    return Object.assign(settings, newSettings);
+};
+exports.Z = bem;
+
+
+/***/ }),
+
 /***/ 71:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -3924,7 +4082,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + {"185":"29f14b","197":"4f8f10","208":"64ba9c","261":"746d55","356":"70ee38","358":"f6d9d8","417":"3699dd","424":"a6b8a2","433":"e7f8da","436":"03eae8","513":"731a92","571":"2f8a2a","695":"4e5849","719":"f968a4","786":"db59c8","808":"9a6519","815":"48f1fe","926":"ba968d","947":"0dfee5"}[chunkId] + ".js";
+/******/ 			return "" + chunkId + "." + {"82":"470d45","185":"29f14b","208":"2d901a","218":"457ab5","261":"746d55","356":"f6f489","358":"f6d9d8","417":"3699dd","424":"cc428b","433":"3e7d57","436":"03eae8","513":"731a92","625":"f5cd8a","695":"ebbce5","719":"507c0f","808":"9a6519","926":"ba968d","947":"0dfee5"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -3933,7 +4091,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "style." + {"185":"79b1df","197":"e5925e","208":"9a8e17","356":"bd8c57","424":"9876a2","433":"91babd","513":"9876a2","695":"c32cad","719":"9935cc","926":"acbbb4","947":"69cdde"}[chunkId] + ".css";
+/******/ 			return "style." + {"185":"79b1df","208":"9a8e17","218":"e5925e","356":"82d925","424":"9876a2","433":"91babd","513":"9876a2","695":"c32cad","719":"9935cc","926":"acbbb4","947":"69cdde"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -4095,7 +4253,7 @@ function invariant(condition, message) {
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"185":1,"197":1,"208":1,"356":1,"424":1,"433":1,"513":1,"695":1,"719":1,"926":1,"947":1};
+/******/ 			var cssChunks = {"185":1,"208":1,"218":1,"356":1,"424":1,"433":1,"513":1,"695":1,"719":1,"926":1,"947":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -4242,6 +4400,36 @@ function ScrollToTop(_ref) {
 }
 
 /* harmony default export */ const Scroll_ScrollToTop = ((0,react_router/* withRouter */.EN)(ScrollToTop));
+// EXTERNAL MODULE: ./node_modules/bem-css-modules/dist/bem-css-modules.js
+var bem_css_modules = __webpack_require__(8893);
+;// CONCATENATED MODULE: ./src/components/Insta/Insta.module.scss
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const Insta_module = ({"Insta":"Insta"});
+;// CONCATENATED MODULE: ./src/components/Insta/Insta.jsx
+
+
+
+var style = (0,bem_css_modules/* default */.Z)(Insta_module);
+
+function Insta() {
+  (0,react.useEffect)(() => {
+    var userFeed = new Instafeed({
+      get: 'user',
+      target: "instafeed-container",
+      resolution: 'low_resolution',
+      accessToken: 'IGQVJVamVzTE04S3RjOG5qaE1nN2VFSE1KMFh1Q0J1S2N3OFFkdGwxbHUtSHlaNGJlUGJEZADh5T0pPSGtxX19LeWRBck1mdk5vZAUdKLVpQS3FlcGFQY2lmYnNaOWkxX3p1a3l1VXZAzNlRCM2lIUm12TgZDZD',
+      limit: 3
+    });
+    userFeed.run();
+  }, []);
+  return /*#__PURE__*/react.createElement("section", {
+    className: style()
+  }, /*#__PURE__*/react.createElement("div", {
+    id: "instafeed-container"
+  }));
+}
+
+/* harmony default export */ const Insta_Insta = (Insta);
 ;// CONCATENATED MODULE: ./src/App.jsx
 
  // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -4249,16 +4437,17 @@ function ScrollToTop(_ref) {
 
 
 
-var Navbar = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(815), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(947)]).then(__webpack_require__.bind(__webpack_require__, 9947)));
-var NavbarFAQ = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(815), __webpack_require__.e(436), __webpack_require__.e(185)]).then(__webpack_require__.bind(__webpack_require__, 9185)));
-var Home = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(786), __webpack_require__.e(358), __webpack_require__.e(433)]).then(__webpack_require__.bind(__webpack_require__, 5433)));
-var AboutMe = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(571), __webpack_require__.e(926)]).then(__webpack_require__.bind(__webpack_require__, 5926)));
-var AboutMeMore = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(786), __webpack_require__.e(208)]).then(__webpack_require__.bind(__webpack_require__, 7208)));
-var Offer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(815), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(197)]).then(__webpack_require__.bind(__webpack_require__, 4197)));
+var Navbar = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(947)]).then(__webpack_require__.bind(__webpack_require__, 9947)));
+var NavbarFAQ = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(185)]).then(__webpack_require__.bind(__webpack_require__, 9185)));
+var Home = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(433)]).then(__webpack_require__.bind(__webpack_require__, 5433)));
+var AboutMe = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(82), __webpack_require__.e(926)]).then(__webpack_require__.bind(__webpack_require__, 5926)));
+var AboutMeMore = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 208).then(__webpack_require__.bind(__webpack_require__, 7208)));
+var Offer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(218)]).then(__webpack_require__.bind(__webpack_require__, 7218)));
 var FAQ = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 424).then(__webpack_require__.bind(__webpack_require__, 424)));
-var FAQMore = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(786), __webpack_require__.e(695)]).then(__webpack_require__.bind(__webpack_require__, 9695)));
-var Contact = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(815), __webpack_require__.e(417), __webpack_require__.e(356)]).then(__webpack_require__.bind(__webpack_require__, 8356)));
-var Footer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(815), __webpack_require__.e(417), __webpack_require__.e(719)]).then(__webpack_require__.bind(__webpack_require__, 7719)));
+var FAQMore = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 695).then(__webpack_require__.bind(__webpack_require__, 9695)));
+var Contact = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(417), __webpack_require__.e(356)]).then(__webpack_require__.bind(__webpack_require__, 8356)));
+var Footer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(417), __webpack_require__.e(719)]).then(__webpack_require__.bind(__webpack_require__, 7719)));
+
 
 
 var App = () => {
@@ -4289,7 +4478,7 @@ var App = () => {
   }, /*#__PURE__*/react.createElement(react_router/* Switch */.rs, null, /*#__PURE__*/react.createElement(react_router/* Route */.AW, {
     path: "/",
     exact: true,
-    render: () => /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(Navbar, null), /*#__PURE__*/react.createElement(Home, null), /*#__PURE__*/react.createElement(AboutMe, null), /*#__PURE__*/react.createElement(Offer, null), /*#__PURE__*/react.createElement(FAQ, null), /*#__PURE__*/react.createElement(Contact, null))
+    render: () => /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(Navbar, null), /*#__PURE__*/react.createElement(Home, null), /*#__PURE__*/react.createElement(AboutMe, null), /*#__PURE__*/react.createElement(Offer, null), /*#__PURE__*/react.createElement(FAQ, null), /*#__PURE__*/react.createElement(Contact, null), /*#__PURE__*/react.createElement(Insta_Insta, null))
   }), /*#__PURE__*/react.createElement(react_router/* Route */.AW, {
     path: "/faq",
     render: () => /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(NavbarFAQ, null), /*#__PURE__*/react.createElement(FAQMore, null))

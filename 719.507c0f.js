@@ -58,6 +58,8 @@ function Footer() {
     className: style("number")
   }, " ", /*#__PURE__*/react.createElement("p", null, "+48 732 845 993"), " "), /*#__PURE__*/react.createElement("p", {
     className: style("coppy")
+  }, "Warszawa | Rzesz\xF3w"), /*#__PURE__*/react.createElement("p", {
+    className: style("coppy")
   }, "\xA9 Copyright 2021. All Rights Reserved"), /*#__PURE__*/react.createElement("p", {
     className: style("author")
   }, "Rafa\u0142 Szczurek")));
