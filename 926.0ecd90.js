@@ -62,7 +62,6 @@ var AboutMe = () => {
       autoAlpha: 1,
       scrollTrigger: {
         trigger: text,
-        markers: true,
         start: "top 85%",
         //when top of herman passes 75% viewport height
         end: "bottom 25%",
@@ -81,7 +80,6 @@ var AboutMe = () => {
       autoAlpha: 1,
       scrollTrigger: {
         trigger: text2,
-        markers: true,
         start: "top 85%",
         //when top of herman passes 75% viewport height
         end: "bottom 25%",
@@ -100,7 +98,6 @@ var AboutMe = () => {
       autoAlpha: 1,
       scrollTrigger: {
         trigger: text3,
-        markers: true,
         start: "top 85%",
         //when top of herman passes 75% viewport height
         end: "bottom 25%",
@@ -119,7 +116,6 @@ var AboutMe = () => {
       autoAlpha: 1,
       scrollTrigger: {
         trigger: text4,
-        markers: true,
         start: "top 85%",
         //when top of herman passes 75% viewport height
         end: "bottom 25%",

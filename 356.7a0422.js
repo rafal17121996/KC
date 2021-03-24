@@ -18,6 +18,10 @@ var react = __webpack_require__(7294);
 var bem_css_modules = __webpack_require__(8893);
 // EXTERNAL MODULE: ./node_modules/emailjs-com/source/index.js
 var source = __webpack_require__(3631);
+// EXTERNAL MODULE: ./node_modules/gsap/index.js + 2 modules
+var gsap = __webpack_require__(6358);
+// EXTERNAL MODULE: ./node_modules/gsap/ScrollTrigger.js
+var ScrollTrigger = __webpack_require__(7082);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js + 1 modules
 var index_es = __webpack_require__(7625);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/free-brands-svg-icons/index.es.js
@@ -44,6 +48,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
+
+gsap/* default.registerPlugin */.ZP.registerPlugin(ScrollTrigger/* ScrollTrigger */.i);
 var style = (0,bem_css_modules/* default */.Z)(Contact_module);
 
 var Contact = () => {
@@ -92,6 +99,30 @@ var Contact = () => {
     }));
   };
 
+  var text = (0,react.useRef)(null);
+  (0,react.useEffect)(() => {
+    gsap/* default.set */.ZP.set([text], {
+      autoAlpha: 0
+    });
+    gsap/* default.fromTo */.ZP.fromTo(text, {
+      y: "+=100"
+    }, {
+      duration: 1,
+      y: "-=100",
+      ease: "linear",
+      autoAlpha: 1,
+      scrollTrigger: {
+        trigger: text,
+        start: "top 85%",
+        //when top of herman passes 75% viewport height
+        end: "bottom 25%",
+        //when bottom of herman passes 25% viewport height
+        //events: onEnter onLeave onEnterBack onLeaveBack
+        toggleActions: "play complete complete reverse" //options: play, pause, resume, reset, restart, complete, reverse,none
+
+      }
+    });
+  }, []);
   return /*#__PURE__*/react.createElement("section", {
     id: "contact",
     className: style()
@@ -114,6 +145,9 @@ var Contact = () => {
     alt: "",
     className: style("image")
   })), /*#__PURE__*/react.createElement("div", {
+    ref: el => {
+      text = el;
+    },
     className: style("inlineStyle")
   }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h1", {
     className: style("title")

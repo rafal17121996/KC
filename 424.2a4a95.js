@@ -10,11 +10,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var bem_css_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8893);
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6358);
+/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7082);
 /* harmony import */ var _FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5602);
 
 
 var Item = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.lazy(() => __webpack_require__.e(/* import() */ 808).then(__webpack_require__.bind(__webpack_require__, 9513)));
 
+
+
+gsap__WEBPACK_IMPORTED_MODULE_3__/* .default.registerPlugin */ .ZP.registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_4__/* .ScrollTrigger */ .i);
 var style = (0,bem_css_modules__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z)(_FAQ_module_scss__WEBPACK_IMPORTED_MODULE_2__/* .default */ .Z);
 
 function FAQ() {
@@ -52,7 +57,7 @@ function FAQ() {
     open: false
   }, {
     question: "9. Ile kosztuje usługa konsultanta ślubnego?",
-    answer: 'Być może Was rozczaruję: tutaj nie ma miejsca na konkretną cenę. <strong>Każda umowa to projekt szyty na miarę.</strong> Zakres moich obowiązków ustalamy wspólnie – to podstawa naszych dalszych działań. Zazwyczaj nie zdarzają się dwie identyczne umowy, tak samo jak nieczęsto powtarzają się dokładnie te same stawki. <br/>Mogę Was zapewnić z tego miejsca, że finalne wynagrodzenie dla mnie – będzie efektem dokładnych wyliczeń tego, co jest do zrobienia oraz Waszych osobistych oczekiwań w stosunku do mnie. <strong>Gwarantuję rzetelność w ocenie tego, ile czasu i pracy zajmie wspólne działanie na Waszą rzecz.</strong> I najważniejsze: zawsze uważnie Was słucham, finalna oferta to efekt rozmów i zrozumienia zarówno Waszych potrzeb, jak i możliwości. Również finansowych.',
+    answer: "Być może Was rozczaruję: tutaj nie ma miejsca na konkretną cenę. <strong>Każda umowa to projekt szyty na miarę.</strong> Zakres moich obowiązków ustalamy wspólnie – to podstawa naszych dalszych działań. Zazwyczaj nie zdarzają się dwie identyczne umowy, tak samo jak nieczęsto powtarzają się dokładnie te same stawki. <br/>Mogę Was zapewnić z tego miejsca, że finalne wynagrodzenie dla mnie – będzie efektem dokładnych wyliczeń tego, co jest do zrobienia oraz Waszych osobistych oczekiwań w stosunku do mnie. <strong>Gwarantuję rzetelność w ocenie tego, ile czasu i pracy zajmie wspólne działanie na Waszą rzecz.</strong> I najważniejsze: zawsze uważnie Was słucham, finalna oferta to efekt rozmów i zrozumienia zarówno Waszych potrzeb, jak i możliwości. Również finansowych.",
     open: false
   }]);
 
@@ -68,14 +73,63 @@ function FAQ() {
     }));
   };
 
+  var text = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var text2 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    gsap__WEBPACK_IMPORTED_MODULE_3__/* .default.set */ .ZP.set([text, text2], {
+      autoAlpha: 0
+    });
+    gsap__WEBPACK_IMPORTED_MODULE_3__/* .default.fromTo */ .ZP.fromTo(text, {
+      y: "+=100"
+    }, {
+      duration: 1,
+      y: "-=100",
+      ease: "linear",
+      autoAlpha: 1,
+      scrollTrigger: {
+        trigger: text,
+        start: "top 85%",
+        //when top of herman passes 75% viewport height
+        end: "bottom 25%",
+        //when bottom of herman passes 25% viewport height
+        //events: onEnter onLeave onEnterBack onLeaveBack
+        toggleActions: "play complete complete reverse" //options: play, pause, resume, reset, restart, complete, reverse,none
+
+      }
+    });
+    gsap__WEBPACK_IMPORTED_MODULE_3__/* .default.fromTo */ .ZP.fromTo(text2, {
+      y: "+=100"
+    }, {
+      duration: 1,
+      y: "-=100",
+      ease: "linear",
+      autoAlpha: 1,
+      scrollTrigger: {
+        trigger: text2,
+        start: "top 85%",
+        //when top of herman passes 75% viewport height
+        end: "bottom 25%",
+        //when bottom of herman passes 25% viewport height
+        //events: onEnter onLeave onEnterBack onLeaveBack
+        toggleActions: "play complete complete reverse" //options: play, pause, resume, reset, restart, complete, reverse,none
+
+      }
+    });
+  }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
     id: "faq",
     className: style()
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
     className: style("title")
   }, "ABC PRZYSZ\u0141YCH NOWO\u017BE\u0143C\xD3W.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " Co powinni\u015Bcie wiedzie\u0107 na dobry pocz\u0105tek wsp\xF3\u0142pracy z KC Wedding?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+    ref: el => {
+      text = el;
+    },
     className: style("description")
   }, "Organizacja \u015Blubu i wesela to ogromna ilo\u015B\u0107 r\xF3\u017Cnych pyta\u0144 i w\u0105tpliwo\u015Bci. Zdecydowanie \u0142atwiej jest przez to przej\u015B\u0107, gdy mamy wsparcie w postaci do\u015Bwiadczenia i merytorycznej wiedzy specjalisty. Takim z ca\u0142\u0105 pewno\u015Bci\u0105 jest w\u0142a\u015Bnie konsultant \u015Blubny. I tutaj r\xF3wnie\u017C nasuwa si\u0119 wiele pyta\u0144. Funkcja konsultanta \u015Blubnego jest wci\u0105\u017C nie do ko\u0144ca oczywista dla wielu os\xF3b. Postanowi\u0142am zebra\u0107 kilka najcz\u0119stszych pyta\u0144, kt\xF3re padaj\u0105 w moim pierwszym kontakcie z przysz\u0142ymi nowo\u017Ce\u0144cami \u2013 i odpowiedzie\u0107 na nie na tyle wyczerpuj\u0105co, \u017Ceby\u015Bcie mieli pe\u0142en obraz sytuacji. Powinno u\u0142atwi\u0107 to Wam decyzj\u0119 o um\xF3wieniu si\u0119 na spotkanie."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    ref: el => {
+      text2 = el;
+    },
     className: style("faqs")
   }, faqs.map((faq, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Item, {
     faq: faq,

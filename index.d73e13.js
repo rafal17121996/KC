@@ -4082,7 +4082,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + {"82":"470d45","185":"29f14b","208":"2d901a","218":"457ab5","261":"746d55","356":"f6f489","358":"f6d9d8","417":"3699dd","424":"cc428b","433":"3e7d57","436":"03eae8","513":"731a92","625":"f5cd8a","695":"ebbce5","719":"507c0f","808":"9a6519","926":"ba968d","947":"0dfee5"}[chunkId] + ".js";
+/******/ 			return "" + chunkId + "." + {"82":"470d45","185":"29f14b","197":"08fb6e","208":"2d901a","261":"746d55","356":"7a0422","358":"f6d9d8","417":"3699dd","424":"2a4a95","433":"053da9","436":"03eae8","513":"731a92","625":"f5cd8a","695":"ebbce5","719":"507c0f","808":"9a6519","926":"0ecd90","947":"0dfee5"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -4091,7 +4091,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "style." + {"185":"79b1df","208":"9a8e17","218":"e5925e","356":"82d925","424":"9876a2","433":"91babd","513":"9876a2","695":"c32cad","719":"9935cc","926":"acbbb4","947":"69cdde"}[chunkId] + ".css";
+/******/ 			return "style." + {"185":"79b1df","197":"e5925e","208":"9a8e17","356":"82d925","424":"9876a2","433":"91babd","513":"9876a2","695":"c32cad","719":"9935cc","926":"eda6eb","947":"69cdde"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -4253,7 +4253,7 @@ function invariant(condition, message) {
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"185":1,"208":1,"218":1,"356":1,"424":1,"433":1,"513":1,"695":1,"719":1,"926":1,"947":1};
+/******/ 			var cssChunks = {"185":1,"197":1,"208":1,"356":1,"424":1,"433":1,"513":1,"695":1,"719":1,"926":1,"947":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -4404,7 +4404,7 @@ function ScrollToTop(_ref) {
 var bem_css_modules = __webpack_require__(8893);
 ;// CONCATENATED MODULE: ./src/components/Insta/Insta.module.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Insta_module = ({"Insta":"Insta"});
+/* harmony default export */ const Insta_module = ({"Insta":"Insta","Insta__container":"Insta__container"});
 ;// CONCATENATED MODULE: ./src/components/Insta/Insta.jsx
 
 
@@ -4418,15 +4418,17 @@ function Insta() {
       target: "instafeed-container",
       resolution: 'low_resolution',
       accessToken: 'IGQVJVamVzTE04S3RjOG5qaE1nN2VFSE1KMFh1Q0J1S2N3OFFkdGwxbHUtSHlaNGJlUGJEZADh5T0pPSGtxX19LeWRBck1mdk5vZAUdKLVpQS3FlcGFQY2lmYnNaOWkxX3p1a3l1VXZAzNlRCM2lIUm12TgZDZD',
-      limit: 3
+      limit: 9
     });
     userFeed.run();
   }, []);
   return /*#__PURE__*/react.createElement("section", {
     className: style()
+  }, /*#__PURE__*/react.createElement("h2", null, "Do\u0142\u0105cz do mnie na instagramie"), /*#__PURE__*/react.createElement("div", {
+    className: style('container')
   }, /*#__PURE__*/react.createElement("div", {
     id: "instafeed-container"
-  }));
+  })));
 }
 
 /* harmony default export */ const Insta_Insta = (Insta);
@@ -4442,10 +4444,10 @@ var NavbarFAQ = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpa
 var Home = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(433)]).then(__webpack_require__.bind(__webpack_require__, 5433)));
 var AboutMe = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(82), __webpack_require__.e(926)]).then(__webpack_require__.bind(__webpack_require__, 5926)));
 var AboutMeMore = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 208).then(__webpack_require__.bind(__webpack_require__, 7208)));
-var Offer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(218)]).then(__webpack_require__.bind(__webpack_require__, 7218)));
-var FAQ = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 424).then(__webpack_require__.bind(__webpack_require__, 424)));
+var Offer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(625), __webpack_require__.e(82), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(197)]).then(__webpack_require__.bind(__webpack_require__, 4197)));
+var FAQ = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(82), __webpack_require__.e(424)]).then(__webpack_require__.bind(__webpack_require__, 424)));
 var FAQMore = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 695).then(__webpack_require__.bind(__webpack_require__, 9695)));
-var Contact = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(417), __webpack_require__.e(356)]).then(__webpack_require__.bind(__webpack_require__, 8356)));
+var Contact = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(625), __webpack_require__.e(82), __webpack_require__.e(417), __webpack_require__.e(356)]).then(__webpack_require__.bind(__webpack_require__, 8356)));
 var Footer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(417), __webpack_require__.e(719)]).then(__webpack_require__.bind(__webpack_require__, 7719)));
 
 

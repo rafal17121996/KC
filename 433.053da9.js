@@ -53,7 +53,7 @@ function Home() {
 
   var handleScroll = () => setOffset(window.pageYOffset);
 
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener("scroll", handleScroll);
   var mystyle = {
     backgroundImage: "url(".concat(back1_2_1, ")"),
     backgroundPositionY: offset * 0.7 + "px"
@@ -64,21 +64,21 @@ function Home() {
     });
     var tl = gsap/* default.timeline */.ZP.timeline({
       defaults: {
-        ease: 'power3.inOut'
+        ease: "power3.inOut"
       }
     });
     tl.fromTo(text1, {
-      y: '-=300'
+      y: "-=300"
     }, {
       duration: 1,
-      y: '+=300',
+      y: "+=300",
       autoAlpha: 1
     });
     tl.fromTo(text2, {
-      y: '+=300'
+      y: "+=300"
     }, {
       duration: 1,
-      y: '-=300',
+      y: "-=300",
       autoAlpha: 1
     });
   }, []);
@@ -95,12 +95,13 @@ function Home() {
       text1 = el;
     },
     className: style("text")
-  }, "KAROLINA CHORZ\u0118PA", /*#__PURE__*/react.createElement("br", null), isMobile ? null : "WEDDING PLANNER"), isMobile ? null : /*#__PURE__*/react.createElement("h2", {
+  }, "KAROLINA CHORZ\u0118PA", /*#__PURE__*/react.createElement("br", null), isMobile ? null : "WEDDING PLANNER"), /*#__PURE__*/react.createElement("div", {
     ref: el => {
       text2 = el;
-    },
+    }
+  }, isMobile ? null : /*#__PURE__*/react.createElement("h2", {
     className: style("text2")
-  }, "KC WEDDING"), isMobile ? /*#__PURE__*/react.createElement("h2", {
+  }, "KC WEDDING")), isMobile ? /*#__PURE__*/react.createElement("h2", {
     className: style("description")
   }, "Kreuj\u0119 rozwi\u0105zania na miar\u0119 Waszych potrzeb estetycznych i organizacyjnych. Wspieram w decyzjach, procesach, emocjach.") : null)));
 }
