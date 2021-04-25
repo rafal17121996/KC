@@ -4082,7 +4082,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + {"82":"470d45","172":"1b1c20","185":"790575","261":"746d55","356":"5f4f9c","358":"f6d9d8","417":"3699dd","424":"2a4a95","436":"03eae8","437":"c23c2c","443":"8cc519","513":"731a92","625":"f5cd8a","695":"d63823","719":"507c0f","808":"9a6519","926":"e4c62b","947":"8b958b"}[chunkId] + ".js";
+/******/ 			return "" + chunkId + "." + {"56":"8c3524","82":"470d45","172":"1b1c20","261":"746d55","356":"2504e2","358":"f6d9d8","417":"3699dd","424":"2a4a95","436":"03eae8","437":"c23c2c","443":"8cc519","513":"731a92","577":"691ffc","601":"086a5e","625":"f5cd8a","695":"d63823","808":"9a6519","926":"e4c62b"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -4091,7 +4091,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "style." + {"172":"709f34","185":"79b1df","356":"1c6e97","424":"9876a2","437":"a256dc","443":"2f28a6","513":"9876a2","695":"14b3b3","719":"0b6fd3","926":"1f69b7","947":"69cdde"}[chunkId] + ".css";
+/******/ 			return "style." + {"56":"79b1df","172":"c8d9a4","356":"1c6e97","424":"9876a2","437":"e2c107","443":"2f28a6","513":"9876a2","577":"832d29","601":"1fc452","695":"14b3b3","926":"1f69b7"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -4253,7 +4253,7 @@ function invariant(condition, message) {
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"172":1,"185":1,"356":1,"424":1,"437":1,"443":1,"513":1,"695":1,"719":1,"926":1,"947":1};
+/******/ 			var cssChunks = {"56":1,"172":1,"356":1,"424":1,"437":1,"443":1,"513":1,"577":1,"601":1,"695":1,"926":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -4439,8 +4439,8 @@ function Insta() {
 
 
 
-var Navbar = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(947)]).then(__webpack_require__.bind(__webpack_require__, 9947)));
-var NavbarFAQ = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(185)]).then(__webpack_require__.bind(__webpack_require__, 9185)));
+var Navbar = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(577)]).then(__webpack_require__.bind(__webpack_require__, 4577)));
+var NavbarFAQ = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(56)]).then(__webpack_require__.bind(__webpack_require__, 3056)));
 var Home = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(437)]).then(__webpack_require__.bind(__webpack_require__, 9437)));
 var AboutMe = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(82), __webpack_require__.e(926)]).then(__webpack_require__.bind(__webpack_require__, 5926)));
 var AboutMeMore = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 172).then(__webpack_require__.bind(__webpack_require__, 1172)));
@@ -4448,7 +4448,7 @@ var Offer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_r
 var FAQ = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(82), __webpack_require__.e(424)]).then(__webpack_require__.bind(__webpack_require__, 424)));
 var FAQMore = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 695).then(__webpack_require__.bind(__webpack_require__, 9695)));
 var Contact = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(625), __webpack_require__.e(82), __webpack_require__.e(417), __webpack_require__.e(356)]).then(__webpack_require__.bind(__webpack_require__, 8356)));
-var Footer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(417), __webpack_require__.e(719)]).then(__webpack_require__.bind(__webpack_require__, 7719)));
+var Footer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(417), __webpack_require__.e(601)]).then(__webpack_require__.bind(__webpack_require__, 7601)));
 
 
 

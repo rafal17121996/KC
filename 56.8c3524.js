@@ -1,4 +1,4 @@
-(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[185],{
+(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[56],{
 
 /***/ 1689:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -30,7 +30,7 @@ var MenuItems = [{
 
 /***/ }),
 
-/***/ 9185:
+/***/ 3056:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -59,8 +59,8 @@ var free_solid_svg_icons_index_es = __webpack_require__(1436);
 ;// CONCATENATED MODULE: ./src/components/Navbar/NavbarFAQ.module.scss
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const NavbarFAQ_module = ({"Navbar":"Navbar","Navbar_hidden":"Navbar_hidden","Navbar__wrapper":"Navbar__wrapper","Navbar__logo":"Navbar__logo","Navbar__title":"Navbar__title","Navbar__nav-menu":"Navbar__nav-menu","Navbar__nav-item":"Navbar__nav-item","Navbar__nav-links":"Navbar__nav-links","fa-bars":"fa-bars","Navbar__menu-button":"Navbar__menu-button","Navbar__nav-menu_active":"Navbar__nav-menu_active","Navbar__navbar-logo":"Navbar__navbar-logo","fa-times":"fa-times","Navbar__nav-links-mobile":"Navbar__nav-links-mobile","Navbar__flags":"Navbar__flags"});
-// EXTERNAL MODULE: ./src/assets/KC (1).png
-var KC_1_ = __webpack_require__(8954);
+;// CONCATENATED MODULE: ./src/assets/KC (1).png
+/* harmony default export */ const KC_1_ = (__webpack_require__.p + "d977e4d3633ed9bb991a26cea748fbe2.png");
 ;// CONCATENATED MODULE: ./src/components/Navbar/NavbarFAQ.jsx
 
  // import { Link } from "react-router-dom";
@@ -113,7 +113,7 @@ var Navbar = () => {
     className: style("logo")
   }, /*#__PURE__*/react.createElement("img", {
     className: style("logo"),
-    src: KC_1_/* default */.Z,
+    src: KC_1_,
     alt: ""
   }));
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("nav", {
@@ -146,17 +146,6 @@ var Navbar = () => {
 };
 
 /* harmony default export */ const NavbarFAQ = (Navbar);
-
-/***/ }),
-
-/***/ 8954:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "ccc228bdd3befc22cce41bbcfd5e6a63.png");
 
 /***/ }),
 

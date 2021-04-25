@@ -136,7 +136,7 @@ var Contact = () => {
     icon: free_brands_svg_icons_index_es/* faInstagram */.Zzi,
     className: style("icon")
   })), /*#__PURE__*/react.createElement("a", {
-    href: "https://www.instagram.com/kc_weddingplanner/"
+    href: "https://www.facebook.com/kcwedding.konsultantkaslubna/"
   }, /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
     icon: free_brands_svg_icons_index_es/* faFacebookSquare */.pZl,
     className: style("icon")

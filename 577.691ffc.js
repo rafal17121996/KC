@@ -1,4 +1,4 @@
-(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[947],{
+(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[577],{
 
 /***/ 1689:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -30,7 +30,7 @@ var MenuItems = [{
 
 /***/ }),
 
-/***/ 9947:
+/***/ 4577:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -61,8 +61,8 @@ var StoreProvider = __webpack_require__(7567);
 ;// CONCATENATED MODULE: ./src/components/Navbar/Navbar.module.scss
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const Navbar_module = ({"Navbar":"Navbar","Navbar_hidden":"Navbar_hidden","Navbar__wrapper":"Navbar__wrapper","Navbar__logo":"Navbar__logo","Navbar__title":"Navbar__title","Navbar__nav-menu":"Navbar__nav-menu","Navbar__nav-item":"Navbar__nav-item","Navbar__nav-links":"Navbar__nav-links","fa-bars":"fa-bars","Navbar__menu-button":"Navbar__menu-button","Navbar__nav-menu_active":"Navbar__nav-menu_active","Navbar__navbar-logo":"Navbar__navbar-logo","Navbar__nav-links-mobile":"Navbar__nav-links-mobile","Navbar__flags":"Navbar__flags"});
-// EXTERNAL MODULE: ./src/assets/KC (1).png
-var KC_1_ = __webpack_require__(8954);
+;// CONCATENATED MODULE: ./src/assets/KC10.png
+/* harmony default export */ const KC10 = (__webpack_require__.p + "a7f1740ec32e0c5e4112f993eed3acdd.png");
 ;// CONCATENATED MODULE: ./src/components/Navbar/Navbar.jsx
 
 
@@ -124,7 +124,7 @@ var Navbar = () => {
     className: style("logo")
   }, /*#__PURE__*/react.createElement("img", {
     className: style("logo"),
-    src: KC_1_/* default */.Z,
+    src: KC10,
     alt: ""
   }));
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("nav", {
@@ -140,9 +140,9 @@ var Navbar = () => {
   }) : /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
     className: style("icon"),
     icon: free_solid_svg_icons_index_es/* faBars */.xiG
-  })), logo, /*#__PURE__*/react.createElement("ul", {
+  })), /*#__PURE__*/react.createElement("ul", {
     className: itemStyle
-  }, Items, /*#__PURE__*/react.createElement("li", {
+  }, Items, /*#__PURE__*/react.createElement("li", null, logo), /*#__PURE__*/react.createElement("li", {
     className: style("nav-item")
   }, /*#__PURE__*/react.createElement(react_router_dom.Link, {
     to: "/faq",
@@ -160,17 +160,6 @@ var Navbar = () => {
 };
 
 /* harmony default export */ const Navbar_Navbar = (Navbar);
-
-/***/ }),
-
-/***/ 8954:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "ccc228bdd3befc22cce41bbcfd5e6a63.png");
 
 /***/ })
 

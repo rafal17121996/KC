@@ -1,6 +1,6 @@
-(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[719],{
+(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[601],{
 
-/***/ 7719:
+/***/ 7601:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18,12 +18,15 @@ var react = __webpack_require__(7294);
 var bem_css_modules = __webpack_require__(8893);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js + 1 modules
 var index_es = __webpack_require__(7625);
+;// CONCATENATED MODULE: ./src/assets/KC9.png
+/* harmony default export */ const KC9 = (__webpack_require__.p + "d1133a6fdced8cf5c4066d6ae0aa97ca.png");
 // EXTERNAL MODULE: ./node_modules/@fortawesome/free-brands-svg-icons/index.es.js
 var free_brands_svg_icons_index_es = __webpack_require__(1417);
 ;// CONCATENATED MODULE: ./src/components/Footer/Footer.module.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Footer_module = ({"footer":"footer","footer__title":"footer__title","footer__link":"footer__link","footer__sm":"footer__sm","footer__icon":"footer__icon","footer__number":"footer__number","footer__coppy":"footer__coppy","footer__author":"footer__author"});
+/* harmony default export */ const Footer_module = ({"footer":"footer","footer__imgg":"footer__imgg","footer__title":"footer__title","footer__link":"footer__link","footer__sm":"footer__sm","footer__icon":"footer__icon","footer__number":"footer__number","footer__coppy":"footer__coppy","footer__author":"footer__author"});
 ;// CONCATENATED MODULE: ./src/components/Footer/Footer.jsx
+
 
 
 
@@ -37,9 +40,12 @@ function Footer() {
     className: style()
   }, /*#__PURE__*/react.createElement("div", {
     className: style("sm")
-  }, /*#__PURE__*/react.createElement("p", {
-    className: style("title")
-  }, "KC WEDDING"), /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/react.createElement("div", {
+    className: style("imgg")
+  }, /*#__PURE__*/react.createElement("img", {
+    src: KC9,
+    alt: ""
+  })), /*#__PURE__*/react.createElement("div", {
     className: style("iconWrapper")
   }, /*#__PURE__*/react.createElement("a", {
     href: "https://www.facebook.com/kcwedding.konsultantkaslubna/"
