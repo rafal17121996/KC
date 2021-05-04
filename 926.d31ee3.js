@@ -167,7 +167,7 @@ var AboutMe = () => {
     className: style("more")
   }, "More!")), /*#__PURE__*/react.createElement("p", {
     className: style("text5")
-  }, "KC Wedding powsta\u0142o z uwielbienia do naturalnych i niebanalnych rozwi\u0105za\u0144 ."), /*#__PURE__*/react.createElement("p", {
+  }, "Kreuj\u0119 rozwi\u0105zania na miar\u0119 Waszych potrzeb estetycznych i organizacyjnych.", /*#__PURE__*/react.createElement("br", null), /*#__PURE__*/react.createElement("strong", null, "Wspieram w decyzjach, procesach, emocjach.")), /*#__PURE__*/react.createElement("p", {
     className: style("text6")
   }, "Rozgo\u015B\u0107cie si\u0119 i wykreujmy razem co\u015B pi\u0119knego!")), isMobile ? null : /*#__PURE__*/react.createElement("div", {
     className: style("imgWrapper")

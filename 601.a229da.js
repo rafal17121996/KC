@@ -39,13 +39,13 @@ function Footer() {
   return /*#__PURE__*/react.createElement("footer", {
     className: style()
   }, /*#__PURE__*/react.createElement("div", {
-    className: style("sm")
-  }, /*#__PURE__*/react.createElement("div", {
     className: style("imgg")
   }, /*#__PURE__*/react.createElement("img", {
     src: KC9,
     alt: ""
   })), /*#__PURE__*/react.createElement("div", {
+    className: style("sm")
+  }, /*#__PURE__*/react.createElement("div", {
     className: style("iconWrapper")
   }, /*#__PURE__*/react.createElement("a", {
     href: "https://www.facebook.com/kcwedding.konsultantkaslubna/"
@@ -57,18 +57,20 @@ function Footer() {
   }, /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
     icon: free_brands_svg_icons_index_es/* faInstagram */.Zzi,
     className: style("icon")
-  }))), /*#__PURE__*/react.createElement("a", {
+  }))), /*#__PURE__*/react.createElement("div", {
+    className: style("wrapper")
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("a", {
     className: style("number")
-  }, " ", /*#__PURE__*/react.createElement("p", null, "kontakt@kcwedding.pl"), " "), /*#__PURE__*/react.createElement("a", {
+  }, /*#__PURE__*/react.createElement("p", null, "kontakt@kcwedding.pl"), " "), /*#__PURE__*/react.createElement("a", {
     href: "tel:732 845 993",
     className: style("number")
-  }, " ", /*#__PURE__*/react.createElement("p", null, "+48 732 845 993"), " "), /*#__PURE__*/react.createElement("p", {
+  }, /*#__PURE__*/react.createElement("p", null, "+48 732 845 993"), " ")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
     className: style("coppy")
   }, "Warszawa | Rzesz\xF3w"), /*#__PURE__*/react.createElement("p", {
     className: style("coppy")
   }, "\xA9 Copyright 2021. All Rights Reserved"), /*#__PURE__*/react.createElement("p", {
     className: style("author")
-  }, "Rafa\u0142 Szczurek")));
+  }, "Rafa\u0142 Szczurek")))));
 }
 
 /* harmony default export */ const Footer_Footer = (Footer);

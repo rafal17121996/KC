@@ -1,6 +1,6 @@
-(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[60],{
+(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[858],{
 
-/***/ 60:
+/***/ 4858:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -25,8 +25,8 @@ var gsap = __webpack_require__(6358);
 /* harmony default export */ const Home_module = ({"homeWrapper":"homeWrapper","zoom":"zoom","homeWrapper__textWrapper":"homeWrapper__textWrapper","homeWrapper__imgWrapper":"homeWrapper__imgWrapper","homeWrapper__img2":"homeWrapper__img2","homeWrapper__text":"homeWrapper__text","homeWrapper__description":"homeWrapper__description"});
 ;// CONCATENATED MODULE: ./src/assets/home.jpg
 /* harmony default export */ const home = (__webpack_require__.p + "9ab4c5540a7a249bf5eb28416bb8ae70.jpg");
-;// CONCATENATED MODULE: ./src/assets/KC7.png
-/* harmony default export */ const KC7 = (__webpack_require__.p + "1169a623e9ca3425b1d4ed6b214c519b.png");
+;// CONCATENATED MODULE: ./src/assets/KC6.png
+/* harmony default export */ const KC6 = (__webpack_require__.p + "846d142dfbabc13af01bdc913d566c50.png");
 ;// CONCATENATED MODULE: ./src/assets/imgMobile.jpg
 /* harmony default export */ const imgMobile = (__webpack_require__.p + "3036213dc9c243dc1bfdc9125bd2c7b4.jpg");
 // EXTERNAL MODULE: ./node_modules/react-div-100vh/dist/esm/index.js
@@ -91,16 +91,16 @@ function Home() {
     className: style(),
     style: mystyle
   }, /*#__PURE__*/react.createElement(esm/* default */.ZP, null, /*#__PURE__*/react.createElement("div", {
+    className: style("imgWrapper")
+  }, /*#__PURE__*/react.createElement("img", {
+    src: KC6,
+    className: style("img2")
+  })), /*#__PURE__*/react.createElement("div", {
     ref: el => {
       text1 = el;
     },
     className: style("textWrapper")
-  }, /*#__PURE__*/react.createElement("div", {
-    className: style("imgWrapper")
-  }, /*#__PURE__*/react.createElement("img", {
-    src: KC7,
-    className: style("img2")
-  })), /*#__PURE__*/react.createElement("h1", {
+  }, /*#__PURE__*/react.createElement("h1", {
     ref: el => {
       text1 = el;
     },

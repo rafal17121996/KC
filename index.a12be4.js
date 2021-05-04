@@ -4082,7 +4082,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + {"60":"680e53","82":"470d45","172":"1b1c20","185":"21f3da","261":"746d55","356":"6caf09","358":"f6d9d8","417":"3699dd","424":"2a4a95","436":"03eae8","443":"346921","513":"731a92","601":"086a5e","625":"f5cd8a","695":"d63823","808":"9a6519","926":"e4c62b","947":"3d569f"}[chunkId] + ".js";
+/******/ 			return "" + chunkId + "." + {"82":"470d45","172":"1b1c20","185":"6664cf","261":"746d55","356":"6caf09","358":"f6d9d8","417":"3699dd","424":"2a4a95","436":"03eae8","443":"346921","513":"731a92","601":"a229da","625":"f5cd8a","695":"d63823","808":"9a6519","858":"03e370","926":"d31ee3","947":"6c6bd4"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -4091,7 +4091,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "style." + {"60":"204dd6","172":"c8d9a4","185":"3aa5d1","356":"1c6e97","424":"9876a2","443":"11bbf8","513":"9876a2","601":"1fc452","695":"2df85d","926":"1f69b7","947":"3aa5d1"}[chunkId] + ".css";
+/******/ 			return "style." + {"172":"c8d9a4","185":"3aa5d1","356":"1c6e97","424":"9876a2","443":"11bbf8","513":"9876a2","601":"f208f8","695":"2df85d","858":"91f7fb","926":"55ef0f","947":"3aa5d1"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -4253,7 +4253,7 @@ function invariant(condition, message) {
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"60":1,"172":1,"185":1,"356":1,"424":1,"443":1,"513":1,"601":1,"695":1,"926":1,"947":1};
+/******/ 			var cssChunks = {"172":1,"185":1,"356":1,"424":1,"443":1,"513":1,"601":1,"695":1,"858":1,"926":1,"947":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -4404,7 +4404,7 @@ function ScrollToTop(_ref) {
 var bem_css_modules = __webpack_require__(8893);
 ;// CONCATENATED MODULE: ./src/components/Insta/Insta.module.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Insta_module = ({"Insta":"Insta","Insta__container":"Insta__container"});
+/* harmony default export */ const Insta_module = ({"Insta":"Insta","Insta__wrapper":"Insta__wrapper","Insta__container":"Insta__container"});
 ;// CONCATENATED MODULE: ./src/components/Insta/Insta.jsx
 
 
@@ -4424,7 +4424,11 @@ function Insta() {
   }, []);
   return /*#__PURE__*/react.createElement("section", {
     className: style()
-  }, /*#__PURE__*/react.createElement("h2", null, "Do\u0142\u0105cz do mnie na instagramie"), /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/react.createElement("div", {
+    className: style('wrapper')
+  }, /*#__PURE__*/react.createElement("a", {
+    href: "https://www.instagram.com/kc_weddingplanner/"
+  }, /*#__PURE__*/react.createElement("button", null, "Do\u0142\u0105cz do mnie na instagramie"))), /*#__PURE__*/react.createElement("div", {
     className: style('container')
   }, /*#__PURE__*/react.createElement("div", {
     id: "instafeed-container"
@@ -4441,7 +4445,7 @@ function Insta() {
 
 var Navbar = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(947)]).then(__webpack_require__.bind(__webpack_require__, 9947)));
 var NavbarFAQ = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(185)]).then(__webpack_require__.bind(__webpack_require__, 9185)));
-var Home = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(60)]).then(__webpack_require__.bind(__webpack_require__, 60)));
+var Home = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(858)]).then(__webpack_require__.bind(__webpack_require__, 4858)));
 var AboutMe = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(82), __webpack_require__.e(926)]).then(__webpack_require__.bind(__webpack_require__, 5926)));
 var AboutMeMore = /*#__PURE__*/react.lazy(() => __webpack_require__.e(/* import() */ 172).then(__webpack_require__.bind(__webpack_require__, 1172)));
 var Offer = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(625), __webpack_require__.e(82), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(443)]).then(__webpack_require__.bind(__webpack_require__, 8443)));

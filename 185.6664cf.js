@@ -96,7 +96,7 @@ var Navbar = () => {
     }, /*#__PURE__*/react.createElement(lib/* HashLink */.fO, {
       smooth: true,
       to: "/#" + item.url,
-      scroll: el => scrollWithOffset(el, isMobile ? 0 : 60),
+      scroll: el => scrollWithOffset(el, isMobile ? 0 : 80),
       className: style("nav-links")
     }, item.title));
   });
@@ -140,7 +140,7 @@ var Navbar = () => {
   }, /*#__PURE__*/react.createElement(lib/* HashLink */.fO, {
     smooth: true,
     to: "/#contact",
-    scroll: el => scrollWithOffset(el, isMobile ? 0 : 60),
+    scroll: el => scrollWithOffset(el, isMobile ? 0 : 80),
     className: style("nav-links")
   }, "KONTAKT"))))));
 };

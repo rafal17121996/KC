@@ -95,7 +95,7 @@ var Navbar = () => {
       smooth: true,
       duration: isMobile ? 0 : 1000,
       to: item.url,
-      offset: isMobile ? 0 : -60,
+      offset: isMobile ? 0 : -80,
       className: style("nav-links"),
       onClick: () => handleOnClick()
     }, item.title));
@@ -153,7 +153,7 @@ var Navbar = () => {
     smooth: true,
     duration: isMobile ? 0 : 1000,
     to: "contact",
-    offset: isMobile ? 0 : -60,
+    offset: isMobile ? 0 : -80,
     className: style("nav-links"),
     onClick: handleOnClick
   }, "KONTAKT"))))));
