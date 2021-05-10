@@ -4082,7 +4082,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + {"82":"470d45","172":"1b1c20","185":"6664cf","261":"746d55","356":"07f177","358":"f6d9d8","417":"3699dd","424":"2a4a95","436":"03eae8","443":"346921","513":"731a92","601":"a229da","625":"f5cd8a","695":"d63823","808":"9a6519","858":"019072","926":"d31ee3","947":"6c6bd4"}[chunkId] + ".js";
+/******/ 			return "" + chunkId + "." + {"82":"470d45","172":"1b1c20","185":"6664cf","261":"746d55","356":"d4bd61","358":"f6d9d8","417":"3699dd","424":"2a4a95","436":"03eae8","443":"346921","513":"731a92","601":"a229da","625":"f5cd8a","695":"d63823","808":"9a6519","858":"019072","926":"d31ee3","947":"6c6bd4"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -4417,7 +4417,7 @@ function Insta() {
       get: 'user',
       target: "instafeed-container",
       resolution: 'low_resolution',
-      accessToken: 'IGQVJVamVzTE04S3RjOG5qaE1nN2VFSE1KMFh1Q0J1S2N3OFFkdGwxbHUtSHlaNGJlUGJEZADh5T0pPSGtxX19LeWRBck1mdk5vZAUdKLVpQS3FlcGFQY2lmYnNaOWkxX3p1a3l1VXZAzNlRCM2lIUm12TgZDZD',
+      accessToken: 'IGQVJVRC1KZAXJNSm1fY1JlRnVIX1lGR3EwWU5ab1F4TThYWS1jMjhXcEZAMM3FqM0JZAZAXlEV3ExSTR1cktlMWJEbloyZAml1RUx3OWZAEb3FlM2ZASUzRZAdXVSRklnWXZAmVHpSRGNRVE9LQ1ktaUp1UjkwcQZDZD',
       limit: 9
     });
     userFeed.run();
