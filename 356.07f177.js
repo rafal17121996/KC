@@ -65,7 +65,6 @@ var Contact = () => {
     text: ""
   });
   var [errors, setErrors] = (0,react.useState)("");
-  var [result, setResult] = (0,react.useState)({});
 
   var handleOnSubmit = e => {
     e.preventDefault();
@@ -84,6 +83,7 @@ var Contact = () => {
         text: "",
         date: ""
       });
+      setErrors("Dziękuje za wysłanie wiadomości");
     }, error => {
       console.log(error.text);
     });
