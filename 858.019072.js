@@ -58,9 +58,11 @@ function Home() {
   var handleScroll = () => setOffset(window.pageYOffset);
 
   window.addEventListener("scroll", handleScroll);
-  var mystyle = {
+  var mystyle = !isMobile ? {
     backgroundImage: "url(".concat(home, ")"),
     backgroundPositionY: offset * 0.7 + "px"
+  } : {
+    backgroundImage: "url(".concat(home, ")")
   };
   (0,react.useEffect)(() => {
     gsap/* default.set */.ZP.set([text1, text2], {
