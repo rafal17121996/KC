@@ -108,9 +108,10 @@ var Navbar = () => {
   var itemStyle = isOpen ? style("nav-menu", {
     active: true
   }) : style("nav-menu");
-  var logo = isMobile ? null : /*#__PURE__*/react.createElement(lib/* HashLink */.fO, {
+  var logo = /*#__PURE__*/react.createElement(lib/* HashLink */.fO, {
+    smooth: true,
     to: "/",
-    className: style("logo")
+    className: style("nav-links")
   }, /*#__PURE__*/react.createElement("img", {
     className: style("logo"),
     src: KC11/* default */.Z,
@@ -129,7 +130,7 @@ var Navbar = () => {
     icon: free_solid_svg_icons_index_es/* faBars */.xiG
   })), /*#__PURE__*/react.createElement("ul", {
     className: itemStyle
-  }, Items, /*#__PURE__*/react.createElement("li", null, logo), /*#__PURE__*/react.createElement("li", {
+  }, !isMobile ? null : /*#__PURE__*/react.createElement("li", null, logo), Items, isMobile ? null : /*#__PURE__*/react.createElement("li", null, logo), /*#__PURE__*/react.createElement("li", {
     className: style("nav-item")
   }, /*#__PURE__*/react.createElement(lib/* HashLink */.fO, {
     smooth: true,

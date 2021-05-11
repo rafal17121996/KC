@@ -153,14 +153,21 @@ var Navbar = () => {
   var itemStyle = isOpen ? style("nav-menu", {
     active: true
   }) : style("nav-menu");
-  var logo = isMobile ? null : /*#__PURE__*/react.createElement(react_router_dom.Link, {
-    to: "/",
-    className: style("logo")
+  var logo = /*#__PURE__*/react.createElement(modules/* Link */.rU, {
+    smooth: true,
+    duration: isMobile ? 0 : 1000,
+    to: "home",
+    offset: isMobile ? 0 : -80,
+    className: style("nav-links"),
+    onClick: handleOnClick
   }, /*#__PURE__*/react.createElement("img", {
     className: style("logo"),
     src: KC11/* default */.Z,
     alt: ""
-  }));
+  })); // <Link to="/" className={style("logo")}>
+  //     <img className={style("logo")} src={img} alt="" />
+  //   </Link>
+
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("nav", {
     className: style("")
   }, /*#__PURE__*/react.createElement("div", {
@@ -178,7 +185,7 @@ var Navbar = () => {
     icon: free_solid_svg_icons_index_es/* faBars */.xiG
   })), /*#__PURE__*/react.createElement("ul", {
     className: itemStyle
-  }, Items, /*#__PURE__*/react.createElement("li", null, logo), /*#__PURE__*/react.createElement("li", {
+  }, !isMobile ? null : /*#__PURE__*/react.createElement("li", null, logo), Items, isMobile ? null : /*#__PURE__*/react.createElement("li", null, logo), /*#__PURE__*/react.createElement("li", {
     className: style("nav-item")
   }, /*#__PURE__*/react.createElement(react_router_dom.Link, {
     to: "/faq",
