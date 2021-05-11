@@ -4082,7 +4082,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + {"82":"470d45","172":"1b1c20","185":"6664cf","261":"746d55","356":"d4bd61","358":"f6d9d8","417":"3699dd","424":"2a4a95","436":"03eae8","443":"346921","513":"731a92","601":"a229da","625":"f5cd8a","695":"d63823","808":"9a6519","858":"019072","926":"d31ee3","947":"6c6bd4"}[chunkId] + ".js";
+/******/ 			return "" + chunkId + "." + {"82":"470d45","153":"15f6f5","172":"1b1c20","185":"6664cf","261":"746d55","356":"f1c20b","358":"f6d9d8","417":"3699dd","424":"2a4a95","436":"03eae8","443":"346921","513":"731a92","601":"a229da","625":"f5cd8a","695":"d63823","808":"9a6519","858":"7abc59","926":"c45321"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -4091,7 +4091,7 @@ function invariant(condition, message) {
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "style." + {"172":"e908b9","185":"3aa5d1","356":"baa781","424":"9876a2","443":"cdc29f","513":"9876a2","601":"f208f8","695":"2df85d","858":"732a26","926":"55ef0f","947":"3aa5d1"}[chunkId] + ".css";
+/******/ 			return "style." + {"153":"3aa5d1","172":"ecc48a","185":"3aa5d1","356":"baa781","424":"9876a2","443":"eb8147","513":"9876a2","601":"f208f8","695":"a1e053","858":"d6a1d2","926":"5cc84e"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -4253,7 +4253,7 @@ function invariant(condition, message) {
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"172":1,"185":1,"356":1,"424":1,"443":1,"513":1,"601":1,"695":1,"858":1,"926":1,"947":1};
+/******/ 			var cssChunks = {"153":1,"172":1,"185":1,"356":1,"424":1,"443":1,"513":1,"601":1,"695":1,"858":1,"926":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -4443,7 +4443,7 @@ function Insta() {
 
 
 
-var Navbar = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(947)]).then(__webpack_require__.bind(__webpack_require__, 9947)));
+var Navbar = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(261), __webpack_require__.e(153)]).then(__webpack_require__.bind(__webpack_require__, 4153)));
 var NavbarFAQ = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(625), __webpack_require__.e(436), __webpack_require__.e(185)]).then(__webpack_require__.bind(__webpack_require__, 9185)));
 var Home = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(858)]).then(__webpack_require__.bind(__webpack_require__, 4858)));
 var AboutMe = /*#__PURE__*/react.lazy(() => Promise.all(/* import() */[__webpack_require__.e(358), __webpack_require__.e(82), __webpack_require__.e(926)]).then(__webpack_require__.bind(__webpack_require__, 5926)));

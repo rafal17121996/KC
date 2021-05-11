@@ -45,12 +45,12 @@ var AboutMe = () => {
   var {
     isMobile
   } = (0,react.useContext)(StoreProvider/* StoreContext */.x);
-  var text = (0,react.useRef)(null);
-  var text2 = (0,react.useRef)(null);
+  var text = (0,react.useRef)(null); // let text2 = useRef(null);
+
   var text3 = (0,react.useRef)(null);
   var text4 = (0,react.useRef)(null);
   (0,react.useEffect)(() => {
-    gsap/* default.set */.ZP.set([text, text2, text3], {
+    gsap/* default.set */.ZP.set([text, text3], {
       autoAlpha: 0
     });
     gsap/* default.fromTo */.ZP.fromTo(text, {
@@ -70,25 +70,27 @@ var AboutMe = () => {
         toggleActions: "play complete complete reverse" //options: play, pause, resume, reset, restart, complete, reverse,none
 
       }
-    });
-    gsap/* default.fromTo */.ZP.fromTo(text2, {
-      y: "+=100"
-    }, {
-      duration: 1,
-      y: "-=100",
-      ease: "linear",
-      autoAlpha: 1,
-      scrollTrigger: {
-        trigger: text2,
-        start: "top 85%",
-        //when top of herman passes 75% viewport height
-        end: "bottom 25%",
-        //when bottom of herman passes 25% viewport height
-        //events: onEnter onLeave onEnterBack onLeaveBack
-        toggleActions: "play complete complete reverse" //options: play, pause, resume, reset, restart, complete, reverse,none
+    }); // gsap.fromTo(
+    //   text2,
+    //   {
+    //     y: "+=100",
+    //   },
+    //   {
+    //     duration: 1,
+    //     y: "-=100",
+    //     ease: "linear",
+    //     autoAlpha: 1,
+    //     scrollTrigger: {
+    //       trigger: text2,
+    //       start: "top 85%", //when top of herman passes 75% viewport height
+    //       end: "bottom 25%", //when bottom of herman passes 25% viewport height
+    //       //events: onEnter onLeave onEnterBack onLeaveBack
+    //       toggleActions: "play complete complete reverse",
+    //       //options: play, pause, resume, reset, restart, complete, reverse,none
+    //     },
+    //   }
+    // );
 
-      }
-    });
     gsap/* default.fromTo */.ZP.fromTo(text3, {
       y: "+=100"
     }, {
@@ -146,12 +148,7 @@ var AboutMe = () => {
       text = el;
     },
     className: style("text1")
-  }, "Cze\u015B\u0107, nazywam si\u0119 ", /*#__PURE__*/react.createElement("strong", null, "Karolina Chorz\u0119pa."), /*#__PURE__*/react.createElement("br", null), "Jestem Waszym wedding plannerem."), /*#__PURE__*/react.createElement("h3", {
-    ref: el => {
-      text2 = el;
-    },
-    className: style("text2")
-  }, "Kreuj\u0119 rozwi\u0105zania na miar\u0119 Waszych potrzeb estetycznych i organizacyjnych. ", /*#__PURE__*/react.createElement("br", null), /*#__PURE__*/react.createElement("strong", null, "Wspieram w decyzjach, procesach, emocjach.")), /*#__PURE__*/react.createElement("p", {
+  }, "Cze\u015B\u0107, nazywam si\u0119 ", /*#__PURE__*/react.createElement("strong", null, "Karolina Chorz\u0119pa."), /*#__PURE__*/react.createElement("br", null), "Jestem Waszym wedding plannerem."), /*#__PURE__*/react.createElement("p", {
     ref: el => {
       text3 = el;
     },

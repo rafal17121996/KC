@@ -76,7 +76,7 @@ var Contact = () => {
     } else if (!state["text"]) {
       setErrors("Wprowadz teks wiadomości");
     } else source/* default.sendForm */.ZP.sendForm("service_e97bjgc", "template_5g2c7io", e.target, "user_ux3gKfqC84EoWJjDiNkqL").then(result => {
-      console.log(result.text);
+      console.log(result);
       setState({
         name: "",
         mail: "",

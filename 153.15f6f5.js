@@ -1,4 +1,4 @@
-(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[947],{
+(self["webpackChunkkarolina"] = self["webpackChunkkarolina"] || []).push([[153],{
 
 /***/ 1689:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -30,7 +30,7 @@ var MenuItems = [{
 
 /***/ }),
 
-/***/ 9947:
+/***/ 4153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -63,7 +63,41 @@ var StoreProvider = __webpack_require__(7567);
 /* harmony default export */ const Navbar_module = ({"Navbar":"Navbar","Navbar_hidden":"Navbar_hidden","Navbar__wrapper":"Navbar__wrapper","Navbar__logo":"Navbar__logo","Navbar__title":"Navbar__title","Navbar__nav-menu":"Navbar__nav-menu","Navbar__nav-item":"Navbar__nav-item","Navbar__nav-links":"Navbar__nav-links","fa-bars":"fa-bars","Navbar__menu-button":"Navbar__menu-button","Navbar__nav-menu_active":"Navbar__nav-menu_active","Navbar__navbar-logo":"Navbar__navbar-logo","Navbar__nav-links-mobile":"Navbar__nav-links-mobile","Navbar__flags":"Navbar__flags"});
 // EXTERNAL MODULE: ./src/assets/KC11.png
 var KC11 = __webpack_require__(6106);
+// EXTERNAL MODULE: ./node_modules/prop-types/index.js
+var prop_types = __webpack_require__(5697);
+var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
+;// CONCATENATED MODULE: ./src/components/Delayed/Delayed.jsx
+
+
+
+class Delayed extends react.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hidden: true
+    };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        hidden: false
+      });
+    }, this.props.waitBeforeShow);
+  }
+
+  render() {
+    return this.state.hidden ? '' : this.props.children;
+  }
+
+}
+
+Delayed.propTypes = {
+  waitBeforeShow: (prop_types_default()).number.isRequired
+};
+/* harmony default export */ const Delayed_Delayed = (Delayed);
 ;// CONCATENATED MODULE: ./src/components/Navbar/Navbar.jsx
+
 
 
 
@@ -134,10 +168,12 @@ var Navbar = () => {
   }, /*#__PURE__*/react.createElement("div", {
     className: style("menu-button"),
     onClick: handleOnClick
-  }, isOpen ? /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
+  }, isOpen ? /*#__PURE__*/react.createElement(Delayed_Delayed, {
+    waitBeforeShow: 500
+  }, /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
     className: style("icon"),
     icon: free_solid_svg_icons_index_es/* faTimes */.NBC
-  }) : /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
+  })) : /*#__PURE__*/react.createElement(index_es/* FontAwesomeIcon */.G, {
     className: style("icon"),
     icon: free_solid_svg_icons_index_es/* faBars */.xiG
   })), /*#__PURE__*/react.createElement("ul", {

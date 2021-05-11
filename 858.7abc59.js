@@ -22,7 +22,7 @@ var lib = __webpack_require__(1113);
 var gsap = __webpack_require__(6358);
 ;// CONCATENATED MODULE: ./src/components/Home/Home.module.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Home_module = ({"homeWrapper":"homeWrapper","zoom":"zoom","homeWrapper__textWrapper":"homeWrapper__textWrapper","homeWrapper__imgWrapper":"homeWrapper__imgWrapper","homeWrapper__img2":"homeWrapper__img2","homeWrapper__text":"homeWrapper__text","homeWrapper__description":"homeWrapper__description"});
+/* harmony default export */ const Home_module = ({"homeWrapper":"homeWrapper","zoom":"zoom","homeWrapper__textWrapper":"homeWrapper__textWrapper","homeWrapper__imgWrapper":"homeWrapper__imgWrapper","homeWrapper__img2":"homeWrapper__img2","homeWrapper__text":"homeWrapper__text","homeWrapper__text2":"homeWrapper__text2","homeWrapper__description":"homeWrapper__description"});
 ;// CONCATENATED MODULE: ./src/assets/home.jpg
 /* harmony default export */ const home = (__webpack_require__.p + "9ab4c5540a7a249bf5eb28416bb8ae70.jpg");
 ;// CONCATENATED MODULE: ./src/assets/KC6.png
@@ -111,7 +111,7 @@ function Home() {
     ref: el => {
       text2 = el;
     },
-    className: style("text")
+    className: style("text2")
   }, "WEDDING PLANNER"))));
 } // <div style={{ height: height }}>
 // <h1
