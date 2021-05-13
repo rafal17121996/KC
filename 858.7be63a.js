@@ -93,16 +93,16 @@ function Home() {
     className: style(),
     style: mystyle
   }, /*#__PURE__*/react.createElement(esm/* default */.ZP, null, /*#__PURE__*/react.createElement("div", {
-    className: style("imgWrapper")
-  }, /*#__PURE__*/react.createElement("img", {
-    src: KC6,
-    className: style("img2")
-  })), /*#__PURE__*/react.createElement("div", {
     ref: el => {
       text1 = el;
     },
     className: style("textWrapper")
-  }, /*#__PURE__*/react.createElement("h1", {
+  }, /*#__PURE__*/react.createElement("div", {
+    className: style("imgWrapper")
+  }, /*#__PURE__*/react.createElement("img", {
+    src: KC6,
+    className: style("img2")
+  })), /*#__PURE__*/react.createElement("h1", {
     ref: el => {
       text1 = el;
     },
