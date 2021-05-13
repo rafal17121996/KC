@@ -92,12 +92,17 @@ function Home() {
     id: "home",
     className: style(),
     style: mystyle
-  }, /*#__PURE__*/react.createElement(esm/* default */.ZP, null, /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/react.createElement(esm/* default */.ZP, null, isMobile ? /*#__PURE__*/react.createElement("div", {
+    className: style("imgWrapper")
+  }, /*#__PURE__*/react.createElement("img", {
+    src: KC6,
+    className: style("img2")
+  })) : null, /*#__PURE__*/react.createElement("div", {
     ref: el => {
       text1 = el;
     },
     className: style("textWrapper")
-  }, /*#__PURE__*/react.createElement("div", {
+  }, isMobile ? null : /*#__PURE__*/react.createElement("div", {
     className: style("imgWrapper")
   }, /*#__PURE__*/react.createElement("img", {
     src: KC6,
