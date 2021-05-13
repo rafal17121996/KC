@@ -112,7 +112,7 @@ function Home() {
       text2 = el;
     },
     className: style("text2")
-  }, "WEDDING PLANNER"))));
+  }, "Wedding Planner"))));
 } // <div style={{ height: height }}>
 // <h1
 //   ref={(el) => {
