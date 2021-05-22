@@ -89,7 +89,7 @@ function Modal(_ref) {
     className: style("two")
   }, /*#__PURE__*/react.createElement("h1", {
     className: style("titlePop")
-  }, title), /*#__PURE__*/react.createElement("p", {
+  }, title), /*#__PURE__*/react.createElement("div", {
     className: style("textPop")
   }, text)), /*#__PURE__*/react.createElement("div", {
     className: style("center")
