@@ -88,7 +88,7 @@ const Navbar = () => {
       <nav className={style("")}>
         <div className={style("wrapper")}>
           <div className={style("menu-button")} onClick={handleOnClick}>
-          {isOpen? <FontAwesomeIcon icon={faTimes}  /> : <FontAwesomeIcon icon={faBars}  /> }
+          {isOpen? <FontAwesomeIcon className={style("icon")} icon={faTimes}  /> : <FontAwesomeIcon  className={style("icon")} icon={faBars}  /> }
           </div>
           {logo}
           <ul className={itemStyle}>{Items}

@@ -18,14 +18,14 @@ export default function Home() {
   return (
     <section id="home" className={style()}>
       <Div100vh>
-        <Parallax blur={{ min: -5, max: 5 }} bgImage={isMobile?imgMobile:img} strength={500}>
+        <Parallax blur={{ min: -5, max: 5 }} bgImage={isMobile?imgMobile:img} strength={isMobile? 0:500}>
           <div style={{ height: height }}>
            <h1 className={style("text")}>
                     KAROLINA CHORZĘPA<br></br>
                     WEDDING PLANNER
+                    {isMobile? null: "WEDDING PLANNER"}
                   </h1>
-                 
-                  <h2 className={style("text2")}>KC WEDDING</h2>
+                  {isMobile? null:  <h2 className={style("text2")}>KC WEDDING</h2>}
             
             {/* <h1 className={style("text")}>
               KAROLINA CHORZĘPA<br></br>
