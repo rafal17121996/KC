@@ -1,7 +1,7 @@
 $base-color: black;
 
 .Navbar {
-  height: 60px;
+  height: 75px;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -18,16 +18,20 @@ $base-color: black;
     background-color: transparent;
 
   }
-
-  &_hidden {
-    top: -80px;
+  &__icon{
+    width: 50px;
+    height: 50px;
   }
-
+  &__icon-close{
+    width: 30px;
+    height: 30px;
+  }
+  
   &__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 75px;
     width: 100%;
   }
    
@@ -35,8 +39,15 @@ $base-color: black;
   &__logo{
     display: block;
     height: 60px;
-    padding-left: 10px;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
     cursor: pointer;
+    @media screen and (max-width: 960px) {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   &__title {
@@ -49,17 +60,17 @@ $base-color: black;
 
   &__nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(6, auto);
     gap: 10px;
     list-style: none;
     text-align: center;
     width: 100vw;
-    justify-content: end;
+    justify-content: center;
     margin-right: 2rem;
   }
 
   &__nav-item {
-    height: 60px;
+    height: 75px;
   }
   &__nav-links {
     color: $base-color;
@@ -70,7 +81,8 @@ $base-color: black;
     height: 100%;
     cursor: pointer;
     &:hover {
-      border-bottom: 4px solid $base-color;
+      color: #ff9a80;
+      border-bottom: 4px solid #ff9a80;
       transition: all 0.2s ease-out;
     }
 
@@ -80,6 +92,7 @@ $base-color: black;
   }
   &__menu-button {
     display: none;
+
   }
   @media screen and (max-width: 960px) {
     &__nav-menu {
@@ -120,10 +133,9 @@ $base-color: black;
     &__menu-button {
       display: block;
       position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
+      top: 10px;
+      right: 10px;
+      font-size: 1.6rem;
       cursor: pointer;
       z-index: 999;
     }
@@ -153,5 +165,7 @@ $base-color: black;
   &__flags{
     cursor: pointer;
   }
+
+
 }
 

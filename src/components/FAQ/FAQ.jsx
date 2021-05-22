@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from "react";
 import bemCssModules from "bem-css-modules";
 const Item = React.lazy(() => import("../FAQ/Item"));
-
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { default as FAQStyles } from "./FAQ.module.scss";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const style = bemCssModules(FAQStyles);
 
-
 function FAQ() {
-
   const [faqs, setFaqs] = useState([
     {
       question: "1. Dla kogo dedykowana jest usługa konsultanta ślubnego?",
@@ -67,33 +68,91 @@ function FAQ() {
     },
     {
       question: "9. Ile kosztuje usługa konsultanta ślubnego?",
-      answer: 'Być może Was rozczaruję: tutaj nie ma miejsca na konkretną cenę. <strong>Każda umowa to projekt szyty na miarę.</strong> Zakres moich obowiązków ustalamy wspólnie – to podstawa naszych dalszych działań. Zazwyczaj nie zdarzają się dwie identyczne umowy, tak samo jak nieczęsto powtarzają się dokładnie te same stawki. <br/>Mogę Was zapewnić z tego miejsca, że finalne wynagrodzenie dla mnie – będzie efektem dokładnych wyliczeń tego, co jest do zrobienia oraz Waszych osobistych oczekiwań w stosunku do mnie. <strong>Gwarantuję rzetelność w ocenie tego, ile czasu i pracy zajmie wspólne działanie na Waszą rzecz.</strong> I najważniejsze: zawsze uważnie Was słucham, finalna oferta to efekt rozmów i zrozumienia zarówno Waszych potrzeb, jak i możliwości. Również finansowych.', 
+      answer:
+        "Być może Was rozczaruję: tutaj nie ma miejsca na konkretną cenę. <strong>Każda umowa to projekt szyty na miarę.</strong> Zakres moich obowiązków ustalamy wspólnie – to podstawa naszych dalszych działań. Zazwyczaj nie zdarzają się dwie identyczne umowy, tak samo jak nieczęsto powtarzają się dokładnie te same stawki. <br/>Mogę Was zapewnić z tego miejsca, że finalne wynagrodzenie dla mnie – będzie efektem dokładnych wyliczeń tego, co jest do zrobienia oraz Waszych osobistych oczekiwań w stosunku do mnie. <strong>Gwarantuję rzetelność w ocenie tego, ile czasu i pracy zajmie wspólne działanie na Waszą rzecz.</strong> I najważniejsze: zawsze uważnie Was słucham, finalna oferta to efekt rozmów i zrozumienia zarówno Waszych potrzeb, jak i możliwości. Również finansowych.",
       open: false,
     },
   ]);
 
+  const toggleFAQ = (index) => {
+    setFaqs(
+      faqs.map((faq, i) => {
+        if (i === index) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
 
+        return faq;
+      })
+    );
+  };
 
-  const toggleFAQ = index => {
-    setFaqs(faqs.map((faq, i) => {
-      if (i === index) {
-        faq.open = !faq.open
-      } else {
-        faq.open = false;
+  let text = useRef(null);
+  let text2 = useRef(null);
+
+  useEffect(() => {
+    gsap.set([text, text2], { autoAlpha: 0 });
+
+    gsap.fromTo(
+      text,
+      {
+        y: "+=100",
+      },
+      {
+        duration: 1,
+        y: "-=100",
+        ease: "linear",
+        autoAlpha: 1,
+        scrollTrigger: {
+          trigger: text,
+
+          start: "top 85%", //when top of herman passes 75% viewport height
+          end: "bottom 25%", //when bottom of herman passes 25% viewport height
+
+          //events: onEnter onLeave onEnterBack onLeaveBack
+          toggleActions: "play complete complete reverse",
+          //options: play, pause, resume, reset, restart, complete, reverse,none
+        },
       }
+    );
+    gsap.fromTo(
+      text2,
+      {
+        y: "+=100",
+      },
+      {
+        duration: 1,
+        y: "-=100",
+        ease: "linear",
+        autoAlpha: 1,
+        scrollTrigger: {
+          trigger: text2,
 
-      return faq;
-    }))
-  }
+          start: "top 85%", //when top of herman passes 75% viewport height
+          end: "bottom 25%", //when bottom of herman passes 25% viewport height
 
+          //events: onEnter onLeave onEnterBack onLeaveBack
+          toggleActions: "play complete complete reverse",
+          //options: play, pause, resume, reset, restart, complete, reverse,none
+        },
+      }
+    );
+  }, []);
 
   return (
     <section id="faq" className={style()}>
       <h1 className={style("title")}>
-        ABC przyszłych nowożeńców <br /> Co powinniście wiedzieć na dobry
-        początek współpracy z KC Wedding?
+        ABC PRZYSZŁYCH NOWOŻEŃCÓW.
+        <br /> Co powinniście wiedzieć na dobry początek współpracy z KC
+        Wedding?
       </h1>
-      <h3 className={style("description")}>
+      <h3
+        ref={(el) => {
+          text = el;
+        }}
+        className={style("description")}
+      >
         Organizacja ślubu i wesela to ogromna ilość różnych pytań i wątpliwości.
         Zdecydowanie łatwiej jest przez to przejść, gdy mamy wsparcie w postaci
         doświadczenia i merytorycznej wiedzy specjalisty. Takim z całą pewnością
@@ -101,18 +160,21 @@ function FAQ() {
         Funkcja konsultanta ślubnego jest wciąż nie do końca oczywista dla wielu
         osób. Postanowiłam zebrać kilka najczęstszych pytań, które padają w moim
         pierwszym kontakcie z przyszłymi nowożeńcami – i odpowiedzieć na nie na
-        tyle wyczerpująco, żebyście mieli pełen obraz sytuacji. Powinno ułatwić to Wam decyzję o umówieniu się na spotkanie.
+        tyle wyczerpująco, żebyście mieli pełen obraz sytuacji. Powinno ułatwić
+        to Wam decyzję o umówieniu się na spotkanie.
       </h3>
-      <div className={style("faqs")}>
+      <div
+        ref={(el) => {
+          text2 = el;
+        }}
+        className={style("faqs")}
+      >
         {faqs.map((faq, i) => (
-        <Item faq={faq} index={i} key={i} toggleFAQ={toggleFAQ}/>
-      ))}
+          <Item faq={faq} index={i} key={i} toggleFAQ={toggleFAQ} />
+        ))}
       </div>
-      
- 
-      </section>
-  )
+    </section>
+  );
 }
 
-export default FAQ
-
+export default FAQ;

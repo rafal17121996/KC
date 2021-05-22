@@ -18,6 +18,7 @@ const Contact = React.lazy(() => import("./components/Contact/Contact"));
 const Footer = React.lazy(() => import("./components/Footer/Footer"));
 
 import ScrollToTop from "./components/Scroll/ScrollToTop";
+import Insta from "./components/Insta/Insta";
 
 const App = () => {
     const [isMobile, setIsMobile] = useState(false)
@@ -39,9 +40,9 @@ const App = () => {
 
 
   return (
-    isMobile?
-    <div className={"overlay"}><i className="fas fa-sync-alt"></i> <p>Obróć swoje urządzenie</p></div>
-    :
+    // isMobile?
+    // <div className={"overlay"}><i className="fas fa-sync-alt"></i> <p>Obróć swoje urządzenie</p></div>
+    // :
     <Router>
       <ScrollToTop />
       <StoreProvider>
@@ -58,6 +59,7 @@ const App = () => {
                   <Offer />
                   <FAQ />
                   <Contact />
+                  <Insta />
                 </>
               )}
             />

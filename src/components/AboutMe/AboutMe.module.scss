@@ -1,28 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 .AboutMeWrapper {
   min-height: 100vh;
   &__title {
-    width: 100%;
+    // font-family: 'EB Garamond', serif;
+    font-family: 'Playfair Display', serif;
+    color: #2d3131;
     font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    width: 100%;
     text-align: center;
     padding: 15px 0;
     background-color: rgba(250, 234, 214, 0.6);
-    font-weight: 400;
     @media screen and (max-width: 960px) {
       font-size: 1.5rem;
     }
-    //     @media screen and (max-width: 1600px) {
-    //     font-size: 1.2rem;
-    // }
+
   }
-  &__description {
-    width: 70%;
-    min-height: 100%;
-    text-align: center;
-    
-    @media screen and (max-width: 960px) {
-      width: 100%;
-    }
-  }
+
 
   &__wrapper {
     display: flex;
@@ -30,11 +27,24 @@
       flex-direction: column;
     }
   }
+
+  &__description {
+    width: 70%;
+    min-height: 100%;
+    text-align: center;
+
+    
+    @media screen and (max-width: 960px) {
+      width: 100%;
+    }
+  }
+
   &__text1 {
     text-align: center;
     font-size: 1.8rem;
     font-weight: 200;
-    padding: 50px 200px;
+     padding: 50px 50px;
+     color: rgb(82, 82, 82);
   
    
     @media screen and (max-width: 1600px) {
@@ -51,10 +61,11 @@
     
   }
   &__text2 {
+    color: rgb(82, 82, 82);
     text-align: center;
     font-size: 1.4rem;
     font-weight: 200;
-    padding: 10px 200px;
+     padding: 10px 50px;
    
    
     @media screen and (max-width: 1600px) {
@@ -66,15 +77,17 @@
     } 
      @media screen and (max-width: 960px) {
       font-size: 1rem;
-      padding: 10px 50px;
+      padding: 10px 40px;
+      text-align: justify;
     }
    
   }
   &__text3 {
+    color: rgb(82, 82, 82);
     font-size: 1.4rem;
     text-align: justify;
     font-weight: 200;
-    padding: 50px 200px 0 200px;
+     padding: 50px 50px 0 50px;
     
     @media screen and (max-width: 1600px) {
       font-size: 1.2rem;
@@ -86,13 +99,13 @@
     @media screen and (max-width: 960px) {
       font-size: 1rem;
       padding: 10px 40px;
-      text-align: center;
     }
   }
   &__text4 {
+    color: rgb(82, 82, 82);
     font-size: 1.4rem;
     text-align: justify;
-    padding: 20px 200px;
+    padding: 20px 50px;
     font-weight: 200;
     
     @media screen and (max-width: 1600px) {
@@ -105,14 +118,13 @@
     @media screen and (max-width: 960px) {
       font-size: 1rem;
       padding: 10px 40px;
-      text-align: center;
     }
   }
   &__text5 {
-    font-family: "Yeseva One", cursive;
+    color: rgba(61, 124, 119, 0.8);
     font-size: 1.4rem;
     text-align: center;
-    padding: 20px 200px;
+    padding: 20px 50px;
     font-weight: 200;
    
     @media screen and (max-width: 1600px) {
@@ -130,10 +142,10 @@
     }
   }
   &__text6 {
+    color: rgb(82, 82, 82);
     font-size: 1.4rem;
     text-align: center;
     padding-bottom: 30px;
-    font-family: 'Yeseva One', cursive;
     font-weight: 300;
     font-weight: 200;
   
@@ -177,22 +189,20 @@
   }
 
   &__imgWrapper {
-    width: 30%;
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
     @media screen and (max-width: 960px) {
       width: 100%;
+      height: auto;
     }
    
   }
 
   &__picture {
-    width: 80%;
+    width: 100%;
     height: auto;
-    box-shadow: 0 6px 20px rgba(43, 50, 63, 0.6);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
-    filter: drop-shadow(0 6px 20px rgba(43, 50, 63, 0.6));
     @media screen and (max-width: 960px) {
       width: 50%;
       margin-top: 20px;

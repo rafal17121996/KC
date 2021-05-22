@@ -1,15 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 .contact {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
-  // background-image: url("../../assets/pexels-miguel-á-padriñán-19670.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  background-color: #fafafa;
+  background-color: rgb(81, 180, 160);
+
   &__ImgWrapper {
     position: relative;
     width: 50%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,9 +33,15 @@
       left: 50%;
       width: 50%;
     }
+    ::placeholder {
+      color: #d1d1d1;
+      opacity: 1; /* Firefox */
+
+    }
   }
   &__title {
-    color: #3c6960;
+    font-family: "Playfair Display", serif;
+    color: white;
     margin-top: 20px;
     font-size: 2.5rem;
     text-shadow: 1px 1px black;
@@ -45,7 +49,8 @@
   }
 
   &__description {
-    color: #51b4a0;
+    font-family: "Playfair Display", serif;
+    color: white;
     text-shadow: 1px 1px black;
     padding: 20px;
     font-size: 1.1rem;
@@ -60,8 +65,8 @@
     background-color: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid gray;
-    color: gray;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    color: rgb(199, 199, 199);
   }
 
   &__textarea {
@@ -73,10 +78,11 @@
     border: none;
     outline: none;
     resize: none;
+    color: rgb(199, 199, 199);
   }
 
   &__subBtn {
-    background-color: #3c6960;
+    background-color: white;
     border: none;
     width: 80%;
     padding: 20px;
@@ -86,13 +92,17 @@
     text-shadow: 1px 1px black;
     font-size: 1.1rem;
     font-weight: 700;
+    background-color: rgba(16, 37, 33, 0.5);
     &:hover {
-      background-color: #244942;
+      background-color: rgba(9, 80, 66, 0.5);
     }
   }
   
   &__errors {
-    color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-weight: 700;
   }
   &__iconWrapper{
     position: absolute;
@@ -103,7 +113,7 @@
     flex-direction: column;
     text-align: center;
     padding: 35px;
-    background-color: rgba(81, 180, 160, 0.5);
+    background-color: rgba(166, 240, 225, 0.5);
   }
   &__icon{
     width: 100%;

@@ -101,12 +101,11 @@ function FAQ() {
 
   return (
     <section id="faq" className={style()}>
-      <Parallax bgImage={img} strength={isMobile?100:600}>
+      <Parallax bgImage={img} strength={isMobile ? 100 : 300}>
         <div className={style("img")}>
           <div className={style("inlineStyle")}>
-            <h1 className={style("faqTitle")}>ABC PRZYSZŁYCH NOWOŻEŃCÓW</h1>
-            <div className={style("textWrapper")}>
-               <h1 className={style("title")}>
+            <h1 className={style("faqTitle")}>ABC Przyszłych Nowożeńców</h1>
+            <h1 className={style("title")}>
               Co powinniście wiedzieć na dobry początek współpracy z KC Wedding?
             </h1>
             {isMobile ? null : (
@@ -120,8 +119,6 @@ function FAQ() {
                 osób.
               </h3>
             )}
-            </div>
-           
           </div>
         </div>
       </Parallax>
@@ -151,9 +148,7 @@ function FAQ() {
         Czekam teraz na Wasz kontakt.
       </div>
       <Link
-        smooth
         to="/#contact"
-        scroll={(el) => scrollWithOffset(el, 60)}
         className={style("nav-links")}
       >
         <button className={style("contact")}>Skontatkuj się ze mną!</button>

@@ -1,6 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import bemCssModules from "bem-css-modules";
 import emailjs from "emailjs-com";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,11 +12,13 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import { default as ContactStyles } from "./Contact.module.scss";
-
 import img from "../../assets/Karolina_KCwedding-37.jpg";
-import bg from "../../assets/pexels-miguel-á-padriñán-19670.jpg";
-
 import { StoreContext } from "../../store/StoreProvider";
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+
 
 const style = bemCssModules(ContactStyles);
 
@@ -27,7 +32,6 @@ const Contact = () => {
     text: "",
   });
   const [errors, setErrors] = useState("");
-  const [result, setResult] = useState({});
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
@@ -40,15 +44,16 @@ const Contact = () => {
     } else
       emailjs
         .sendForm(
-          "service_f2ixcir",
+          "service_e97bjgc",
           "template_5g2c7io",
           e.target,
           "user_ux3gKfqC84EoWJjDiNkqL"
         )
         .then(
           (result) => {
-            console.log(result.text);
+            console.log(result);
             setState({ name: "", mail: "", text: "", date: "" });
+            setErrors("Dziękuje za wysłanie wiadomości")
           },
           (error) => {
             console.log(error.text);
@@ -64,30 +69,49 @@ const Contact = () => {
       [name]: value,
     });
   };
-  //  const onFocus =(e)=> {
-  //     e.currentTarget.type = "date";
-  // },
-  // const onBlur = (e)=> {
-  //     e.currentTarget.type = "text";
-  //     e.currentTarget.placeholder = "Enter a Date";
-  // },
+  
+  let text = useRef(null);
+
+  useEffect(() => {
+    gsap.set([text], { autoAlpha: 0 });
+
+    gsap.fromTo(
+      text,
+      {
+        y: "+=100",
+      },
+      {
+        duration: 1,
+        y: "-=100",
+        ease: "linear",
+        autoAlpha: 1,
+        scrollTrigger: {
+          trigger: text,
+          start: "top 85%", //when top of herman passes 75% viewport height
+          end: "bottom 25%", //when bottom of herman passes 25% viewport height
+
+          //events: onEnter onLeave onEnterBack onLeaveBack
+          toggleActions: "play complete complete reverse",
+          //options: play, pause, resume, reset, restart, complete, reverse,none
+        },
+      }
+    );
+  }, []);
+
+
 
   return (
     <section
       id="contact"
-      style={{ backgroundImage: `url(${bg})` }}
       className={style()}
     >
       {isMobile ? null : (
         <div className={style("ImgWrapper")}>
           <div className={style("iconWrapper")}>
+            <a href="https://www.instagram.com/kc_weddingplanner/">
+              <FontAwesomeIcon icon={faInstagram} className={style("icon")} />
+            </a>
             <a href="https://www.facebook.com/kcwedding.konsultantkaslubna/">
-              <FontAwesomeIcon icon={faInstagram} className={style("icon")} />
-            </a>
-            <a href="https://www.instagram.com/kc_weddingplanner/">
-              <FontAwesomeIcon icon={faInstagram} className={style("icon")} />
-            </a>
-            <a href="https://www.instagram.com/kc_weddingplanner/">
               <FontAwesomeIcon
                 icon={faFacebookSquare}
                 className={style("icon")}
@@ -99,11 +123,13 @@ const Contact = () => {
         </div>
       )}
 
-      <div className={style("inlineStyle")}>
+      <div ref={(el) => {
+          text = el;
+        }} className={style("inlineStyle")}>
         <div>
           <h1 className={style("title")}>Napisz do mnie</h1>
           <h1 className={style("description")}>
-            Umówimy się na kawę i omówimy szczegóły
+            Umówimy się na kawę i omówimy szczegóły Twojego przyjęcia
           </h1>
         </div>
         <form onSubmit={handleOnSubmit}>
@@ -151,7 +177,13 @@ const Contact = () => {
           <button className={style("subBtn")}>WYŚLIJ WIADOMOŚĆ</button>
         </form>
       </div>
+
+
+    
+
     </section>
+
+
   );
 };
 

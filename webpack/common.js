@@ -35,18 +35,25 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path(__dirname, "..", "public", "index.html"),
+      favicon: "public/KC4.png"
     }),
+  //   new CopyWebpackPlugin({ 
+  //     patterns: [ 
+  //      // relative path is from src
+  //      { from: '../src/assets/KC4.png' }, // <- your path to favicon
+  //     ]
+  //  }),
     new ImageMinimizerPlugin({
       minimizerOptions: {
         plugins: [
           // Name
           'gifsicle',
           // Name with options
-          ['mozjpeg', { quality: 80 }],
+          ['mozjpeg', { quality: 90 }],
           [
             'pngquant',
             {
-              quality: [0.6, 0.8],
+              quality: [0.9, 0.9],
             },
           ],
           // Full package name 

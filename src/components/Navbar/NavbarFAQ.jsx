@@ -14,7 +14,10 @@ import {
 
 import { default as NavbarFAQStyles } from "./NavbarFAQ.module.scss";
 
-import img from "../../assets/KC (1).png";
+import img from "../../assets/KC11.png";
+import menu from "../../assets/burgerMenu.svg";
+import close from "../../assets/close.svg";
+import Delayed from "../Delayed/Delayed";
 
 const style = bemCssModules(NavbarFAQStyles);
 
@@ -38,7 +41,7 @@ const Navbar = () => {
         <Link
           smooth
           to={"/#" + item.url}
-          scroll={(el) => scrollWithOffset(el, isMobile ? 0 : 60)}
+          scroll={(el) => scrollWithOffset(el, isMobile ? 0 : 80)}
           className={style("nav-links")}
         >
           {item.title}
@@ -55,22 +58,28 @@ const Navbar = () => {
     ? style("nav-menu", { active: true })
     : style("nav-menu");
 
-  const logo = isMobile ? null : (
-    <Link to="/" className={style("logo")}>
-      <img className={style("logo")} src={img} alt="" />
-    </Link>
-  );
+    const logo = 
+    <Link smooth to="/" className={style("nav-links")}>
+  <img className={style("logo")} src={img} alt="" />
+  </Link>
 
   return (
     <>
       <nav className={style("")}>
         <div className={style("wrapper")}>
-          <div className={style("menu-button")} onClick={handleOnClick}>
-          {isOpen? <FontAwesomeIcon icon={faTimes}  /> : <FontAwesomeIcon icon={faBars}  /> }
+        <div className={style("menu-button")} onClick={handleOnClick}>
+            {isOpen ? (
+              <Delayed waitBeforeShow={500}>
+                <img className={style("icon-close")} src={close} alt="" />
+              </Delayed>
+            ) : (
+                <img className={style("icon")} src={menu} alt="" />
+            )}
           </div>
-          {logo}
           <ul className={itemStyle}>
+          {!isMobile? null : <li>{logo}</li>}
             {Items}
+            {isMobile? null : <li>{logo}</li>}
             <li className={style("nav-item")}>
               <Link smooth to="/faq" className={style("nav-links")}>
                 ABC KLIENTA
@@ -80,7 +89,7 @@ const Navbar = () => {
               <Link
                 smooth
                 to="/#contact"
-                scroll={(el) => scrollWithOffset(el, isMobile ? 0 : 60)}
+                scroll={(el) => scrollWithOffset(el, isMobile ? 0 : 80)}
                 className={style("nav-links")}
               >
                 KONTAKT
@@ -94,3 +103,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

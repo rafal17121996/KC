@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 .FAQWrapper {
   background-color: white;
   min-height: 100vh;
@@ -7,12 +8,14 @@
   padding-bottom: 30px;
 
   &__title {
+    font-family: 'EB Garamond', serif;
+    color: #2d3131;
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 1px;
     padding: 15px 0;
     margin-bottom: 20px;
     background-color: #ff9a80;
-    color: rgb(58, 58, 58);
-    font-weight: 400;
-    letter-spacing: 1px;
     @media screen and (max-width: 960px) {
       font-size: 1rem;
       padding: 15px;

@@ -2,11 +2,14 @@ import React, { useContext, useState } from "react";
 import bemCssModules from "bem-css-modules";
 const Item = React.lazy(() => import("../FAQ/Item"));
 import { HashLink as Link } from "react-router-hash-link";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { default as AboutMeMoreStyles } from "./AboutMeMore.module.scss";
 // import img from "../../assets/faq2.jpg";
-import img from "../../assets/back1 (4).jpg";
+import img from "../../assets/EXP11992.jpg";
 import img2 from "../../assets/Karolina_KCwedding-53-1.jpg";
+import img3 from "../../assets/certyfikat.jpg";
 import { Parallax } from "react-parallax";
 import { StoreContext } from "../../store/StoreProvider";
 
@@ -73,18 +76,27 @@ function AboutMeMore() {
             wolicie?
           </strong>
         </h3>
-        <img className={style("picture")} src={img2} alt="" />
+        <div className={style("pictureW")}>
+ <Carousel showStatus={false}>
+                <div>
+                    <img src={img2} />
+                </div>
+                <div>
+                    <img src={img3} />
+                </div>
+          </Carousel>
+        </div>
+{/*        
+        <img className={style("picture")} src={img2} alt="" /> */}
       </div>
       <h3 className={style("textEnd")}>
-        KC Wedding powstało z uwielbienia do naturalnych i niebanalnych
-        rozwiązań.
+        <strong>KC Wedding</strong> powstało z uwielbienia do naturalnych i niebanalnych
+        rozwiązań. 
       </h3>
       <Link
-        smooth
         to="/#contact"
-        scroll={(el) => scrollWithOffset(el, 60)}
       >
-        <button className={style("contact")}>Skontatkuj się ze mną!</button>
+        <button className={style("contact")}>Zoorganizuj ze mną ślub swoich marzeń</button>
       </Link>
     </section>
   );

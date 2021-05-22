@@ -1,12 +1,10 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import ReactDom from "react-dom";
 import bemCssModules from "bem-css-modules";
+import { Link as Link1 } from "react-scroll";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTimes,
-  faBars
-} from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 
 import { default as OfferStyles } from "../Offer.module.scss";
 import { StoreContext } from "../../../store/StoreProvider";
@@ -41,14 +39,28 @@ export default function Modal({ img, open, title, text, onClose }) {
           </div>
         </div>
         <div className={style("close")} onClick={onClose}>
-        <FontAwesomeIcon icon={faTimes}  />
+          <FontAwesomeIcon icon={faTimes} />
         </div>
         {/* {isMobile?null:<div className={style("one")}></div>} */}
         <div className={style("two")}>
           <h1 className={style("titlePop")}>{title}</h1>
           <p className={style("textPop")}>{text}</p>
         </div>
+        <div className={style("center")} >
+              <Link1
+          smooth={true}
+          duration={isMobile?0:1000}
+          to='contact'
+          offset={isMobile?0:-60}
+          className={style("nav-links")}
+          onClick={onClose}
+        >
+           <button className={style("contact")}>Skontatkuj się ze mną!</button>
+        </Link1>
+        </div>
+    
       </div>
+ 
     </>,
     document.getElementById("portal")
   );
