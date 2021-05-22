@@ -24,7 +24,7 @@ var js = __webpack_require__(615);
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const AboutMeMore_module = ({"AboutMeMoreWrapper":"AboutMeMoreWrapper","AboutMeMoreWrapper__img":"AboutMeMoreWrapper__img","AboutMeMoreWrapper__inlineStyle":"AboutMeMoreWrapper__inlineStyle","AboutMeMoreWrapper__faqTitle":"AboutMeMoreWrapper__faqTitle","AboutMeMoreWrapper__title":"AboutMeMoreWrapper__title","AboutMeMoreWrapper__bottom":"AboutMeMoreWrapper__bottom","AboutMeMoreWrapper__text":"AboutMeMoreWrapper__text","AboutMeMoreWrapper__textEnd":"AboutMeMoreWrapper__textEnd","AboutMeMoreWrapper__text2":"AboutMeMoreWrapper__text2","AboutMeMoreWrapper__picture":"AboutMeMoreWrapper__picture","AboutMeMoreWrapper__pictureW":"AboutMeMoreWrapper__pictureW","AboutMeMoreWrapper__contact":"AboutMeMoreWrapper__contact"});
 ;// CONCATENATED MODULE: ./src/assets/EXP11992.jpg
-/* harmony default export */ const EXP11992 = (__webpack_require__.p + "cc8a3106ce52a7fc27b0fdea052db612.jpg");
+/* harmony default export */ const EXP11992 = (__webpack_require__.p + "12f91dad5785029a0412508616cdc207.jpg");
 ;// CONCATENATED MODULE: ./src/assets/Karolina_KCwedding-53-1.jpg
 /* harmony default export */ const Karolina_KCwedding_53_1 = (__webpack_require__.p + "57577be4fae162a816a955d7d5846c47.jpg");
 ;// CONCATENATED MODULE: ./src/assets/certyfikat.jpg
