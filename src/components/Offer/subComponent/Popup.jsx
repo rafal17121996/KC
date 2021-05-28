@@ -44,23 +44,29 @@ export default function Modal({ img, open, title, text, onClose }) {
         {/* {isMobile?null:<div className={style("one")}></div>} */}
         <div className={style("two")}>
           <h1 className={style("titlePop")}>{title}</h1>
-          <p className={style("textPop")}>{text}</p>
+          <div
+            className={style("test")}
+          >
+            <div
+            className={style("test2")}
+            >
+              {text}
+            </div>
+          </div>
         </div>
-        <div className={style("center")} >
-              <Link1
-          smooth={true}
-          duration={isMobile?0:1000}
-          to='contact'
-          offset={isMobile?0:-60}
-          className={style("nav-links")}
-          onClick={onClose}
-        >
-           <button className={style("contact")}>Skontatkuj się ze mną!</button>
-        </Link1>
+        <div className={style("center")}>
+          <Link1
+            smooth={true}
+            duration={isMobile ? 0 : 1000}
+            to="contact"
+            offset={isMobile ? 0 : -60}
+            className={style("nav-links")}
+            onClick={onClose}
+          >
+            <button className={style("contact")}>Skontatkuj się ze mną!</button>
+          </Link1>
         </div>
-    
       </div>
- 
     </>,
     document.getElementById("portal")
   );

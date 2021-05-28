@@ -108,12 +108,12 @@ const Navbar = () => {
             </li>
             <li className={style("nav-item")}>
               <Link1
-                smooth={true}
-                duration={isMobile ? 0 : 1000}
+              smooth={true}
+              duration={isMobile ? 0 : 1000}
                 to="contact"
                 offset={isMobile ? 0 : -80}
-                className={style("nav-links")}
-                onClick={handleOnClick}
+          className={style("nav-links")}
+          onClick={() => handleOnClick()}
               >
                 KONTAKT
               </Link1>

@@ -66,6 +66,9 @@
       text-align: center;
       white-space: nowrap;
     }
+    @media screen and (max-width: 400px) {
+      font-size: 1.6rem;
+    }
   }
   &__text2 {
     font-family: "Playfair Display", serif;

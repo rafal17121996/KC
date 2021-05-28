@@ -72,31 +72,31 @@ const Contact = () => {
   
   let text = useRef(null);
 
-  useEffect(() => {
-    gsap.set([text], { autoAlpha: 0 });
+  // useEffect(() => {
+  //   gsap.set([text], { autoAlpha: 0 });
 
-    gsap.fromTo(
-      text,
-      {
-        y: "+=100",
-      },
-      {
-        duration: 1,
-        y: "-=100",
-        ease: "linear",
-        autoAlpha: 1,
-        scrollTrigger: {
-          trigger: text,
-          start: "top 85%", //when top of herman passes 75% viewport height
-          end: "bottom 25%", //when bottom of herman passes 25% viewport height
+  //   gsap.fromTo(
+  //     text,
+  //     {
+  //       y: "+=100",
+  //     },
+  //     {
+  //       duration: 1,
+  //       y: "-=100",
+  //       ease: "linear",
+  //       autoAlpha: 1,
+  //       scrollTrigger: {
+  //         trigger: text,
+  //         start: "top 85%", //when top of herman passes 75% viewport height
+  //         end: "bottom 25%", //when bottom of herman passes 25% viewport height
 
-          //events: onEnter onLeave onEnterBack onLeaveBack
-          toggleActions: "play complete complete reverse",
-          //options: play, pause, resume, reset, restart, complete, reverse,none
-        },
-      }
-    );
-  }, []);
+  //         //events: onEnter onLeave onEnterBack onLeaveBack
+  //         toggleActions: "play complete complete reverse",
+  //         //options: play, pause, resume, reset, restart, complete, reverse,none
+  //       },
+  //     }
+  //   );
+  // }, []);
 
 
 

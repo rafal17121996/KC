@@ -182,7 +182,7 @@ const AboutMe = () => {
             <button className={style("more")}>More!</button>
           </Link>
           <p className={style("text5")}>
-          Kreuję rozwiązania na miarę Waszych potrzeb <br /> estetycznych i organizacyjnych.
+          Kreuję rozwiązania na miarę <br/> Waszych potrzeb <br /> estetycznych i organizacyjnych.
           <br/>
           <strong>
             Wspieram w decyzjach, procesach, emocjach.
