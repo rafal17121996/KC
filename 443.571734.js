@@ -22,7 +22,7 @@ var gsap = __webpack_require__(6358);
 var ScrollTrigger = __webpack_require__(7082);
 ;// CONCATENATED MODULE: ./src/components/Offer/Offer.module.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Offer_module = ({"cards":"cards","cards__popup":"cards__popup","cards__center":"cards__center","cards__contact":"cards__contact","cards__two":"cards__two","cards__border":"cards__border","cards__imgWrapper":"cards__imgWrapper","cards__titlePop":"cards__titlePop","cards__textPop":"cards__textPop","cards__close":"cards__close","cards__popup_background":"cards__popup_background","cards__title":"cards__title","cards__container":"cards__container","cards__wrapper":"cards__wrapper","cards__items":"cards__items","cards__item":"cards__item","cards__item__link":"cards__item__link","cards_clas_item__pic-wrap":"cards_clas_item__pic-wrap","cards__item__img":"cards__item__img","cards__item__info":"cards__item__info","cards__item__text":"cards__item__text"});
+/* harmony default export */ const Offer_module = ({"cards":"cards","cards__popup":"cards__popup","cards__textPop":"cards__textPop","cards__test":"cards__test","cards__test2":"cards__test2","cards__center":"cards__center","cards__contact":"cards__contact","cards__two":"cards__two","cards__border":"cards__border","cards__imgWrapper":"cards__imgWrapper","cards__titlePop":"cards__titlePop","cards__close":"cards__close","cards__popup_background":"cards__popup_background","cards__title":"cards__title","cards__container":"cards__container","cards__wrapper":"cards__wrapper","cards__items":"cards__items","cards__item":"cards__item","cards__item__link":"cards__item__link","cards_clas_item__pic-wrap":"cards_clas_item__pic-wrap","cards__item__img":"cards__item__img","cards__item__info":"cards__item__info","cards__item__text":"cards__item__text"});
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
 var react_dom = __webpack_require__(3935);
 // EXTERNAL MODULE: ./node_modules/react-scroll/modules/index.js
@@ -90,8 +90,10 @@ function Modal(_ref) {
   }, /*#__PURE__*/react.createElement("h1", {
     className: style("titlePop")
   }, title), /*#__PURE__*/react.createElement("div", {
-    className: style("textPop")
-  }, text)), /*#__PURE__*/react.createElement("div", {
+    className: style("test")
+  }, /*#__PURE__*/react.createElement("div", {
+    className: style("test2")
+  }, text))), /*#__PURE__*/react.createElement("div", {
     className: style("center")
   }, /*#__PURE__*/react.createElement(modules/* Link */.rU, {
     smooth: true,
@@ -157,7 +159,7 @@ function CardItem(props) {
 ;// CONCATENATED MODULE: ./src/assets/7_.jpg
 /* harmony default export */ const _7_ = (__webpack_require__.p + "bc9877598d335510179c5674b34a6a28.jpg");
 ;// CONCATENATED MODULE: ./src/assets/offer1.jpg
-/* harmony default export */ const offer1 = (__webpack_require__.p + "1b78c25449435a0cdd1f437f1d4fe536.jpg");
+/* harmony default export */ const offer1 = (__webpack_require__.p + "20a36cae7af5783c74a5488b04bff569.jpg");
 ;// CONCATENATED MODULE: ./src/assets/offer2.jpg
 /* harmony default export */ const offer2 = (__webpack_require__.p + "fb18e9dfa9b29b88ccfb488e1695904e.jpg");
 ;// CONCATENATED MODULE: ./src/assets/EXP21410.jpg
@@ -165,7 +167,7 @@ function CardItem(props) {
 ;// CONCATENATED MODULE: ./src/assets/offer4.jpg
 /* harmony default export */ const offer4 = (__webpack_require__.p + "355a7a8c65f858d3e49347f8522f41c8.jpg");
 ;// CONCATENATED MODULE: ./src/assets/EXP21606.jpg
-/* harmony default export */ const EXP21606 = (__webpack_require__.p + "5debcc8355b710fc0e622187ce33922a.jpg");
+/* harmony default export */ const EXP21606 = (__webpack_require__.p + "7549638f9e475b3c0979ca2dd0035e36.jpg");
 ;// CONCATENATED MODULE: ./src/assets/EXP21351.jpg
 /* harmony default export */ const EXP21351 = (__webpack_require__.p + "bd44ac5d92f0f2c6f586bb3c00d9b59f.jpg");
 ;// CONCATENATED MODULE: ./src/assets/xxx.jpg

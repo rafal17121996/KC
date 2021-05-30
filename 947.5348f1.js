@@ -215,7 +215,7 @@ var Navbar = () => {
     to: "contact",
     offset: isMobile ? 0 : -80,
     className: style("nav-links"),
-    onClick: handleOnClick
+    onClick: () => handleOnClick()
   }, "KONTAKT"))))));
 };
 

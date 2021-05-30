@@ -104,7 +104,7 @@ function Home() {
     id: "home",
     className: style(),
     style: mystyle
-  }, /*#__PURE__*/react.createElement(esm/* default */.ZP, null, /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/react.createElement("div", {
     ref: el => {
       text1 = el;
     },
@@ -124,7 +124,7 @@ function Home() {
       text2 = el;
     },
     className: style("text2")
-  }, "Wedding Planner"))));
+  }, "Wedding Planner")));
 } // <div style={{ height: height }}>
 // <h1
 //   ref={(el) => {
@@ -156,10 +156,9 @@ function Home() {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ZP": () => /* binding */ Div100vh,
 /* harmony export */   "g": () => /* binding */ use100vh
 /* harmony export */ });
-/* unused harmony export measureHeight */
+/* unused harmony exports default, measureHeight */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 var __assign = (undefined && undefined.__assign) || function () {
     __assign = Object.assign || function(t) {
@@ -194,7 +193,7 @@ function Div100vh(_a) {
         console.warn('<ReactDiv100vh /> overrides the height property of the style prop');
     }
     var styleWithRealHeight = __assign(__assign({}, style), { height: height ? height + "px" : '100vh' });
-    return react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", __assign({ style: styleWithRealHeight }, other));
+    return React.createElement("div", __assign({ style: styleWithRealHeight }, other));
 }
 function use100vh() {
     var _a = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(measureHeight), height = _a[0], setHeight = _a[1];
