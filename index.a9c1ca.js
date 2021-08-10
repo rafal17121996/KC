@@ -4417,7 +4417,7 @@ function Insta() {
       get: 'user',
       target: "instafeed-container",
       resolution: 'low_resolution',
-      accessToken: 'IGQVJVRC1KZAXJNSm1fY1JlRnVIX1lGR3EwWU5ab1F4TThYWS1jMjhXcEZAMM3FqM0JZAZAXlEV3ExSTR1cktlMWJEbloyZAml1RUx3OWZAEb3FlM2ZASUzRZAdXVSRklnWXZAmVHpSRGNRVE9LQ1ktaUp1UjkwcQZDZD',
+      accessToken: 'IGQVJVZAG5QUG9qd0NKZAVFkQzNNVmVPa3A3ZAWQ3cFVIcHlCcHVUNGZAHQjM0VzMxQ0x6VmMyTk13d19hQ2xra2pybmFTYVB3cDl0NTZAvYzNya1NNRHBaWkJCWTRQSFNHUWFpakQ0NFdzS1NXam9jQW04VwZDZD',
       limit: 9
     });
     userFeed.run();
